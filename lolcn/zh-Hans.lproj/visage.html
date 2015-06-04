@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>VISAGE</title>
+        <title>维萨吉</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">维萨吉</div>
-                    <div class="atype">远程</div>
+                     <div class="atype">远程</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">爆发</td>
-                            <td class="role" width="50%">耐久</td>
-                        </tr>
-                        <tr >
-                            <td class="role">控制</td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">爆发</td>
+                                <td class="role" width="50%">耐久</td>
+                            </tr>
+                            <tr >
+                                <td class="role">控制</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -81,8 +81,8 @@
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 34</span></li>
-                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>295</span></li>
-                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>0.54</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>285</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>-0.46</span></li>
                             </ul>
                         </div>
                     </div>
@@ -121,13 +121,13 @@
                             <tr class="statRow">
                                 <td ></td>
                                 <td >护甲</td>
-                                <td class="statRowColW">1</td>
-                                <td class="statRowColW">3</td>
-                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">-0</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">7</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -162,8 +162,8 @@
                                 <img  src="../img/visage_gravekeepers_cloak_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/visage_summon_familiars_hp2.png" >
-                                    </li>
+                                <img  src="../img/visage_summon_familiars_hp2.png" />
+                            </li>
                         </ul>
                     </div>
                     <div class="contentblock">
@@ -173,111 +173,127 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">70 / 80 / 90 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">16/14/12/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度吸取:</td><td class="statRowColW">32% / 32% / 32% / 32%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击速度吸取:</td><td class="statRowColW">64 / 64 / 64 / 64</td>
                                 </tr>
                             </table>
+                            <p>温暖的阳光到了黑暗的狭窄迷宫里只剩下寒意。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>灵魂超度</strong></p>
-                            <p>维萨吉对目标单位造成基于灵魂能量的伤害。每当他周围的所有英雄受到伤害积累到一定量时，死灵飞龙就会获得一点灵魂能量。</p>
+                            <p>每次附近英雄（不论敌我）受到的伤害超过110点，维萨吉就能集聚灵魂精华的能量。将精华释放后，会对目标单位造成基础伤害，每一点集聚的能量还将造成额外伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">170 / 160 / 150 / 140</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">170/160/150/140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">4.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >基础伤害:</td><td class="statRowColW">20</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >灵魂能量伤害:</td><td class="statRowColW">65</td>
+                                    <td>基础伤害:</td><td class="statRowColW">20</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害积累:</td><td class="statRowColW">110</td>
+                                    <td>每点灵魂伤害:</td><td class="statRowColW">65</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大灵魂能量数量:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>最大能量点数:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >灵魂能量持续时间:</td><td class="statRowColW">6</td>
+                                    <td>能量持续时间:</td><td class="statRowColW">6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >收集范围:</td><td class="statRowColW">1375</td>
+                                    <td>累积伤害临界值:</td><td class="statRowColW">110</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>集聚伤害范围:</td><td class="statRowColW">1375</td>
                                 </tr>
                             </table>
+                            <p>收集的死者亡魂四散而去带回生魂。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>守墓人的斗篷</strong></p>
+                            <p><strong>陵卫斗篷</strong></p>
                             <p>维萨吉产生数层屏障来保护他，降低受到的物理和魔法伤害。每当他受到来自玩家的伤害，就会失去一层屏障，失去的屏障需要一定时间才能恢复。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >护甲/层:</td><td class="statRowColW">1 / 2 / 4 / 5</td>
+                                    <td>每层提供的护甲:</td><td class="statRowColW">1 / 2 / 4 / 5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >抗性/层:</td><td class="statRowColW">3% / 6% / 12% / 16%</td>
+                                    <td>每层提供的魔抗:</td><td class="statRowColW">3% / 6% / 12% / 16%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大层数:</td><td class="statRowColW">4</td>
+                                    <td>最大层数:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >恢复时间:</td><td class="statRowColW">12 / 10 / 8 / 6</td>
+                                    <td>每层恢复时间:</td><td class="statRowColW">4</td>
                                 </tr>
                             </table>
+                            <p>维萨吉坚硬的鳞片同时具有鬼魂和石像的属性，刀剑和魔法的突袭对他来说不痛不痒。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>召唤佣兽</strong></p>
-                            <p>召唤2只盲眼的佣兽为维萨吉作战。佣兽拥有很高的攻击力，但是每次攻击都会降低部分攻击力，降低的攻击力可以慢慢恢复。佣兽拥有石像形态技能，可以化为石像，在落地时使敌人眩晕。在石像形态中的佣兽无敌，并且迅速回复生命值和攻击力。佣兽被击杀时给予高额奖励。可神杖升级。</p>
+                            <p>召唤2只盲眼的佣兽为维萨吉作战。佣兽拥有很高的攻击力，但是每次攻击都会降低部分攻击力，降低的攻击力可以缓慢恢复。佣兽拥有石像形态技能，可以化为石像，在落地时使敌人眩晕。在石像形态中的佣兽无敌，并且迅速回复生命值和攻击力。佣兽被击杀时给予高额奖励。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 150 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/150/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">180.0 / 160.0 / 140.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">180/160/140</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >佣兽生命值:</td><td class="statRowColW">300 / 450 / 600</td>
+                                    <td>摧毁佣兽所需攻击次数:</td><td class="statRowColW">3</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >佣兽护甲:</td><td class="statRowColW">0 / 1 / 2</td>
+                                    <td>佣兽护甲:</td><td class="statRowColW">0 / 1 / 2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >佣兽速度:</td><td class="statRowColW">380 / 390 / 400</td>
+                                    <td>佣兽移动速度:</td><td class="statRowColW">380 / 390 / 400</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >佣兽最大伤害:</td><td class="statRowColW">56 / 98 / 154</td>
+                                    <td>佣兽最大攻击力:</td><td class="statRowColW">56 / 98 / 154</td>
                                 </tr>
                             </table>
+                            <p>死灵飞龙的佣兽，也是狭窄迷宫的守卫，俯视着他的领地。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -285,7 +301,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>面目狰狞的石像鬼庞大的身影蹲坐在狭窄迷宫的入口，永恒地凝视着通往往生之境的路径。无论走兽还是飞鸟，人类还是怪物，一切服从生老病死并选择进入冥府的生物终有一天会经过它们的面前。对于一个离开肉体的灵魂而言，一旦做出了穿过死亡幕帘的决定就再无回头之路。不过总有一些不安分的灵魂 凭着智力或机巧，借着偶然的契机得以从天国或是地狱逃离。这时候，令人胆寒的石像鬼维萨吉，承载死灵飞龙不朽灵魂的形体，就会被派遣出去寻回他们。维萨吉精明强干又冷酷无情，不受死亡或是疲倦的支配。它无休无止、毫不留情地追踪它的猎物，一心只想摧毁一切逃亡灵魂的藏身之处。谁敢嘲笑冥界的法则， 谁就永远不得安宁。 虽然亡者的确可以被复活， 但他们迟早会被维萨吉找到， 并且遣送回他们本来该在的地方。</p>
+                    	<p>面目狰狞的石像鬼庞大的身影蹲坐在狭窄迷宫的入口，永恒地凝视着通往往生之境的路径。无论走兽还是飞鸟，人类还是怪物，一切服从生老病死并选择进入冥府的生物终有一天会经过它们的面前。对于一个离开肉体的灵魂而言，一旦做出了穿过死亡幕帘的决定就再无回头之路。不过总有一些不安分的灵魂 凭着智力或机巧，借着偶然的契机得以从天国或是地狱逃离。这时候，令人胆寒的石像鬼维萨吉，承载死灵飞龙不朽灵魂的形体，就会被派遣出去寻回他们。维萨吉精明强干又冷酷无情，不受死亡或是疲倦的支配。它无休无止、毫不留情地追踪它的猎物，一心只想摧毁一切逃亡灵魂的藏身之处。谁敢嘲笑冥界的法则， 谁就永远不得安宁。 虽然亡者的确可以被复活， 但他们迟早会被维萨吉找到， 并且遣送回他们本来该在的地方。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

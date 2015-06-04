@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>LESHRAC</title>
+        <title>拉席克</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -81,7 +81,7 @@
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>19 - 23</span></li>
-                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>320</span></li>
                                 <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.22</span></li>
                             </ul>
                         </div>
@@ -127,8 +127,8 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 900</td>
+                                <td >视野范围</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -156,13 +156,13 @@
                                 <img  src="../img/leshrac_split_earth_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/leshrac_diabolic_edict_hp2.png" />               
+                                <img  src="../img/leshrac_diabolic_edict_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/leshrac_lightning_storm_hp2.png" />                          
+                                <img  src="../img/leshrac_lightning_storm_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/leshrac_pulse_nova_hp2.png" >
+                                <img  src="../img/leshrac_pulse_nova_hp2.png" />
                             </li>
                         </ul>
                     </div>
@@ -173,126 +173,148 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 125 / 140 / 160</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/125/140/160</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">9.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">9</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">120 / 180 / 240 / 300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕延迟:</td><td class="statRowColW">0.35</td>
+                                    <td>攻击力:</td><td class="statRowColW">120 / 180 / 240 / 300</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">150 / 175 / 200 / 225</td>
+                                    <td>眩晕延迟:</td><td class="statRowColW">0.35</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">2</td>
+                                    <td>作用范围:</td><td class="statRowColW">150 / 175 / 200 / 225</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>眩晕时间:</td><td class="statRowColW">2</td>
                                 </tr>
                             </table>
+                            <p>拉席克用他恶毒的意志扭曲大自然，撕裂大地摧毁那些挡他路的倒霉蛋。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
-                            <p><strong>恶魔赦令</strong></p>
-                            <p>拉席克在他四周的空间中充满爆发性的魔法能量，对敌方单位和建筑同时造成物理和魔法伤害。有效范围内的敌人越少，这些敌人受到的伤害越大。持续8秒。</p>
+                            <p><strong>恶魔敕令</strong></p>
+                            <p>使拉席克周围的区域充满魔法爆炸，对敌方单位和建筑造成物理伤害。范围内的敌人越少，他们受到的伤害就越大。对防御塔额外造成40%的伤害。持续10秒。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95 / 120 / 135 / 155</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95/120/135/155</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">22.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">22</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">混合</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">12.5 / 25 / 37.5 / 50</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >爆炸数:</td><td class="statRowColW">32</td>
+                                    <td>攻击力:</td><td class="statRowColW">9 / 18 / 27 / 36</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">500</td>
+                                    <td>爆炸次数:</td><td class="statRowColW">40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围:</td><td class="statRowColW">500</td>
                                 </tr>
                             </table>
+                            <p>古老的能量从一个位面向另一个位面爆发，将触碰到的一切化为灰烬。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>闪电风暴</strong></p>
-                            <p>召唤一片闪电风暴攻击目标敌方单位，并跳跃到附近的敌方单位。</p>
+                            <p>召唤一片闪电风暴攻击目标敌方单位，并跳跃到附近的敌方单位。被攻击的敌人将会被减速。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 115 / 130 / 145</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90/100/110/120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">5.5</td>
+                                    <td>冷却时间:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">80 / 145 / 205 / 265</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >弹跳数:</td><td class="statRowColW">4 / 6 / 7 / 8</td>
+                                    <td>攻击力:</td><td class="statRowColW">80 / 140 / 200 / 260</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>闪电跳跃次数:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度减缓:</td><td class="statRowColW">75%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>减速持续时间:</td><td class="statRowColW">0.7 / 0.8 / 0.9 / 1</td>
                                 </tr>
                             </table>
+                            <p>受折磨的灵魂用来击倒敌人的闪电风暴展示了他对元素的精通。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>脉冲新星</strong></p>
-                            <p>拉席克在他周围创造破坏性的能量波，每秒对附近敌方单位造成伤害。可神杖升级。</p>
+                            <p>拉席克在他周围创造破坏性的能量波，每秒对附近敌方单位造成伤害。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110 / 110 / 110</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">70/90/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">1.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">1</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标, 开关型</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 切换</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >魔法值/秒:</td><td class="statRowColW">20 / 40 / 60</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">450</td>
+                                    <td>魔法消耗/每秒:</td><td class="statRowColW">20 / 40 / 60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">66 / 100 / 144</td>
+                                    <td>作用范围:</td><td class="statRowColW">450</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">88 / 133 / 177</td>
+                                    <td>伤害:</td><td class="statRowColW">100 / 130 / 160</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级伤害:</td><td class="statRowColW">160 / 190 / 220</td>
                                 </tr>
                             </table>
+                            <p>必要时，受折磨的灵魂能操纵时空本身，毁灭弱小的存在。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -300,7 +322,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>拉席克，受折磨的灵魂，是一个从人性之中被撕裂出来的存在，他身体的一半存在于物质面，另外一半存在于非物质面。他敏锐的智慧使他能觉察到任何生物心中的最细微的恐惧。作为一个曾经毕生寻求存在意义的伟大哲学家，他用时光水晶探视了人性的最深处，在那里，他被展示在他面前的神秘的丑恶永远地改变了。傲慢与自负点燃了他内心最黑暗的深渊。和其他元素生命一样，他也是个完全随天性而行的人，但他的天性中只有邪恶和恐怖。他是唯一一个看到现实世界邪恶真理的存在，对那些相信上苍会对善举做出回馈的人，拉席克无疑是最大的反面例子。</p>
+                    	<p>拉席克，受折磨的灵魂，是一个从人性之中被撕裂出来的存在，他身体的一半存在于物质面，另外一半存在于非物质面。他敏锐的智慧使他能觉察到任何生物心中的最细微的恐惧。作为一个曾经毕生寻求存在意义的伟大哲学家，他用时光水晶探视了人性的最深处，在那里，他被展示在他面前的神秘的丑恶永远地改变了。傲慢与自负点燃了他内心最黑暗的深渊。和其他元素生命一样，他也是个完全随天性而行的人，但他的天性中只有邪恶和恐怖。他是唯一一个看到现实世界邪恶真理的存在，对那些相信上苍会对善举做出回馈的人，拉席克无疑是最大的反面例子。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

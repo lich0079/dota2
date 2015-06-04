@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>SHADOW FIEND</title>
+        <title>影魔</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,104 +156,123 @@
                                 <img  src="../img/nevermore_shadowraze1_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/nevermore_necromastery_hp2.png" />               
+                                <img  src="../img/nevermore_necromastery_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/nevermore_dark_lord_hp2.png" />                          
+                                <img  src="../img/nevermore_dark_lord_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/nevermore_requiem_hp2.png" >
+                                <img  src="../img/nevermore_requiem_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>毁灭阴影</strong></p>
-                            <p>影魔能运用他的力量污染前方的区域，造成伤害。</p>
+                            <p>影魔对其正前方区域发出毁灭能量，对该区域中的敌人造成伤害。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75/75/75/75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">200</td>
+                                    <td>攻击力:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>距离:</td><td class="statRowColW">200</td>
                                 </tr>
                             </table>
+                            <p>影魔标志性的灵魂收割手段。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>支配死灵</strong></p>
-                            <p>每当影魔杀死一个生物，他就将这个可怜的灵魂储存在体内。每个灵魂会为他提供额外的攻击力。英雄算12个灵魂。当他死亡时，有一半的灵魂将逃逸出去。</p>
+                            <p>影魔窃取被他杀死的单位的灵魂，获得额外的攻击力。如果被杀死的单位是一个英雄，他将获得12个灵魂。影魔死亡时将会有一半的灵魂逃离他的束缚。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害加成/个灵魂:</td><td class="statRowColW">2</td>
+                                    <td>单个灵魂的攻击力加成:</td><td class="statRowColW">2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大灵魂数:</td><td class="statRowColW">12 / 20 / 28 / 36</td>
+                                    <td>灵魂上限:</td><td class="statRowColW">15 / 22 / 29 / 36</td>
                                 </tr>
                             </table>
+                            <p>被收割的亡魂在影魔体内的魂渊盘旋，让影魔能不断的增加他的灵魂收藏。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>魔王降临</strong></p>
-                            <p>使附近的敌方单位受到了惊吓，减少他们的护甲。</p>
+                            <p>影魔的出现使得周围的敌人护甲降低。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动, 光环</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方单位</td>
+                                    <td>影响:</td><td class="statRowColW">敌方</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >护甲减少:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">900</td>
+                                    <td>护甲削弱:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围:</td><td class="statRowColW">900</td>
                                 </tr>
                             </table>
+                            <p>即使只是在影魔周围游荡，灵魂也会被侵蚀。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>魂之挽歌</strong></p>
-                            <p>施法时间1秒，召唤恶灵以均匀的角度向四周发射造成伤害，靠近的单位自然同时受到更多恶灵的打击，降低敌方单位的攻击力和移动速度。 每2个灵魂创造一波攻击。在影魔死去的时候他将要失去的灵魂会被释放出来，效果等同魂之挽歌。</p>
+                            <p>影魔聚集捕获的灵魂，以多道魔能的形式释放。若距离影魔过近将受到数道魔能的伤害。受到魂之挽歌伤害的敌方单位同时也会受到移动速度和攻击速度均有所下降的效果。每2个通过支配死灵收集的灵魂会为魂之挽歌创造一道魔能。死亡时会自动释放魂之挽歌，不占用主动大招的冷却时间。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 175 / 200</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/175/200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">120.0 / 110.0 / 100.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">120/110/100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">80 / 120 / 160</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >减速:</td><td class="statRowColW">20%</td>
+                                    <td>攻击力:</td><td class="statRowColW">80 / 120 / 160</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击力减益:</td><td class="statRowColW">50%</td>
+                                    <td>施法延迟:</td><td class="statRowColW">1.67</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>移动速度减少:</td><td class="statRowColW">25%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>攻击力降低:</td><td class="statRowColW">50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>降攻和减速持续时间:</td><td class="statRowColW">5.000000</td>
                                 </tr>
                             </table>
+                            <p>那些死者的灵魂被捕获，用来毁灭他们生前的盟友。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -261,7 +280,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>据说影魔奈文摩尔有着一个诗人的灵魂，事实上，他吞噬的诗人灵魂早已成千上万。千百年来，他收集了各式各样的灵魂，包括诗人，牧师，帝王，乞丐，奴隶，哲人，罪犯，当然，还有英雄。他拥有着世间所有种类的灵魂。然而没人知道他收集这些灵魂作何之用。从来没有人得以窥视影魔的魂渊之秘，他从魂渊中伸出灵魂触须，蔓延在精神位面。他是把灵魂一个个吞噬了？还是把灵魂堆积在他的影惧神殿里？又或是将灵魂浸在死灵之池中？难道他仅仅是一个被恶魔傀儡大师操纵着，通过位面裂口进入世界的傀儡？尽管众说纷纭，但根本没有人能看透他那黑暗光环下的层层邪恶。然而，如果你实在是很想知道那些灵魂的归宿，有个办法能帮你达成心愿：凡人，将你的灵魂奉献给影魔，或者等待魔王的收割！	</p>
+                    	<p>据说影魔奈文摩尔有着一个诗人的灵魂，事实上，他吞噬的诗人灵魂早已成千上万。千百年来，他收集了各式各样的灵魂，包括诗人，牧师，帝王，乞丐，奴隶，哲人，罪犯，当然，还有英雄。他拥有着世间所有种类的灵魂。然而没人知道他收集这些灵魂作何之用。从来没有人得以窥视影魔的魂渊之秘，他从魂渊中伸出灵魂触须，蔓延在精神位面。他是把灵魂一个个吞噬了？还是把灵魂堆积在他的影惧神殿里？又或是将灵魂浸在死灵之池中？难道他仅仅是一个被恶魔傀儡大师操纵着，通过位面裂口进入世界的傀儡？尽管众说纷纭，但根本没有人能看透他那黑暗光环下的层层邪恶。然而，如果你实在是很想知道那些灵魂的归宿，有个办法能帮你达成心愿：凡人，将你的灵魂奉献给影魔，或者等待魔王的收割！ 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

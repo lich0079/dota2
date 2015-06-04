@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>terrorblade</title>
+        <title>TERRORBLADE</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,23 +41,23 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">TERRORBLADE</div>
-                    <div class="atype">Melee</div>
+                     <div class="atype">Melee</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Carry</td>
-                            <td class="role" width="50%"></td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%"></td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,13 +69,13 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>19 + 1.75</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>22 + 3.20</span></li>
-                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>15 + 1.90</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>15 + 1.40</span></li>
                             </ul>
                         </div>
                         <div class="grow floatleft">
@@ -101,8 +101,8 @@
                                 <td ></td>
                                 <td >HIT POINTS</td>
                                 <td class="statRowColW">435</td>
-                                <td class="statRowColW">940</td>
-                                <td class="statRowColW">1,681</td>
+                                <td class="statRowColW">807</td>
+                                <td class="statRowColW">1,453</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -162,116 +162,132 @@
                                 <img  src="../img/terrorblade_metamorphosis_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/terrorblade_sunder_hp2.png" >
+                                <img  src="../img/terrorblade_sunder_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Reflection</strong></p>
-                            <p>Terrorblade brings forth an invulnerable dark illusion of the targeted enemy Hero. The enemy Hero is slowed and attacked by the illusion for a short duration.</p>
+                            <p>Terrorblade brings forth an invulnerable dark reflection of the targeted enemy hero. The enemy hero is slowed and attacked by the reflection for a short duration.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">22/18/14/10</td>
+                                    <td>Cooldown:</td><td class="statRowColW">22/18/14/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Heroes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">5</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ILLUSION DAMAGE:</td><td class="statRowColW">40% / 50% / 60% / 70%</td>
+                                    <td>REFLECTION DURATION:</td><td class="statRowColW">2.5 / 3.5 / 4.5 / 5.5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SLOW:</td><td class="statRowColW">60%</td>
+                                    <td>REFLECTION DAMAGE:</td><td class="statRowColW">40% / 60% / 80% / 100%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>MOVEMENT SLOW:</td><td class="statRowColW">60%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>ATTACK SLOW:</td><td class="statRowColW">60</td>
                                 </tr>
                             </table>
+                            <p>In the fractal prison of Foulfell, Terrorblade learned the truth of this old tale: you are your own worst enemy. Now it is a lesson he teaches others.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Conjure Image</strong></p>
                             <p>Creates an illusion of Terrorblade that deals damage.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">80</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">16</td>
+                                    <td>Cooldown:</td><td class="statRowColW">16</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ILLUSION DAMAGE TAKEN:</td><td class="statRowColW">200%</td>
+                                    <td>ILLUSION DURATION:</td><td class="statRowColW">32</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ILLUSION DAMAGE:</td><td class="statRowColW">30% / 40% / 50% / 60%</td>
+                                    <td>ILLUSION DAMAGE:</td><td class="statRowColW">30% / 40% / 50% / 60%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">32</td>
+                                    <td>ILLUSION DAMAGE TAKEN:</td><td class="statRowColW">425%</td>
                                 </tr>
                             </table>
+                            <p>There's only one thing more dangerous than facing Terrorblade. Facing MORE Terrrorblades!</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Metamorphosis</strong></p>
                             <p>Terrorblade transforms into a powerful demon with a ranged attack.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">140</td>
+                                    <td>Cooldown:</td><td class="statRowColW">140</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">40 / 44 / 48 / 52</td>
+                                    <td>DURATION:</td><td class="statRowColW">40 / 44 / 48 / 52</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >TRANSFORMATION TIME:</td><td class="statRowColW">0.35</td>
+                                    <td>TRANSFORMATION TIME:</td><td class="statRowColW">0.35</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BASE ATTACK TIME:</td><td class="statRowColW">1.6</td>
+                                    <td>BASE ATTACK TIME:</td><td class="statRowColW">1.6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ATTACK RANGE:</td><td class="statRowColW">550</td>
+                                    <td>ATTACK RANGE:</td><td class="statRowColW">550</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BONUS DAMAGE:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                    <td>BONUS DAMAGE:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>MOVEMENT SPEED LOSS:</td><td class="statRowColW">25</td>
                                 </tr>
                             </table>
+                            <p>Temper, temper. The rage rises up and takes control. Meet Terrorblade's own worst self.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Sunder</strong></p>
-                            <p>Severs the soul from both Terrorblade and a target hero, then exchanges them, carrying part of the units' life forces. The percentage hit points of each unit are switched with the souls. Some hit points must remain.</p>
+                            <p>Severs the life from both Terrorblade and a target hero, exchanging a percentage of both units' current health. Some health points must remain.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">200/100/0</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">200/100/0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">120/80/40</td>
+                                    <td>Cooldown:</td><td class="statRowColW">120/80/40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">UNITS</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MINIMUM HP SWAP:</td><td class="statRowColW">25% / 20% / 15%</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>MINIMUM HP SWAP:</td><td class="statRowColW">20%</td>
                                 </tr>
                             </table>
+                            <p>You didn't need that life, did you? The demon marauder steals that which you hold most dear.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -279,9 +295,10 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>Terrorblade is the demon marauder--an outlaw hellion whom even other demons fear. A cosmic iconoclast, he stole from the Demon Lords, ignored the codified rites that should have bound his behavior, and broke every law of the seven Infernal Regions. For his crimes, he was taught this lesson: even Hell has a hell. A short, brutal trial ensued, with many dead on all sides, and he was finally incarcerated in Foulfell, a hidden dimension where demonkind imprison their own. </p>
-                        
-                        <p>But Foulfell is no normal prison. In this dark mirror of reality, demons are sentenced to gaze eternally into the twisted reflection of their own souls. But instead of suffering, Terrorblade made himself master of his own reflected worst self--a raging, thieving demon of unimaginable power. With his inner beast under sway, he destroyed the fractal prison walls and burst free to turn his terror loose upon all creation.</p>
+                    	<p>Terrorblade is the demon marauder--an outlaw hellion whom even other demons fear. A cosmic iconoclast, he stole from the Demon Lords, ignored the codified rites that should have bound his behavior, and broke every law of the seven Infernal Regions. For his crimes, he was taught this lesson: even Hell has a hell. A short, brutal trial ensued, with many dead on all sides, and he was finally incarcerated in Foulfell, a hidden dimension where demonkind imprison their own. 
+<br>
+<br>But Foulfell is no normal prison. In this dark mirror of reality, demons are sentenced to gaze eternally into the twisted reflection of their own souls. But instead of suffering, Terrorblade made himself master of his own reflected worst self--a raging, thieving demon of unimaginable power. With his inner beast under sway, he destroyed the fractal prison walls and burst free to turn his terror loose upon all creation. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

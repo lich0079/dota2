@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>GYROCOPTER</title>
+        <title>矮人直升机</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -73,7 +73,7 @@
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
-                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>23 + 2.10</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>19 + 2.10</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>24 + 2.80</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>18 + 1.80</span></li>
                             </ul>
@@ -107,9 +107,9 @@
                             <tr class="statRow">
                                 <td ></td>
                                 <td >魔法值</td>
-                                <td class="statRowColW">299</td>
-                                <td class="statRowColW">681</td>
-                                <td class="statRowColW">1,214</td>
+                                <td class="statRowColW">247</td>
+                                <td class="statRowColW">629</td>
+                                <td class="statRowColW">1,162</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -127,13 +127,13 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
                                 <td >攻击距离</td>
-                                <td class="statRowColW" colspan="3" align="center">375</td>
+                                <td class="statRowColW" colspan="3" align="center">365</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -156,10 +156,10 @@
                                 <img  src="../img/gyrocopter_rocket_barrage_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/gyrocopter_homing_missile_hp2.png" />               
+                                <img  src="../img/gyrocopter_homing_missile_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/gyrocopter_flak_cannon_hp2.png" />                          
+                                <img  src="../img/gyrocopter_flak_cannon_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
                                 <img  src="../img/gyrocopter_call_down_hp2.png" />
@@ -169,124 +169,146 @@
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>火箭弹幕</strong></p>
-                            <p>矮人直升机倾泻大量火箭弹，随机打击周围的敌方单位。持续3秒。</p>
+                            <p>向矮人直升机周围一定范围内的敌方单位齐射导弹。持续3秒。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 90 / 90 / 90</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90/90/90/90</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">7.0 / 6.5 / 6 / 5.5</td>
+                                    <td>冷却时间:</td><td class="statRowColW">7/6.50/6/5.50</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">11 / 15 / 19 / 23</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">400</td>
+                                    <td>攻击力:</td><td class="statRowColW">8 / 13 / 18 / 23</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >每秒发射次数:</td><td class="statRowColW">10</td>
+                                    <td>作用范围:</td><td class="statRowColW">400</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>每秒发射导弹数:</td><td class="statRowColW">10</td>
                                 </tr>
                             </table>
+                            <p>奥雷尔的新飞行器有更大的火箭载弹量，增强了速射能力。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>追踪导弹</strong></p>
-                            <p>发射一枚追踪导弹，追踪目标直到击中。导弹飞的越远，伤害越大，眩晕越久。敌方单位可以摧毁导弹。</p>
+                            <p>发射一枚会自动搜索目标单位的追踪导弹。导弹发射后持续增加飞行速度，击中目标时造成伤害及眩晕。飞行距离越远，造成的伤害越大。敌方单位可在导弹接近前将其击落。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 130 / 140 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/130/140/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">20 / 17 / 14 / 11</td>
+                                    <td>冷却时间:</td><td class="statRowColW">20/17/14/11</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">110 / 220 / 330 / 440</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">2.2 / 2.4 / 2.6 / 2.8</td>
+                                    <td>攻击力:</td><td class="statRowColW">125 / 250 / 375 / 500</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最小伤害:</td><td class="statRowColW">50</td>
+                                    <td>摧毁所需次数:</td><td class="statRowColW">3 / 3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>摧毁所需防御塔攻击次数:</td><td class="statRowColW">6 / 6 / 8 / 10</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>眩晕时间:</td><td class="statRowColW">2.2 / 2.4 / 2.6 / 2.8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>最低伤害:</td><td class="statRowColW">50</td>
                                 </tr>
                             </table>
+                            <p>奥雷尔的飞行器上所能装载的最大的导弹，为实现最佳效果，The Bomb™经过了空气动力学和爆炸物的精心计算。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>高射火炮</strong></p>
-                            <p>矮人直升机火炮全开，每次攻击都会打击被攻击目标极其范围内所有敌人。持续15秒或维持数次攻击。</p>
+                            <p>矮人直升机的攻击会击中目标周围一定范围内的所有敌人，持续一定次数的攻击。只有主要目标会受到致命一击等攻击特效。持续15秒或攻击次数用完。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/50/50/50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30</td>
+                                    <td>冷却时间:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">1000</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大攻击次数:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>作用范围:</td><td class="statRowColW">1000</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>最多攻击次数:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>这架新近改造的旋翼机装备了足够的弹药，可以攻击360度全范围内的敌人。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>召唤飞弹</strong></p>
-                            <p>召唤导弹从空中打击目标区域的敌军。两发导弹先后到达，第一发造成大量伤害和小幅减速。第二发造成少量伤害和大幅减速。可神杖升级。</p>
+                            <p>召唤导弹从空中打击目标区域的敌军。两发导弹先后到达，第一发造成大量伤害和小幅减速，减速持续2秒；第二发造成少量伤害和大幅减速，减速持续4秒。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 125 / 125</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125/125/125</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">55 / 50 / 45</td>
+                                    <td>冷却时间:</td><td class="statRowColW">55/50/45</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >导弹1伤害:</td><td class="statRowColW">250 / 300 / 350</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >导弹2伤害:</td><td class="statRowColW">100 / 150 / 200</td>
+                                    <td>第一发导弹伤害:</td><td class="statRowColW">250 / 300 / 350</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >导弹1减速:</td><td class="statRowColW">20%</td>
+                                    <td>第二发导弹伤害:</td><td class="statRowColW">100 / 150 / 200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >导弹2减速:</td><td class="statRowColW">50%</td>
+                                    <td>第一发导弹减速:</td><td class="statRowColW">30%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">450</td>
+                                    <td>第二发导弹减速:</td><td class="statRowColW">60%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级导弹2伤害:</td><td class="statRowColW">175 / 225 / 275</td>
+                                    <td>作用范围:</td><td class="statRowColW">600</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级第二枚导弹伤害:</td><td class="statRowColW">175 / 225 / 275</td>
                                 </tr>
                             </table>
+                            <p>‘开始轰炸！’</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -294,7 +316,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在毕生为战争、起义、暴动和革命服务后，军中名人奥雷尔终于感到厌倦了。退役时除了一些琐碎物品和一笔可观的退休金，这位前工程师还带走了一样很有意思的东西：一件被遗忘了很久的，未完成的旋翼飞机设计图，这将是世界上第一架有人驾驶的，不依靠魔力的飞行装置。退休后他身无旁物，只带着时间和资金来到灰烬群岛，在这片隐蔽的热带岛屿中着手制造他的飞行装置。随着时间一年年过去，原型机失败作的残骸越堆越多，他甚至开始怀疑依靠机械飞行是否真的可能。在退休后第十年的第一天，一个阳光明媚、南风微拂的午后。奥雷尔坐在他最后的试验机中，充满愤怒和此次也将失败的预料。拉动点火绳后，在引擎的咕哝声中他护起脑袋，等着和以往一样不可避免的爆炸。然而这次大大出乎他的意料，他开始升空了，经过一阵慌乱的调整和稳定操作。不到一个小时，他就乘着微风，与海鸥结伴同行，飞行的体验让奥雷尔惊讶得近乎窒息。黄昏临近，他设置了返回工作间的路线，但就在这时，他的旋翼机被一发飞来的炮弹击穿了尾翼。从坠毁的残骸中解脱后，他游向眼前最近的岛屿，咒骂着射出那发炮弹的船只要为此付出代价。几天后，奥雷尔回到了工作间，开始制造他的新飞行器，一种能装载许多危险的火箭和导弹的新型旋翼机。</p>
+                    	<p>在毕生为战争、起义、暴动和革命服务后，军中名人奥雷尔终于感到厌倦了。退役时除了一些琐碎物品和一笔可观的退休金，这位前工程师还带走了一样很有意思的东西：一件被遗忘了很久的，未完成的旋翼飞机设计图，这将是世界上第一架有人驾驶的，不依靠魔力的飞行装置。退休后他身无旁物，只带着时间和资金来到灰烬群岛，在这片隐蔽的热带岛屿中着手制造他的飞行装置。随着时间一年年过去，原型机失败作的残骸越堆越多，他甚至开始怀疑依靠机械飞行是否真的可能。在退休后第十年的第一天，一个阳光明媚、南风微拂的午后。奥雷尔坐在他最后的试验机中，充满愤怒和此次也将失败的预料。拉动点火绳后，在引擎的咕哝声中他护起脑袋，等着和以往一样不可避免的爆炸。然而这次大大出乎他的意料，他开始升空了，经过一阵慌乱的调整和稳定操作。不到一个小时，他就乘着微风，与海鸥结伴同行，飞行的体验让奥雷尔惊讶得近乎窒息。黄昏临近，他设置了返回工作间的路线，但就在这时，他的旋翼机被一发飞来的炮弹击穿了尾翼。从坠毁的残骸中解脱后，他游向眼前最近的岛屿，咒骂着射出那发炮弹的船只要为此付出代价。几天后，奥雷尔回到了工作间，开始制造他的新飞行器，一种能装载许多危险的火箭和导弹的新型旋翼机。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

@@ -156,19 +156,22 @@
                                 <img  src="../img/morphling_waveform_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/morphling_adaptive_strike_hp2.png" />               
+                                <img  src="../img/morphling_adaptive_strike_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/morphling_morph_agi_hp2.png" />                          
+                                <img  src="../img/morphling_morph_agi_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/morphling_morph_str_hp2.png" >
+                                <img  src="../img/morphling_morph_str_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/morphling_replicate_hp2.png" />                          
+                                <img  src="../img/morphling_hybrid_hp2.png" />
                             </li>
                             <li sel="6" class="abi">
-                                <img  src="../img/morphling_morph_replicate_hp2.png" >
+                                <img  src="../img/morphling_replicate_hp2.png" />
+                            </li>
+                            <li sel="7" class="abi">
+                                <img  src="../img/morphling_morph_replicate_hp2.png" />
                             </li>
                         </ul>
                     </div>
@@ -179,137 +182,187 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">140 / 155 / 160 / 165</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">140/155/160/165</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">11.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">11</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>DAMAGE:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
                                 </tr>
                             </table>
+                            <p>A torrential flood takes enemies by force.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Adaptive Strike</strong></p>
-                            <p>Strikes an enemy unit with a blast of water. If Morphling's agility is 50% higher than strength, it deals the maximum damage and the minimum stun. If strength is 50% higher, it deals the maximum stun and minimum damage.</p>
+                            <p>Launches a surge of water toward an enemy unit, stunning the target while dealing base damage plus additional damage based on Morphling's agility times a multiplier. If Morphling's agility is 50% higher than strength, the maximum damage and the minimum stun is dealt. If his strength is 50% higher than his agility, the maximum stun and minimum damage are dealt.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100/100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">10.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >STUN MIN:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >STUN MAX:</td><td class="statRowColW">0.75 / 1.5 / 2.25 / 3</td>
+                                    <td>BASE DAMAGE:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE MIN:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                    <td>DAMAGE MIN AGI MULTIPLIER:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE MAX:</td><td class="statRowColW">0.5 / 1 / 1.5 / 2</td>
+                                    <td>DAMAGE MAX AGI MULTIPLIER:</td><td class="statRowColW">0.5 / 1 / 1.5 / 2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BASE DAMAGE:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                    <td>STUN MIN:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>STUN MAX:</td><td class="statRowColW">1.25 / 2.25 / 3.25 / 4.25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>CAST RANGE:</td><td class="statRowColW">600 / 700 / 800 / 900</td>
                                 </tr>
                             </table>
+                            <p>The Morphling calls upon his elements to crush his opponents with waves.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Morph (Agility Gain)</strong></p>
                             <p>Morphling shifts its form, pulling points from Strength and pouring them into Agility. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Agility.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET, TOGGLE</td>
+                                    <td width="45%">Cooldown:</td><td class="statRowColW" width="55%">0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MANA PER SECOND:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target, Toggle</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >POINTS PER SHIFT:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                    <td>MANA PER SECOND:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SHIFT RATE:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.25</td>
+                                    <td>POINTS PER SHIFT:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BONUS AGILITY:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>SHIFT RATE:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>BONUS AGILITY:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>Shifting water makes it difficult to discern the nature of Morphling.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Morph (Strength Gain)</strong></p>
                             <p>Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Strength.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET, TOGGLE</td>
+                                    <td width="45%">Cooldown:</td><td class="statRowColW" width="55%">0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MANA PER SECOND:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target, Toggle</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >POINTS PER SHIFT:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                    <td>MANA PER SECOND:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SHIFT RATE:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.25</td>
+                                    <td>POINTS PER SHIFT:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BONUS STRENGTH:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>SHIFT RATE:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>BONUS STRENGTH:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>Shifting water makes it difficult to discern the nature of Morphling.</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
-                            <p><strong>Replicate</strong></p>
-                            <p>Morphling replicates any hero, friend or foe, although only dealing 50% the original hero's damage. At any time, Morphling can instantly take the position of the Replicate.</p>
+                            <p><strong>Hybrid</strong></p>
+                            <p>Morphling becomes a hybrid replication of a target allied hero, and can cast all of that hero's non-ultimate abilities. Morphling will reappear at the location of the hybrid if it dies, or when its duration ends. Cannot be cast while Morphling has an active Replicate.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">80.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">140</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">30 / 45 / 60</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >CAST RANGE:</td><td class="statRowColW">700 / 1100 / 1500</td>
+                                    <td>DURATION:</td><td class="statRowColW">20</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi6" class="abicontent cont hided">
+                            <p><strong>Replicate</strong></p>
+                            <p>Morphling replicates any hero, friend or foe, dealing 50% of the original Hero's outgoing damage while taking 100% of any incoming damage. At any time, Morphling can instantly take the position of the Replicate for 150 mana. If Morphling dies, the Replicate will expire. Upgradable by Aghanim's Scepter.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">25/25/25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>Cooldown:</td><td class="statRowColW">80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DURATION:</td><td class="statRowColW">30 / 45 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>REPLICATE DAMAGE:</td><td class="statRowColW">50% / 50% / 50%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>REPLICATE DAMAGE TAKEN:</td><td class="statRowColW">100% / 100% / 100%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>CAST RANGE:</td><td class="statRowColW">700 / 1100 / 1500</td>
+                                </tr>
+                            </table>
+                            <p>Staring into Morphling produces a reflection that mimics the beholder.</p>
+                        </div>
+                        <div id="abi7" class="abicontent cont hided">
                             <p><strong>Morph Replicate</strong></p>
                             <p>Morphling switches into his replication, instantly taking its position.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150 / 150 / 150</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">150/150/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -317,7 +370,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>For dark eons the comet circled. Held in thrall to a distant sun, bound by gravity's inexorable pull, the massive ball of ice careened through the blackness between worlds, made strange by its dark journey. On the eve of the ancient war of the Vloy, it punched down through the sky and lit a glowing trail across the night-a sign both armies took for an omen. The frozen ball melted in a flash of boiling heat, as below two forces enjoined in battle across the border of a narrow river. Thus freed from its icy stasis, the Morphling was born into conflict, an elemental power at one with the tides of the ocean, capricious and unconstrained. He entered the fight, instinctively taking the form of the first general who dared set foot across the water-and then struck him dead. As the motley warriors clashed, he shifted from form to form throughout the battle, instantly absorbing the ways of these strange creatures-now a footsoldier, now an archer, now the cavalryman-until, by the time the last soldier fell, Morphling had played every part. The battle's end was his beginning.</p>
+                    	<p>For dark eons the comet circled. Held in thrall to a distant sun, bound by gravity's inexorable pull, the massive ball of ice careened through the blackness between worlds, made strange by its dark journey. On the eve of the ancient war of the Vloy, it punched down through the sky and lit a glowing trail across the night, a sign both armies took for an omen. The frozen ball melted in a flash of boiling heat, as below two forces enjoined in battle across the border of a narrow river. Thus freed from its icy stasis, the Morphling was born into conflict, an elemental power at one with the tides of the ocean, capricious and unconstrained. He entered the fight, instinctively taking the form of the first general who dared set foot across the water, and then struck him dead. As the motley warriors clashed, he shifted from form to form throughout the battle, instantly absorbing the ways of these strange creatures--now a footsoldier, now an archer, now the cavalryman--until, by the time the last soldier fell, Morphling had played every part. The battle's end was his beginning. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>RAZOR</title>
+        <title>剃刀</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -75,7 +75,7 @@
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>19 + 1.80</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>22 + 2.00</span></li>
-                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>21 + 1.70</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>21 + 2.30</span></li>
                             </ul>
                         </div>
                         <div class="grow floatleft">
@@ -101,8 +101,8 @@
                                 <td ></td>
                                 <td >生命值</td>
                                 <td class="statRowColW">549</td>
-                                <td class="statRowColW">1,001</td>
-                                <td class="statRowColW">1,704</td>
+                                <td class="statRowColW">1,161</td>
+                                <td class="statRowColW">1,978</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,132 +156,147 @@
                                 <img  src="../img/razor_plasma_field_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/razor_static_link_hp2.png" />               
+                                <img  src="../img/razor_static_link_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/razor_unstable_current_hp2.png" />                          
+                                <img  src="../img/razor_unstable_current_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/razor_eye_of_the_storm_hp2.png" >
+                                <img  src="../img/razor_eye_of_the_storm_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>等离子场</strong></p>
-                            <p>闪电幽魂释放出威力正比于其扩张程度的等离子场。扩张和收缩过程中造成两次伤害。
-                            等离子场离闪电游魂的距离越远，伤害越大。</p>
+                            <p>释放一波威力随扩张程度提升的等离子能量场，收缩时也会对经过的敌人造成伤害。距离剃刀越远，伤害越大。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 125 / 125 / 125</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125/125/125/125</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">14.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最小伤害:</td><td class="statRowColW">60 / 100 / 140 / 180</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大伤害:</td><td class="statRowColW">160 / 230 / 300 / 370</td>
+                                    <td>最低伤害:</td><td class="statRowColW">30 / 50 / 70 / 90</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">700</td>
+                                    <td>最高伤害:</td><td class="statRowColW">160 / 230 / 300 / 370</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>作用范围:</td><td class="statRowColW">700</td>
                                 </tr>
                             </table>
+                            <p>闪电幽魂用等离子力量统治着永劫之墟。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>静电连接</strong></p>
-                            <p>闪电幽魂将能量注入目标英雄体内，在两者之间建立静电连接。不断从目标英雄体内偷取攻击力并化为己用。</p>
+                            <p>在剃刀和一个敌方英雄之间创造静电连接，偷取目标的攻击力并将其转移给剃刀。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">20 / 30 / 40 / 50</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">25.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">32/30/28/26</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >链接持续时间:</td><td class="statRowColW">8 / 8 / 8 / 8</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >增益持续时间:</td><td class="statRowColW">18 / 18 / 18 / 18</td>
+                                    <td>连接持续时间:</td><td class="statRowColW">8 / 8 / 8 / 8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击力偷取:</td><td class="statRowColW">7 / 14 / 21 / 28</td>
+                                    <td>攻击加成持续时间:</td><td class="statRowColW">18 / 18 / 18 / 18</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击力吸取速率:</td><td class="statRowColW">7 / 14 / 21 / 28</td>
                                 </tr>
                             </table>
+                            <p>剃刀的极性吸引电流通向自身，以汲取他对手的力量。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>不稳定电流</strong></p>
-                            <p>增加移动速度，被释放指向性技能时会反弹伤害并对施法单位减速。</p>
+                            <p>提升剃刀的移动速度，并且对剃刀使用指向性技能的施法者会立刻受到电流的反击伤害，并被减速，身上的增益效果也会被驱散。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">40 / 70 / 100 / 130</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度加成:</td><td class="statRowColW">4/8/12/16%</td>
+                                    <td>攻击力:</td><td class="statRowColW">40 / 70 / 100 / 130</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速时间:</td><td class="statRowColW">0.4 / 0.8 / 1.2 / 1.6</td>
+                                    <td>移动速度提升:</td><td class="statRowColW">4% / 8% / 12% / 16%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>减速持续时间:</td><td class="statRowColW">0.5 / 1 / 1.5 / 2</td>
                                 </tr>
                             </table>
+                            <p>攻击闪电幽魂将可以体验免费的电击疗法。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>风暴之眼</strong></p>
-                            <p>闪电幽魂召唤出一个强大的爆炸性能量风暴，让其用致命的雷电打击生命值最低的敌人，攻击同时降低单位护甲。可神杖升级。</p>
+                            <p>强大的闪电风暴，打击生命值最低的敌方单位，造成伤害并削弱护甲。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 150 / 200</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/150/200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">80.0 / 70.0 / 60.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">80/70/60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">500 / 500 / 500</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">30</td>
+                                    <td>作用范围:</td><td class="statRowColW">500 / 500 / 500</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击间隔:</td><td class="statRowColW">0.7/0.6/0.5</td>
+                                    <td>持续时间:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >护甲减少:</td><td class="statRowColW">1 / 1 / 1</td>
+                                    <td>打击间隔:</td><td class="statRowColW">0.7 / 0.6 / 0.5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">37 / 50 / 63</td>
+                                    <td>护甲削弱:</td><td class="statRowColW">1 / 1 / 1</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级攻击间隔:</td><td class="statRowColW">0.55/0.45/0.35</td>
+                                    <td>伤害:</td><td class="statRowColW">37 / 50 / 63</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级打击间隔:</td><td class="statRowColW">0.6 / 0.5 / 0.4</td>
                                 </tr>
                             </table>
+                            <p>掌控闪电。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -289,7 +304,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>闪电幽魂-剃刀，是永劫之墟中最有代表性的可怕力量。他鞭打着闪电巡回在狭窄迷宫中，这是一个区分死者灵魂的迷宫，他们要靠生前的智慧、精明和毅力来通过其中变化莫测的网络通道。剃刀飘浮于迷宫上方，俯视着那些迷茫不前的灵魂，用闪电鞭打他们赶快前进去决定他们的命运，朝向光明的出口或者黑暗的地狱。剃刀是支配力量的永恒化身，他使用力量时残忍而客观。但他贵族般的气势暗示了他对工作那讽刺的满足。	</p>
+                    	<p>闪电幽魂-剃刀，是永劫之墟中最有代表性的可怕力量。他鞭打着闪电巡回在狭窄迷宫中，这是一个区分死者灵魂的迷宫，他们要靠生前的智慧、精明和毅力来通过其中变化莫测的网络通道。剃刀飘浮于迷宫上方，俯视着那些迷茫不前的灵魂，用闪电鞭打他们赶快前进去决定他们的命运，朝向光明的出口或者黑暗的地狱。剃刀是支配力量的永恒化身，他使用力量时残忍而客观。但他贵族般的气势暗示了他对工作那讽刺的满足。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

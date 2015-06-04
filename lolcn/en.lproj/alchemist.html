@@ -128,7 +128,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >SIGHT RANGE</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 1400</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >MISSILE SPEED</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,144 +156,158 @@
                                 <img  src="../img/alchemist_acid_spray_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/alchemist_unstable_concoction_hp2.png" />               
+                                <img  src="../img/alchemist_unstable_concoction_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/alchemist_goblins_greed_hp2.png" />                          
+                                <img  src="../img/alchemist_goblins_greed_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/alchemist_chemical_rage_hp2.png" >
+                                <img  src="../img/alchemist_chemical_rage_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/alchemist_unstable_concoction_throw_hp2.png" >
+                                <img  src="../img/alchemist_unstable_concoction_throw_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Acid Spray</strong></p>
-                            <p>Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take mixed damage per second and have their armor reduced.</p>
+                            <p>Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take damage per second and have their armor reduced.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">130 / 140 / 150 / 160</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">130/140/150/160</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">22.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">22</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">COMPOSITE</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Physical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">625</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">16</td>
+                                    <td>RADIUS:</td><td class="statRowColW">625</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE OVER TIME:</td><td class="statRowColW">14 / 20 / 26 / 32</td>
+                                    <td>DURATION:</td><td class="statRowColW">16</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ARMOR REDUCTION:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>DAMAGE PER SECOND:</td><td class="statRowColW">12 / 16 / 20 / 24</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>ARMOR REDUCTION:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
                                 </tr>
                             </table>
+                            <p>Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves even the toughest metals.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Unstable Concoction</strong></p>
-                            <p>Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage. The longer the concoction brews, the more damage it deals and the longer the target is stunned. After 5 seconds, the brew reaches its maximum damage and stun time. However, after 7 seconds, the concoction will explode on Alchemist himself if not thrown.</p>
+                            <p>Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. After 5 seconds, the brew reaches its maximum damage and stun time. However, after 5.5 seconds, the concoction will explode on Alchemist himself if not thrown.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">120</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">16.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">16</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">PHYSICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Physical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MAX STUN:</td><td class="statRowColW">1.75 / 2.5 / 3.25 / 4</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MAX DAMAGE:</td><td class="statRowColW">150 / 220 / 290 / 360</td>
+                                    <td>MAX STUN:</td><td class="statRowColW">1.75 / 2.5 / 3.25 / 4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">175</td>
+                                    <td>MAX DAMAGE:</td><td class="statRowColW">150 / 220 / 290 / 360</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>EXPLOSION RADIUS:</td><td class="statRowColW">175</td>
                                 </tr>
                             </table>
+                            <p>A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>Goblin's Greed</strong></p>
-                            <p>Alchemist gets bonus gold for killing creeps; the bonus stacks if the creeps are killed within a period of time, after which the count is reset. The bonus gold is capped at 30 gold.</p>
+                            <p><strong>Greevil's Greed</strong></p>
+                            <p>Alchemist synthesizes additional gold from his enemies and bounty runes. With each kill, Alchemist earns base bonus gold and extra bonus gold. If Alchemist kills another unit which yields gold within the next 30 seconds, an additional instance of Extra Bonus Gold is added to the total. Additionally, causes bounty runes to yield 4 times their normal gold.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">Passive</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RECENT KILL WINDOW:</td><td class="statRowColW">25</td>
+                                    <td>RECENT KILL WINDOW:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BASE BONUS GOLD:</td><td class="statRowColW">4 / 6 / 8 / 10</td>
+                                    <td>BASE BONUS GOLD:</td><td class="statRowColW">6 / 8 / 10 / 12</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >EXTRA BONUS GOLD:</td><td class="statRowColW">1 / 2 / 3 / 4</td>
+                                    <td>EXTRA BONUS GOLD:</td><td class="statRowColW">3</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>MAX BONUS GOLD PER KILL:</td><td class="statRowColW">12 / 20 / 28 / 36</td>
                                 </tr>
                             </table>
+                            <p>While it is not a mountain, Razzil has mastered the conversion of smaller compounds to line his pockets.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Chemical Rage</strong></p>
-                            <p>Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed, hitpoints and regeneration.</p>
+                            <p>Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed and regeneration.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50 / 100 / 150</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">50/100/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">45.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">45</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">25</td>
+                                    <td>DURATION:</td><td class="statRowColW">25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BASE ATTACK TIME:</td><td class="statRowColW">1.4 / 1.2 / 1</td>
+                                    <td>BASE ATTACK TIME:</td><td class="statRowColW">1.4 / 1.2 / 1</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BONUS HEALTH:</td><td class="statRowColW">300 / 600 / 900</td>
+                                    <td>BONUS HEALTH REGEN:</td><td class="statRowColW">50 / 75 / 100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BONUS HEALTH REGEN:</td><td class="statRowColW">15 / 30 / 60</td>
+                                    <td>BONUS MANA REGEN:</td><td class="statRowColW">3 / 7.5 / 12</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BONUS MANA REGEN:</td><td class="statRowColW">3 / 7.5 / 12</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >BONUS MOVE SPEED:</td><td class="statRowColW">30 / 40 / 60</td>
+                                    <td>BONUS MOVE SPEED:</td><td class="statRowColW">30 / 40 / 60</td>
                                 </tr>
                             </table>
+                            <p>The brew Razzil gave to the Ogre during their prison bust has become a useful potion in the midst of combat.</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
                             <p><strong>Unstable Concoction Throw</strong></p>
                             <p>Throw it before it blows up!</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">TARGET UNIT</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Heroes</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -301,7 +315,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy. In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research. When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike. They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit. In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more.	</p>
+                    	<p>The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy. In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research. When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike. They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit. In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

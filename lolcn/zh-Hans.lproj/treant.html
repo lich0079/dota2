@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>TREANT PROTECTOR</title>
+        <title>树精卫士</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,8 +127,8 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 1200</td>
+                                <td >视野范围</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,137 +156,182 @@
                                 <img  src="../img/treant_natures_guise_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/treant_leech_seed_hp2.png" />               
+                                <img  src="../img/treant_leech_seed_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/treant_living_armor_hp2.png" />                          
+                                <img  src="../img/treant_living_armor_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/treant_overgrowth_hp2.png" >
+                                <img  src="../img/treant_eyes_in_the_forest_hp2.png" />
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/treant_overgrowth_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>大自然的掩护</strong></p>
-                            <p>改变一个友方单位的外形，将其掩于树林之中。该单位会保持隐身状态，移动速度提升10%，直到他攻击或离开树林周围为止。树精卫士可以在大自然的掩护状态下施法的同时保持隐形。</p>
+                            <p>使目标单位融入树林之中，在树木附近时进入隐身并获得移动速度加成。如果该单位远离树木，或施放于一个周围没有树木的单位，大自然的掩护将失效。树精卫士可以在大自然的掩护下施放技能并保持隐身状态。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 80 / 70 / 60</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0 / 8.0 / 6.0 / 4.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10/8/6/4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">友方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">15 / 30 / 45 / 60</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >消失时间:</td><td class="statRowColW">2</td>
+                                    <td>持续时间:</td><td class="statRowColW">15 / 30 / 45 / 60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >树范围:</td><td class="statRowColW">375 / 375 / 375 / 375</td>
+                                    <td>渐隐时间:</td><td class="statRowColW">2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度:</td><td class="statRowColW">10% / 10% / 10% / 10%</td>
+                                    <td>树木范围:</td><td class="statRowColW">375 / 375 / 375 / 375</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度:</td><td class="statRowColW">10% / 10% / 10% / 10%</td>
                                 </tr>
                             </table>
+                            <p>树精卫士不常出现在人们的视线中；他们舒适地隐蔽于枝繁叶茂的同胞当中并保持自然的形态。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>寄生种子</strong></p>
-                            <p>树精卫士在敌人身上种下寄生种子。寄生种子减缓被寄生单位移动速度，能在接下来汲取该敌人的生命量，并转移给其附近范围内的友方单位。一共汲取4次。</p>
+                            <p>树精卫士在一个敌方单位体内种下一颗吸血的种子，吸收其生命值，同时使其减速。种子对其周围的友方单位进行治疗。吸取6次。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">140 / 140 / 140 / 140</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">16/14/12/10</td>
+                                    <td>冷却时间:</td><td class="statRowColW">16/14/12/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >每次汲取伤害:</td><td class="statRowColW">30 / 45 / 60 / 75</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度减少:</td><td class="statRowColW">28%</td>
+                                    <td>每次伤害:</td><td class="statRowColW">15 / 30 / 45 / 60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">500</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">28%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">3</td>
+                                    <td>范围:</td><td class="statRowColW">500</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">4.5</td>
                                 </tr>
                             </table>
+                            <p>鲁夫伦特悉心培育的这些生命完全靠闯入他圣地的入侵者的生命力维持。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>活体护甲</strong></p>
-                            <p>为友方单位创造一个魔法藤蔓护甲，保护他不受伤害并給予回复加成。承受一定攻击后失效。</p>
+                            <p>将友方英雄或建筑笼罩在保护性外壳中，获得额外的生命回复速率。同时为英雄提供所有类型的伤害格挡。在受到若干次攻击后护甲将会消失。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">32/26/20/14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">友方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >承受攻击次数:</td><td class="statRowColW">7</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >回复加成:</td><td class="statRowColW">4 / 7 / 10 / 13</td>
+                                    <td>抵挡伤害次数:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >抵消伤害:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                    <td>生命回复速率:</td><td class="statRowColW">4 / 7 / 10 / 13</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">15</td>
+                                    <td>格挡伤害量:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>持续时间:</td><td class="statRowColW">15</td>
                                 </tr>
                             </table>
+                            <p>树精卫士的根须广泛蔓延，促进自然万物的生长和恢复。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>疯狂生长</strong></p>
-                            <p>让树精卫士四周的藤蔓和树枝疯狂地生长，缠绕周围的敌方地面单位，每秒收到伤害。被缠绕的单位不能移动和攻击，闪现，隐身。</p>
+                            <p><strong>丛林之眼</strong></p>
+                            <p>树精卫士对目标树木灌注魔力。注魔后树木将拥有周围的顺畅视野。如果树精卫士施放了疯狂生长，这些树木附近700范围内的单位将会被困住，并受到伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 175 / 200</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">70</td>
+                                    <td>冷却时间:</td><td class="statRowColW">25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>树木视野范围:</td><td class="statRowColW">700</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">3 / 3.75 / 4.5</td>
+                                    <td>疯狂生长作用范围:</td><td class="statRowColW">700</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">625 / 625 / 625</td>
+                                    <td>疯狂生长每秒伤害:</td><td class="statRowColW">175</td>
                                 </tr>
                             </table>
+                            <p>对于需要守卫的，谁也不能打包票究竟是什么人，或什么东西。</p>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>疯狂生长</strong></p>
+                            <p>在树精卫士周围召唤出疯狂生长的伤害性藤条和枝干，阻止被缠绕的敌人移动、闪烁、进入隐身或攻击。 可用神杖升级。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/175/200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>冷却时间:</td><td class="statRowColW">70</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">3 / 3.75 / 4.5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围:</td><td class="statRowColW">675</td>
+                                </tr>
+                            </table>
+                            <p>鲁夫伦特召唤自然的先祖之魂，将其力量施予他的同胞。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -294,7 +339,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在遥远的西方之外，在预兆之谷远方的群山中，蕴藏着一股强大的古老力量，一股隐藏在树木中，令人敬畏的力量之源。据说生长在这片区域的物种都很奇特。对于自然之力而言，这是一片神圣的土地，不为世人所知。这片土地上有着各种致命的陷阱和危险——吞噬一切的杂草，各式杂交的动物以及充满剧毒的花——不过这些都远远比不上强大的树精卫士。这些长生不老，体型巨大的生物终其一生都在维护这片土地的安静，保证没人能够侵犯这里，没人能够知道他们的秘密。他们已经守护这片圣地长达千万年，与外界秋毫无犯，对世界的变迁也不甚了了。然而不可避免的，外界逐渐的注意到了这片未开化的土地，随着时间的推移，外面世界的入侵者也愈发大胆。他们很快就带着工具来砍伐焚烧这片土地，而树精卫士们则在思考，这些脆弱却勤劳的生物到底是什么？那原本绿色的原野现在变成了什么样？数万年的疑问和怀疑通通浮现，从上古时期流传下来的传统开始被他们重新审视，同时，越来越多外面世界的人死在了这片土地上，成为了花草的养分。当所有的生物都商议完毕以后，他们达成了一致，对外界的好奇终究战胜了保守和审慎。他们决定：向外界派出一名树精卫士，肩负着将外界情况传达给他们的使命，观察外面那个变化的世界以及其中的生命，最重要的是，监视那些有可能威胁到他们神圣领地的一切危险。</p>
+                    	<p>在遥远的西方之外，预兆之谷远方的群山中，蕴藏着一股强大的古老力量，一股隐藏在树木中，令人敬畏的力量之源。据说生长在这片区域的物种都很奇特。对于自然之力而言，这是一片神圣的土地，不为世人所知。这片土地上有着各种致命的陷阱和危险——吞噬一切的杂草，各式杂交的动物以及充满剧毒的花——不过这些都远远比不上强大的树精卫士。这些长生不老，体型巨大的生物终其一生都在维护这片土地的安静，保证没人能够侵犯这里，没人能够知道他们的秘密。他们已经守护这片圣地长达千万年，与外界秋毫无犯，对世界的变迁也不甚了了。然而不可避免的，外界逐渐的注意到了这片未开化的土地，随着时间的推移，外面世界的入侵者也愈发大胆。他们很快就带着工具来砍伐焚烧这片土地，而树精卫士们则在思考，这些脆弱却勤劳的生物到底是什么？那原本绿色的原野现在变成了什么样？数万年的疑问和怀疑通通浮现，从上古时期流传下来的传统开始被他们重新审视，同时，越来越多外面世界的人死在了这片土地上，成为了花草的养分。当所有的生物都商议完毕以后，他们达成了一致，对外界的好奇终究战胜了保守和审慎。他们决定：向外界派出一名树精卫士，肩负着将外界情况传达给他们的使命，观察外面那个变化的世界以及其中的生命，最重要的是，监视那些有可能威胁到他们神圣领地的一切危险。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

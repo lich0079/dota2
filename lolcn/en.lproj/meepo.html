@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,23 +41,23 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">MEEPO</div>
-                    <div class="atype">Melee</div>
+                     <div class="atype">Melee</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Carry</td>
-                            <td class="role" width="50%">Disabler</td>
-                        </tr>
-                        <tr >
-                            <td class="role">Initiator</td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%">Disabler</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Initiator</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -81,8 +81,8 @@
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>16 - 22</span></li>
-                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>305</span></li>
-                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>5.15</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>4.22</span></li>
                             </ul>
                         </div>
                     </div>
@@ -121,14 +121,14 @@
                             <tr class="statRow">
                                 <td ></td>
                                 <td >ARMOR</td>
-                                <td class="statRowColW">5</td>
-                                <td class="statRowColW">9</td>
-                                <td class="statRowColW">14</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">13</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >SIGHT RANGE</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 1800</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >MISSILE SPEED</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -162,8 +162,8 @@
                                 <img  src="../img/meepo_geostrike_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/meepo_divided_we_stand_hp2.png" >
-                                    </li>
+                                <img  src="../img/meepo_divided_we_stand_hp2.png" />
+                            </li>
                         </ul>
                     </div>
                     <div class="contentblock">
@@ -173,78 +173,94 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">20 / 16 / 12 / 8</td>
+                                    <td>Cooldown:</td><td class="statRowColW">20/16/12/8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">2</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">220</td>
+                                    <td>DURATION:</td><td class="statRowColW">2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RANGE:</td><td class="statRowColW">500 / 750 / 1000 / 1250</td>
+                                    <td>RADIUS:</td><td class="statRowColW">220</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>RANGE:</td><td class="statRowColW">500 / 750 / 1000 / 1250</td>
                                 </tr>
                             </table>
+                            <p>Catching dinner in the Riftshadow Ruins can be quite the task.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Poof</strong></p>
                             <p>Drawing mystical energies from the earth, a Meepo can teleport to another Meepo or itself after channeling for 1.5 seconds, dealing damage in both the departure and arrival locations.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">80</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">12 / 10 / 8 / 6</td>
+                                    <td>Cooldown:</td><td class="statRowColW">12/10/8/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT, TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target, Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ALLIED HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Allied Heroes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">375</td>
+                                    <td>DAMAGE:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>RADIUS:</td><td class="statRowColW">375</td>
                                 </tr>
                             </table>
+                            <p>Sometimes breaking one of the Riftshadow Crystals can be just the trick for getting yourself out of a bind. Or your other self.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Geostrike</strong></p>
                             <p>Meepo enchants his weapon to deal damage per second, as well as slow the movement speed of the attacked unit. Geostrikes from multiple Meepos stack.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">Passive</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">7 / 14 / 21 / 28</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SLOW:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
+                                    <td>DAMAGE:</td><td class="statRowColW">8 / 16 / 24 / 32</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>MOVE SLOW:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DURATION:</td><td class="statRowColW">2</td>
                                 </tr>
                             </table>
+                            <p>Keeping your pack light and having few but versatile tools is the best bet for survival.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Divided We Stand</strong></p>
-                            <p>Meepo summons an imperfect, semi-autonomous duplicate of himself, which can gain gold and experience as he does and shares his experience and abilities. However, the clones cannot wield any items but the boots that Meepo himself wears. The cloned Meepos also gain 25% of any bonus attributes the primary Meepo has. If any of the clones die, they all die. Upgradable by Aghanim's Scepter.</p>
+                            <p>Meepo summons an imperfect, semi-autonomous duplicate of himself, which can gain gold and experience as he does and shares his experience and abilities. However, the clones cannot wield any items but the boots that Meepo himself wears. If any of the clones die, they all die. Upgradable by Aghanim's Scepter.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">Passive</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >NUMBER OF MEEPOES:</td><td class="statRowColW">1 / 2 / 3</td>
+                                    <td>NUMBER OF MEEPOES:</td><td class="statRowColW">1 / 2 / 3</td>
                                 </tr>
                             </table>
+                            <p>Do I know you?</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -252,7 +268,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>"If you ask me, life is all about who you know and what you can find. When you live up in the Riftshadow Ruins, just finding food can be tough. So you need to cut corners, you need to scrounge, you need to know your strengths. Some of the beasts up there can kill you, so you need a way to trap the weak and duck the strong. On the upside, the ruins have history, and history is worth a lot to some people. There used to be a palace there, where they had all these dark rituals. Bad stuff. If you survived the ceremony, they would shatter a crystal and split your soul into pieces. They made great art though! Sculptures and such. Let me tell you: sometimes you stumble onto some of those old carvings. Take a pack full of those to town and sell them, then get yourself food for a few weeks. If luck is really on your side, you might find a Riftshadow crystal. Get it appraised and start asking around. Someone always knows some crazy fool looking for this kind of thing. If all else fails, sell it to a Magus the next time one's in town. They love that stuff. Still, whatever you do, be careful handling those crystals. You do not want one to go off on you. It really hurts."</p>
+                    	<p>"If you ask me, life is all about who you know and what you can find. When you live up in the Riftshadow Ruins, just finding food can be tough. So you need to cut corners, you need to scrounge, you need to know your strengths. Some of the beasts up there can kill you, so you need a way to trap the weak and duck the strong. On the upside, the ruins have history, and history is worth a lot to some people. There used to be a palace there, where they had all these dark rituals. Bad stuff. If you survived the ceremony, they would shatter a crystal and split your soul into pieces. They made great art though! Sculptures and such. Let me tell you: sometimes you stumble onto some of those old carvings. Take a pack full of those to town and sell them, then get yourself food for a few weeks. If luck is really on your side, you might find a Riftshadow crystal. Get it appraised and start asking around. Someone always knows some crazy fool looking for this kind of thing. If all else fails, sell it to a Magus the next time one's in town. They love that stuff. Still, whatever you do, be careful handling those crystals. You do not want one to go off on you. It really hurts." 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

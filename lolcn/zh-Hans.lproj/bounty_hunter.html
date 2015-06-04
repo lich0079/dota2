@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>BOUNTY HUNTER</title>
+        <title>赏金猎人</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -73,7 +73,7 @@
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
-                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>19 + 1.40</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>19 + 2.00</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>21 + 3.00</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>17 + 1.80</span></li>
                             </ul>
@@ -108,8 +108,8 @@
                                 <td ></td>
                                 <td >魔法值</td>
                                 <td class="statRowColW">247</td>
-                                <td class="statRowColW">502</td>
-                                <td class="statRowColW">944</td>
+                                <td class="statRowColW">611</td>
+                                <td class="statRowColW">1,131</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 1000</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,128 +156,147 @@
                                 <img  src="../img/bounty_hunter_shuriken_toss_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/bounty_hunter_jinada_hp2.png" />               
+                                <img  src="../img/bounty_hunter_jinada_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/bounty_hunter_wind_walk_hp2.png" />                          
+                                <img  src="../img/bounty_hunter_wind_walk_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/bounty_hunter_track_hp2.png" >
+                                <img  src="../img/bounty_hunter_track_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>投掷飞镖</strong></p>
-                            <p>赏金猎人向目标投掷一个飞镖，造成伤害以及晕眩。</p>
+                            <p>向一名敌方单位掷出一枚致命的飞镖，对目标造成伤害和短暂眩晕。只要作用目标周围1200范围内存在被追踪术标记的单位，飞镖就能向其弹射。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 115 / 135 / 155</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/130/140/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">100 / 200 / 250 / 325</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>伤害:</td><td class="statRowColW">150 / 225 / 300 / 375</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>被追踪单位弹射距离:</td><td class="statRowColW">1200</td>
                                 </tr>
                             </table>
+                            <p>尽管飞镖很小，但刚铎精确的瞄准可以带来致命伤害。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>忍术</strong></p>
-                            <p>每隔一段时间给予一次致命一击的机会，并且对目标造成残废效果。</p>
+                            <p>赏金猎人准备好他的下次攻击，造成致命一击并残废目标。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">12.0 / 10.0 / 8.0 / 6.0</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">12/10/8/6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                    <td>技能:</td><td class="statRowColW">被动</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >额外伤害:</td><td class="statRowColW">150% / 175% / 200% / 225%</td>
+                                    <td>致命一击伤害倍率:</td><td class="statRowColW">150% / 175% / 200% / 225%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减少:</td><td class="statRowColW">25% / 25% / 25% / 25%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">25% / 25% / 25% / 25%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻速减少:</td><td class="statRowColW">25 / 25 / 25 / 25</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">25 / 25 / 25 / 25</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">3 / 3 / 3 / 3</td>
+                                    <td>持续时间:</td><td class="statRowColW">3 / 3 / 3 / 3</td>
                                 </tr>
                             </table>
+                            <p>对着他信赖的刀刃低语从索鲁克那里学来的魔法，刚铎瞄准对手的肌腱和关节下手，就是要让他们残废。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>暗影步</strong></p>
-                            <p>进入隐身并可以穿越单位，直到攻击或使用技能，如果是使用攻击，会造成额外伤害。</p>
+                            <p>赏金猎人进入隐身，并能够穿越其它单位，直到他攻击或使用技能。破隐一击会造成额外伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/50/50/50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">15</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >隐身时间:</td><td class="statRowColW">1 / 0.75 / 0.5 / 0.25</td>
+                                    <td>持续时间:</td><td class="statRowColW">20 / 25 / 30 / 35</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >额外伤害:</td><td class="statRowColW">30 / 60 / 90 / 120</td>
+                                    <td>进入隐身时间:</td><td class="statRowColW">1 / 0.75 / 0.5 / 0.25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>额外伤害:</td><td class="statRowColW">30 / 60 / 90 / 120</td>
                                 </tr>
                             </table>
+                            <p>当回忆起暴君伽夫被刺杀时的那个宫廷小丑，人们脑海中只能想起那舞动的暗影。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>追踪术</strong></p>
-                            <p>追踪一个敌方英雄，获得目标的真实视域，被追踪者周围的友军获得移动速度提升。如果目标在被追踪期间死亡，赏金猎人和附近友方英雄将获得一笔赏金。</p>
+                            <p>追踪一个敌方英雄，获得目标的真实视域，以及目标当前携带的金钱数额。被追踪者周围的友军获得移动速度提升。如果目标在被追踪期间死亡，赏金猎人和附近友方英雄都将获得一笔赏金。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0 / 7.0 / 5.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >加速范围:</td><td class="statRowColW">900 / 900 / 900</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >速度加成:</td><td class="statRowColW">20% / 20% / 20%</td>
+                                    <td>加速范围:</td><td class="statRowColW">900 / 900 / 900</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >对自己的奖金:</td><td class="statRowColW">150 / 200 / 250</td>
+                                    <td>速度提升:</td><td class="statRowColW">20% / 20% / 20%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >对友方的奖金:</td><td class="statRowColW">50 / 100 / 150</td>
+                                    <td>自身金钱奖励:</td><td class="statRowColW">200 / 275 / 350</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">30 / 30 / 30</td>
+                                    <td>友军金钱奖励:</td><td class="statRowColW">50 / 100 / 150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">30 / 30 / 30</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>施法距离:</td><td class="statRowColW">1200</td>
                                 </tr>
                             </table>
+                            <p>利用他高度敏锐的视觉和嗅觉，刚铎的袭击成功率很高。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -285,7 +304,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>关于赏金猎人刚铎，有很多真假难分的故事，唯一的共同点是，讲述这些故事的人都死了。在那些低语中，有的说他像工具一样被抛弃，为了生存而学习追踪术。另一种说法是他是战争中幸存的弃儿，被伟大的猎手索鲁克带走，并在阴暗的森林中教会他高超的猎人技巧。然而，另外一些人则相信他是贫民窟的捣蛋鬼，在一帮小偷扒手中混迹成人，擅长偷盗和误导。被刚铎追杀的人每次一提起他，恐惧就会剧增：他们说，那个追踪暴君伽夫多年，最后将其逼疯并杀死，割下其头颅拿走其权杖的人，就是刚铎。就是他，渗透进海西特反叛军营地，将传奇盗贼“白色海角”带回去接受审判。就是他，终结了猎手索鲁克的神话，让其为杀死王子的得力助手付出了代价。刚铎的传奇还在继续，每一个故事都比之前的更加不可思议，每一个猎物都比以前的更加难以捕杀。然而，只要出价够高，谁都无法躲开他；只要出价够高，即使是最强大的战士，想到刚铎，都会在阴影中颤抖。</p>
+                    	<p>关于赏金猎人刚铎，有很多真假难分的故事，唯一的共同点是，讲述这些故事的人都死了。在那些低语中，有的说他像工具一样被抛弃，为了生存而学习追踪术。另一种说法是他是战争中幸存的弃儿，被伟大的猎手索鲁克带走，并在阴暗的森林中教会他高超的猎人技巧。然而，另外一些人则相信他是贫民窟的捣蛋鬼，在一帮小偷扒手中混迹成人，擅长偷盗和误导。被刚铎追杀的人每次一提起他，恐惧就会剧增：他们说，那个追踪暴君伽夫多年，最后将其逼疯并杀死，割下其头颅拿走其权杖的人，就是刚铎。就是他，渗透进海西特反叛军营地，将传奇盗贼“白色海角”带回去接受审判。就是他，终结了猎手索鲁克的神话，让其为杀死王子的得力助手付出了代价。刚铎的传奇还在继续，每一个故事都比之前的更加不可思议，每一个猎物都比以前的更加难以捕杀。然而，只要出价够高，谁都无法躲开他；只要出价够高，即使是最强大的战士，想到刚铎，都会在阴影中颤抖。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

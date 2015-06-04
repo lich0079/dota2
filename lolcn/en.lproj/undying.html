@@ -73,7 +73,7 @@
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
-                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>27 + 2.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>27 + 2.50</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>10 + 0.80</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>22 + 2.10</span></li>
                             </ul>
@@ -108,8 +108,8 @@
                                 <td ></td>
                                 <td >MANA</td>
                                 <td class="statRowColW">351</td>
-                                <td class="statRowColW">715</td>
-                                <td class="statRowColW">1,235</td>
+                                <td class="statRowColW">806</td>
+                                <td class="statRowColW">1,391</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >MISSILE SPEED</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,149 +156,165 @@
                                 <img  src="../img/undying_decay_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/undying_soul_rip_hp2.png" />               
+                                <img  src="../img/undying_soul_rip_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/undying_tombstone_hp2.png" />                          
+                                <img  src="../img/undying_tombstone_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/undying_flesh_golem_hp2.png" >
+                                <img  src="../img/undying_flesh_golem_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Decay</strong></p>
-                            <p>Undying saps the life from enemy Heroes in an area, dealing damage and stealing Strength for the duration.</p>
+                            <p>Undying steals strength from all enemy heroes in an area, dealing base damage as he claims the enemy's strength for himself.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">70 / 90 / 110 / 130</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">70/90/110/130</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">10.0 / 8.0 / 6.0 / 4.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">10/8/6/4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">20/60/100/140</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">325</td>
+                                    <td>BASE DAMAGE:</td><td class="statRowColW">20 / 60 / 100 / 140</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">25 / 30 / 35 / 40</td>
+                                    <td>STRENGTH STEAL:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >STRENGTH STEAL:</td><td class="statRowColW">4</td>
+                                    <td>STEAL DURATION:</td><td class="statRowColW">40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>RADIUS:</td><td class="statRowColW">325</td>
                                 </tr>
                             </table>
+                            <p>The strength of the living is simply borrowed from the strength of the dead.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Soul Rip</strong></p>
-                            <p>Redirects the flow of energy through a target friendly or enemy unit, healing or damaging it depending on how many units are near Undying. Each counted unit takes damage.</p>
+                            <p>Undying rips health away from all nearby units and uses it to heal an ally, or damage an enemy.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50 / 75 / 100 / 125</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100/110/120/130</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">25.0 / 20.0 / 15.0 / 10.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">24/18/12/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE/HEAL PER UNIT:</td><td class="statRowColW">25</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">975</td>
+                                    <td>DAMAGE/HEAL PER UNIT:</td><td class="statRowColW">18 / 22 / 26 / 30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MAX UNITS:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                    <td>MAX UNITS:</td><td class="statRowColW">10 / 12 / 14 / 16</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>RIP RADIUS:</td><td class="statRowColW">1300</td>
                                 </tr>
                             </table>
+                            <p>Even allies feel despair in Undying's presence.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Tombstone</strong></p>
                             <p>Summons a tombstone at the target point. Zombies will frequently spawn next to every enemy unit in the area around the Tombstone, and attack them. Zombies have the Deathlust ability, which causes their attacks to slow the target, and if the target reaches below a certain amount of health, increases the attack and movement speed of the zombie.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">120 / 130 / 140 / 150</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">120/130/140/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">60.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">400 / 600 / 800 / 1000</td>
+                                    <td>TOMBSTONE HEALTH:</td><td class="statRowColW">175 / 350 / 525 / 700</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SPAWN INTERVAL:</td><td class="statRowColW">3</td>
+                                    <td>TOMBSTONE DURATION:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DEATHLUST HEALTH THRESHOLD:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                    <td>ZOMBIE SPAWN RADIUS:</td><td class="statRowColW">600 / 800 / 1000 / 1200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>DEATHLUST FLAT HEALTH THRESHOLD:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DEATHLUST PCT HEALTH THRESHOLD:</td><td class="statRowColW">20% / 25% / 30% / 35%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>ZOMBIE SPAWN INTERVAL:</td><td class="statRowColW">3</td>
                                 </tr>
                             </table>
+                            <p>Dirge calls on his fallen brothers to fight for the Dead God.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Flesh Golem</strong></p>
-                            <p>Undying transforms into a horrifying flesh golem that possesses a Plague Aura. This aura slows all enemy units within 750 range and amplifies the damage they take; the closer to Undying, the more damage. When a plagued unit dies, Undying is healed equal to a percentage of that unit's maximum health. Upgradable by Aghanim's Scepter.</p>
+                            <p>Undying transforms into a horrifying flesh golem that possesses a Plague Aura. This aura slows all enemy units within 750 range and amplifies the damage they take; the closer to Undying, the more damage and slow. When a plagued unit dies, Undying is healed equal to a percentage of his own maximum health. Upgradable by Aghanim's Scepter.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">75.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">75</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">30 / 30 / 30</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MOVEMENT SLOW:</td><td class="statRowColW">9%</td>
+                                    <td>DURATION:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MAX DAMAGE AMP:</td><td class="statRowColW">20% / 25% / 30%</td>
+                                    <td>MAX DAMAGE AMP:</td><td class="statRowColW">20% / 25% / 30%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MIN DAMAGE AMP:</td><td class="statRowColW">5% / 10% / 15%</td>
+                                    <td>MAX MOVE SLOW:</td><td class="statRowColW">20%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DEATH HEAL (HEROES):</td><td class="statRowColW">6%</td>
+                                    <td>DEATH HEAL (HEROES):</td><td class="statRowColW">6%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DEATH HEAL (CREEPES):</td><td class="statRowColW">2%</td>
+                                    <td>DEATH HEAL (CREEPS):</td><td class="statRowColW">2%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">SCEPTER MAX DAMAGE AMP:</td><td class="statRowColW">25% / 30% / 35%</td>
+                                    <td>SCEPTER MAX DAMAGE AMP:</td><td class="statRowColW">30% / 35% / 40%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">SCEPTER MIN DAMAGE AMP:</td><td class="statRowColW">10% / 15% / 20%</td>
+                                    <td>SCEPTER DEATH HEAL (HEROES):</td><td class="statRowColW">10%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">SCEPTER DEATH HEAL (HEROES):</td><td class="statRowColW">10%</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">SCEPTER DEATH HEAL (CREEPES):</td><td class="statRowColW">3%</td>
+                                    <td>SCEPTER DEATH HEAL (CREEPS):</td><td class="statRowColW">3%</td>
                                 </tr>
                             </table>
+                            <p>The flesh of the recently dead add to the power of Dirge's plague.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -306,9 +322,10 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>How long has it been since he lost his name? The torn ruin of his mind no longer knows. </p>
-                        
-                        <p>Dimly he recalls armor and banners and grim-faced kin riding at his side. He remembers a battle: pain and fear as pale hands ripped him from his saddle. He remembers terror as they threw him into the yawning pit of the Dead God alongside his brothers, to hear the Dirge and be consumed into nothingness. In the darkness below, time left them. Thought left them. Sanity left them. Hunger, however, did not. They turned on each other with split fingernails and shattered teeth. Then it came: distant at first, a fragile note at the edge of perception, joined by another, then another, inescapable and unending. The chorus grew into a living wall of sound pulsing in his mind until no other thought survived. With the Dirge consuming him, he opened his arms to the Dead God and welcomed his obliteration. Yet destruction was not what he'd been chosen for. The Dead God demanded war. In the belly of the great nothing, he was granted a new purpose: to spread the Dirge across the land, to rally the sleepless dead against the living. He was to become the Undying, the herald of the Dead God, to rise and fall and rise again whenever his body failed him. To trudge on through death unending, that the Dirge might never end.</p>
+                    	<p>How long has it been since he lost his name? The torn ruin of his mind no longer knows. 
+<br>
+<br>Dimly he recalls armor and banners and grim-faced kin riding at his side. He remembers a battle: pain and fear as pale hands ripped him from his saddle. He remembers terror as they threw him into the yawning pit of the Dead God alongside his brothers, to hear the Dirge and be consumed into nothingness. In the darkness below, time left them. Thought left them. Sanity left them. Hunger, however, did not. They turned on each other with split fingernails and shattered teeth. Then it came: distant at first, a fragile note at the edge of perception, joined by another, then another, inescapable and unending. The chorus grew into a living wall of sound pulsing in his mind until no other thought survived. With the Dirge consuming him, he opened his arms to the Dead God and welcomed his obliteration. Yet destruction was not what he'd been chosen for. The Dead God demanded war. In the belly of the great nothing, he was granted a new purpose: to spread the Dirge across the land, to rally the sleepless dead against the living. He was to become the Undying, the herald of the Dead God, to rise and fall and rise again whenever his body failed him. To trudge on through death unending, that the Dirge might never end. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

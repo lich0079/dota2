@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Medusa</title>
+        <title>MEDUSA</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -40,24 +40,24 @@
                     <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/medusa_hphover.png"/></a>
                 </div>
                 <div  class="floatleft">
-                    <div class="heroName">Medusa</div>
-                    <div class="atype">Ranged</div>
+                    <div class="heroName">MEDUSA</div>
+                     <div class="atype">Ranged</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Carry</td>
-                            <td class="role" width="50%"></td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%"></td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -128,7 +128,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >SIGHT RANGE</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 1800</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -162,113 +162,126 @@
                                 <img  src="../img/medusa_mana_shield_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/medusa_stone_gaze_hp2.png" >
-                                    </li>
+                                <img  src="../img/medusa_stone_gaze_hp2.png" />
+                            </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Split Shot</strong></p>
-                            <p>Medusa magically splits her shot into five arrows. These arrows deal a lower percent of her normal damage. The extra targets will not receive other attack effects (such as critical strike) and Unique Attack Modifiers.</p>
+                            <p>Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage. The extra targets will not receive other attack effects (such as critical strike) and Unique Attack Modifiers.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET, TOGGLE</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">No Target, Toggle</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >OUTGOING DAMAGE:</td><td class="statRowColW">50% / 60% / 70% / 80%</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >EXTRA TARGETS:</td><td class="statRowColW">4 / 4 / 4 / 4</td>
+                                    <td>OUTGOING DAMAGE:</td><td class="statRowColW">80%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RANGE:</td><td class="statRowColW">700</td>
+                                    <td>TOTAL TARGETS:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>RANGE:</td><td class="statRowColW">700</td>
                                 </tr>
                             </table>
+                            <p>All who encounter the cursed Gorgon will feel her rage.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Mystic Snake</strong></p>
-                            <p>A mystic snake made of energy jumps from target to target dealing damage and stealing some mana. After it reaches its last target, it jumps back to Medusa to replenish it with mana. The snake deals more damage and steals more mana per jump.</p>
+                            <p>A mystic snake made of energy jumps from target to target dealing damage and stealing mana. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake deals more damage and steals more mana per jump. Deals Pure damage to units petrified by Stone Gaze.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">140/150/160/170</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">140/150/160/170</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">11</td>
+                                    <td>Cooldown:</td><td class="statRowColW">11</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >JUMP RADIUS:</td><td class="statRowColW">475 / 475 / 475 / 475</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >JUMPS:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>JUMP RADIUS:</td><td class="statRowColW">475 / 475 / 475 / 475</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">80 / 120 / 160 / 200</td>
+                                    <td>JUMPS:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MANA STEAL:</td><td class="statRowColW">20 / 30 / 40 / 50</td>
+                                    <td>DAMAGE:</td><td class="statRowColW">80 / 120 / 160 / 200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >INCREASE PER JUMP:</td><td class="statRowColW">25%</td>
+                                    <td>MANA STEAL:</td><td class="statRowColW">20 / 35 / 50 / 65</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>INCREASE PER JUMP:</td><td class="statRowColW">25%</td>
                                 </tr>
                             </table>
+                            <p>The Gorgon's curse is her greatest strength.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Mana Shield</strong></p>
-                            <p>Creates a shield that absorbs 50% of the incoming damage by using Medusa's mana.</p>
+                            <p>Creates a shield that absorbs 60% of the incoming damage in exchange for Medusa's mana.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET, TOGGLE</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">No Target, Toggle</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE PER MANA:</td><td class="statRowColW">0.75 / 1.25 / 1.75 / 2.25</td>
+                                    <td>DAMAGE PER MANA:</td><td class="statRowColW">1.6 / 1.9 / 2.2 / 2.5</td>
                                 </tr>
                             </table>
+                            <p>While Medusa was not gifted with eternal life upon birth, her curse bestowed her with impressive defensive powers.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Stone Gaze</strong></p>
-                            <p>Any enemy units looking at Medusa will have their movement and attack speed slowed. If 2 seconds of total time is accumulated looking at Medusa while Stone Gaze is active, that unit will turn to stone. Petrified units are stunned, have 100% magic resistance, and take bonus physical damage. If the petrified unit is an illusion, it is immediately killed.</p>
+                            <p>Any enemy units looking at Medusa will have their movement and attack speed slowed. If 2 seconds of total time is accumulated looking at Medusa while Stone Gaze is active, that unit will turn to stone. Petrified units are stunned, have 100% magic damage resistance, and take bonus physical damage. If the petrified unit is an illusion, it is immediately killed.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">200/100/0</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">200/200/200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">90</td>
+                                    <td>Cooldown:</td><td class="statRowColW">90</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">无目标</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">1000 / 1000 / 1000</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">魔法</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">6 / 6 / 6</td>
+                                    <td>RADIUS:</td><td class="statRowColW">1000 / 1000 / 1000</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SLOW:</td><td class="statRowColW">50%</td>
+                                    <td>DURATION:</td><td class="statRowColW">6 / 6 / 6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >STONE DURATION:</td><td class="statRowColW">3 / 3 / 3</td>
+                                    <td>SLOW:</td><td class="statRowColW">50%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BONUS PHYSICAL DAMAGE:</td><td class="statRowColW">30% / 40% / 50%</td>
+                                    <td>STONE DURATION:</td><td class="statRowColW">3 / 3 / 3</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>BONUS PHYSICAL DAMAGE:</td><td class="statRowColW">30% / 40% / 50%</td>
                                 </tr>
                             </table>
+                            <p>The beauty of Medusa is legendary.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -276,7 +289,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>Beauty is power. This thought comforted Medusa--the youngest and loveliest of three beautiful Gorgon sisters, born to a sea goddess--because she alone of the sisters was mortal. It comforted her, that is, until the day masked assailants invaded the Gorgon realm and tore the two immortal sisters from their home, unmoved by their beauty or by their tears. One of the invaders seized Medusa as well, but then cast her aside with a disgusted look: 'This one has the mortal stink upon her. We have no use for that which dies.' Humiliated, enraged, Medusa fled to the temple of her mother and cast herself before the goddess, crying, 'You denied me eternal life--therefore I beg you, give me power! Power, so I can dedicate what life I have to rescuing my sisters and avenging this injustice!' After long thought, the goddess granted her daughter's request, allowing Medusa to trade her legendary beauty for a face and form of terrifying strength. Never for a moment has Medusa regretted her choice. She understands that power is the only beauty worth possessing--for only power can change the world.</p>
+                    	<p>Beauty is power. This thought comforted Medusa--the youngest and loveliest of three beautiful Gorgon sisters, born to a sea goddess--because she alone of the sisters was mortal. It comforted her, that is, until the day masked assailants invaded the Gorgon realm and tore the two immortal sisters from their home, unmoved by their beauty or by their tears. One of the invaders seized Medusa as well, but then cast her aside with a disgusted look: 'This one has the mortal stink upon her. We have no use for that which dies.' Humiliated, enraged, Medusa fled to the temple of her mother and cast herself before the goddess, crying, 'You denied me eternal life--therefore I beg you, give me power! Power, so I can dedicate what life I have to rescuing my sisters and avenging this injustice!' After long thought, the goddess granted her daughter's request, allowing Medusa to trade her legendary beauty for a face and form of terrifying strength. Never for a moment has Medusa regretted her choice. She understands that power is the only beauty worth possessing--for only power can change the world. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

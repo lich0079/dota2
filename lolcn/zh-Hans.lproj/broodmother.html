@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>BROODMOTHER</title>
+        <title>育母蜘蛛</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,110 +156,126 @@
                                 <img  src="../img/broodmother_spawn_spiderlings_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/broodmother_spin_web_hp2.png" />               
+                                <img  src="../img/broodmother_spin_web_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/broodmother_incapacitating_bite_hp2.png" />                          
+                                <img  src="../img/broodmother_incapacitating_bite_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/broodmother_insatiable_hunger_hp2.png" >
+                                <img  src="../img/broodmother_insatiable_hunger_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
-                            <p><strong>寄生蜘蛛</strong></p>
-                            <p>育母蜘蛛将她的卵寄生到目标体内，造成伤害。如果目标在感染期间死亡，将会有蜘蛛幼虫从尸体中诞生。</p>
+                            <p><strong>孵化蜘蛛</strong></p>
+                            <p>育母蜘蛛将她的卵注入敌人体内，造成伤害。如果目标在感染期间被击杀，卵会孵化成小蜘蛛。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/120/120/120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >个数:</td><td class="statRowColW">1/2/3/4</td>
+                                    <td>伤害:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>数量:</td><td class="statRowColW">1 / 2 / 3 / 4</td>
                                 </tr>
                             </table>
+                            <p>布蕾克·艾拉齐娜不断抚育她的后代，即使是在战场上。新孵化的小蜘蛛很快就学会如何支援她们的母亲。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>织网</strong></p>
-                            <p>在指定区域织一张蛛网，育母蜘蛛在其中处于隐身状态，并且被动地提升她的移动速度与生命回复速度。</p>
+                            <p>编织出一张蜘蛛网，育母蜘蛛在蛛网里可以隐身，获得无视地形移动的能力，同时提高生命回复和移动速度。织网没有冷却时间，但是需要能量点数，每40秒能量点数恢复1点。一旦育母蜘蛛受到来自敌人的伤害，她将在6秒内丧失无视地形移动的能力，移动速度加成效果也会减半。织网现在可向其他蛛网触及的区域全屏释放。蛛网永久存在，不过可以手动摧毁。当其数量超过上限，最早的蛛网将会消失。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大织网数:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                    <td>蛛网数量上限:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生命值回复:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                    <td>生命回复提升:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度:</td><td class="statRowColW">20% / 25% / 30% / 35%</td>
+                                    <td>移动速度提升:</td><td class="statRowColW">40% / 50% / 60% / 70%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>织网能量点数上限:</td><td class="statRowColW">1 / 2 / 3 / 4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>能量恢复所需时间:</td><td class="statRowColW">40</td>
                                 </tr>
                             </table>
+                            <p>编制出一张蛛丝之床，艾拉齐娜的网保护她和她的后代，同时给予前进的敌人警告。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>麻痹之咬</strong></p>
-                            <p>让育母蜘蛛在攻击中附带能大幅削弱目标能力的毒素，减速并增加额外的攻击，使目标有几率攻击落空。</p>
+                            <p>育母蜘蛛用毒液削弱敌方单位，使她的攻击带有减速效果，中毒单位的攻击有一定概率落空。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >未命中几率:</td><td class="statRowColW">30/40/50/60%</td>
+                                    <td>未命中概率:</td><td class="statRowColW">30% / 40% / 50% / 60%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度减少:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
                                 </tr>
                             </table>
+                            <p>来自布蕾克·艾拉齐娜的尖牙中的麻痹毒素，对侵入她的网中的敌人造成减速和痛苦的死亡。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>极度饥渴</strong></p>
-                            <p>育母蜘蛛变得对生命极度得饥渴，这种饥渴大幅地增加了她的攻击力，并且能够吸血。</p>
+                            <p>对活物体液的强烈饥渴提高了育母蜘蛛的攻击力，并使她的攻击附带吸血效果。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">60.0 / 45.0 / 30.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">45</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >额外伤害:</td><td class="statRowColW">60 / 80 / 100</td>
+                                    <td>攻击力加成:</td><td class="statRowColW">60 / 90 / 120</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生命偷取:</td><td class="statRowColW">40% / 60% / 80%</td>
+                                    <td>吸血百分比:</td><td class="statRowColW">60% / 80% / 100%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">14 / 14 / 14</td>
+                                    <td>持续时间:</td><td class="statRowColW">14 / 14 / 14</td>
                                 </tr>
                             </table>
+                            <p>大多数猎物都被她用丝茧裹了起来，作为饲料留给后代，育母蜘蛛自己则想品尝那些迷路的英雄的味道。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -267,7 +283,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>几个世纪以来，育母蜘蛛布蕾克·艾拉齐娜一直潜伏在灼神山的火山口岩洞中，悉心的照料着数以百万计的幼虫，保证他们能够安全的存活到去地上世界捕食的年龄。直到后来，索罗普瑟斯，一个贪婪的权臣，在死火山的火山口修建了他的私人庙塔，因为他知道，就算有人觊觎他的财富，也不能活着穿越那条蜘蛛出没的死亡之路。在安享了几百年的安宁后，布蕾克·艾拉齐娜发现一些不速之客不停的在干扰着她的生活，毛手毛脚的小偷、有勇无谋的骑士，以及出生贵族的年轻人——诚然，他们都是美味的食物，但是他们的到来切实的影响到了她照料她那“无辜”的后代。忍无可忍之时，她去造访了索罗普瑟斯，而这个权臣却不愿意妥协，于是她用蛛丝将他裹起来，扔到一边，留给那些即将出生的小崽子们美味一顿。不幸的是，庙塔主人的失踪却让更多的人壮着胆子前来骚扰。而当她的一名新生儿被一个冒失的探险者踩死时，她终于爆发了。育母蜘蛛向着地上世界前进，誓要清洗掉世界上所有可能对她的孩子有威胁的入侵者，即使是英雄也不例外，直到确保她能够为她那珍贵的小蜘蛛们提供一个安全健康的温床。	</p>
+                    	<p>几个世纪以来，育母蜘蛛布蕾克·艾拉齐娜一直潜伏在灼神山的火山口岩洞中，悉心的照料着数以百万计的幼虫，保证他们能够安全的存活到去地上世界捕食的年龄。直到后来，索罗普瑟斯，一个贪婪的权臣，在死火山的火山口修建了他的私人庙塔，因为他知道，就算有人觊觎他的财富，也不能活着穿越那条蜘蛛出没的死亡之路。在安享了几百年的安宁后，布蕾克·艾拉齐娜发现一些不速之客不停的在干扰着她的生活，毛手毛脚的小偷、有勇无谋的骑士，以及出生贵族的年轻人——诚然，他们都是美味的食物，但是他们的到来切实的影响到了她照料她那“无辜”的后代。忍无可忍之时，她去造访了索罗普瑟斯，而这个权臣却不愿意妥协，于是她用蛛丝将他裹起来，扔到一边，留给那些即将出生的小崽子们美味一顿。不幸的是，庙塔主人的失踪却让更多的人壮着胆子前来骚扰。而当她的一名新生儿被一个冒失的探险者踩死时，她终于爆发了。育母蜘蛛向着地上世界前进，誓要清洗掉世界上所有可能对她的孩子有威胁的入侵者，即使是英雄也不例外，直到确保她能够为她那珍贵的小蜘蛛们提供一个安全健康的温床。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>DRAGON KNIGHT</title>
+        <title>龙骑士</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,113 +156,129 @@
                                 <img  src="../img/dragon_knight_breathe_fire_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/dragon_knight_dragon_tail_hp2.png" />               
+                                <img  src="../img/dragon_knight_dragon_tail_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/dragon_knight_dragon_blood_hp2.png" />                          
+                                <img  src="../img/dragon_knight_dragon_blood_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/dragon_knight_elder_dragon_form_hp2.png" >
+                                <img  src="../img/dragon_knight_elder_dragon_form_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
-                            <p><strong>火焰呼吸</strong></p>
-                            <p>向面前锥形范围吐出一道火焰，对敌方单位造成伤害。</p>
+                            <p><strong>火焰气息</strong></p>
+                            <p>向龙骑士的前方喷射出一团火焰，烧灼碰到的敌人，并使其基础攻击力降低。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 110 / 120 / 130</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/110/120/130</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">90 / 170 / 240 / 300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>攻击力:</td><td class="statRowColW">90 / 170 / 240 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击力降低:</td><td class="statRowColW">20% / 25% / 30% / 35%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>减攻持续时间:</td><td class="statRowColW">8</td>
                                 </tr>
                             </table>
+                            <p>龙骑士达维安的气息已经变成了斯莱瑞克的古龙之息，人们还记得它将无数骑士烧成了焦炭。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>神龙摆尾</strong></p>
-                            <p>龙骑士在近身距离猛击对手，造成伤害并晕眩。在龙形态时，攻击距离增加到400。</p>
+                            <p>龙骑士用盾对身边的一个敌方单位进行打击，造成眩晕和少量伤害。在真龙形态下施法距离提高到400。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">9.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12/11/10/9</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">2.5 / 2.75 / 3 / 3.25</td>
+                                    <td>攻击力:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>眩晕时间:</td><td class="statRowColW">2.5 / 2.75 / 3 / 3.25</td>
                                 </tr>
                             </table>
+                            <p>达维安将龙族的天赋和骑士的战斗技巧完美结合，使他在近身肉搏中无比勇猛。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>龙族血统</strong></p>
-                            <p>龙骑士身上所流的龙族之血使他有更高的生命回复速度和护甲。</p>
+                            <p>龙族的鲜血能提高龙骑士的生命恢复速度以及护甲。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >生命值回复加成:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                    <td>生命恢复:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >护甲加成:</td><td class="statRowColW">3 / 6 / 9 / 12</td>
+                                    <td>护甲提升:</td><td class="statRowColW">3 / 6 / 9 / 12</td>
                                 </tr>
                             </table>
+                            <p>斯莱瑞克的血液流遍达维安的全身，他获得了寻常骑士身上双倍的活力。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>真龙形态</strong></p>
-                            <p>龙骑士化身为龙，获得特殊能力。龙是空中单位，拥有远程攻击能力。<br>
-                            等级1 - 化身为绿龙，基础移动速度315，攻击带有毒性效果。<br>
-                            等级2 - 化身为赤龙，基础移动速度315，攻击带有溅射效果。<br>
-                            等级3 - 化身为碧龙，基础移动速度315，攻击带有溅射效果和霜冻效果。</p>
+                            <p>龙骑士能够变身成为三种真龙形态之一，同时攻击力，移动速度以及神龙摆尾的施法距离都有一定提升，而且还有新的能力。 等级1 绿龙 - 腐蚀吐息: 攻击时造成20点每秒的持续毒素伤害，持续5秒。 等级2 红龙 - 溅射攻击：攻击时伤害将溅射到300范围内所有单位，并且主目标将受到腐蚀吐息的作用。 等级3 蓝龙 - 冰霜吐息：降低攻击溅射到的敌人30%移动速度和20攻击速度，持续3秒，并且主目标将受到腐蚀吐息的作用。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/50/50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">115.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">115</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">60 / 60 / 60</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度加成:</td><td class="statRowColW">25 / 25 / 25</td>
+                                    <td>持续时间:</td><td class="statRowColW">60 / 60 / 60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻击距离加成:</td><td class="statRowColW">372 / 372 / 372</td>
+                                    <td>移动速度提升:</td><td class="statRowColW">25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>额外攻击距离:</td><td class="statRowColW">372 / 372 / 372</td>
                                 </tr>
                             </table>
+                            <p>达维安体内有一个更为强大的形态正在休眠，一个将骑士之力和古龙之威完美结合的形态。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -270,7 +286,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在传说中的龙冢——厄尔多姆试炼多年以后，骑士戴维安发现自己的对手愈发不能令他满意了：过去那个让人闻风丧胆的神龙斯莱瑞克已经变得苍老而脆弱，它的双翼已经残破，它所剩不多的龙鳞也开始腐烂，它的爪子变得肿大老化，它曾经引以为傲的火焰吐息现在威力和进水了的火柴差不多。戴维安觉得这样的屠龙行径已经不能给他带来任何荣誉，转身就要离开，让他的老对手安静的死去。但是他的脑海里传来了一个声音，斯莱瑞克低声的乞求着，让戴维安允许它光荣的战死。戴维安同意了，随即发现他的怜悯给他带来了意外的收获：当他将手中的锋刃刺入斯莱瑞克的胸膛时，龙使出最后的力量用龙爪刺穿了他的喉咙，随着他们血液的融合，斯莱瑞克将它所有的力量随着血液赐予了戴维安，也赐予了他龙族千万年来的智慧。龙的死去将他们的命运完全的绑定在了一起，龙骑士横空出世。古老的力量在龙骑士戴维安的身体里沉睡着，当他需要力量时则完全复苏。而龙族之力，也唤醒了骑士的所有力量...</p>
+                    	<p>在与传说中的生命——古龙一族试炼多年以后，骑士达维安发现自己的对手愈发不能令他满意了：过去那个让人闻风丧胆的神龙斯莱瑞克已经变得苍老而脆弱，它的双翼已经残破，它所剩不多的龙鳞也开始腐烂，它的爪子变得肿大老化，它曾经引以为傲的火焰吐息现在威力和进水了的火柴差不多。达维安觉得这样的屠龙行径已经不能给他带来任何荣誉，转身就要离开，让他的老对手安静的死去。但是他的脑海里传来了一个声音，斯莱瑞克低声的乞求着，让达维安允许它光荣的战死。达维安同意了，随即发现他的怜悯给他带来了意外的收获：当他将手中的锋刃刺入斯莱瑞克的胸膛时，神龙使出最后的力量用龙爪刺穿了他的喉咙，随着他们血液的融合，斯莱瑞克将它所有的力量随着血液赐予了达维安，也赐予了他龙族千万年来的智慧。龙的死去将他们的命运完全的绑定在了一起，龙骑士横空出世。古老的力量在龙骑士达维安的身体里沉睡着，当他需要力量时则完全复苏。而龙族之力，也唤醒了骑士的所有力量... 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

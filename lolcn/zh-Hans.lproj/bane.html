@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>BANE</title>
+        <title>祸乱之源</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -80,7 +80,7 @@
                         </div>
                         <div class="grow floatleft">
                             <ul>
-                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>29 - 35</span></li>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>33 - 39</span></li>
                                 <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
                                 <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>4.08</span></li>
                             </ul>
@@ -114,9 +114,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >攻击力</td>
-                                <td class="statRowColW">51-57</td>
-                                <td class="statRowColW">80-86</td>
-                                <td class="statRowColW">121-127</td>
+                                <td class="statRowColW">55-61</td>
+                                <td class="statRowColW">84-90</td>
+                                <td class="statRowColW">125-131</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,131 +156,167 @@
                                 <img  src="../img/bane_enfeeble_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/bane_brain_sap_hp2.png" />               
+                                <img  src="../img/bane_brain_sap_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/bane_nightmare_hp2.png" />                          
+                                <img  src="../img/bane_nightmare_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/bane_fiends_grip_hp2.png" >
+                                <img  src="../img/bane_fiends_grip_hp2.png" />
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/bane_nightmare_end_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>虚弱</strong></p>
-                            <p>虚弱一个敌方单位，降低它的物理攻击力，持续20秒。</p>
+                            <p>虚弱一个敌方单位，降低它的物理攻击力。持续20秒。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95 / 105 / 115 / 125</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95/105/115/125</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击力减少:</td><td class="statRowColW">30 / 60 / 90 / 120</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击力削弱:</td><td class="statRowColW">30 / 60 / 90 / 120</td>
                                 </tr>
                             </table>
+                            <p>即使是最强大的战士，在阿特洛波斯的恐怖面前也会崩溃。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>蚀脑</strong></p>
-                            <p>暴食一个敌方单位的生命能量，造成伤害并回复自身等量生命值。</p>
+                            <p>暴食一个敌方单位的生命能量，造成伤害并回复自身生命值。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 150 / 175 / 200</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/125/150/175</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">14.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                    <td>伤害类型:</td><td class="statRowColW">纯粹</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">90 / 160 / 230 / 300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>攻击力:</td><td class="statRowColW">90 / 160 / 230 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>生命回复量:</td><td class="statRowColW">90 / 160 / 230 / 300</td>
                                 </tr>
                             </table>
+                            <p>阿特洛波斯认为收割被他亲自制造的恐惧弄崩溃的生命是至高的享受。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>噩梦</strong></p>
-                            <p>让目标敌方或者友方英雄进入沉睡并每秒造成伤害。睡着的单位受到攻击便会醒来，但噩梦将转移到攻击者身上。</p>
+                            <p>让目标敌方或友方英雄进入沉睡并每秒造成伤害。睡着的单位受到攻击便会醒来，但噩梦将转移到攻击者身上。噩梦中的单位受到伤害便会醒来。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">165 / 165 / 165 / 165</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">165/165/165/165</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">16/15/14/13</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">英雄</td>
+                                    <td>影响:</td><td class="statRowColW">英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">减少生命值</td>
+                                    <td>伤害类型:</td><td class="statRowColW">纯粹</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                    <td>攻击力:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>施法距离:</td><td class="statRowColW">500 / 550 / 600 / 650</td>
                                 </tr>
                             </table>
+                            <p>从夜之女神妮塔莎那里偷来的能力，让猎物一觉不醒。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>恶魔之握</strong></p>
-                            <p>持续性 - 使用噩梦支配一个敌方单位，使其是去行动能力并持续受到大量伤害，同时每秒按照目标最大魔法比例吸取魔法值。可神杖升级。</p>
+                            <p><strong>魔爪</strong></p>
+                            <p>持续施法 - 抓住一个敌方单位，使其失去行动能力并持续受到大量伤害，同时每秒按目标最大魔法值一定比例吸取魔法。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 300 / 400</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200/300/400</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">100.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">持续性, 单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">持续施法, 单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >魔法吸取:</td><td class="statRowColW">5%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">5 / 5 / 5</td>
+                                    <td>魔法吸取:</td><td class="statRowColW">5%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">100 / 155 / 215</td>
+                                    <td>持续时间:</td><td class="statRowColW">5 / 5 / 5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级魔法吸取:</td><td class="statRowColW">10%</td>
+                                    <td>伤害:</td><td class="statRowColW">100 / 155 / 215</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级持续时间:</td><td class="statRowColW">7 / 7 / 7</td>
+                                    <td>神杖升级魔法吸取:</td><td class="statRowColW">10%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">155 / 215 / 270</td>
+                                    <td>神杖升级持续时间:</td><td class="statRowColW">7</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级伤害:</td><td class="statRowColW">155 / 215 / 270</td>
                                 </tr>
                             </table>
+                            <p>阿特洛波斯的受害者经常因为噩梦中逼真的幻象痛不欲生。</p>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>噩梦终止</strong></p>
+                            <p>将所有人从噩梦中唤醒。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 切换</td>
+                                </tr>
+                            </table>
+                            <p> </p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -288,7 +324,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>如果神做了噩梦，那一定是祸乱之源带来的。被称为阿特洛波斯的祸乱之源诞生自夜之女神妮塔莎午夜的恐惧。永生的女神在漫长的时间中孕育了过强的恐惧，已经无法用睡眠抑制，于是，祸乱之源从女神的躯体中逃脱了，他雾状的身形源自女神墨色的鲜血。他的存在就是恐惧本身。听见他声音的凡人会感觉他们心中最阴暗的秘密在耳边低语。他呼唤着所有英雄内心隐藏的恐惧。就算不眠亦无济于事，因为祸乱之源会用他不停滴落的黑色血液把敌人困在噩梦中。只要祸乱之源一出现，所有英雄心中都会想起那可怖的黑暗。	</p>
+                    	<p>如果神明做了噩梦，那一定是祸乱之源带来的。被称为阿特洛波斯的祸乱之源诞生自夜之女神妮塔莎午夜的恐惧。永生的女神在漫长的时间中孕育了过强的恐惧，已经无法用睡眠抑制，于是，祸乱之源在不断蚕食女神的不朽之身后，从她的躯体中逃脱了，他雾状的身形源自女神墨色的鲜血。他的存在就是恐惧本身。听见他声音的凡人会感觉他们心中最阴暗的秘密在耳边低语。他呼唤着所有英雄内心隐藏的恐惧。就算不眠不休亦无济于事，因为祸乱之源会用他不停滴落的黑色血液把敌人困在噩梦中。只要祸乱之源一出现，所有英雄心中都会想起那可怖的黑暗。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

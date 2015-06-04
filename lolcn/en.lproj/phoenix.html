@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>phoenix</title>
+        <title>PHOENIX</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,23 +41,23 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">PHOENIX</div>
-                    <div class="atype">Ranged</div>
+                     <div class="atype">Ranged</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Initiator</td>
-                            <td class="role" width="50%">Disabler</td>
-                        </tr>
-                        <tr >
-                            <td class="role">Nuker</td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Initiator</td>
+                                <td class="role" width="50%">Disabler</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Nuker</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,14 +69,13 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>18 + 1.80</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>12 + 1.30</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>17 + 2.90</span></li>
-                                
                             </ul>
                         </div>
                         <div class="grow floatleft">
@@ -163,7 +162,7 @@
                                 <img  src="../img/phoenix_sun_ray_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/phoenix_supernova_hp2.png" >
+                                <img  src="../img/phoenix_supernova_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
                                 <img  src="../img/phoenix_launch_fire_spirit_hp2.png" />
@@ -172,210 +171,248 @@
                                 <img  src="../img/phoenix_icarus_dive_stop_hp2.png" />
                             </li>
                             <li sel="7" class="abi">
-                                <img  src="../img/phoenix_sun_ray_stop_hp2.png" >
+                                <img  src="../img/phoenix_sun_ray_stop_hp2.png" />
                             </li>
                             <li sel="8" class="abi">
-                                <img  src="../img/phoenix_sun_ray_toggle_move_hp2.png" >
+                                <img  src="../img/phoenix_sun_ray_toggle_move_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Icarus Dive</strong></p>
-                            <p>Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units he comes into contact with, and then orbiting back to his original position. If Phoenix casts Supernova, the dive ends.</p>
+                            <p>Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units it comes into contact with, and then orbiting back to its original position. If Phoenix casts Supernova, the dive ends.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">COOLDOWN:</td><td class="statRowColW" width="55%">36</td>
+                                    <td width="45%">Cooldown:</td><td class="statRowColW" width="55%">36</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >HP COST:</td><td class="statRowColW">15%</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DIVE LENGTH:</td><td class="statRowColW">1400</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BURN DURATION:</td><td class="statRowColW">4</td>
+                                    <td>HP COST:</td><td class="statRowColW">15%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
+                                    <td>DIVE LENGTH:</td><td class="statRowColW">1400</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MOVE SLOW:</td><td class="statRowColW">25%</td>
+                                    <td>BURN DURATION:</td><td class="statRowColW">4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>DAMAGE PER SECOND:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>MOVE SLOW:</td><td class="statRowColW">25%</td>
                                 </tr>
                             </table>
+                            <p>Though no stranger to travelling the cosmic void, soaring within an atmosphere offers unique pleasures.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Fire Spirits</strong></p>
-                            <p>Summons 4 fire spirits that circle around you. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.</p>
+                            <p>Summons 4 fire spirits that circle around Phoenix. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">80/90/100/110</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">80/90/100/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">45/40/35/30</td>
+                                    <td>Cooldown:</td><td class="statRowColW">45/40/35/30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >HP COST:</td><td class="statRowColW">15%</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SPIRIT DURATION:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
+                                    <td>HP COST:</td><td class="statRowColW">20%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BURN DURATION:</td><td class="statRowColW">4</td>
+                                    <td>SPIRIT DURATION:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ATTACK SPEED SLOW:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                    <td>RADIUS:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">15 / 35 / 55 / 75</td>
+                                    <td>BURN DURATION:</td><td class="statRowColW">4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>ATTACK SPEED SLOW:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DAMAGE PER SECOND:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
                                 </tr>
                             </table>
+                            <p>The ever-collapsing core of Phoenix often emits short-lived bursts of conscious light.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Sun Ray</strong></p>
-                            <p>Drawing from his own inner fire, Phoenix expels a huge beam of light at the cost of his own life energy. The beam damages enemies for a percentage of their life and heals allies for half the amount. Damage scales up to twice the initial damage as the beam fires.</p>
+                            <p>Drawing from its own inner fire, Phoenix expels a huge beam of light at the cost of its own life energy. The beam damages enemies for a percentage of their life and heals allies for half that amount. Damage scales up to twice the initial damage as the beam fires.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">20</td>
+                                    <td>Cooldown:</td><td class="statRowColW">20</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >HP COST PER SECOND:</td><td class="statRowColW">6%</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Pure</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MAX HP AS DAMAGE:</td><td class="statRowColW">1% / 2% / 3% / 4%</td>
+                                    <td>HP COST PER SECOND:</td><td class="statRowColW">6%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >WIDTH:</td><td class="statRowColW">130</td>
+                                    <td>DAMAGE PER SECOND:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RANGE:</td><td class="statRowColW">1300</td>
+                                    <td>MAX HP AS DAMAGE:</td><td class="statRowColW">1% / 2% / 3% / 4%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">6</td>
+                                    <td>WIDTH:</td><td class="statRowColW">130</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>RANGE:</td><td class="statRowColW">1300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DURATION:</td><td class="statRowColW">6</td>
                                 </tr>
                             </table>
+                            <p>The vent through which such stellar energy flows is mere atoms wide.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Supernova</strong></p>
-                            <p>The Phoenix willingly ends his current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area.</p>
+                            <p>The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After 6 seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities. Upgradable by Aghanim's Scepter.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">200/200/200</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">200/200/200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">110</td>
+                                    <td>Cooldown:</td><td class="statRowColW">110</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Allied Heroes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">1000 / 1000 / 1000</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">60 / 80 / 100</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >STUN DURATION:</td><td class="statRowColW">1.5 / 2 / 2.5</td>
+                                    <td>RADIUS:</td><td class="statRowColW">1000 / 1000 / 1000</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ATTACKS TO DESTROY:</td><td class="statRowColW">5 / 7 / 10</td>
+                                    <td>DAMAGE PER SECOND:</td><td class="statRowColW">60 / 80 / 100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">6</td>
+                                    <td>STUN DURATION:</td><td class="statRowColW">1.5 / 2 / 2.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>ATTACKS TO DESTROY:</td><td class="statRowColW">5 / 8 / 11</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DURATION:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>SCEPTER CAST RANGE:</td><td class="statRowColW">500</td>
                                 </tr>
                             </table>
+                            <p>The solar crucible of a Supernova may be fatal, yet from its flames arise new beacons to wander infinity.</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
                             <p><strong>Launch Fire Spirit</strong></p>
-                            <p>Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.</p>
+                            <p>Each fire spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced. Reveals the area it strikes for 1 second.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">0/0/0/0</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">0/0/0/0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >HP COST:</td><td class="statRowColW">15%</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SPIRIT DURATION:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
+                                    <td>HP COST:</td><td class="statRowColW">20%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
+                                    <td>SPIRIT DURATION:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BURN DURATION:</td><td class="statRowColW">4</td>
+                                    <td>RADIUS:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ATTACK SPEED SLOW:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                    <td>BURN DURATION:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">15 / 35 / 55 / 75</td>
+                                    <td>ATTACK SPEED SLOW:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DAMAGE PER SECOND:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
                                 </tr>
                             </table>
+                            <p>PKAWW! BOOM</p>
                         </div>
                         <div id="abi6" class="abicontent cont hided">
                             <p><strong>Stop Icarus Dive</strong></p>
                             <p>Immediately cancels the dive.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">No Target</td>
                                 </tr>
                             </table>
+                            <p>SCREE!</p>
                         </div>
                         <div id="abi7" class="abicontent cont hided">
                             <p><strong>Stop Sun Ray</strong></p>
                             <p>Immediately stops the Sun Ray.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">No Target</td>
                                 </tr>
                             </table>
+                            <p>CHIRP!</p>
                         </div>
                         <div id="abi8" class="abicontent cont hided">
                             <p><strong>Toggle Movement</strong></p>
                             <p>Toggles slow forward movement during Sun Ray firing.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">No Target</td>
                                 </tr>
                             </table>
+                            <p>SQAWRK!</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -383,9 +420,10 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>Alone across an untouched darkness gleamed the Keeper's first sun, a singular point of conscious light fated to spread warmth into the empty void. Through aeons beyond count, this blinding beacon set to coalescing its incalculable energy before bursting forth the cataclysmic flare of supernova. From this inferno raced new beacons, star progeny identical to its parent, who journeyed an unlit ocean and settled in constellatory array. In time, they too would be made to propagate through supernova flame. So would this dazzling cycle of birth and rebirth repeat until all skies hewn of Titan toil deigned to twinkle and shine.</p>
-                        
-                        <p>By this ageless crucible the star that mortals would come to call Phoenix collapsed into being, and like its ancestors was thrust into an endless cosmos to find a place among its stellar brethren. Yet curiosity toward that which the dimming elders comfort in the darkness consumed the fledgling, and so over long cycles it inquired and studied. It learned that among worlds both whole and broken would soon stir a nexus of remarkable variety locked in an enduring conflict of cosmic consequence, a plane which would find itself in need of more influence than a dying sun's distant rays could provide. Thus this infant son of suns took terrestrial form, eagerly travelling to shine its warmth upon those who may need it most, and perhaps seize upon its solar destiny.</p>
+                    	<p>Alone across an untouched darkness gleamed the Keeper's first sun, a singular point of conscious light fated to spread warmth into the empty void. Through aeons beyond count, this blinding beacon set to coalescing its incalculable energy before bursting forth the cataclysmic flare of supernova. From this inferno raced new beacons, star progeny identical to its parent, who journeyed an unlit ocean and settled in constellatory array. In time, they too would be made to propagate through supernova flame. So would this dazzling cycle of birth and rebirth repeat until all skies hewn of Titan toil deigned to twinkle and shine. 
+<br>
+<br>By this ageless crucible the star that mortals would come to call Phoenix collapsed into being, and like its ancestors was thrust into an endless cosmos to find a place among its stellar brethren. Yet curiosity toward that which the dimming elders comfort in the darkness consumed the fledgling, and so over long cycles it inquired and studied. It learned that among worlds both whole and broken would soon stir a nexus of remarkable variety locked in an enduring conflict of cosmic consequence, a plane which would find itself in need of more influence than a dying sun's distant rays could provide. Thus this infant son of suns took terrestrial form, eagerly travelling to shine its warmth upon those who may need it most, and perhaps seize upon its solar destiny. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

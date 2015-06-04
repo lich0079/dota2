@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>SNIPER</title>
+        <title>狙击手</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -74,7 +74,7 @@
                         <div class="statsline floatleft">
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>15 + 2.60</span></li>
-                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>21 + 2.90</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>21 + 2.50</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>16 + 1.70</span></li>
                             </ul>
                         </div>
@@ -115,19 +115,19 @@
                                 <td ></td>
                                 <td >攻击力</td>
                                 <td class="statRowColW">36-42</td>
-                                <td class="statRowColW">77-83</td>
-                                <td class="statRowColW">126-132</td>
+                                <td class="statRowColW">71-77</td>
+                                <td class="statRowColW">116-122</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
                                 <td >护甲</td>
                                 <td class="statRowColW">2</td>
-                                <td class="statRowColW">8</td>
-                                <td class="statRowColW">14</td>
+                                <td class="statRowColW">7</td>
+                                <td class="statRowColW">13</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 1000</td>
                             </tr>
                             <tr class="statRow">
@@ -156,107 +156,117 @@
                                 <img  src="../img/sniper_shrapnel_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/sniper_headshot_hp2.png" />               
+                                <img  src="../img/sniper_headshot_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/sniper_take_aim_hp2.png" />                          
+                                <img  src="../img/sniper_take_aim_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/sniper_assassinate_hp2.png" >
+                                <img  src="../img/sniper_assassinate_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
-                            <p><strong>散弹</strong></p>
-                            <p>射出一发带有爆炸弹片的榴霰弹，无差别攻击目标区域。区域内的敌军受到伤害并被减速。对建筑造成30%的伤害。榴霰弹在目标范围内提供视野。</p>
+                            <p><strong>榴霰弹</strong></p>
+                            <p>消耗一点能量射出一发带有爆炸弹片的榴霰弹，在目标区域降下弹雨。区域内的敌军受到伤害并被减速。榴霰弹将给予目标区域的视野。榴霰弹的能量每过55秒恢复1点。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">12 / 24 / 36 / 48</td>
+                                    <td>攻击力:</td><td class="statRowColW">12 / 24 / 36 / 48</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度:</td><td class="statRowColW">15% / 20% / 25% / 30%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">15% / 20% / 25% / 30%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">400</td>
+                                    <td>作用范围:</td><td class="statRowColW">450</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">9</td>
+                                    <td>持续时间:</td><td class="statRowColW">10</td>
                                 </tr>
                             </table>
+                            <p>卡德尔的模块化步枪还能发射燃烧弹，对攻击战壕中的敌人很有用。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>爆头</strong></p>
-                            <p>狙击手提高他的精确度，一定几率造成额外伤害和短暂眩晕。</p>
+                            <p>狙击手提高他的精确度，有一定概率造成额外伤害和短暂的移动停滞。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">15 / 40 / 65 / 90</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >几率:</td><td class="statRowColW">40%</td>
+                                    <td>攻击力:</td><td class="statRowColW">15 / 40 / 65 / 90</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>概率:</td><td class="statRowColW">40%</td>
                                 </tr>
                             </table>
+                            <p>童年时对潜行兽的胡乱射击现在被练就成攻击敌人的技术。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>瞄准</strong></p>
-                            <p>被动地增加狙击手的步枪的射程。</p>
+                            <p>增加狙击手的步枪的射程。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程加成:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                    <td>射程增加:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
                                 </tr>
                             </table>
+                            <p>卡德尔总是保持自己待在远处的安全距离，同时他仍然可以作为狙击手进行完美的射击。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>暗杀</strong></p>
-                            <p>狙击手锁定一个目标敌方单位，短暂瞄准1.7秒后，从远距离射出一发毁灭性的子弹。</p>
+                            <p>狙击手锁定一个目标敌方单位，2秒后，从远距离射出一发毁灭性的子弹，对目标造成伤害及短暂眩晕。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">175 / 275 / 375</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">175/275/375</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">20.0 / 15.0 / 10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">20/15/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">355 / 505 / 655</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >射程:</td><td class="statRowColW">2000 / 2500 / 3000</td>
+                                    <td>攻击力:</td><td class="statRowColW">320 / 485 / 650</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>施法距离:</td><td class="statRowColW">2000 / 2500 / 3000</td>
                                 </tr>
                             </table>
+                            <p>为了完成预言然后返回家乡，卡德尔必须和参加古老考验那天一样，做出完美的射击。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -264,7 +274,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>卡德尔·鹰眼出生在诺伦山脉的山谷中，这里的住民从太古以来就靠猎杀居住在村庄上方悬崖上的一种奇怪生物为生，他们从远距离杀死这种叫峭壁潜行兽的生物，然后收集他们掉下来的尸体。鹰眼是这些怪异住民中其中最棒的射手之一，对他来说，枪械是他身体的一部分，射击就和触摸一样自然。在征召之日，他即将在村庄中获得完全的地位时，他经历了古老的考验：从谷底一击射下一头悬崖上的潜行兽。打空则是耻辱。在全体村民的注视下，鹰眼射击了。一头潜行兽掉下来了；人群欢呼了。但当尸体被收起时，整个村子都沉默了，长老发现子弹穿过了潜行兽中间的眼睛后，紧紧的卡在了它的下颚骨中。这个凶兆正是黑暗预言的开端所描述的，按预言中所说，射出这发子弹的枪手将成为伟大的人，但也将被流放。狙击手鹰眼因此离开了他的人民，被他自己的技术所诅咒，在剩下的预言实现前不得回来，他必须成为战场上的传说。</p>
+                    	<p>卡德尔·鹰眼出生在诺伦山脉的山谷中，这里的住民从太古以来就靠猎杀居住在村庄上方悬崖上的一种奇怪生物为生，他们从远距离杀死这种叫峭壁潜行兽的生物，然后收集他们掉下来的尸体。鹰眼是这些怪异住民中其中最棒的射手之一，对他来说，枪械是他身体的一部分，射击就和触摸一样自然。在征召之日，他即将在村庄中获得完全的地位时，他经历了古老的考验：从谷底一击射下一头悬崖上的潜行兽。打空则是耻辱。在全体村民的注视下，鹰眼射击了。一头潜行兽掉下来了；人群欢呼了。但当尸体被收起时，整个村子都沉默了，长老发现子弹穿过了潜行兽中间的眼睛后，紧紧的卡在了它的下颚骨中。这个凶兆正是黑暗预言的开端所描述的，按预言中所说，射出这发子弹的枪手将成为伟大的人，但也将被流放。狙击手鹰眼因此离开了他的人民，被他自己的技术所诅咒，在剩下的预言实现前不得回来，他必须成为战场上的传说。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

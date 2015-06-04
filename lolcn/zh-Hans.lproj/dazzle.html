@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>DAZZLE</title>
+        <title>戴泽</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,13 +127,13 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
                                 <td >攻击距离</td>
-                                <td class="statRowColW" colspan="3" align="center">500</td>
+                                <td class="statRowColW" colspan="3" align="center">550</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -156,134 +156,153 @@
                                 <img  src="../img/dazzle_poison_touch_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/dazzle_shallow_grave_hp2.png" />               
+                                <img  src="../img/dazzle_shallow_grave_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/dazzle_shadow_wave_hp2.png" />                          
+                                <img  src="../img/dazzle_shadow_wave_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/dazzle_weave_hp2.png" >
+                                <img  src="../img/dazzle_weave_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>剧毒之触</strong></p>
-                            <p>对一个敌方单位释放剧毒咒语，造成缓慢减速和持续伤害，最后被麻痹。在技能等级2级时，减速效果会在1秒以后加倍，在技能等级达到3级和4级时，目标在减速以后会被眩晕1秒。</p>
+                            <p>对一个敌方单位施放剧毒法术，造成持续伤害及减速，最终完全瘫痪。减速效果逐级增强。 等级1将减缓目标33%的移动速度。 等级2将在2秒内减缓目标33%的移动速度，再在1秒内减缓66%的移动速度。 等级3将在3秒内每秒相继减缓目标33%，66%和100%的移动速度。 等级4将在1秒内减缓33%的移动速度，再在1秒内减缓66%的移动速度，然后让目标受到1秒的眩晕。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 115 / 130 / 145</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/115/130/145</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">15 / 13 / 11 / 7</td>
+                                    <td>冷却时间:</td><td class="statRowColW">15/13/11/7</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">8 / 16 / 24 / 32</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生效时间:</td><td class="statRowColW">1 / 2 / 3 / 3</td>
+                                    <td>攻击力:</td><td class="statRowColW">14 / 20 / 26 / 36</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >减速:</td><td class="statRowColW">33%</td>
+                                    <td>减速持续时间:</td><td class="statRowColW">3</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">8 / 9 / 10 / 10</td>
+                                    <td>伤害持续时间:</td><td class="statRowColW">10</td>
                                 </tr>
                             </table>
+                            <p>少数进攻性的德尊仪式之一，麻痹魔法经常显示出它的有用之处。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>薄葬</strong></p>
-                            <p>将薄葬释放于一名友军，使他在持续时间内无论受到多大伤害都不会死亡。</p>
+                            <p>将薄葬施放于一名友军，使他在持续时间内无论受到多大伤害都不会死亡。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">140 / 130 / 120 / 110</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">140/130/120/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">60 / 45 / 30 / 15</td>
+                                    <td>冷却时间:</td><td class="statRowColW">60/45/30/15</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">友方英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">5 / 5 / 5 / 5</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">550/700/850/1000</td>
+                                    <td>持续时间:</td><td class="statRowColW">5 / 5 / 5 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>范围:</td><td class="statRowColW">550 / 700 / 850 / 1000</td>
                                 </tr>
                             </table>
+                            <p>只有经验老道的暗影侍僧才能正确做出免死之仪式。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>暗影波</strong></p>
-                            <p>暗影波治疗数个友军，同时对他们附近小范围内的敌人造成和治疗量相同的伤害。暗影波一定会治疗戴泽，并且对戴泽的治疗不算在目标数量之内。</p>
+                            <p>放出一道能量弧，可以瞬间跳跃至目标附近的队友，治疗的同时还将对附近的敌人造成伤害。施放暗影波时戴泽必定会享受到治疗效果。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80 / 90 / 100 / 110</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80/90/100/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12 / 10 / 8 / 6</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12/10/8/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">友方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害范围:</td><td class="statRowColW">185</td>
+                                    <td>攻击力:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >目标数:</td><td class="statRowColW">3/4/5/6</td>
+                                    <td>能量弧跳跃范围:</td><td class="statRowColW">475</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>伤害范围:</td><td class="statRowColW">185</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>治疗目标数上限:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
                                 </tr>
                             </table>
+                            <p>虽然对暗影牧师来说，暗影波只是很简单也很日常的仪式，不过它确实是取胜的关键所在。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>编织</strong></p>
-                            <p>提升目标区域内友方英雄的护甲，同时降低区域内敌方英雄的护甲，每秒提高或降低1点护甲。可神杖升级。</p>
+                            <p>在目标区域内的所有英雄身上施加一个效果，随着时间逐渐提升友方英雄的护甲，降低敌方英雄的护甲。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">40</td>
+                                    <td>冷却时间:</td><td class="statRowColW">40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">575 / 575 / 575</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">12 / 18 / 24</td>
+                                    <td>作用范围:</td><td class="statRowColW">575 / 575 / 575</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级范围:</td><td class="statRowColW">775 / 775 / 775</td>
+                                    <td>每秒护甲变化:</td><td class="statRowColW">0.75 / 1 / 1.25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级持续时间:</td><td class="statRowColW">18 / 24 / 30</td>
+                                    <td>持续时间:</td><td class="statRowColW">24</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级作用范围:</td><td class="statRowColW">775 / 775 / 775</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级每秒护甲变化:</td><td class="statRowColW">1.25 / 1.5 / 1.75</td>
                                 </tr>
                             </table>
+                            <p>戴泽在零领域的以太之旅让他能将光与暗的力量融在一起，创造出有两种力量的魔力波动。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -291,7 +310,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>每一个德尊教团的年轻侍僧在成为暗影牧师前都必须完成一系列的仪式。而仪式的最后一步，则是穿越无比危险的虚无之境，一个只有少数人能活着回来的未知领域。有些人虽然回来了，但却发疯了。还有些回来的人获得了奇怪的能力。但可以肯定的是，所有去了那里的人都被改变了。出于对神圣启示的执着追求，戴泽成为了他部族中最年轻的神圣仪式的追求者。起初，教团拒绝了他，因为他太年轻了。然而戴泽不是那么容易放弃的。教团长老在这位顽固的年轻侍僧身上感到了一些特别的东西，便宽许他进入了教团。最终仪式时，戴泽将神圣药剂一饮而尽后在篝火旁坐下，而他的族人则在一旁跳着祭祀之舞。在虚无之境的虚灵位面中，光明与黑暗的属性被反转了。导致戴泽原本灿烂夺目的治疗之光演变成了包藏凶险的邪恶力量，在那夺目的光辉中隐藏的则是黑暗的行径。不出长老所料：戴泽回来了，成为了一名不世出的暗影牧师，他获得了既可以用来治疗也可以进行破坏的能力。现在，他用他的力量消灭敌人，治愈同伴。	</p>
+                    	<p>每一个德尊教团的年轻侍僧在成为暗影牧师前都必须完成一系列的仪式。而仪式的最后一步，则是穿越无比危险的虚无之境，一个只有少数人能活着回来的未知领域。有些人虽然回来了，但却发疯了。还有些回来的人获得了奇怪的能力。但可以肯定的是，所有去了那里的人都被改变了。出于对神圣启示的执着追求，戴泽成为了他部族中最年轻的神圣仪式的追求者。起初，教团拒绝了他，因为他太年轻了。然而戴泽不是那么容易放弃的。教团长老在这位顽固的年轻侍僧身上感到了一些特别的东西，便宽许他进入了教团。最终仪式时，戴泽将神圣药剂一饮而尽后在篝火旁坐下，而他的族人则在一旁跳着祭祀之舞。在虚无之境的虚灵位面中，光明与黑暗的属性被反转了。导致戴泽原本灿烂夺目的治疗之光演变成了包藏凶险的邪恶力量，在那夺目的光辉中隐藏的则是黑暗的行径。不出长老所料：戴泽回来了，成为了一名不世出的暗影牧师，他获得了既可以用来治疗也可以进行破坏的能力。现在，他用他的力量消灭敌人，治愈同伴。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

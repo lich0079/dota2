@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>MORPHLING</title>
+        <title>变体精灵</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,160 +156,213 @@
                                 <img  src="../img/morphling_waveform_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/morphling_adaptive_strike_hp2.png" />               
+                                <img  src="../img/morphling_adaptive_strike_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/morphling_morph_agi_hp2.png" />                          
+                                <img  src="../img/morphling_morph_agi_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/morphling_morph_str_hp2.png" >
+                                <img  src="../img/morphling_morph_str_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/morphling_replicate_hp2.png" />                          
+                                <img  src="../img/morphling_hybrid_hp2.png" />
                             </li>
                             <li sel="6" class="abi">
-                                <img  src="../img/morphling_morph_replicate_hp2.png" >
+                                <img  src="../img/morphling_replicate_hp2.png" />
+                            </li>
+                            <li sel="7" class="abi">
+                                <img  src="../img/morphling_morph_replicate_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>波浪形态</strong></p>
-                            <p>变体精灵将自己分解为元素，向前流动并对经过的敌方单位造成伤害。变体精灵在波浪形态时无敌。</p>
+                            <p>变体精灵化为波浪向前涌进，对路径上的敌人造成伤害。变体精灵在波浪形态中是无敌的。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">140 / 155 / 160 / 165</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">140/155/160/165</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">11.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">11</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击力:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
                                 </tr>
                             </table>
+                            <p>轻松卷走敌人的滔滔洪水。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>变体攻击</strong></p>
-                            <p>用水攻击敌人。如果变体精灵的敏捷比力量多50%，会造成最大的伤害和最小的眩晕时间。如果是力量多50%，造成最大的眩晕时间和最小的伤害。</p>
+                            <p>用猛烈的水波打击一个敌方单位，对其造成眩晕和伤害，伤害由基础伤害和基于变体精灵的敏捷计算的额外伤害这两部分组成。若变体精灵的敏捷比力量高50%，将造成最大伤害和最短眩晕。若力量远比敏捷高50%，则造成最长眩晕和最小伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最小眩晕时间:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大眩晕时间:</td><td class="statRowColW">0.75 / 1.5 / 2.25 / 3</td>
+                                    <td>基础伤害:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最小伤害:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                    <td>最小敏捷值伤害倍率:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大伤害:</td><td class="statRowColW">0.5 / 1 / 1.5 / 2</td>
+                                    <td>最大敏捷值伤害倍率:</td><td class="statRowColW">0.5 / 1 / 1.5 / 2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >基础伤害:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                    <td>最短眩晕:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>最长眩晕:</td><td class="statRowColW">1.25 / 2.25 / 3.25 / 4.25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>施法距离:</td><td class="statRowColW">600 / 700 / 800 / 900</td>
                                 </tr>
                             </table>
+                            <p>变体精灵唤出自身的元素，构成波浪碾碎对手。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>属性转换 (获得敏捷)</strong></p>
-                            <p>变体精灵的物理形态能随环境自由变化。他可以牺牲一定量的力量转化为敏捷。</p>
+                            <p><strong>变形（敏捷获取）</strong></p>
+                            <p>变体精灵改变它的形态，将一些力量转化成敏捷。该过程可逆。升级此技能将提高转化速率。被动获得敏捷加成。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 开关型</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >魔法值/秒:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 切换</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >增加的点数:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                    <td>每秒魔法消耗:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >转换率:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.25</td>
+                                    <td>每次转换点数:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >敏捷加成:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>转换速率:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>敏捷加成:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>转变为水形态的变体精灵特征很难被辨别。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>属性转换 (获得力量)</strong></p>
-                            <p>变体精灵的物理形态能随环境自由变化。他可以牺牲一定量的敏捷转化为力量。</p>
+                            <p><strong>变形（力量获取）</strong></p>
+                            <p>变体精灵改变它的形态，将一些敏捷转化成力量。该过程可逆。升级此技能将提高转化速率。被动获得力量加成。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 开关型</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >魔法值/秒:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 切换</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >增加的点数:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                    <td>每秒魔法消耗:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >转换率:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.25</td>
+                                    <td>每次转换点数:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >力量加成:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>转换速率:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>力量加成:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>转变为水形态的变体精灵特征很难被辨别。</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
-                            <p><strong>复制</strong></p>
-                            <p>变体精灵近乎完美地复制一个友方或者敌方的英雄。镜像拥有本体50%的攻击力。变体精灵可以瞬间将镜像替换为自己。</p>
+                            <p><strong>混源</strong></p>
+                            <p>变体精灵变成了友方目标英雄的混源复制体，可以施放该英雄除了终极技能以外的所有技能。混源体消失，或者持续时间结束后变体精灵会在混源体最后的位置上重新出现。 变体精灵拥有复制的复制体时将无法使用该技能。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">80.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">140</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">30 / 45 / 60</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >施法距离:</td><td class="statRowColW">700 / 1100 / 1500</td>
+                                    <td>持续时间:</td><td class="statRowColW">20</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi6" class="abicontent cont hided">
-                            <p><strong>传送</strong></p>
-                            <p>传送至复制的位置。</p>
+                            <p><strong>复制</strong></p>
+                            <p>变体精灵复制一个英雄，敌我皆可，但只继承被复制者50%的攻击力，受到100%的伤害。变体精灵随时可以在一瞬间将自己替换至复制品，需消耗150点魔法。如果变体精灵死亡，复制体将会消失。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 150 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25/25/25</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>冷却时间:</td><td class="statRowColW">80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>持续时间:</td><td class="statRowColW">30 / 45 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>复制体继承攻击力:</td><td class="statRowColW">50% / 50% / 50%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>复制体承受伤害:</td><td class="statRowColW">100% / 100% / 100%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>施法距离:</td><td class="statRowColW">700 / 1100 / 1500</td>
                                 </tr>
                             </table>
+                            <p>盯着变体精灵看而因此幻化出的一个映像，会变成这个观看者的模样。</p>
+                        </div>
+                        <div id="abi7" class="abicontent cont hided">
+                            <p><strong>替换复制品</strong></p>
+                            <p>变体精灵替换它的复制品，瞬间移动到它的位置。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/150/150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                            </table>
+                            <p></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -317,7 +370,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在那黑暗的年代里，有一颗彗星一直绕着天体运动着。被太阳束缚，又被地心引力拉扯，这颗巨大的冰球在世界之间的黑暗缝隙中穿行着，其自身也被这段黑暗的旅途改变着。在乌洛伊战争的前夜，它刺破天穹，轰然坠地，并散发出了一丝奇异的光芒，点亮了黑夜——战争的双方都认为这是一个征兆。这个冰球在沸腾的燥热中融化了，在战争中双方踏入分界河的时候，它融合了双方的力量。旋即冰封解除，变体精灵在战争中横空出世，拥有海洋潮汐之力的元素，反复无常，变化多端。他加入了战斗，在一瞬间就复制了一方的将军的形态，然后杀死了他——这个冒失鬼居然想试图穿过分界河。随着那些士兵们一个个死去，变体精灵也将自己的形态一次又一次的转换，吸收着这些奇怪生物的形态——一会是步兵，一会是弓箭手，一会又是骑兵，直到最后一个士兵也死去，变体精灵终于将所有的形态复制完毕。战争算是结束了，而变体精灵的时代，则刚刚开始。	</p>
+                    	<p>在那黑暗的年代里，有一颗彗星一直绕着天体运动着。被太阳束缚，又被地心引力拉扯，这颗巨大的冰球在世界之间的黑暗缝隙中穿行着，其自身也被这段黑暗的旅途改变着。在乌洛伊战争的前夜，它刺破天穹，轰然坠地，并散发出了一丝奇异的光芒，点亮了黑夜——战争的双方都认为这是一个征兆。这个冰球在沸腾的燥热中融化了，在战争中双方踏入分界河的时候，它融合了双方的力量。旋即冰封解除，变体精灵在战争中横空出世，拥有海洋潮汐之力的元素，反复无常，变化多端。他加入了战斗，在一瞬间就复制了一方的将军的形态，然后杀死了他——这个冒失鬼居然想试图穿过分界河。随着那些士兵们一个个死去，变体精灵也将自己的形态一次又一次的转换，吸收着这些奇怪生物的形态——一会是步兵，一会是弓箭手，一会又是骑兵，直到最后一个士兵也死去，变体精灵终于将所有的形态复制完毕。战争算是结束了，而变体精灵的时代，则刚刚开始。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

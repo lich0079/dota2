@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>AXE</title>
+        <title>斧王</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,140 +156,168 @@
                                 <img  src="../img/axe_berserkers_call_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/axe_battle_hunger_hp2.png" />               
+                                <img  src="../img/axe_battle_hunger_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/axe_counter_helix_hp2.png" />                          
+                                <img  src="../img/axe_counter_helix_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/axe_culling_blade_hp2.png" >
+                                <img  src="../img/axe_culling_blade_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>狂战士的怒吼</strong></p>
-                            <p>斧王将周围敌人的恨意集中到自己身上，让他们攻击他。斧王同时获得护甲加成。</p>
+                            <p>斧王嘲讽附近的敌方单位，强迫他们攻击自己，同时获得额外护甲。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80 / 90 / 100 / 110</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80/90/100/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">16/14/12/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">275</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >护甲加成:</td><td class="statRowColW">40 / 40 / 40 / 40</td>
+                                    <td>攻击力:</td><td class="statRowColW">0 / 0 / 0 / 0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">1.5 / 2 / 2.5 / 3</td>
+                                    <td>作用范围:</td><td class="statRowColW">300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>护甲提升:</td><td class="statRowColW">40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">2 / 2.4 / 2.8 / 3.2</td>
                                 </tr>
                             </table>
+                            <p>蒙哥可汗的狂吼嘲讽使敌人不得不与他作战。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>战斗饥渴</strong></p>
-                            <p>以对杀戮的可怕的渴望折磨目标，他将持续受到伤害并减速，直到他杀死任意单位或持续时间结束为止。没折磨一个目标斧王都会获得移动速度加成。</p>
+                            <p>激怒一个敌方单位，使他受到减速和持续伤害，直到他杀死一个单位或者持续时间结束为止。斧王从每个受战斗饥渴影响的敌人身上获得移动速度加成。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 85 / 95 / 105</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">20.0 / 15.0 / 10.0 / 5.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">20/15/10/5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">15 / 21 / 27 / 33</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">10 / 13 / 16 / 19</td>
+                                    <td>攻击力:</td><td class="statRowColW">16 / 24 / 32 / 40</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减少:</td><td class="statRowColW">8%</td>
+                                    <td>持续时间:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >自身移动速度加成:</td><td class="statRowColW">8%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">12%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>速度提升:</td><td class="statRowColW">12%</td>
                                 </tr>
                             </table>
+                            <p>通常英雄都无法抵挡蒙哥可汗的战斗狂怒，他们会一直受伤，直到蒙哥可汗的狂怒平息。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>反击螺旋</strong></p>
-                            <p>在受到攻击时，斧王有一定几率施展反击螺旋攻击附近的所有敌人。</p>
+                            <p>受攻击时，斧王做出螺旋反击，对附近所有敌方单位造成伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0.55/0.5/0.45/0.4</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0.45/0.40/0.35/0.30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                    <td>技能:</td><td class="statRowColW">被动</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">100 / 135 / 170 / 205</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">275</td>
+                                    <td>攻击力:</td><td class="statRowColW">100 / 135 / 170 / 205</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >触发几率:</td><td class="statRowColW">17%</td>
+                                    <td>作用范围:</td><td class="statRowColW">275</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>反击概率:</td><td class="statRowColW">20%</td>
                                 </tr>
                             </table>
+                            <p>这支军队只要有斧王就不需要援军了。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>淘汰之刃</strong></p>
-                            <p>清除斧王视线范围内的弱者，伤害并不高，但能瞬间斩杀生命值不足的敌人。当这样杀死敌人时，斧王和附近的队友获得移动速度加成。可神杖升级。</p>
+                            <p>斧王寻找弱点攻击，直接秒杀低血量的敌方单位，血量如果过高则只造成一定伤害。当秒杀的是敌方英雄时，本技能不会进入冷却时间。同时斧王和附近友军单位获得移动速度加成。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 160 / 200</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60/120/180</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">75.0 / 65.0 / 55.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">75/65/55</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >可斩杀的生命值:</td><td class="statRowColW">300 / 450 / 625</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">150 / 250 / 300</td>
+                                    <td>秒杀血量:</td><td class="statRowColW">250 / 325 / 400</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度加成:</td><td class="statRowColW">25%</td>
+                                    <td>伤害:</td><td class="statRowColW">150 / 250 / 300</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度加成持续时间:</td><td class="statRowColW">6</td>
+                                    <td>斩杀后移动速度加成:</td><td class="statRowColW">30%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度加成范围:</td><td class="statRowColW">600</td>
+                                    <td>斩杀后攻击速度加成:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">6 / 6 / 6</td>
+                                    <td>斩杀加速持续时间:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>斩杀后加速范围:</td><td class="statRowColW">900</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级冷却时间:</td><td class="statRowColW">6 / 6 / 6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级秒杀血量:</td><td class="statRowColW">300 / 425 / 550</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级速度持续时间:</td><td class="statRowColW">10</td>
                                 </tr>
                             </table>
+                            <p>蒙哥可汗是战斗与狂怒的化身，胆敢与斧王为敌者只有死路一条。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -297,7 +325,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>作为红雾军团的一名步兵，蒙哥可汗的目标是成为红雾军团的将军。在一场又一场的战斗中，他用血腥的战果证明了自己的价值。他毫不犹豫杀死上级的行为帮助了他的晋升。在七年的千冰斗湖战役中，他用光荣的杀戮给自己带来了荣誉，他的声望比从前更耀眼了，但他身边的战友也在一个个的减少。在最终战胜的夜晚，斧王宣布他为红雾军团的新将军，并冠以自身“斧王”的头衔。但他的军队现在却只有他一人。当然，许多人是战死的，而更多人则是死在斧王的刃下。不用说，现在大多数战士都在回避他作为领导者。但这对斧王来说不算什么，因为他的军队只需要他一个人就够了。</p>
+                    	<p>作为红雾军团的一名步兵，蒙哥可汗的目标是成为红雾军团的将军。在一场又一场的战斗中，他用血腥的战果证明了自己的价值。他毫不犹豫杀死上级的行为帮助他完成了晋升。在长达七年的千湖之境战役中，他用光荣的杀戮给自己带来了荣誉，他的声望比从前更耀眼了，但他身边的战友也在一个个地减少。在最终战胜的夜晚，蒙哥可汗宣布他为红雾军团的新将军，并冠以自身“斧王”的头衔。但他的军队却只有他一人，虽然许多人是战死的，但更多人则是死在斧王的刃下。不用说，现在大多数战士都不想由他领导。但这对斧王来说不算什么，因为他的军队只需要他一个人就够了。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

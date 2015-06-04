@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>ANTI-MAGE</title>
+        <title>敌法师</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -75,7 +75,7 @@
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>15 + 1.80</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>22 + 2.80</span></li>
-                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>20 + 1.20</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>22 + 1.20</span></li>
                             </ul>
                         </div>
                         <div class="grow floatleft">
@@ -100,9 +100,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >生命值</td>
-                                <td class="statRowColW">530</td>
-                                <td class="statRowColW">849</td>
-                                <td class="statRowColW">1,457</td>
+                                <td class="statRowColW">568</td>
+                                <td class="statRowColW">887</td>
+                                <td class="statRowColW">1,495</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,96 +156,105 @@
                                 <img  src="../img/antimage_mana_break_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/antimage_blink_hp2.png" />               
+                                <img  src="../img/antimage_blink_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/antimage_spell_shield_hp2.png" />                          
+                                <img  src="../img/antimage_spell_shield_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/antimage_mana_void_hp2.png" >
+                                <img  src="../img/antimage_mana_void_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>法力损毁</strong></p>
-                            <p>每次攻击损毁目标一定量的魔法值，并额外造成相当于损毁魔法值60%%的伤害。
-                            法力损毁是个独特攻击特效，不与其它独特攻击特效叠加。</p>
+                            <p>每次攻击损毁目标一定量的魔法值，并额外造成相当于损毁魔法值60%的伤害。 法力损毁是攻击特效，不与其它攻击特效叠加。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >魔法值伤害:</td><td class="statRowColW">28 / 40 / 52 / 64</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>每次攻击损毁魔法:</td><td class="statRowColW">28 / 40 / 52 / 64</td>
                                 </tr>
                             </table>
+                            <p>这是一种将星隐寺僧侣们的非暴力招式改良后的战斗技巧，用施法者的魔法能量来伤害他们自己。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>闪烁</strong></p>
                             <p>让敌法师自由出入战场的短距离传送。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60 / 60 / 60 / 60</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60/60/60/60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12.0 / 9.0 / 7.0 / 5.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12/9/7/5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">1000 / 1075 / 1150 / 1150</td>
+                                    <td>距离:</td><td class="statRowColW">1000 / 1075 / 1150 / 1150</td>
                                 </tr>
                             </table>
+                            <p>在与死亡之神遭遇时，敌法师明白了让敌人捉摸不定是多么重要。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>法术护盾</strong></p>
                             <p>提高敌法师的魔法抗性。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >抗性加成:</td><td class="statRowColW">26% / 34% / 42% / 50%</td>
+                                    <td>抗性:</td><td class="statRowColW">26% / 34% / 42% / 50%</td>
                                 </tr>
                             </table>
+                            <p>多年的冥想和对复仇的执着强化了敌法师的皮肤。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>法力虚空</strong></p>
-                            <p>根据目标损失的魔法值，对目标和目标周围的敌人造成伤害。</p>
+                            <p>根据目标损失的魔法值，对目标和其周围的敌人造成伤害。主要目标受到短暂眩晕。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 200 / 275</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125/200/275</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">70.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">70</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">0.6 / 0.85 / 1.1</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">0.1 / 0.2 / 0.3</td>
+                                    <td>伤害:</td><td class="statRowColW">0.6 / 0.85 / 1.1</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">300</td>
+                                    <td>眩晕时间:</td><td class="statRowColW">0.1 / 0.2 / 0.3</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围:</td><td class="statRowColW">500</td>
                                 </tr>
                             </table>
+                            <p>击倒敌人以后，敌法师给予他们惩罚作为使用奥术的代价。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -253,7 +262,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>当山下的王国被潮水般的侵略者们横扫的时候，星隐寺的僧侣们只是在山上默默的注视着那崎岖的山谷。苦行且务实的他们在偏远高山的寺院里，独自沉浸在远离尘嚣的冥想中，不受任何魔法元素或者神灵的干扰。然而，死亡之神的军队来了，带着摧毁所有信仰，并让当地人转而信奉死亡之神的虚无主义。带着他们千年的战乱和血雨腥风，死亡军团将他们打败的敌人的灵魂和尸骨撕裂，用这种恐怖来摧毁星隐寺的信仰。面对此等攻击，寺院只坚持了不到两个星期，甚至还有一些刚从冥想中醒来的僧侣认为，这些入侵者不过是恶魔用来干扰他们冥想的幻象，于是他们死在了自己的冥想垫上。只有一个人幸免于难，他是来星隐寺寻求智慧，却尚未得到寺院认可的侍僧。他惊恐的看着自己曾经侍奉过的僧侣们被杀，然后又被复活成为死亡之神的祭司。带着星隐寺残存的珍贵教义卷轴，他艰难的到达了一个相对安全的地方，他发誓，不仅要消灭死亡之神的魔法师，更要将“魔法”这个词从世上抹去。	</p>
+                    	<p>当山下的王国被潮水般的侵略者们横扫的时候，星隐寺的僧侣们只是在山上默默的注视着那崎岖的山谷。苦行且务实的他们在偏远高山的寺院里，独自沉浸在远离尘嚣的冥想中，不受任何魔法元素或者神灵的干扰。然而，死亡之神的军队来了，带着摧毁所有信仰，并让当地人转而信奉死亡之神的虚无主义。带着他们千年的战乱和血雨腥风，死亡军团将他们打败的敌人的灵魂和尸骨撕裂，用这种恐怖来摧毁星隐寺的信仰。面对此等攻击，寺院只坚持了不到两个星期，甚至还有一些刚从冥想中醒来的僧侣认为，这些入侵者不过是恶魔用来干扰他们冥想的幻象，于是他们死在了自己的冥想垫上。只有一个人幸免于难，他是来星隐寺寻求智慧，却尚未得到寺院认可的侍僧。他惊恐地看着自己曾经侍奉过的僧侣们被杀，然后又被复活成为死亡之神的祭司。带着星隐寺残存的珍贵教义卷轴，他艰难地到达了一个相对安全的地方，他发誓，不仅要消灭死亡之神的魔法师，更要将“魔法”这个词从世上抹去。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>TINKER</title>
+        <title>修补匠</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,113 +156,138 @@
                                 <img  src="../img/tinker_laser_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/tinker_heat_seeking_missile_hp2.png" />               
+                                <img  src="../img/tinker_heat_seeking_missile_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/tinker_march_of_the_machines_hp2.png" />                          
+                                <img  src="../img/tinker_march_of_the_machines_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/tinker_rearm_hp2.png" >
+                                <img  src="../img/tinker_rearm_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>激光</strong></p>
-                            <p>向目标发射一束激光，造成伤害，并致盲他3秒。</p>
+                            <p>发射强烈的能量光束，对目标造成伤害和致盲效果，使他的所有物理攻击都落空。 可用神杖升级，使激光折射给550范围内所有可见的敌方英雄。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95 / 120 / 145 / 170</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95/120/145/170</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">14.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                    <td>伤害类型:</td><td class="statRowColW">纯粹</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">80 / 160 / 240 / 320</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >未命中几率:</td><td class="statRowColW">100% / 100% / 100% / 100%</td>
+                                    <td>攻击力:</td><td class="statRowColW">80 / 160 / 240 / 320</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>致盲后丢失概率:</td><td class="statRowColW">100% / 100% / 100% / 100%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>英雄致盲持续时间:</td><td class="statRowColW">3 / 3.5 / 4 / 4.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>小兵致盲持续时间:</td><td class="statRowColW">6 / 6 / 6 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>施法距离:</td><td class="statRowColW">550</td>
                                 </tr>
                             </table>
+                            <p>鲍什在他的地下实验室完善了这把激光岩石切割器，从没考虑过它的作战效用。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>热导飞弹</strong></p>
-                            <p>修补匠发射热导飞弹，攻击距离最近的英雄。英雄必须在己方视野内，射程2500。</p>
+                            <p>发射一对火箭，攻击2500范围内可见的最近的敌方英雄。装备阿哈利姆神杖后导弹数量将会加倍。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 140 / 160 / 180</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/140/160/180</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">25.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >目标数:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                    <td>攻击力:</td><td class="statRowColW">125 / 200 / 275 / 350</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>目标数:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
                                 </tr>
                             </table>
+                            <p>鲍什最后救下来的玩意儿，是一个改造过的制导式火箭筒。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>机器人的进军</strong></p>
-                            <p>召唤一大群机器人对附近的敌方单位造成伤害。</p>
+                            <p><strong>进击的机械</strong></p>
+                            <p>征募一支机器人军队，摧毁修补匠周围的敌方单位。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">145 / 150 / 165 / 190</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">145/150/165/190</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">35.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">35</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">16 / 24 / 32 / 40</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
+                                    <td>攻击力:</td><td class="statRowColW">16 / 24 / 32 / 40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">6 / 6 / 6 / 6</td>
+                                    <td>作用范围:</td><td class="statRowColW">900</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">6 / 6 / 6 / 6</td>
                                 </tr>
                             </table>
+                            <p>就算实验室最后被封锁了，呼叫机械兵锋的无线电还是通的。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>再装填</strong></p>
-                            <p>持续性 - 修补匠重新装填他的武器，立即刷新所有技能和物品的冷却时间。</p>
+                            <p>持续施法 - 重置修补匠的大多数物品和技能的冷却时间。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 250 / 350</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125/225/325</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">无目标, 持续性</td>
+                                    <td>冷却时间:</td><td class="statRowColW">0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >施法时间:</td><td class="statRowColW">3 / 2 / 1</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 持续施法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>再装填所需时间:</td><td class="statRowColW">3 / 2 / 1</td>
                                 </tr>
                             </table>
+                            <p>这儿换块新电池，那儿塞几枚火箭弹，鲍什不断改进现有的技术。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -270,7 +295,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>修补匠鲍什的矮小种族以他们独有的智慧、狡猾以及敌视魔法而闻名。出于自傲，他们完全凭借自己的智慧生存，只通过理性的科学方法来合理利用自然的力量。然而，即使是对魔法如此严令禁止，也给他们带来了很多麻烦，这一点鲍什深有体会。作为曾经的自然法则首席研究员，修补匠鲍什在传说中薄雾缭绕的紫罗兰高原建立了一座地下实验室，在那里领导了大量对自然运作规律的研究。出于对魔法师们给世界带来的伤害的鄙夷，鲍什和他的修补匠助手带着高傲，打开了一扇传送门，门的另一端是一个超越了凡人认知能力的国度，于是他们自食恶果。黑色的薄雾从紫罗兰高原的洞穴内升起，将高原覆盖在不断散发出恐怖声音的永恒黑暗中。机智的鲍什带着他的机关装置逃了出来，成了紫罗兰高原事故中唯一生还的修补匠。</p>
+                    	<p>修补匠鲍什的矮小种族以他们独有的智慧、狡猾以及敌视魔法而闻名。出于自傲，他们完全凭借自己的智慧生存，只通过理性的科学方法来合理利用自然的力量。然而，即使是对魔法如此严令禁止，也给他们带来了很多麻烦，这一点鲍什深有体会。作为曾经的自然法则首席研究员，修补匠鲍什在传说中薄雾缭绕的紫罗兰高原建立了一座地下实验室，在那里领导了大量对自然运作规律的研究。出于对魔法师们给世界带来的伤害的鄙夷，鲍什和他的修补匠助手带着高傲，打开了一扇传送门，门的另一端是一个超越了凡人认知能力的国度，于是他们自食恶果。黑色的薄雾从紫罗兰高原的洞穴内升起，将高原覆盖在不断散发出恐怖声音的永恒黑暗中。机智的鲍什带着他的机关装置逃了出来，成了紫罗兰高原事故中唯一生还的修补匠。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>WISP</title>
+        <title>艾欧</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -40,7 +40,7 @@
                     <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/wisp_hphover.png"/></a>
                 </div>
                 <div  class="floatleft">
-                    <div class="heroName">精灵守卫</div>
+                    <div class="heroName">艾欧</div>
                      <div class="atype">远程</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
                             <tr >
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -121,13 +121,13 @@
                             <tr class="statRow">
                                 <td ></td>
                                 <td >护甲</td>
-                                <td class="statRowColW">0</td>
+                                <td class="statRowColW">-0</td>
                                 <td class="statRowColW">3</td>
                                 <td class="statRowColW">8</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,155 +156,186 @@
                                 <img  src="../img/wisp_tether_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/wisp_tether_break_hp2.png" />               
+                                <img  src="../img/wisp_tether_break_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/wisp_spirits_hp2.png" />                          
+                                <img  src="../img/wisp_spirits_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/wisp_overcharge_hp2.png" >
+                                <img  src="../img/wisp_overcharge_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/wisp_relocate_hp2.png" />               
+                                <img  src="../img/wisp_relocate_hp2.png" />
                             </li>
                             <li sel="6" class="abi">
-                                <img  src="../img/wisp_spirits_in_hp2.png" />                          
+                                <img  src="../img/wisp_spirits_in_hp2.png" />
                             </li>
                             <li sel="7" class="abi">
-                                <img  src="../img/wisp_spirits_out_hp2.png" >
+                                <img  src="../img/wisp_spirits_out_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>闪电之链</strong></p>
-                            <p>精灵守卫将自己和一个友方单位链接起来，使两者共同提升移动速度；精灵守卫获得的任何回复状态，也同时会影响到被链接的单位。任何碰触到闪电之链的敌方单位均会被眩晕。当间隔太远时，效果会失去。</p>
+                            <p>将艾欧和一个友方单位连接在一起，提高双方的移动速度。当艾欧回复生命或魔法时，连在一起的友军也将获得1.5倍的回复效果。任何碰到连接的敌方单位将被减速。距离过远时连接将会断开，也可以主动断开连接。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">40 / 40 / 40 / 40</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">40/40/40/40</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友军</td>
+                                    <td>影响:</td><td class="statRowColW">友方</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大距离:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度加成:</td><td class="statRowColW">20% / 20% / 20% / 20%</td>
+                                    <td>最远连接距离:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">0.75 / 1.25 / 1.75 / 2.25</td>
+                                    <td>移动速度提升:</td><td class="statRowColW">14% / 15% / 16% / 17%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>连接持续时间:</td><td class="statRowColW">12 / 12 / 12 / 12</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>敌方移动速度减缓:</td><td class="statRowColW">100%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>敌方攻击速度降低:</td><td class="statRowColW">100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>敌方减速持续时间:</td><td class="statRowColW">0.75 / 1.25 / 1.75 / 2.25</td>
                                 </tr>
                             </table>
+                            <p>艾欧善意的接触从不同位面之间带来力量。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
-                            <p><strong>打断闪电之链</strong></p>
-                            <p>打断闪电之链效果.</p>
+                            <p><strong>断开连接</strong></p>
+                            <p>断开连接。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1.0</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>幽光之魂</strong></p>
-                            <p>召唤出共计5个幽光之魂。每个幽光之魂都会对逼的过近的敌人展开反击。如果是英雄单位，幽光之魂会释放自己的生命能量引发爆炸，对附近范围内所有敌人造成伤害；如果是非英雄单位，幽光之魂后只会对其造成轻微伤害，不会爆炸。</p>
+                            <p>召唤五个围绕艾欧起舞的幽光之魂，对所有碰触到的单位造成伤害。如果碰到的是敌方英雄，幽光之魂会爆炸，对其附近的所有敌人造成伤害。普通单位碰到幽光之魂会受到轻微伤害，但是不会使其爆炸。持续时间结束后，幽光之魂将自动爆炸。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 130 / 140 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/130/140/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">20.0 / 18.0 / 16.0 / 14.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">20/18/16/14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >小兵伤害:</td><td class="statRowColW">8 / 14 / 20 / 26</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >英雄伤害:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >振荡范围:</td><td class="statRowColW">875 / 875 / 875 / 875</td>
+                                    <td>对小兵伤害:</td><td class="statRowColW">8 / 14 / 20 / 26</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >爆炸范围:</td><td class="statRowColW">300 / 300 / 300 / 300</td>
+                                    <td>英雄伤害:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>最大范围:</td><td class="statRowColW">875 / 875 / 875 / 875</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>爆炸范围:</td><td class="statRowColW">300 / 300 / 300 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">19 / 19 / 19 / 19</td>
                                 </tr>
                             </table>
+                            <p>艾欧用它不可思议的力量扭曲了宇宙中的粒子。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>过载</strong></p>
-                            <p>以消耗自身生命与魔法/秒为代价，极大提升攻击速度和伤害减免。如果存在被闪电之链连接的单位，则该单位也会获得相同的攻速提升效果。</p>
+                            <p>艾欧获得攻击速度加成并降低受到的伤害，代价是每秒流失一定百分比的当前生命值和魔法值。如果艾欧和一个友军连接，该单位也会获得增益效果。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 开关型</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻速:</td><td class="statRowColW">40 / 50 / 60 / 70</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 切换</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害减免:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
+                                    <td>攻击速度:</td><td class="statRowColW">40 / 50 / 60 / 70</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >生命值/魔法值消耗:</td><td class="statRowColW">4.5%</td>
+                                    <td>受到伤害降低:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>生命/魔法流失:</td><td class="statRowColW">4.5% / 4.5% / 4.5% / 4.5%</td>
                                 </tr>
                             </table>
+                            <p>从所有位面的世界吸取一切物质的能量，艾欧开始展示时间的真相。</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
-                            <p><strong>传送</strong></p>
-                            <p>传送你和你链接的单位去地图上任何地方。效果持续时间过后，返回原来的地方。</p>
+                            <p><strong>降临</strong></p>
+                            <p>将艾欧和与其连接的友军传送到地图上任何位置。法术结束后艾欧和相连的友军会被传送回原位。双击将传送回己方的泉水。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">90.0 / 75.0 / 60.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">90/75/60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >施法延迟:</td><td class="statRowColW">2.5 / 2.25 / 2</td>
+                                    <td>施法延迟:</td><td class="statRowColW">2.5 / 2.25 / 2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >返回时间:</td><td class="statRowColW">12 / 12 / 12</td>
+                                    <td>返回时间:</td><td class="statRowColW">12 / 12 / 12</td>
                                 </tr>
                             </table>
+                            <p>艾欧的存在体现了宇宙的神秘。</p>
                         </div>
                         <div id="abi6" class="abicontent cont hided">
                             <p><strong>拉近幽光之魂</strong></p>
-                            <p>拉近幽光之魂。可开关。</p>
+                            <p>将幽光之魂召回到你身边。可以切换开关状态。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 开关型</td>
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 切换</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi7" class="abicontent cont hided">
-                            <p><strong>推远幽光之魂</strong></p>
-                            <p>推远幽光之魂。可开关。</p>
+                            <p><strong>拉远幽光之魂</strong></p>
+                            <p>让幽光之魂远离你。可以切换开关状态。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 开关型</td>
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 切换</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -312,7 +343,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>精灵守卫存在于所有地方和世间万物之内。敌人们诋毁它为灭绝者，学者们则尊崇它为闪动的神圣之眼，精灵守卫同时在所有位面存在着，它们可以在任何时候将自己身体的一小部分转化为物理存在。 就像伟大的双子骑士“暗”与“光”一样，精灵守卫艾欧也是来自远古的旅者，它真正的来历已经淹没在时间中。它是比时间还要古老的宇宙法则，来自凡人无法理解的领域。精灵守卫不仅仅是物质内部的吸引力和排斥力的结合，它是将物质粒子连接在一起的电荷的直观体现。只有将这些力量进行可控的扭曲，精灵守卫才能在物理位面被人感受到。作为一股善意、乐于合作的力量，精灵守卫将它的力量与其它人绑在一起，让盟友的力量得到强化。它的心思深不可测，它的力量无法想象，精灵守卫在物理位面穿梭着，是神秘宇宙的完美体现。	</p>
+                    	<p>艾欧存在于所有地方和世间万物之内。敌人们诋毁它为灭绝者，学者们则尊崇它为闪动的神圣之眼，艾欧同时在所有位面存在着，它们可以在任何时候将自己身体的一小部分转化为物理存在。 就像伟大的双子骑士“暗”与“光”一样，精灵守卫艾欧也是来自远古的旅者，它真正的来历已经淹没在时间中。它是比时间还要古老的宇宙法则，来自凡人无法理解的领域。艾欧不仅仅是物质内部的吸引力和排斥力的结合，它是将实体连接在一起的电荷的直观体现。只有将这些力量进行可控的扭曲，艾欧才能在物理位面被人感受到。作为一股善意、乐于合作的力量，艾欧将它的力量与其它人绑在一起，让盟友的力量得到强化。它的心思深不可测，它的力量无法想象，艾欧在物理位面穿梭着，是神秘宇宙的完美体现。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

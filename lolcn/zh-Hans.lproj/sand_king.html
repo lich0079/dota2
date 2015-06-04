@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>SAND KING</title>
+        <title>沙王</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,128 +156,165 @@
                                 <img  src="../img/sandking_burrowstrike_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/sandking_sand_storm_hp2.png" />               
+                                <img  src="../img/sandking_sand_storm_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/sandking_caustic_finale_hp2.png" />                          
+                                <img  src="../img/sandking_caustic_finale_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/sandking_epicenter_hp2.png" >
+                                <img  src="../img/sandking_epicenter_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>掘地穿刺</strong></p>
-                            <p>沙王在地底挖掘隧道前进，刺穿头顶的地面，对敌方单位造成伤害并晕眩。</p>
+                            <p>沙王钻入地面挖掘隧道前进，穿出地面时伤害并眩晕上方的敌方单位。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110 / 120 / 130 / 140</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110/120/130/140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">11.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">11</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">100 / 160 / 220 / 280</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">2.17</td>
+                                    <td>攻击力:</td><td class="statRowColW">100 / 160 / 220 / 280</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">350 / 450 / 550 / 650</td>
+                                    <td>眩晕时间:</td><td class="statRowColW">2.17</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>距离:</td><td class="statRowColW">350 / 450 / 550 / 650</td>
                                 </tr>
                             </table>
+                            <p>克里瑟历斯经常钻入地下埋伏，等待伏击敌人。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>沙尘暴</strong></p>
-                            <p>持续性 - 沙王制造一场可怕的沙尘暴，扬起的沙尘使敌人无法看见沙王的踪迹，同时造成伤害。沙王在沙尘暴结束后继续隐身一小段时间。</p>
+                            <p>持续施法 - 沙王制造一起可怕的沙尘暴，伤害敌方单位的同时隐匿沙王自身。沙尘暴结束后，沙王会短暂保持隐身状态。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60 / 50 / 40 / 30</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60/50/40/30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">40.0 / 30.0 / 20.0 / 10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">40/30/20/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标, 持续性</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 持续施法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >隐身延迟:</td><td class="statRowColW">1.5</td>
+                                    <td>攻击力:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">275 / 325 / 375 / 525</td>
+                                    <td>隐身续存时间:</td><td class="statRowColW">1.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>作用范围:</td><td class="statRowColW">525</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>持续时间:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
                                 </tr>
                             </table>
+                            <p>有人认为克里瑟历斯只是传说中的幻影，因为他的甲壳在闪烁荒原的沙尘中总是若隐若现。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>腐尸毒</strong></p>
-                            <p>沙王在攻击时向目标注入致命的毒素。如果目标在感染期间死亡，他的尸体将爆裂，对附近的敌方单位造成伤害。</p>
+                            <p>沙王的攻击会给敌方单位注入毒液，持续时间结束或中毒单位死亡时发生剧烈爆炸，造成范围伤害和移动速度减缓效果。 腐尸毒是攻击特效，不与其它攻击特效叠加。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">90 / 130 / 170 / 220</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">400</td>
+                                    <td>爆炸范围:</td><td class="statRowColW">400</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>死尸爆炸伤害:</td><td class="statRowColW">90 / 130 / 170 / 220</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>毒发爆炸伤害:</td><td class="statRowColW">27 / 39 / 51 / 66</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>毒发所需时间:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>移动速度减缓:</td><td class="statRowColW">20%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>减速持续时间:</td><td class="statRowColW">3</td>
                                 </tr>
                             </table>
+                            <p>克里瑟历斯的毒液让受害者变得脆弱并且干涸如干旱的荒地，最后爆炸而死。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>地震</strong></p>
-                            <p>持续施法2秒后，沙王将扰动传至地底，引发地震。所有范围内的敌方地面目标都会受到伤害，同时降低速度。可神杖升级。</p>
+                            <p>持续施法 - 在2秒吟唱后，沙王向地中发送扰动，引起大地剧烈震动。所有范围内的敌人会受到伤害并被减速。每次后续震击都会提高伤害传播半径。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">175 / 250 / 325</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">175/250/325</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">140.0 / 120.0 / 100.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">140/120/100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标, 持续性</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 持续施法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >次数:</td><td class="statRowColW">6 / 8 / 10</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害/次:</td><td class="statRowColW">110 / 110 / 110</td>
+                                    <td>震击次数:</td><td class="statRowColW">6 / 8 / 10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速:</td><td class="statRowColW">30% / 30% / 30%</td>
+                                    <td>每波伤害:</td><td class="statRowColW">110 / 110 / 110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级次数:</td><td class="statRowColW">8 / 10 / 12</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">30% / 30% / 30%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">120 / 100 / 80</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>减速持续时间:</td><td class="statRowColW">3</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级地震波数:</td><td class="statRowColW">8 / 10 / 12</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级冷却时间:</td><td class="statRowColW">120 / 100 / 80</td>
                                 </tr>
                             </table>
+                            <p>许多探险家丧生于闪烁荒原的流沙。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -285,7 +322,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>闪烁荒原的沙漠是有知觉的活物，它与自我对话，思考着只有这广阔的沙漠能包容的思想。当它必须要寻找一种和那些有限的存在交流的方式时，它解放了一块它的碎片，填入一块由狡猾的卡尔丁灯神创造的魔法甲壳中。这个存在称它自己为克里瑟历斯，意为“沙之魂”，不过世人都称他为沙王。沙王那巨大蛛形生物的外形源自闪烁荒地那些渺小但无处不及的居民，这身形真实地展示了他残忍的天性。沙王无法与赐予他生命的无限沙漠分开，他是这片沙漠的守卫者、战士、使节。</p>
+                    	<p>闪烁荒原的沙漠是有知觉的活物，它与自我对话，思考着只有这广阔的沙漠能包容的思想。当它必须要寻找一种和那些有限的存在交流的方式时，它解放了一块它的碎片，填入一块由狡猾的卡尔丁灯神创造的魔法甲壳中。这个存在称它自己为克里瑟历斯，意为“沙之魂”，不过世人都称他为沙王。沙王那巨大蛛形生物的外形源自闪烁荒地那些渺小但无处不及的居民，这身形真实地展示了他残忍的天性。沙王无法与赐予他生命的无限沙漠分开，他是这片沙漠的守卫者、战士、使节。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

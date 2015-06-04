@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>BEASTMASTER</title>
+        <title>兽王</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -80,7 +80,7 @@
                         </div>
                         <div class="grow floatleft">
                             <ul>
-                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>33 - 37</span></li>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>41 - 45</span></li>
                                 <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>310</span></li>
                                 <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>4.52</span></li>
                             </ul>
@@ -114,9 +114,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >攻击力</td>
-                                <td class="statRowColW">56-60</td>
-                                <td class="statRowColW">87-91</td>
-                                <td class="statRowColW">129-133</td>
+                                <td class="statRowColW">64-68</td>
+                                <td class="statRowColW">95-99</td>
+                                <td class="statRowColW">137-141</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,131 +156,188 @@
                                 <img  src="../img/beastmaster_wild_axes_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/beastmaster_call_of_the_wild_hp2.png" />               
+                                <img  src="../img/beastmaster_call_of_the_wild_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/beastmaster_inner_beast_hp2.png" />                          
+                                <img  src="../img/beastmaster_call_of_the_wild_boar_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/beastmaster_primal_roar_hp2.png" >
+                                <img  src="../img/beastmaster_inner_beast_hp2.png" />
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/beastmaster_primal_roar_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>野性之斧</strong></p>
-                            <p>兽王掷出他的双斧，它们交错回旋并最终会回到兽王手中。每把飞斧最多能对同一单位造成一次伤害。</p>
+                            <p>兽王投出他的斧头然后召回它们，切开飞过的敌人和树木。每把飞斧只对同一个敌人攻击一次。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/120/120/120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">13.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">13</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">混合</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">90 / 120 / 150 / 180</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">1300 / 1300 / 1300 / 1300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>攻击力:</td><td class="statRowColW">70 / 100 / 130 / 160</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>距离:</td><td class="statRowColW">1300 / 1300 / 1300 / 1300</td>
                                 </tr>
                             </table>
+                            <p>在独自学习野外生存时，兽王也掌握了飞斧的运用技巧，使他能够熟练的砍下树木，或者敌人的脑袋。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
-                            <p><strong>野性呼唤</strong></p>
-                            <p>兽王召唤野兽来帮助战斗。野兽数量和能力随着技能等级的提升而提升。先前召唤的单位在下次召唤时会被移除。<br>等级1 - 召唤一只侦查战鹰。<br>
-                            等级2 - 召唤一只侦查战鹰和一头豪猪。<br>
-                            等级3 - 召唤一只高等侦查战鹰和一头豪猪。<br>
-                            等级4 - 召唤一只高等侦查战鹰和一头高等豪猪。</p>
+                            <p><strong>野性呼唤：战鹰</strong></p>
+                            <p>兽王召唤号称千里眼的战鹰侦察战场。3级以上的战鹰静止4秒后将进入隐身状态。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25 / 25 / 25 / 25</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">15</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">40.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >战鹰持续时间:</td><td class="statRowColW">60 / 70 / 80 / 80</td>
+                                    <td>战鹰生命值:</td><td class="statRowColW">40 / 60 / 80 / 100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >豪猪持续时间:</td><td class="statRowColW">0 / 70 / 80 / 90</td>
+                                    <td>战鹰移动速度:</td><td class="statRowColW">250 / 275 / 300 / 325</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>战鹰白天视野范围:</td><td class="statRowColW">700 / 1000 / 1300 / 1600</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>战鹰夜晚视野范围:</td><td class="statRowColW">700 / 800 / 900 / 1000</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>战鹰持续时间:</td><td class="statRowColW">60 / 60 / 60 / 60</td>
                                 </tr>
                             </table>
+                            <p>度过了与各种野兽互惠互助的孩童时期，现在兽王拥有了随需召唤野兽的能力。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>野性之心</strong></p>
-                            <p>兽王的野性之心振奋了附近的友方单位，提升其攻击速度。</p>
+                            <p><strong>野性呼唤：豪猪</strong></p>
+                            <p>兽王召唤强力的豪猪作为战场上的战友，豪猪的攻击带有毒素，可以降低敌人的移动速度和攻击速度。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">15</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>冷却时间:</td><td class="statRowColW">40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>豪猪生命值:</td><td class="statRowColW">200 / 300 / 400 / 500</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>豪猪攻击力:</td><td class="statRowColW">15 / 30 / 45 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>豪猪减速效果:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>豪猪攻速降低效果:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>豪猪毒素持续时间:</td><td class="statRowColW">3</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>豪猪持续时间:</td><td class="statRowColW">60 / 60 / 60 / 60</td>
+                                </tr>
+                            </table>
+                            <p>度过了与异兽互惠互助的孩童时期，现在兽王拥有了随需召唤野兽的能力。</p>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>野性之心</strong></p>
+                            <p>唤起友军内心的狂怒，提高他们的攻击速度。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动, 光环</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友军</td>
+                                    <td>影响:</td><td class="statRowColW">友方</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">1000 / 1000 / 1000 / 1000</td>
+                                    <td>作用范围:</td><td class="statRowColW">900</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻击速度加成:</td><td class="statRowColW">18 / 26 / 32 / 40</td>
+                                    <td>攻击速度提升:</td><td class="statRowColW">15 / 25 / 35 / 45</td>
                                 </tr>
                             </table>
+                            <p>兽王的激起野兽先天力量的能力，在他劈打斯洛美之王时被目击到。</p>
                         </div>
-                        <div id="abi4" class="abicontent cont hided">
+                        <div id="abi5" class="abicontent cont hided">
                             <p><strong>原始咆哮</strong></p>
-                            <p>兽王惊天动地的咆哮对目标单位造成伤害并晕眩。兽王和目标单位之间的单位则因为被冲击波所波及而受到伤害，攻击速度和移动速度因此降低。可神杖升级。</p>
+                            <p>兽王发出震耳欲聋的咆哮，使目标敌方单位受到伤害并眩晕，同时在兽王和他的猎物之间清出一条通道。通道上的所有单位都被震开，也受到伤害并被降低移动和攻击速度。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 175 / 200</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/175/200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">80.0 / 75.0 / 70.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">80/75/70</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >眩晕时间:</td><td class="statRowColW">3 / 3.5 / 4</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">200 / 250 / 300</td>
+                                    <td>眩晕时间:</td><td class="statRowColW">3 / 3.5 / 4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">250 / 250 / 250</td>
+                                    <td>伤害:</td><td class="statRowColW">200 / 250 / 300</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度减少:</td><td class="statRowColW">50% / 50% / 50%</td>
+                                    <td>咆哮宽度:</td><td class="statRowColW">300</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻速减少:</td><td class="statRowColW">50% / 50% / 50%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">50% / 50% / 50%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速时间:</td><td class="statRowColW">2 / 3 / 4</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">50 / 50 / 50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级射程:</td><td class="statRowColW">950 / 950 / 950</td>
+                                    <td>减速持续时间:</td><td class="statRowColW">2 / 3 / 4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">45 / 45 / 45</td>
+                                    <td>神杖升级施法距离:</td><td class="statRowColW">950 / 950 / 950</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级冷却时间:</td><td class="statRowColW">45 / 45 / 45</td>
                                 </tr>
                             </table>
+                            <p>兽王学会将他的原始本能凝聚为猛兽般的怒吼，以破坏敌人的队列。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -288,9 +345,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>卡洛克自出生伊始就被当做兽婴。他的母亲在他出生时就死去；他的父亲是狂王斯洛姆的马蹄铁匠，在他五岁时被马群践踏致死。后来，卡洛克将自己卖到国王的动物园干活，在那里，他和宫廷里面饲养的狮子，猩猩，野鹿以及其他一些很少见的甚至传说中的野兽一起长大。在他七岁那年，一个冒险者带着一只没人见过的野兽来觐见国王。当这只野兽被国王的链条锁住的时候，它说话了，乞求自由，然而它的嘴并没有张开。国王大笑，命令野兽表演助兴，遭到拒绝以后，国王用他的疯狂权杖狠狠的抽打了野兽，并把它关在了兽栏里面。</p>
-                        
-                        <p>接下来的几个月里，卡洛克每天都给这个受伤的野兽偷偷的带去食物和药物，然而这一切只能减缓野兽的死亡。这只野兽和卡洛克开始了交流，无言的交流，他们之间的情感纽带也随着时间的推移而加深，最后卡洛克发现他竟然能够和宫廷动物园里面的所有动物交流。在那只野兽死去的晚上，卡洛克狂怒无比，他煽动了所有的动物一起反叛，并且将它们的笼子打开，在宫廷广场上大开杀戒。狂王在动乱中受伤。在混乱之中，一只皇家雄鹿在这个救了它的男孩面前屈膝，让他以兽王的身份骑上它，带他跃过了堡垒的高墙，逃出生天。现在，兽王卡洛克已经成长为一个男子汉，并且仍然能够自由的和野生动物交谈。他已经成为了拥有自然狂猛野性的战士。</p>
+                    	<p>卡洛克自出生伊始就被当做兽婴。他的母亲在他出生时就已死去；他的父亲是斯洛姆末代帝王的马蹄铁匠，在他五岁时被马群践踏致死。后来，卡洛克将自己卖到国王的动物园干活，在那里，他和宫廷里面饲养的狮子，猩猩，野鹿以及其他一些很少见的甚至传说中的野兽一起长大。在他七岁那年，一个冒险者带着一只没人见过的野兽来觐见国王。当这只野兽被国王的链条锁住的时候，它说话了，乞求自由，然而它的嘴并没有张开。国王大笑，命令野兽表演助兴，遭到拒绝以后，国王用他的疯狂权杖狠狠的抽打了野兽，并把它关在了兽栏里面。接下来的几个月里，卡洛克每天都给这个受伤的野兽偷偷的带去食物和药物，然而这一切只能减缓野兽的死亡。这只野兽和卡洛克开始了交流，无言的交流，他们之间的情感纽带也随着时间的推移而加深，最后卡洛克发现他竟然能够和宫廷动物园里面的所有动物交流。在那只野兽死去的晚上，卡洛克狂怒无比，他煽动了所有的动物一起反叛，并且将它们的笼子打开，在宫廷广场上大开杀戒。末代帝王在动乱中受伤。在混乱之中，一只皇家雄鹿在这个救了它的男孩面前屈膝，让他以兽王的身份骑上它，带他跃过了堡垒的高墙，逃出生天。现在，兽王卡洛克已经成长为一个男子汉，并且仍然能够自由的和野生动物交谈。他已经成为了拥有自然狂猛野性的战士。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

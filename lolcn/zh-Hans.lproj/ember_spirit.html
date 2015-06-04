@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">灰烬之灵</div>
-                    <div class="atype">近战</div>
+                     <div class="atype">近战</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">核心</td>
-                            <td class="role" width="50%">爆发</td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%">爆发</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -162,10 +162,10 @@
                                 <img  src="../img/ember_spirit_flame_guard_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/ember_spirit_activate_fire_remnant_hp2.png" >
-                                    </li>
+                                <img  src="../img/ember_spirit_activate_fire_remnant_hp2.png" />
+                            </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/ember_spirit_fire_remnant_hp2.png" >
+                                <img  src="../img/ember_spirit_fire_remnant_hp2.png" />
                             </li>
                         </ul>
                     </div>
@@ -179,139 +179,162 @@
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">14/12/10/8</td>
+                                    <td>冷却时间:</td><td class="statRowColW">14/12/10/8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">2 / 2 / 3 / 3</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">400</td>
+                                    <td>持续时间:</td><td class="statRowColW">1 / 2 / 2 / 3</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >每秒伤害:</td><td class="statRowColW">40 / 60 / 80 / 100</td>
+                                    <td>作用范围:</td><td class="statRowColW">400</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >绳索数量:</td><td class="statRowColW">2</td>
+                                    <td>每秒伤害:</td><td class="statRowColW">80 / 60 / 120 / 100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>总伤害:</td><td class="statRowColW">80 / 120 / 240 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>绳索数量:</td><td class="statRowColW">2</td>
                                 </tr>
                             </table>
+                            <p>炘之严训，炽链相伴。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>无影拳</strong></p>
                             <p>灰烬之灵以燎原之火的速度横冲直撞，攻击目标区域内所有敌人，随后返回所在位置。对英雄造成额外伤害，对小兵造成的伤害较少。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30/22/14/6</td>
+                                    <td>冷却时间:</td><td class="statRowColW">30/22/14/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">250 / 350 / 450 / 550</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >对英雄的额外伤害:</td><td class="statRowColW">30 / 60 / 90 / 120</td>
+                                    <td>作用范围:</td><td class="statRowColW">250 / 350 / 450 / 550</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击间隔:</td><td class="statRowColW">0.2</td>
+                                    <td>对英雄的额外伤害:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >对小兵伤害降低:</td><td class="statRowColW">50%</td>
+                                    <td>攻击间隔:</td><td class="statRowColW">0.2</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>对小兵伤害降低:</td><td class="statRowColW">50%</td>
                                 </tr>
                             </table>
+                            <p>顷刻之间，鞭策众敌。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>烈火罩</strong></p>
                             <p>灰烬之灵用火焰之环将自己包裹起来，接下来的魔法伤害将被全部吸收。烈火罩对灰烬之灵周围的敌人造成持续伤害。吸收的伤害超过上限后将失去伤害效果。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80/90/100/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">35</td>
+                                    <td>冷却时间:</td><td class="statRowColW">35</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">8 / 12 / 16 / 20</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">400</td>
+                                    <td>持续时间:</td><td class="statRowColW">8 / 12 / 16 / 20</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >魔法伤害吸收:</td><td class="statRowColW">50 / 200 / 350 / 500</td>
+                                    <td>作用范围:</td><td class="statRowColW">400</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >每秒造成伤害:</td><td class="statRowColW">30 / 40 / 50 / 60</td>
+                                    <td>魔法伤害吸收:</td><td class="statRowColW">50 / 200 / 350 / 500</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>每秒造成伤害:</td><td class="statRowColW">30 / 40 / 50 / 60</td>
                                 </tr>
                             </table>
+                            <p>近身之敌，自讨苦吃。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>激活残焰</strong></p>
                             <p>选择残焰，灰烬之灵将向其冲去。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                             </table>
+                            <p>燎原之火，瞬息将至！</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
                             <p><strong>残焰</strong></p>
                             <p>灰烬之灵每隔35秒创造出一个残焰，最多拥有3个。释放残焰时，目标地点将产生一个残焰像（速度为灰烬之灵移动速度的2.5倍）。灰烬之灵可以使用“激活残焰”技能，向其中一个残焰像冲去。冲刺过程中依次引爆其他残焰像，造成范围伤害，最后到达指定的残焰像。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >残焰上限:</td><td class="statRowColW">3</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >残焰恢复时间:</td><td class="statRowColW">35</td>
+                                    <td>残焰上限:</td><td class="statRowColW">3</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">100 / 150 / 200</td>
+                                    <td>残焰恢复时间:</td><td class="statRowColW">35</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">450</td>
+                                    <td>伤害:</td><td class="statRowColW">100 / 150 / 200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >残焰持续时间:</td><td class="statRowColW">45</td>
+                                    <td>作用范围:</td><td class="statRowColW">450</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>残焰持续时间:</td><td class="statRowColW">45</td>
                                 </tr>
                             </table>
+                            <p>身怀灵力，重焕教义。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -319,7 +342,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在燃烧要塞中有一口玉石大釜，里面装满了灰烬，这是当年的战争诗人，炘的火葬之地。炘毕生都在卫火盟教导年轻的弟子。后来燃烧之神被炘的师德所打动，下凡来到要塞中，重新点燃了灰烬。余烬之中，炘的样子渐渐成型，四周环绕着火焰。他的面容一如既往的沉静，为了让知识之火燎原，为寻求指引的人提供方向，他已准备就绪。	</p>
+                    	<p>悲叹山脉中无人问津的角落里，有一座荒废已久的光火堡。堡内演武堂已经空无一人，校场里满是落叶和灰尘。门窗禁闭的光火殿里放着一口玉石大釜，装满了灰烬，这是当年战争诗人——炘的火葬之地。炘培养了整整三代卫火盟的弟子，从修身养性的真经，到强身健体的武艺，炘悉心教导在堡外闯荡所需的一切本领。然而，作为众多弟子的师傅，他也不得不对付弟子在外惹来的敌人。在炘的暮年，他不敌对手，惨遭兵解。堡内的弟子在此后也奔走各方。一晃之间，数十年乃至数百年转瞬而过，弟子们不断地开枝散叶，而他的教义在口口相传之下慢慢地消逝。后来燃烧天神，一位好学的火神，被他传承的师德所打动，下凡来到了光火堡，重新点燃了灰烬。闪耀的余烬之中，炘的脸庞慢慢浮现，火焰环绕之下他显得格外沉静。为了让知识之火得以燎原，为了让寻求指引的世人接受教导，他已准备就绪。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

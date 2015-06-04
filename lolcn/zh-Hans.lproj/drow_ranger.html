@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>DROW RANGER</title>
+        <title>卓尔游侠</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,8 +127,8 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 1700</td>
+                                <td >视野范围</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -156,86 +156,117 @@
                                 <img  src="../img/drow_ranger_frost_arrows_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/drow_ranger_silence_hp2.png" />               
+                                <img  src="../img/drow_ranger_wave_of_silence_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/drow_ranger_trueshot_hp2.png" />                          
+                                <img  src="../img/drow_ranger_trueshot_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/drow_ranger_marksmanship_hp2.png" >
+                                <img  src="../img/drow_ranger_marksmanship_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>霜冻之箭</strong></p>
-                            <p>在武器上附加霜冻效果，降低被攻击单位的移动速度，持续1.5秒(英雄) 7秒（小兵）。</p>
+                            <p>卓尔游侠在箭矢中附上冰冻效果，降低敌人的移动速度。对英雄持续1.5秒，对普通单位持续7秒。 霜冻之箭是攻击特效，不与其它攻击特效叠加。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">12 / 12 / 12 / 12</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">12/12/12/12</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">自动施法, 单位目标</td>
+                                    <td>冷却时间:</td><td class="statRowColW">0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>技能:</td><td class="statRowColW">自动施放, 单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度:</td><td class="statRowColW">11% / 24% / 37% / 60%</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击力:</td><td class="statRowColW">0 / 0 / 0 / 0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移速减缓:</td><td class="statRowColW">15% / 30% / 45% / 60%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>对英雄持续时间:</td><td class="statRowColW">1.5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>对小兵持续时间:</td><td class="statRowColW">7</td>
                                 </tr>
                             </table>
+                            <p>覆盖着寒冰的箭矢破空而出，将敌人冻结致死。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
-                            <p><strong>沉默魔法</strong></p>
-                            <p>阻止目标区域内的敌方单位使用技能。</p>
+                            <p><strong>狂风</strong></p>
+                            <p>释放一阵狂风，沉默敌方单位并将其击退。击退距离与敌人和卓尔游侠的距离成反比。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 90 / 90 / 90</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">13.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">13</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>施法距离:</td><td class="statRowColW">900</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>作用宽度:</td><td class="statRowColW">250</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>沉默持续时间:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>击退效果持续时间:</td><td class="statRowColW">0.6 / 0.7 / 0.8 / 0.9</td>
                                 </tr>
                             </table>
+                            <p>崔西丝特别中意肉搏中蕴含的平静，因此她将她卓尔人的天赋用于终结敌人的魔法咒语。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>强击光环</strong></p>
-                            <p>全地图光环.为你和所有友军的远程单位提供攻击力加成,数值为你敏捷的一部分。现在只影响自己周围900码内的非英雄单位。</p>
+                            <p><strong>精准光环</strong></p>
+                            <p>提高全地图友方远程英雄的物理攻击力，提升数值是卓尔游侠敏捷值的一定百分比。施放后对全屏的非英雄单位在30秒内有效。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 光环, 开关型</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友军</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >远程攻击力加成:</td><td class="statRowColW">16/20/24/28%</td>
+                                    <td>影响:</td><td class="statRowColW">友方</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>远程攻击力增加:</td><td class="statRowColW">18% / 24% / 30% / 36%</td>
                                 </tr>
                             </table>
+                            <p>崔希丝在卓尔族森林中独处的时光让她有时间教导其他弓箭手如何提高弓技。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>射手天赋</strong></p>
-                            <p>被动提供敏捷加成.如果375码没有敌方英雄,你能更加集中注意力使敏捷加成加倍。</p>
+                            <p>卓尔游侠的战斗经验提高了她的精确度和战斗效率，被动增加敏捷。如果400范围内有敌方英雄，敏捷加成消失。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >敏捷加成:</td><td class="statRowColW">20 / 30 / 40</td>
+                                    <td>敏捷提升:</td><td class="statRowColW">40 / 60 / 80</td>
                                 </tr>
                             </table>
+                            <p>卓尔游侠是弓箭手登峰造极的典型。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -243,7 +274,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>卓尔游侠名叫崔希丝，这个名字很适合矮小、有点像侏儒、令人生厌的卓尔人。但崔希丝并不是卓尔人。她的双亲在坐大篷车旅行时受到土匪的袭击，滥杀无辜的土匪激怒了附近爱好和平的卓尔人。战斗结束后，卓尔人发现了一个藏在马车残骸中的小女孩，他们一致同意不能让这个失去父母的孩子被抛弃。还是孩童时，崔希丝就展现出了她对那些卓尔人引以为傲的技术的天赋：隐秘、沉默、敏锐。如果不看身体，在精神上她就像一个被拐走后又回到自己真正家中的卓尔人孩童。但随着她的成长，她的个头比她的家人高了不少，她因此认为自己是个丑陋的卓尔人。即使她皮肤光滑且长的匀称，完全没有卓尔人的肉疣和粗糙的髯须。与收养她的部族疏远后，她独自居住在森林中。许多在森林中寻路的旅行者都说他们见过一个美丽得难以置信的游侠在树林深处凝视他们，而当他们试图接近时，她又消失的无影无踪。轻盈、隐秘的冷美人，她像无声的迷雾般移动。你听到的森林低语，其实是她命中敌人心脏的霜冻箭矢的破空之声。</p>
+                    	<p>卓尔游侠名叫崔希丝，这个名字很适合矮小、有点像侏儒、令人生厌的卓尔人。但崔希丝并不是卓尔人。她的双亲在坐大篷车旅行时受到土匪的袭击，滥杀无辜的土匪激怒了附近爱好和平的卓尔人。战斗结束后，卓尔人发现了一个藏在马车残骸中的小女孩，他们一致同意不能让这个失去父母的孩子被抛弃。还是孩童时，崔希丝就展现出了她对那些卓尔人引以为傲的技术的天赋：隐秘、沉默、敏锐。如果不看身体，在精神上她就像一个被拐走后又回到自己真正家中的卓尔人孩童。但随着她的成长，她的个头比她的家人高了不少，她因此认为自己是个丑陋的卓尔人。即使她皮肤光滑且长的匀称，完全没有卓尔人的肉疣和粗糙的髯须。与收养她的部族疏远后，她独自居住在森林中。许多在森林中寻路的旅行者都说他们见过一个美丽得难以置信的游侠在树林深处凝视他们，而当他们试图接近时，她又消失的无影无踪。轻盈、隐秘的冷美人，她像无声的迷雾般移动。你听到的森林低语，其实是她命中敌人心脏的霜冻箭矢的破空之声。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>SPIRIT BREAKER</title>
+        <title>裂魂人</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,131 +156,153 @@
                                 <img  src="../img/spirit_breaker_charge_of_darkness_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/spirit_breaker_empowering_haste_hp2.png" />               
+                                <img  src="../img/spirit_breaker_empowering_haste_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/spirit_breaker_greater_bash_hp2.png" />                          
+                                <img  src="../img/spirit_breaker_greater_bash_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/spirit_breaker_nether_strike_hp2.png" >
+                                <img  src="../img/spirit_breaker_nether_strike_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>暗影冲刺</strong></p>
-                            <p>裂魂人紧盯着一个目标向他冲去。在冲刺的过程中，所有被穿越的单位会受到巨力重击，目标单位会眩晕。如果目标单位死了，会转换目标至最近的地方单位。</p>
+                            <p>裂魂人盯紧一个敌方单位，开始无视一切物体的冲刺。途中经过的所有敌方单位和目标单位都将受到巨力重击。如果目标单位在到达前死亡了，裂魂人将他的目标改为原路径上最近的一个敌方单位。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">35.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >冲刺速度:</td><td class="statRowColW">600 / 650 / 700 / 750</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >眩晕时间:</td><td class="statRowColW">1.2 / 1.6 / 2 / 2.4</td>
+                                    <td>冲刺速度:</td><td class="statRowColW">600 / 650 / 700 / 750</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>眩晕时间:</td><td class="statRowColW">1.2 / 1.6 / 2 / 2.4</td>
                                 </tr>
                             </table>
+                            <p>巴拉森带着一股狂蛮之力从黑暗中冲出。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>神行太保</strong></p>
-                            <p>提升裂魂人和附近范围内的友方单位的移动速度。</p>
+                            <p>裂魂人的高速移动给他带来力量，提高附近友军单位的移动速度。技能可以施放，施放后效果提升50%，持续6秒，然而技能在冷却过程中被动效果将会减半。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动, 光环</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">12</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友军</td>
+                                    <td>技能:</td><td class="statRowColW">无目标, 光环</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度加成:</td><td class="statRowColW">6% / 10% / 14% / 18%</td>
+                                    <td>影响:</td><td class="statRowColW">友方</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >光环范围:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
+                                    <td>移动速度提升:</td><td class="statRowColW">6% / 10% / 14% / 18%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>光环作用范围:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>施放后额外速度加成:</td><td class="statRowColW">3% / 5% / 7% / 9%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>施放后额外速度加成持续时间:</td><td class="statRowColW">6</td>
                                 </tr>
                             </table>
+                            <p>英雄们只要留心观察裂魂人在战场上的支配地位，就能提高他们的速度与力量。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>巨力重击</strong></p>
-                            <p>在攻击中有几率重击对手，将他推至后方并造成额外的伤害。重击后获得移动速度加成。移动速度的百分比作为伤害加成。</p>
+                            <p>攻击时有一定概率眩晕并击退敌方单位，打出重击后获得移动速度加成。重击的伤害值为移动速度的一定百分比。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1.5</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1.50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                    <td>技能:</td><td class="statRowColW">被动</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >重击几率:</td><td class="statRowColW">17% / 17% / 17% / 17%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度伤害加成:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                    <td>重击概率:</td><td class="statRowColW">17% / 17% / 17% / 17%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >眩晕时间:</td><td class="statRowColW">1 / 1.2 / 1.4 / 1.6</td>
+                                    <td>移动速度转化为伤害比例:</td><td class="statRowColW">22% / 28% / 34% / 40%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >击退持续时间:</td><td class="statRowColW">0.5 / 0.5 / 0.5 / 0.5</td>
+                                    <td>眩晕时间:</td><td class="statRowColW">1 / 1.2 / 1.4 / 1.6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度加成:</td><td class="statRowColW">15% / 15% / 15% / 15%</td>
+                                    <td>击退持续时间:</td><td class="statRowColW">0.5 / 0.5 / 0.5 / 0.5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度加成持续时间:</td><td class="statRowColW">3 / 3 / 3 / 3</td>
+                                    <td>移动速度提升:</td><td class="statRowColW">15% / 15% / 15% / 15%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>速度持续时间:</td><td class="statRowColW">3 / 3 / 3 / 3</td>
                                 </tr>
                             </table>
+                            <p>巴拉森幽灵般链球的标志性一击。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>幽冥一击</strong></p>
-                            <p>瞬间移动到目标的身旁，发动巨力重击。可神杖升级。</p>
+                            <p>裂魂人遁入幽冥领域，从不幸的目标身旁再次出现，发动当前等级的巨力重击并造成额外伤害。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 150 / 175</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125/150/175</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">75.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">80/70/60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >额外伤害:</td><td class="statRowColW">150 / 250 / 350</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >射程:</td><td class="statRowColW">400 / 550 / 700</td>
+                                    <td>额外伤害:</td><td class="statRowColW">150 / 250 / 350</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级射程:</td><td class="statRowColW">550 / 700 / 850</td>
+                                    <td>范围:</td><td class="statRowColW">700</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级重击范围:</td><td class="statRowColW">250 / 250 / 250</td>
+                                    <td>神杖升级施法距离:</td><td class="statRowColW">850</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">20 / 20 / 20</td>
+                                    <td>神杖升级巨力重击范围:</td><td class="statRowColW">250 / 250 / 250</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级冷却时间:</td><td class="statRowColW">20 / 20 / 20</td>
                                 </tr>
                             </table>
+                            <p>巴拉森暂时回到他原来所在的元素领域，然后带回来自两个世界的回击。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -288,7 +310,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>裂魂人巴拉森来自元素领域，他高傲、强大、凶猛且精通元素之力，来到物质世界参与那些会影响到元素世界的事件。为此他准备了一个能派上用处的形态，既存在于我们的物质世界，又存在于物质世界之外。他的物理形态来自于我们的物质世界，又像牛又像人，有蹄和手，这个外表象征着他的力量、速度与狡猾。他戴着的鼻环则暗示了他侍奉于一位藏在幕后的主人，而这个世界对他来说不过是元素世界的影子。</p>
+                    	<p>裂魂人巴拉森来自元素领域，他高傲、强大、凶猛且精通元素之力，来到物质世界参与那些会影响到元素世界的事件。为此他准备了一个能派上用处的形态，既存在于我们的物质世界，又存在于物质世界之外。他的物理形态来自于我们的物质世界，又像牛又像人，有蹄和手，这个外表象征着他的力量、速度与狡猾。他戴着的鼻环则暗示了他侍奉于一位藏在幕后的主人，而这个世界对他来说不过是元素世界的影子。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

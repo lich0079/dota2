@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -40,24 +40,24 @@
                     <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/keeper_of_the_light_hphover.png"/></a>
                 </div>
                 <div  class="floatleft">
-                    <div class="heroName" style="font-size:15px;">KEEPER OF THE LIGHT</div>
-                    <div class="atype">Ranged</div>
+                    <div class="heroName">KEEPER OF THE LIGHT</div>
+                     <div class="atype">Ranged</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Nuker</td>
-                            <td class="role" width="50%">Support</td>
-                        </tr>
-                        <tr >
-                            <td class="role">Lane Support</td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Nuker</td>
+                                <td class="role" width="50%">Support</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Lane Support</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -162,213 +162,248 @@
                                 <img  src="../img/keeper_of_the_light_chakra_magic_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/keeper_of_the_light_spirit_form_hp2.png" >
-                            </li>
-                            <li sel="5" class="abi">
                                 <img  src="../img/keeper_of_the_light_recall_hp2.png" />
                             </li>
-                            <li sel="6" class="abi">
+                            <li sel="5" class="abi">
                                 <img  src="../img/keeper_of_the_light_blinding_light_hp2.png" />
                             </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/keeper_of_the_light_spirit_form_hp2.png" />
+                            </li>
                             <li sel="7" class="abi">
-                                <img  src="../img/keeper_of_the_light_illuminate_end_hp2.png" >
+                                <img  src="../img/keeper_of_the_light_illuminate_end_hp2.png" />
                             </li>
                             <li sel="8" class="abi">
-                                <img  src="../img/keeper_of_the_light_spirit_form_illuminate_hp2.png" >
+                                <img  src="../img/keeper_of_the_light_spirit_form_illuminate_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Illuminate</strong></p>
-                            <p>Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage dealt.</p>
+                            <p>Channels light energy, building power the longer it's channeled. Once released, a wave is sent forth that deals damage and gives vision in its path. The longer it is channeled, the more damage is dealt. Upgradable by Aghanim's Scepter, allowing Illuminate to heal allies and harm enemies during daytime. The heal and damage amounts are the same.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150/160/170/180</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">150/160/170/180</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">10.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">CHANNELED, TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Channeled, Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">100 / 100 / 100 / 100</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">350</td>
+                                    <td>DAMAGE PER SECOND CHANNELED:</td><td class="statRowColW">100 / 100 / 100 / 100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RANGE:</td><td class="statRowColW">1600</td>
+                                    <td>MAX CHANNEL TIME:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MAX CHANNEL TIME:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                    <td>WIDTH:</td><td class="statRowColW">350 / 350 / 350 / 350</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>RANGE:</td><td class="statRowColW">1550</td>
                                 </tr>
                             </table>
+                            <p>Ezalor's hidden light reveals itself in marvelous fashion.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Mana Leak</strong></p>
                             <p>Weakens an enemy's magical essence, causing them to lose mana as they move. If the enemy loses all of its mana, it will be stunned.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">75/75/75/75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">16.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">16/14/12/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >LEAK DURATION:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MANA LEAK PERCENT:</td><td class="statRowColW">3.5% / 4% / 4.5% / 5%</td>
+                                    <td>LEAK DURATION:</td><td class="statRowColW">5 / 6 / 7 / 8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >STUN DURATION:</td><td class="statRowColW">1.3 / 1.6 / 1.9 / 2.2</td>
+                                    <td>MANA LEAK PERCENT:</td><td class="statRowColW">5%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>STUN DURATION:</td><td class="statRowColW">1.5 / 2 / 2.5 / 3</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>CAST RANGE:</td><td class="statRowColW">550 / 700 / 850 / 1000</td>
                                 </tr>
                             </table>
+                            <p>Ezalor disrupts Primordial harmony, draining magical energy from those with poor constitution.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Chakra Magic</strong></p>
-                            <p>Restores mana to the target unit.</p>
+                            <p>Restores mana to the target unit, and reduces the cooldown of the next spell they cast.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">25 / 45 / 65 / 85</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">25/35/45/55</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">19.0 / 18.0 / 17.0 / 16.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">19/18/17/16</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ALLIED HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Allied Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MANA RESTORE:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>MANA RESTORE:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>ALLY COOLDOWN REDUCTION:</td><td class="statRowColW">1 / 2 / 3 / 4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>COOLDOWN REDUCTION DURATION:</td><td class="statRowColW">12</td>
                                 </tr>
                             </table>
+                            <p>In the same vein, Ezalor bestows his harmony among others.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>Spirit Form</strong></p>
-                            <p>Ezalor turns his body luminescent temporarily, gaining various abilities. Illuminate is now channeled by a separate spirit, and gains the Blinding Light and Recall abilities.</p>
-                            <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
-                                <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
-                                </tr>
-                                <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">80.0 / 70.0 / 60.0</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
-                                </tr>
-                                <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">40 / 40 / 40</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div id="abi5" class="abicontent cont hided">
                             <p><strong>Recall</strong></p>
                             <p>After a short delay, teleports the targeted friendly hero to your location. If the targeted friendly hero takes player based damage during this time, the ability is interrupted.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">15.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">15</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET, CHANNELED, TARGET UNIT, TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target, Channeled, Unit Target, Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ALLIES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Allies</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >TELEPORT DELAY:</td><td class="statRowColW">5 / 4 / 3</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>TELEPORT DELAY:</td><td class="statRowColW">5 / 4 / 3</td>
                                 </tr>
                             </table>
+                            <p>Walk towards the light.</p>
                         </div>
-                        <div id="abi6" class="abicontent cont hided">
+                        <div id="abi5" class="abicontent cont hided">
                             <p><strong>Blinding Light</strong></p>
                             <p>A blinding light flashes over the targeted area, knocking back and blinding the units in the area, causing them to miss attacks.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50 / 50 / 50</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">50/50/50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">20.0 / 16.0 / 12.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">20/16/12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">675 / 675 / 675</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">3 / 4 / 5</td>
+                                    <td>RADIUS:</td><td class="statRowColW">675 / 675 / 675</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MISS CHANCE:</td><td class="statRowColW">80% / 80% / 80%</td>
+                                    <td>DURATION:</td><td class="statRowColW">4 / 5 / 6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >KNOCKBACK DISTANCE:</td><td class="statRowColW">250 / 250 / 250</td>
+                                    <td>MISS CHANCE:</td><td class="statRowColW">80% / 80% / 80%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>KNOCKBACK DISTANCE:</td><td class="statRowColW">400</td>
                                 </tr>
                             </table>
+                            <p>The Primordial light turns the tides of battle in favor of Ezalor and his allies.</p>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>Spirit Form</strong></p>
+                            <p>Ezalor temporarily turns his body luminescent, gaining various abilities. Illuminate is now channeled by a separate spirit, and gains the Blinding Light and Recall abilities. Upgradable by Aghanim's Scepter.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100/100/100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>Cooldown:</td><td class="statRowColW">80/70/60</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>DURATION:</td><td class="statRowColW">40 / 40 / 40</td>
+                                </tr>
+                            </table>
+                            <p>In a flash of light, Ezalor reveals his true nature.</p>
                         </div>
                         <div id="abi7" class="abicontent cont hided">
                             <p><strong>Release Illuminate</strong></p>
                             <p>Release the channel early.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">No Target</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi8" class="abicontent cont hided">
                             <p><strong>Illuminate</strong></p>
-                            <p>Channels a ball of light energy, building power the longer it's channeled. Once released, the ball deals damage and gives vision in a line. The longer it is channeled, the more damage dealt.</p>
+                            <p>Channels light energy, building power the longer it's channeled. Once released, a wave is sent forth that deals damage and gives vision in its path. The longer it is channeled, the more damage is dealt. Upgradable by Aghanim's Scepter, allowing Illuminate to heal allies and harm enemies during daytime. The heal and damage amounts are the same.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150 / 150 / 150 / 150</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">150/160/170/180</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">10.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">100 / 100 / 100 / 100</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">400 / 400 / 400 / 400</td>
+                                    <td>DAMAGE PER SECOND CHANNELED:</td><td class="statRowColW">100 / 100 / 100 / 100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RANGE:</td><td class="statRowColW">1600</td>
+                                    <td>MAX CHANNEL TIME:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MAX CHANNEL TIME:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                    <td>WIDTH:</td><td class="statRowColW">350 / 350 / 350 / 350</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>RANGE:</td><td class="statRowColW">1550</td>
                                 </tr>
                             </table>
+                            <p>Ezalor's hidden light reveals itself in marvelous fashion.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -376,7 +411,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>Upon a pale horse he rides, this spark of endless suns, this Keeper of the Light. Ezalor long ago escaped the Fundamental plane, separating from the other ancient forces to which he was bound within the great Primordial harmony. He is a power grown sentient in the dawn of the universe, and now rides forth in all planes at once, one step ahead of pursuing chaos, bearing his gift with him at the end of a radiant staff. His majestic truth lies hidden beneath the outward appearance of a slightly doddering old man who barely stays in the saddle. However, when faced with the challenge of chaos, or the forces of darkness, his primordial light bursts forth, and his full power is revealed, transforming him once again into a force to be reckoned with.</p>
+                    	<p>Upon a pale horse he rides, this spark of endless suns, this Keeper of the Light. Ezalor long ago escaped the Fundamental plane, separating from the other ancient forces to which he was bound within the great Primordial harmony. He is a power grown sentient in the dawn of the universe, and now rides forth in all planes at once, one step ahead of pursuing chaos, bearing his gift with him at the end of a radiant staff. His majestic truth lies hidden beneath the outward appearance of a slightly doddering old man who barely stays in the saddle. However, when faced with the challenge of chaos, or the forces of darkness, his primordial light bursts forth, and his full power is revealed, transforming him once again into a force to be reckoned with. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

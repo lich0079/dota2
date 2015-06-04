@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>PUDGE</title>
+        <title>帕吉</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,110 +156,123 @@
                                 <img  src="../img/pudge_meat_hook_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/pudge_rot_hp2.png" />               
+                                <img  src="../img/pudge_rot_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/pudge_flesh_heap_hp2.png" />                          
+                                <img  src="../img/pudge_flesh_heap_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/pudge_dismember_hp2.png" >
+                                <img  src="../img/pudge_dismember_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>肉钩</strong></p>
-                            <p>向一个地点投掷血腥的肉钩，肉钩将把所接触到的第一个单位钩回屠夫身边。如果这是一个敌方单位，会造成伤害。</p>
+                            <p>向一个单位或方向射出血腥的肉钩。勾住第一个遭遇的单位，并将它拖到帕吉身边，如果是敌人的话将造成伤害。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110 / 120 / 130 / 140</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110/120/130/140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">14.0 / 13.0 / 12.0 / 11.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">14/13/12/11</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                    <td>伤害类型:</td><td class="statRowColW">纯粹</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">90 / 180 / 270 / 360</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >距离:</td><td class="statRowColW">700 / 900 / 1100 / 1300</td>
+                                    <td>攻击力:</td><td class="statRowColW">90 / 180 / 270 / 360</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>距离:</td><td class="statRowColW">1000 / 1100 / 1200 / 1300</td>
                                 </tr>
                             </table>
+                            <p>屠夫的肉钩是噩梦的象征，锋利的倒钩暗示了他嗜血的本性。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>腐烂</strong></p>
-                            <p>屠夫释放出他体内的瘟疫，同时对周围的敌方单位和屠夫自身造成伤害。</p>
+                            <p>能够造成持续伤害并减缓敌人移动速度的毒性云雾——同时对敌军和自身造成伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 开关型</td>
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 切换</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">35 / 60 / 85 / 110</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">250</td>
+                                    <td>攻击力:</td><td class="statRowColW">35 / 60 / 85 / 110</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速:</td><td class="statRowColW">20%</td>
+                                    <td>作用范围:</td><td class="statRowColW">250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>移动速度减缓:</td><td class="statRowColW">20% / 22% / 24% / 26%</td>
                                 </tr>
                             </table>
+                            <p>从屠夫腐烂肿胀的肉体中放出的有毒气体，气味恶心的令人窒息。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>堆积腐肉</strong></p>
-                            <p>屠夫由无数腐烂的尸体堆积而成，这个技能让他能够积聚更多的腐肉，并且拥有额外的魔法抗性，范围内敌方英雄死亡，屠夫能永久增加力量。</p>
+                            <p><strong>腐肉堆积</strong></p>
+                            <p>给予帕吉对魔法伤害的抗性，并且帕吉每次杀死一个敌方英雄，或者附近有敌方英雄死亡时，帕吉将获得额外的力量。腐肉堆积在学习之前就可以积累力量，但是学习之后才能获得这部分力量。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >魔法抗性:</td><td class="statRowColW">4% / 8% / 12% / 16%</td>
+                                    <td>魔法抗性:</td><td class="statRowColW">6% / 8% / 10% / 12%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >力量加成:</td><td class="statRowColW">1/1.5/2/2.5</td>
+                                    <td>力量增加:</td><td class="statRowColW">1 / 1.5 / 2 / 2.5</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">450</td>
+                                    <td>距离:</td><td class="statRowColW">450</td>
                                 </tr>
                             </table>
+                            <p>屠夫赋予“肉盾”这个词新的含义。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>肢解</strong></p>
-                            <p>持续性 - 咬住一个目标，造成伤害。目标不能移动、攻击、使用技能和物品。对英雄持续3秒，小兵6秒。可神杖升级。</p>
+                            <p>持续施法 - 帕吉撕咬一个敌方单位，使其失去行动能力并受到持续伤害。对英雄持续3秒，对普通单位持续6秒。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 130 / 170</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/130/170</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">持续性, 单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">持续施法, 单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害/秒:</td><td class="statRowColW">75 / 125 / 175</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级力量乘数:</td><td class="statRowColW">0.75</td>
+                                    <td>每秒伤害:</td><td class="statRowColW">75 / 125 / 175</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级力量伤害系数:</td><td class="statRowColW">1</td>
                                 </tr>
                             </table>
+                            <p>“等我干掉这些蠢货以后，就可以把它们做成肉饼了！”</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -267,7 +280,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在与囚尸岭南部遥遥相望的戮尽之地，一个肥胖的身影在夜晚不知疲倦地工作着——肢解、开膛、堆积死人的四肢和内脏，一切都是为了在黎明前把战场打扫干净。在这个被诅咒的区域，尸体不会腐烂或者分解，虽然不会复活，但无论你把坟墓挖的多深，它们都会返回地面。屠夫帕吉的身边总是围绕着一群食腐鸟类，他为它们切好大小能够塞进鸟嘴的肉块，时间久了，他的技术也越来越成熟。嗖嗖嗖...嗖嗖嗖...唰...肉块就从骨头上掉下来，肌腱和韧带像湿纸一样被剥离。帕吉的兴趣在一开始只是屠宰，但时间一长，他对食尸也产生了兴趣。刚开始时只是这里吃一小块肉，那里小嗫一口血...但很快他就开始了自己的饕餮盛举，即使是躯干上最硬的部位他也津津有味的品尝。就算是那些在面对掠夺者时都毫无惧色的人们，看到屠夫，也是异常恐惧。</p>
+                    	<p>在与囚尸岭南部遥遥相望的戮尽之地，一个肥胖的身影在夜晚不知疲倦地工作着——肢解、开膛、堆积死人的四肢和内脏，一切都是为了在黎明前把战场打扫干净。在这个被诅咒的区域，尸体不会腐烂或者分解，虽然不会复活，但无论你把坟墓挖的多深，它们都会返回地面。屠夫帕吉的身边总是围绕着一群食腐鸟类，他为它们切好大小能够塞进鸟嘴的肉块，时间久了，他的技术也越来越成熟。嗖嗖嗖...嗖嗖嗖...唰...肉块就从骨头上掉下来，肌腱和韧带像湿纸一样被剥离。帕吉的兴趣在一开始只是屠宰，但时间一长，他对食尸也产生了兴趣。刚开始时只是这里吃一小块肉，那里小嗫一口血...但很快他就开始了自己的饕餮盛举，即使是躯干上最硬的部位他也津津有味的品尝。就算是那些在面对掠夺者时都毫无惧色的人们，看到屠夫，也是异常恐惧。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

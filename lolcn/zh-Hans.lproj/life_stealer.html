@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>LIFESTEALER</title>
+        <title>噬魂鬼</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,104 +156,197 @@
                                 <img  src="../img/life_stealer_rage_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/life_stealer_feast_hp2.png" />               
+                                <img  src="../img/life_stealer_feast_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/life_stealer_open_wounds_hp2.png" />                          
+                                <img  src="../img/life_stealer_open_wounds_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/life_stealer_infest_hp2.png" >
+                                <img  src="../img/life_stealer_assimilate_hp2.png" />
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/life_stealer_assimilate_eject_hp2.png" />
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/life_stealer_infest_hp2.png" />
+                            </li>
+                            <li sel="7" class="abi">
+                                <img  src="../img/life_stealer_control_hp2.png" />
+                            </li>
+                            <li sel="8" class="abi">
+                                <img  src="../img/life_stealer_consume_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>狂暴</strong></p>
-                            <p>噬魂鬼变得无可遏制地狂暴，免疫魔法并且得到攻击速度的提升。</p>
+                            <p>进入狂暴状态，对技能免疫，获得100%魔法抗性并提升攻击速度。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75/75/75/75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">19</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻击速度加成:</td><td class="statRowColW">30 / 45 / 60 / 80</td>
+                                    <td>攻击速度提升:</td><td class="statRowColW">30 / 45 / 60 / 80</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">3 / 4/ 5 / 6</td>
+                                    <td>持续时间:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>奈克斯的疯狂和残暴使得他在战斗中异常凶狠无情。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>盛宴</strong></p>
-                            <p>造成相当于当前生命值一定百分比的伤害，同时自身回复相应的生命值。</p>
+                            <p>噬魂鬼每次攻击时还会根据目标当前生命值造成额外的伤害，同时自身回复等量的生命。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >生命值百分比:</td><td class="statRowColW">4% / 5% / 6% / 7%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>生命吸取:</td><td class="statRowColW">4% / 5% / 6% / 7%</td>
                                 </tr>
                             </table>
+                            <p>从德瓦克的监狱中逃离后，奈克斯就靠着吞噬那些挡路的倒霉蛋的血肉维持生命。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>撕裂伤口</strong></p>
-                            <p>噬魂鬼撕裂目标，降低其移动速度。友方单位对该目标进行攻击或施法，能使他们回复所造成伤害一定百分比的生命。</p>
+                            <p>噬魂鬼撕裂一个敌方单位，减缓受害者的移动速度，并使所有友军在攻击该单位时根据造成的伤害回复一定比例的生命。所有伤害都有回复效果，包括技能的伤害。受害者在持续时间内逐渐恢复移动速度。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110 / 110 / 110 / 110</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110/110/110/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">24 / 20 / 16 / 12</td>
+                                    <td>冷却时间:</td><td class="statRowColW">24/20/16/12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生命偷取:</td><td class="statRowColW">15% / 20% / 25% / 30%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大减速:</td><td class="statRowColW">70%</td>
+                                    <td>生命吸取:</td><td class="statRowColW">50%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">8</td>
+                                    <td>最大减速:</td><td class="statRowColW">70%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>施法距离:</td><td class="statRowColW">200 / 300 / 400 / 500</td>
                                 </tr>
                             </table>
+                            <p>新鲜的伤口和鲜血的芳香通常能引来那些嗜血的清道夫。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>感染</strong></p>
-                            <p>噬魂鬼将魔爪伸向那些不幸的目标的躯体，悄无声息地潜入并蛰伏在他们体内，直到他认为现形的时机已经成熟。当他现形时，会对周围范围内的单位造成伤害。噬魂鬼在感染一个单位期间能够从周围死亡的单位身上获得经验。 如果他感染的对象是一个敌方单位，他现形时会恢复该单位的当前生命值。无法作用于敌方英雄。</p>
+                            <p><strong>吸收</strong></p>
+                            <p>噬魂鬼吞下友方目标，使其藏于自己的体内。被吸收的单位将享受噬魂鬼的回复效果。被吸收的英雄离开噬魂鬼时会突然现身，对周围敌人造成伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">100</td>
+                                    <td>冷却时间:</td><td class="statRowColW">50</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>影响:</td><td class="statRowColW">友方英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害范围</td><td class="statRowColW">700 / 700 / 700</td>
+                                    <td>爆发伤害:</td><td class="statRowColW">300</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">150 / 275 / 400</td>
+                                    <td>爆发范围:</td><td class="statRowColW">700 / 700 / 700</td>
                                 </tr>
                             </table>
+                            <p>噬魂鬼怎能抗拒品尝队友的机会？</p>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>喷吐</strong></p>
+                            <p>吐出吸收的英雄，对周围敌人造成伤害。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>爆发伤害:</td><td class="statRowColW">300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>爆发范围:</td><td class="statRowColW">700 / 700 / 700</td>
+                                </tr>
+                            </table>
+                            <p></p>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>感染</strong></p>
+                            <p>噬魂鬼进入目标单位的身体，无法被察觉。接着可以从宿主体内现身，对周围所有敌方单位造成伤害。如果被感染单位是小兵或中立生物，噬魂鬼可以控制其进行移动和攻击，而现身时会将其吞噬，获得目标当前生命值同等的生命回复。无法对敌方英雄生效。 可用神杖升级。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/50/50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>冷却时间:</td><td class="statRowColW">100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>伤害范围:</td><td class="statRowColW">700 / 700 / 700</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>伤害:</td><td class="statRowColW">150 / 275 / 400</td>
+                                </tr>
+                            </table>
+                            <p>奈克斯通过寄生吞噬宿主的生命之血，回复他的不洁之力。</p>
+                        </div>
+                        <div id="abi7" class="abicontent cont hided">
+                            <p><strong>控制</strong></p>
+                            <p>噬魂鬼掌控了宿主身体里的神经系统，使他可以在体内下达移动和攻击的指令。受控制的单位与噬魂鬼的移动速度相同。不可对英雄使用。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
+                                </tr>
+                            </table>
+                            <p></p>
+                        </div>
+                        <div id="abi8" class="abicontent cont hided">
+                            <p><strong>吞噬</strong></p>
+                            <p>噬魂鬼从宿主身体内部吃掉宿主，同时突然现身。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
+                                </tr>
+                            </table>
+                            <p></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -261,7 +354,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在德瓦克地下城中，关押着一个一心想要复仇的巫师，他正在密谋着如何逃跑。和他被关在同一间牢房的，是一个口齿不清的生物，一个名叫奈克斯的贼，它被邪恶议会施加了长命百岁的诅咒，这样才有足够的时间来尽可能多的惩罚它的偷窃和欺骗的行径。年复一年，它的枷锁已然被侵蚀得不成样子，它的思维也不再清醒；奈克斯已经完全忘记了以前的事情，也不再想着逃跑。巫师见状，觉得自己为逃跑大计找到了一个完美的牺牲品，于是对奈克斯施放了感染之咒，将自己的生命之力灌注到奈克斯的躯壳里，然后指使奈克斯制造暴乱，牺牲它的躯体来破坏囚牢，巫师随后就能返回自己的身体，然后神不知鬼不觉的逃跑。然而他的如意算盘并未实现，在进入奈克斯躯体以后，巫师发现他的神志被一个疯狂的旋涡所捕获，那个旋涡的力量强横无匹，抹掉了他所有的意识。由于其意识被一个鲜活生命的闯入刺激，奈克斯突然之间从它那疯狂的梦魇中清醒了过来，并且按着脑海中那个虚无的声音的唯一的指令行动：逃跑。也就是在那个时候，噬魂鬼正式诞生。这个生命体将自己的心智灌注到地下城里面的卫兵身体里，强迫他们打开牢笼，杀死其他卫兵，为噬魂鬼打开了一条畅通无阻的自由大道，而他们的生命也在被吞噬。现在，噬魂鬼仍然带着那串破碎的镣铐，似乎是在告诉世界没有人能够禁锢住他，但同时它心里还认为自己是个囚犯。两个意识共存于一个身体里——一个恶毒狡猾，阳奉阴违的生命。</p>
+                    	<p>在德瓦克地下城中，关押着一个一心想要复仇的巫师，他正在密谋着如何逃跑。和他被关在同一间牢房的，是一个口齿不清的生物，一个名叫奈克斯的贼，它被邪恶议会施加了长命百岁的诅咒，这样才有足够的时间来尽可能多的惩罚它的偷窃和欺骗的行径。年复一年，它的枷锁已然被侵蚀得不成样子，它的思维也不再清醒；奈克斯已经完全忘记了以前的事情，也不再想着逃跑。巫师见状，觉得自己为逃跑大计找到了一个完美的牺牲品，于是对奈克斯施放了感染之咒，将自己的生命之力灌注到奈克斯的躯壳里，然后指使奈克斯制造暴乱，牺牲它的躯体来破坏囚牢，巫师随后就能返回自己的身体，然后神不知鬼不觉的逃跑。然而他的如意算盘并未实现，在进入奈克斯躯体以后，巫师发现他的神志被一个疯狂的旋涡所捕获，那个旋涡的力量强横无匹，抹掉了他所有的意识。由于其意识被一个鲜活生命的闯入刺激，奈克斯突然之间从它那疯狂的梦魇中清醒了过来，并且按着脑海中那个虚无的声音的唯一的指令行动：逃跑。也就是在那个时候，噬魂鬼正式诞生。这个生命体将自己的心智灌注到地下城里面的卫兵身体里，强迫他们打开牢笼，杀死其他卫兵，为噬魂鬼打开了一条畅通无阻的自由大道，而他们的生命也在被吞噬。现在，噬魂鬼仍然带着那串破碎的镣铐，似乎是在告诉世界没有人能够禁锢住他，但同时它心里还认为自己是个囚犯。两个意识共存于一个身体里——一个恶毒狡猾，阳奉阴违的生命。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

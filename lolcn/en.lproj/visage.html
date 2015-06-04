@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,23 +41,23 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">VISAGE</div>
-                    <div class="atype">Ranged</div>
+                     <div class="atype">Ranged</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Nuker</td>
-                            <td class="role" width="50%">Durable</td>
-                        </tr>
-                        <tr >
-                            <td class="role">Disabler</td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Nuker</td>
+                                <td class="role" width="50%">Durable</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Disabler</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -81,8 +81,8 @@
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 34</span></li>
-                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>295</span></li>
-                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>0.54</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>285</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>-0.46</span></li>
                             </ul>
                         </div>
                     </div>
@@ -121,9 +121,9 @@
                             <tr class="statRow">
                                 <td ></td>
                                 <td >ARMOR</td>
-                                <td class="statRowColW">1</td>
-                                <td class="statRowColW">3</td>
-                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">-0</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">7</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -162,8 +162,8 @@
                                 <img  src="../img/visage_gravekeepers_cloak_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/visage_summon_familiars_hp2.png" >
-                                    </li>
+                                <img  src="../img/visage_summon_familiars_hp2.png" />
+                            </li>
                         </ul>
                     </div>
                     <div class="contentblock">
@@ -173,111 +173,127 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">70 / 80 / 90 / 100</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">10.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">16/14/12/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>DURATION:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>MOVE SPEED DRAIN:</td><td class="statRowColW">32% / 32% / 32% / 32%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>ATTACK SPEED DRAIN:</td><td class="statRowColW">64 / 64 / 64 / 64</td>
                                 </tr>
                             </table>
+                            <p>The warmth of the sun is never felt in the dark cold of the Narrow Maze.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Soul Assumption</strong></p>
-                            <p>Visage damages the targeted unit based on the number of soul charges. Visage gains a soul charge when damage taken by all heroes around him reaches the damage threshold.</p>
+                            <p>Visage gathers charges of soul essence each time nearby heroes take more than 110 damage. When the essence is released, it deals base damage as well as damage for each gathered soul charge.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">170 / 160 / 150 / 140</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">170/160/150/140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">4.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BASE DAMAGE:</td><td class="statRowColW">20</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SOUL DAMAGE:</td><td class="statRowColW">65</td>
+                                    <td>BASE DAMAGE:</td><td class="statRowColW">20</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE THRESHOLD:</td><td class="statRowColW">110</td>
+                                    <td>DAMAGE PER CHARGE:</td><td class="statRowColW">65</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MAX SOULS:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>MAX CHARGES:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SOUL DURATION:</td><td class="statRowColW">6</td>
+                                    <td>CHARGE DURATION:</td><td class="statRowColW">6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ASSUMPTION RADIUS:</td><td class="statRowColW">1375</td>
+                                    <td>GATHER DAMAGE THRESHOLD:</td><td class="statRowColW">110</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>GATHER DAMAGE RADIUS:</td><td class="statRowColW">1375</td>
                                 </tr>
                             </table>
+                            <p>The collected souls of the dead reach out to bring another into their fold.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Gravekeeper's Cloak</strong></p>
                             <p>Visage generates a layered barrier that protects him from physical and magical attacks. If he receives damage from a player, one layer is removed, and takes time to recover.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">Passive</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ARMOR PER LAYER:</td><td class="statRowColW">1 / 2 / 4 / 5</td>
+                                    <td>ARMOR PER LAYER:</td><td class="statRowColW">1 / 2 / 4 / 5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RESIST PER LAYER:</td><td class="statRowColW">3% / 6% / 12% / 16%</td>
+                                    <td>RESIST PER LAYER:</td><td class="statRowColW">3% / 6% / 12% / 16%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MAX LAYERS:</td><td class="statRowColW">4</td>
+                                    <td>MAX LAYERS:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RECOVERY TIME:</td><td class="statRowColW">12 / 10 / 8 / 6</td>
+                                    <td>LAYER RECOVERY TIME:</td><td class="statRowColW">4</td>
                                 </tr>
                             </table>
+                            <p>Visage's tough scales share equal properties of ghost and stone, making it nearly impervious to blade and magical assault.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Summon Familiars</strong></p>
                             <p>Conjures up two blind Familiars to fight for Visage. Familiars have high attack power, but each attack drains a charge of damage that recharges slowly over time. Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing. While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health and damage. Familiars grant high bounty when killed. Upgradable by Aghanim's Scepter.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150 / 150 / 150</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">150/150/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">180.0 / 160.0 / 140.0</td>
+                                    <td>Cooldown:</td><td class="statRowColW">180/160/140</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >FAMILIAR HP:</td><td class="statRowColW">300 / 450 / 600</td>
+                                    <td>FAMILIAR ATTACKS TO DESTROY:</td><td class="statRowColW">3</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >FAMILIAR ARMOR:</td><td class="statRowColW">0 / 1 / 2</td>
+                                    <td>FAMILIAR ARMOR:</td><td class="statRowColW">0 / 1 / 2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >FAMILIAR SPEED:</td><td class="statRowColW">380 / 390 / 400</td>
+                                    <td>FAMILIAR SPEED:</td><td class="statRowColW">380 / 390 / 400</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >FAMILIAR MAX DAMAGE:</td><td class="statRowColW">56 / 98 / 154</td>
+                                    <td>FAMILIAR MAX DAMAGE:</td><td class="statRowColW">56 / 98 / 154</td>
                                 </tr>
                             </table>
+                            <p>Guardians of the Narrow Maze, Necro'lic's Familiars stand watch over his domain.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -285,7 +301,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>Perched atop the entrance to the Narrow Maze sit the looming shapes of sneering gargoyles, the paths into the hereafter forever in their gaze. Beasts and birds, men and monsters, all creatures that die and choose to travel beyond must someday pass beneath their sight. For an untethered spirit, the decision to journey through the veil of death is irrevocable. When chance comes, and by craft or cunning some restless soul escapes their hells and heavens, it is the dreaded gargoyle Visage, the bound form of the eternal spirit Necro'lic, who is dispatched to reclaim them. Ruthless and efficient, unhindered by the principles of death and fatigue, Visage stalks its prey without mercy or end, willingly destroying all which may give shelter to the fugitive essence. That which flaunts the laws of the afterlife may never rest, for while it is true that the dead may be revived, it is only a matter of time before Visage finds and returns them to their proper place.	</p>
+                    	<p>Perched atop the entrance to the Narrow Maze sit the looming shapes of sneering gargoyles, the paths into the hereafter forever in their gaze. Beasts and birds, men and monsters, all creatures that die and choose to travel beyond must someday pass beneath their sight. For an untethered spirit, the decision to journey through the veil of death is irrevocable. When chance comes, and by craft or cunning some restless soul escapes their hells and heavens, it is the dreaded gargoyle Visage, the bound form of the eternal spirit Necro'lic, who is dispatched to reclaim them. Ruthless and efficient, unhindered by the principles of death and fatigue, Visage stalks its prey without mercy or end, willingly destroying all which may give shelter to the fugitive essence. That which flaunts the laws of the afterlife may never rest, for while it is true that the dead may be revived, it is only a matter of time before Visage finds and returns them to their proper place. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

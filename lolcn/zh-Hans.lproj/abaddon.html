@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">亚巴顿</div>
-                    <div class="atype">近战</div>
+                     <div class="atype">近战</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%"></td>
-                            <td class="role" width="50%"></td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">耐久</td>
+                                <td class="role" width="50%">辅助</td>
+                            </tr>
+                            <tr >
+                                <td class="role">核心</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -82,7 +82,7 @@
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>32 - 42</span></li>
                                 <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>310</span></li>
-                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.38</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.38</span></li>
                             </ul>
                         </div>
                     </div>
@@ -121,13 +121,13 @@
                             <tr class="statRow">
                                 <td ></td>
                                 <td >护甲</td>
-                                <td class="statRowColW">2</td>
-                                <td class="statRowColW">5</td>
-                                <td class="statRowColW">10</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">9</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -162,116 +162,135 @@
                                 <img  src="../img/abaddon_frostmourne_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/abaddon_borrowed_time_hp2.png" >
+                                <img  src="../img/abaddon_borrowed_time_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
-                            <p><strong>死亡缠绕</strong></p>
-                            <p>亚巴顿以部分生命为代价，施放死亡缠绕伤害敌方单位或治疗友方单位。</p>
+                            <p><strong>迷雾缠绕</strong></p>
+                            <p>亚巴顿以部分生命为代价，释放带有死亡气息的迷雾缠绕伤害敌方单位或治疗友方单位。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75/75/75/75</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/60/70/80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">5</td>
+                                    <td>冷却时间:</td><td class="statRowColW">5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">英雄</td>
+                                    <td>影响:</td><td class="statRowColW">英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >对自身伤害:</td><td class="statRowColW">50 / 75 / 100 / 125</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害/治疗:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
+                                    <td>对自身伤害:</td><td class="statRowColW">75 / 100 / 125 / 150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>伤害/治疗:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
                                 </tr>
                             </table>
+                            <p>亚巴顿的气息中充盈着来自魔霭圣池的神秘之汽，他能随意将其释放。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>无光之盾</strong></p>
                             <p>召唤黑暗能量环绕友方单位，创造一个护盾，护盾在消失前能吸收一定量的伤害。护盾被摧毁后，它会将之前吸收的伤害反馈给周围的敌方单位。施放时移除目标身上的负面魔法效果。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/105/110/115</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12/10/8/6</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12/10/8/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友方单位</td>
+                                    <td>影响:</td><td class="statRowColW">友方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">15</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大伤害吸收量:</td><td class="statRowColW">110 / 140 / 170 / 200</td>
+                                    <td>持续时间:</td><td class="statRowColW">15</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >爆炸作用范围:</td><td class="statRowColW">675</td>
+                                    <td>最大伤害吸收量:</td><td class="statRowColW">110 / 140 / 170 / 200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>爆炸作用范围:</td><td class="statRowColW">675</td>
                                 </tr>
                             </table>
+                            <p>升腾的黑雾将敌人的招数一一吞噬，如同吞噬日光。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>霜寒之剑</strong></p>
-                            <p>亚巴顿的攻击中带有寒心能量，受到攻击的敌人将被减速，同时所有攻击被减速目标的单位将提升移动速度和攻击速度，持续一定时间。</p>
+                            <p><strong>魔霭诅咒</strong></p>
+                            <p>亚巴顿的攻击中带有寒心诅咒，受到攻击的敌人将被减速，同时所有攻击被减速目标的单位将提升移动速度和攻击速度，持续一定时间。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >减速持续时间:</td><td class="statRowColW">2.5</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >加速持续时间:</td><td class="statRowColW">4.5</td>
+                                    <td>减速持续时间:</td><td class="statRowColW">2.5</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减缓:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
+                                    <td>加速持续时间:</td><td class="statRowColW">4.5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度加成:</td><td class="statRowColW">15%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻击速度加成:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度加成:</td><td class="statRowColW">15%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击速度加成:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
                                 </tr>
                             </table>
+                            <p>缓敌之咒，捷我之语</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>回光返照</strong></p>
-                            <p>启动时，移除身上负面的魔法效果，期间所有受到的伤害转而治疗你。如果技能不在冷却过程中，在生命值低于一定数值时技能会自动启动。 可用神杖升级。</p>
+                            <p>启动后所有受到的伤害转而治疗你，大部分的负面效果均会移除。只要技能不在冷却过程中，在生命值低于400点时技能会自动启动。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">0</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">0/0/0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">60/50/40</td>
+                                    <td>冷却时间:</td><td class="statRowColW">60/50/40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >生命临界值:</td><td class="statRowColW">400</td>
+                                    <td>生命临界值:</td><td class="statRowColW">400</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">3 / 4 / 5</td>
+                                    <td>持续时间:</td><td class="statRowColW">4 / 5 / 6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级持续时间:</td><td class="statRowColW">5 / 6 / 7</td>
+                                    <td>神杖升级持续时间:</td><td class="statRowColW">5 / 6 / 7</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>伤害转移范围:</td><td class="statRowColW">900</td>
                                 </tr>
                             </table>
+                            <p> 魔霭圣池中最为扭曲的馈赠，凡人对死亡的认知在此力量前显得异常可笑。敌之尖刀，我之伤药；死地后生，回光返照。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -279,11 +298,12 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>The Font of Avernus is the source of a family's strength, a crack in primal stones from which vapors of prophetic power have issued for generations. Each newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism they are given an innate connection to the mystic energies of the land. They grow up believing themselves fierce protectors of their lineal traditions, the customs of the realm--but what they really are protecting is the Font itself. And the motives of the mist are unclear. </p>
-                        
-                        <p>When the infant Abaddon was bathed in the Font, they say something went awry. In the child's eyes there flared a light of comprehension that startled all present and set the sacerdotes to whispering. He was raised with every expectation of following the path all scions of Avernus took--to train in war, that in times of need he might lead the family's army in defense of the ancestral lands. But Abaddon was always one apart. Where others trained with weapons, he bent himself to meditation in the presence of the mist. He drank deep from the vapors that welled from the Font, learning to blend his spirit with the potency that flowed from far beneath the House; he became a creature of the black mist. </p>
-                        
-                        <p>There was bitterness within the House Avernus--elders and young alike accusing him of neglecting his responsibilities. But all such accusations stopped when Abaddon rode into battle, and they saw how the powers of the mist had given him mastery over life and death beyond those of any lord the House had ever known.</p>
+                    	<p>魔霭圣池，一个处于原初群石的裂缝，从中带有先兆力量的蒸汽不断溢出，作为家族力量的源泉，已经惠及数个世代。在居住于洞穴中的魔霭家族，每个新生儿都会在暗黑迷雾中接受沐浴，经过这样的洗礼，他们与大陆的神秘力量获得了内在的联系。随着他们长大，内心坚信自己的使命是誓死保护世袭的传统和领域的风俗——实际上他们守护的不过就是圣池本身。而迷雾的作用原理尚不明朗。 
+<br>
+<br>当初生的亚巴顿沐浴在圣池中时，众人都表示事情并不对劲。孩子的双眼里闪耀出洞察之光，在场所有人都大吃一惊，神父们纷纷交头接耳。而他之后的成长道路与所有魔霭族裔的传人并无差别——为战争接受训练，在危机时刻需要他挺身而出，率领家族的军队守卫先祖的大陆。但是亚巴顿总是特立独行。其他人挥着武器训练时，他喜欢在迷雾前沉思。他饱吸从圣池中涌出的蒸汽，开始学习将自己的灵魂与家族深处流出的力量相融合；他变成了被暗黑迷雾笼罩的怪物。 
+<br>
+<br>魔霭家族怨气冲天——不论老小都谴责他对自己的责任视而不见。但是亚巴顿驾临战场时，不满全都烟消云散，他们目睹了迷雾的强大力量让他恣意挥洒着生杀大权，族内任何领主都是望尘莫及。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

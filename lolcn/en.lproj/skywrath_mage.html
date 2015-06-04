@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -40,24 +40,24 @@
                     <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/skywrath_mage_hphover.png"/></a>
                 </div>
                 <div  class="floatleft">
-                    <div class="heroName" style="font-size:15px;">SKYWRATH MAGE</div>
-                    <div class="atype">Ranged</div>
+                    <div class="heroName">SKYWRATH MAGE</div>
+                     <div class="atype">Ranged</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Nuker</td>
-                            <td class="role" width="50%">Support</td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Nuker</td>
+                                <td class="role" width="50%">Support</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,20 +69,20 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
-                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>27 + 3.20</span></li>
-                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>18 + 0.80</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>27 + 3.60</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>13 + 0.80</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>19 + 1.50</span></li>
                             </ul>
                         </div>
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>12 - 22</span></li>
-                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
-                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>0.52</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>325</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>-0.18</span></li>
                             </ul>
                         </div>
                     </div>
@@ -108,22 +108,22 @@
                                 <td ></td>
                                 <td >MANA</td>
                                 <td class="statRowColW">351</td>
-                                <td class="statRowColW">933</td>
-                                <td class="statRowColW">1,609</td>
+                                <td class="statRowColW">1,006</td>
+                                <td class="statRowColW">1,734</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >DAMAGE</td>
                                 <td class="statRowColW">39-49</td>
-                                <td class="statRowColW">84-94</td>
-                                <td class="statRowColW">136-146</td>
+                                <td class="statRowColW">89-99</td>
+                                <td class="statRowColW">145-155</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
                                 <td >ARMOR</td>
+                                <td class="statRowColW">-0</td>
                                 <td class="statRowColW">1</td>
-                                <td class="statRowColW">2</td>
-                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">5</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -162,125 +162,144 @@
                                 <img  src="../img/skywrath_mage_ancient_seal_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/skywrath_mage_mystic_flare_hp2.png" >
+                                <img  src="../img/skywrath_mage_mystic_flare_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Arcane Bolt</strong></p>
-                            <p>Skywrath launches a slow-moving bolt of arcane magic, dealing damage to an enemy unit based on Skywrath's intelligence.</p>
+                            <p>Skywrath Mage launches a slow-moving bolt of arcane magic, dealing damage to an enemy unit based on Skywrath Mage's intelligence.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">70/70/70/70</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">70/70/70/70</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">5/4/3/2</td>
+                                    <td>Cooldown:</td><td class="statRowColW">5/4/3/2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BASE DAMAGE:</td><td class="statRowColW">60 / 80 / 100 / 120</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >INT DAMAGE MULTIPLIER:</td><td class="statRowColW">1.6</td>
+                                    <td>BASE DAMAGE:</td><td class="statRowColW">60 / 80 / 100 / 120</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>INT DAMAGE MULTIPLIER:</td><td class="statRowColW">1.6</td>
                                 </tr>
                             </table>
+                            <p>Within the Ghastly Eyrie's endless intrigue, only the clever and calm can hope to survive.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Concussive Shot</strong></p>
-                            <p>Skywrath sets off a long range shot that hits the closest hero within a long range. Upon impact, it deals damage and slows in an area of effect.</p>
+                            <p>Skywrath Mage sets off a long range shot that hits the closest hero within a long range. Upon impact, it deals damage and slows in an area of effect.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">110/110/110/110</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">110/110/110/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">20/18/16/14</td>
+                                    <td>Cooldown:</td><td class="statRowColW">20/18/16/14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SHOT RANGE:</td><td class="statRowColW">1600</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE RADIUS:</td><td class="statRowColW">200</td>
+                                    <td>SHOT RANGE:</td><td class="statRowColW">1600</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">50 / 100 / 150 / 200</td>
+                                    <td>DAMAGE RADIUS:</td><td class="statRowColW">200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SLOW DURATION:</td><td class="statRowColW">4</td>
+                                    <td>DAMAGE:</td><td class="statRowColW">60 / 120 / 180 / 240</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SLOW:</td><td class="statRowColW">40%</td>
+                                    <td>SLOW DURATION:</td><td class="statRowColW">4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>SLOW:</td><td class="statRowColW">30% / 35% / 40% / 45%</td>
                                 </tr>
                             </table>
+                            <p>Those who serve the court of the Ghastly Eyrie are ever locked in covert war. One must always know where danger lurks nearest.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Ancient Seal</strong></p>
-                            <p>Skywrath seals the targeted unit with an ancient rune, silencing it and causing it to take additional damage from spells.</p>
+                            <p>Skywrath Mage seals the targeted unit with an ancient rune, silencing it and causing it to take additional damage from spells.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">80/90/100/110</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">80/90/100/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">11</td>
+                                    <td>Cooldown:</td><td class="statRowColW">14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MAGIC RESISTANCE REDUCTION:</td><td class="statRowColW">18% / 24% / 30% / 36%</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>INCREASED MAGIC DAMAGE:</td><td class="statRowColW">30% / 35% / 40% / 45%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DURATION:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>A holy incantation, whosoever finds themselves touched by Avilliva's sigil must suffer in penitent silence.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Mystic Flare</strong></p>
-                            <p>Skywrath uses his ultimate magical ability to conjure a precise and violent mystical field that lays waste to his adversaries. Deals massive damage distributed evenly among any Heroes in the area over 2 seconds.</p>
+                            <p>Skywrath Mage uses his ultimate magical ability to conjure a precise and violent mystical field that lays waste to his adversaries. Deals massive damage distributed evenly among any Heroes in the area over 2.4 seconds. Upgradable by Aghanim's Scepter.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">350/575/800</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">350/575/800</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">60/40/20</td>
+                                    <td>Cooldown:</td><td class="statRowColW">60/40/20</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">170</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DURATION:</td><td class="statRowColW">2</td>
+                                    <td>RADIUS:</td><td class="statRowColW">170</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">600 / 900 / 1200</td>
+                                    <td>DURATION:</td><td class="statRowColW">2.4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>DAMAGE:</td><td class="statRowColW">600 / 1000 / 1400</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>SCEPTER COOLDOWN:</td><td class="statRowColW">20 / 10 / 0</td>
                                 </tr>
                             </table>
+                            <p>Only the most practiced of Skywrath sorcerers could hope to shape the skies into such a storm.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -288,11 +307,12 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>A highly placed mage in the court of the Ghastly Eyrie, Dragonus lives a troubled existence. Sworn by birth to protect whoever sits within the Nest of Thorns, he hates the current Skywrath queen with all his soul. As a youth, high-born, he was a friend and companion to the eldest Skywrath princess, Shendelzare, first in line for the Nest. He had loved her warmly and unshakably, but as his studies took hold, his mind turned to arcane learning and the mastery of Skywrath sorcery. </p>
-                        
-                        <p>Obsessed with matters aetherial, he missed the mundane signs of courtly treachery that hinted at a plot against Shendelzare, and lost his chance to foil it. When the court was shaken by a swift and violent coup, he emerged from his studies to discover his oldest and dearest friend had been lost to him. The Nest of Thorns now belonged to Shendelzare's ruthless younger sister, and Dragonus could do nothing. The magic of the Skywrath Mage serves only the sworn protector of the Skywrath scion, so to act against the Nest would render him helpless. He clings to his post, believing it to be the best hope of one day restoring his true love to her rightful place. Meanwhile, his secret is known only to the goddess Scree'auk, whose magic it was transformed Shendelzare from a crippled physical creature into an embodiment of pure vengeful energy. </p>
-                        
-                        <p>While he dreams of restoring his beloved queen to the Ghastly Eyrie, he dreams even more desperately of restoring Shendelzare herself to a fully healed physical form. The duplicity of his role at court tortures him, for he is a noble and good-hearted creature; but the worst torture of all is imagining the hatred that Vengeful Spirit must hold in her heart for him.	</p>
+                    	<p>A highly placed mage in the court of the Ghastly Eyrie, Dragonus lives a troubled existence. Sworn by birth to protect whoever sits within the Nest of Thorns, he hates the current Skywrath queen with all his soul. As a youth, high-born, he was a friend and companion to the eldest Skywrath princess, Shendelzare, first in line for the Nest. He had loved her warmly and unshakably, but as his studies took hold, his mind turned to arcane learning and the mastery of Skywrath sorcery. 
+<br>
+<br> Obsessed with matters aetherial, he missed the mundane signs of courtly treachery that hinted at a plot against Shendelzare, and lost his chance to foil it. When the court was shaken by a swift and violent coup, he emerged from his studies to discover his oldest and dearest friend had been lost to him. The Nest of Thorns now belonged to Shendelzare's ruthless younger sister, and Dragonus could do nothing. The magic of the Skywrath Mage serves only the sworn protector of the Skywrath scion, so to act against the Nest would render him helpless. He clings to his post, believing it to be the best hope of one day restoring his true love to her rightful place. Meanwhile, his secret is known only to the goddess Scree'auk, whose magic it was transformed Shendelzare from a crippled physical creature into an embodiment of pure vengeful energy. 
+<br>
+<br> While he dreams of restoring his beloved queen to the Ghastly Eyrie, he dreams even more desperately of restoring Shendelzare herself to a fully healed physical form. The duplicity of his role at court tortures him, for he is a noble and good-hearted creature; but the worst torture of all is imagining the hatred that Vengeful Spirit must hold in her heart for him. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

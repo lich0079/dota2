@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>SHADOW DEMON</title>
+        <title>暗影恶魔</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -73,7 +73,7 @@
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
-                                <li class="relativeP"><img class="primary" src="../img/overviewicon_primary.png" width="40" height="40">&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>23 + 2.70</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>23 + 2.70</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>18 + 2.20</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>17 + 1.90</span></li>
                             </ul>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,150 +156,170 @@
                                 <img  src="../img/shadow_demon_disruption_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/shadow_demon_soul_catcher_hp2.png" />               
+                                <img  src="../img/shadow_demon_soul_catcher_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/shadow_demon_shadow_poison_hp2.png" />                          
+                                <img  src="../img/shadow_demon_shadow_poison_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/shadow_demon_shadow_poison_release_hp2.png" >
+                                <img  src="../img/shadow_demon_shadow_poison_release_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/shadow_demon_demonic_purge_hp2.png" >
+                                <img  src="../img/shadow_demon_demonic_purge_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>崩裂禁锢</strong></p>
-                            <p>放逐目标单位，在持续时间内将其移除。回归时创造2个该单位的幻象，受暗影恶魔控制。</p>
+                            <p>将目标单位从战场上放逐，在持续时间内将其移除。回归时创造2个该单位的幻象，受暗影恶魔控制。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/120/120/120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">25.0 / 22.0 / 19.0 / 16.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">25/22/19/16</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >幻象持续时间:</td><td class="statRowColW">5 / 6 / 7 / 8</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >幻象受到的额外伤害:</td><td class="statRowColW">50% / 50% / 50% / 50%</td>
+                                    <td>禁锢持续时间:</td><td class="statRowColW">2.5 / 2.5 / 2.5 / 2.5</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >幻象伤害:</td><td class="statRowColW">30% / 40% / 50% / 60%</td>
+                                    <td>幻象持续时间:</td><td class="statRowColW">5 / 6 / 7 / 8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >放逐持续时间:</td><td class="statRowColW">2.5 / 2.5 / 2.5 / 2.5</td>
+                                    <td>幻象伤害:</td><td class="statRowColW">30% / 40% / 50% / 60%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>幻象承受伤害:</td><td class="statRowColW">150% / 150% / 150% / 150%</td>
                                 </tr>
                             </table>
+                            <p>欺骗的痛苦不是在其发生之时，而是在其被揭露之时。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>灵魂猎手</strong></p>
-                            <p>诅咒区域内的一个随机的敌人使之受到额外伤害。额外伤害作为一次单独的伤害计算。处于崩裂禁锢中的单位仍然可以被灵魂猎手影响。</p>
+                            <p>诅咒区域内的一个随机的敌人，使其受到额外伤害。处于崩裂禁锢中的单位仍然可以被灵魂猎手影响。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 60 / 70 / 80</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/60/70/80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">13.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">13</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                    <td>伤害类型:</td><td class="statRowColW">纯粹</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >额外伤害:</td><td class="statRowColW">20% / 30% / 40% / 50%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">450 / 450 / 450 / 450</td>
+                                    <td>额外伤害:</td><td class="statRowColW">20% / 30% / 40% / 50%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">12 / 12 / 12 / 12</td>
+                                    <td>作用范围:</td><td class="statRowColW">450 / 450 / 450 / 450</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">12 / 12 / 12 / 12</td>
                                 </tr>
                             </table>
+                            <p>对暗影恶魔腐蚀的抵抗通常都是徒劳的。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>暗影剧毒</strong></p>
-                            <p>在一块直线区域内造成伤害，并以毒诅咒折磨敌方单位。根据目标身上的叠加层数，毒咒造成1//2/4/8倍的叠加伤害，至多4层。更多层的叠加每层造成50点伤害。这部分延缓的伤害在暗影毒的持续时间借宿后生效，或者你可以使用附属技能释放立刻造成伤害。</p>
+                            <p>在一条直线上造成伤害，并以毒咒折磨敌方单位。根据目标身上的叠加层数，毒咒造成1/2/4/8/16倍的叠加伤害，至多5层。更多层的叠加每层造成50点伤害。这部分延缓的伤害在暗影毒的持续时间结束后生效，或者你可以使用附属技能释放立刻造成伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">40</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">2.75</td>
+                                    <td>冷却时间:</td><td class="statRowColW">2.75</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">50 / 50 / 50 / 50</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >叠加伤害:</td><td class="statRowColW">20 / 35 / 50 / 65</td>
+                                    <td>攻击力:</td><td class="statRowColW">50 / 50 / 50 / 50</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大叠加层数:</td><td class="statRowColW">4 / 4 / 4 / 4</td>
+                                    <td>叠加伤害:</td><td class="statRowColW">20 / 35 / 50 / 65</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">180 / 180 / 180 / 180</td>
+                                    <td>伤害加倍最多层数:</td><td class="statRowColW">5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">10 / 10 / 10 / 10</td>
+                                    <td>作用范围:</td><td class="statRowColW">190</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">10 / 10 / 10 / 10</td>
                                 </tr>
                             </table>
+                            <p>暗影恶魔不断增长的影响能够玷污最勇敢最纯洁的英雄。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>释放暗影剧毒</strong></p>
-                            <p>释放暗影剧毒对所有受到影响的敌人造成伤害。</p>
+                            <p><strong>释放暗影毒</strong></p>
+                            <p>释放毒咒对所有受影响的单位造成伤害。崩裂禁锢中的单位依然可以受到暗影毒的影响。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1.0</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
                             <p><strong>邪恶净化</strong></p>
-                            <p>净化目标敌方单位，移除增益魔法效果，并使目标在持续时间内减速。伤害在持续时间结束时计算，在此之前目标单位的移动速度缓慢的恢复。崩裂禁锢中的单位依然可以受到暗影毒的影响。</p>
+                            <p>净化目标敌方单位，移除增益魔法效果，并使目标在持续时间内减速。伤害在持续时间结束时计算，在此之前目标单位的移动速度缓慢地恢复。崩裂禁锢中的单位依然可以受到邪恶净化的影响。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 200 / 200</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200/200/200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">50.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">50</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">200 / 300 / 400</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">5 / 5 / 5</td>
+                                    <td>攻击力:</td><td class="statRowColW">200 / 300 / 400</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">5 / 5 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级充能所需时间:</td><td class="statRowColW">40</td>
                                 </tr>
                             </table>
+                            <p>一旦暗影恶魔不再需要他的信徒，他会让其从自己的奴仆中-同时也是从其生命中-解放出来。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -307,7 +327,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在那些能够直接进入现实世界肆虐的强大恶魔中，末日使者几乎不理会那些低等物种的琐事，影魔来到世间只是为了他的灵魂收集。而暗影恶魔则一向对这个世界有着浓厚的兴趣，他似乎觉察到对两个世界之间坚定联系的掌握可能是统治整个物质世界的关键所在。一开始，暗影恶魔是被一些低级巫师召唤的，他满足了他们所有的愿望，展现出惊人的法力，直到一些高级恶魔学家注意到他的存在，进而一些试图通过巫术来维持他们世俗统治的暴君、独裁者们也开始利用他的恶魔之力。暗影恶魔的欺诈之术高明至极，以至于那些召唤他的人都认为自己是主人，暗影恶魔只是他们的奴仆；而就在同时，暗影恶魔不停地吞噬着他们的神智，并为己所用。到了最后，那些召唤过他的人，都成了他的傀儡，为他那邪恶的意志卖命。没人能猜到暗影恶魔下一步究竟想要做什么，然而就在那时，影魔偶然间吞噬了一个充满着恶臭的灵魂，发现里面竟然有着暗影恶魔的痕迹。在意识到暗影恶魔即将对他们的统治造成威胁，依靠阴影契约维持的古老的平衡已经不复存在以后，末日使者和影魔立刻加入到摧毁暗影恶魔傀儡大军的力量中。在他们那不可思议的力量面前，暗影恶魔几百年的精心谋划毁于一旦，他的傀儡大军也遭到瓦解——所有人都被杀死了。到最后，只有他自己的一点碎片残留了下来。然而，即使是一点碎片，也足以让他卷土重来。在接下来的几百年里，他开始缓慢的重新凝聚。他的碎片将触碰到的一切事物感染，而这种感染则逐渐滋生壮大。那些以前被撕裂的，现在被感染的部分通过一片混沌结合在一起，重新连接，给予了暗影恶魔一个比以前更加强大的形态。他几乎已经凝聚完成，而他那永久统治世界的计划也更加的周密。虽然我们的世界似乎不可能出现一个如此邪恶和恶毒的存在，这将是对所有生命的巨大威胁……然而，暗影恶魔的信徒，依然众多。	</p>
+                    	<p>在那些能够直接进入现实世界肆虐的强大恶魔中，末日使者几乎不理会那些低等物种的琐事，影魔来到世间只是为了他的灵魂收集。而暗影恶魔则一向对这个世界有着浓厚的兴趣，他似乎觉察到对两个世界之间坚定联系的掌握可能是统治整个物质世界的关键所在。一开始，暗影恶魔是被一些低级巫师召唤的，他满足了他们所有的愿望，展现出惊人的法力，直到一些高级恶魔学家注意到他的存在，进而一些试图通过巫术来维持他们世俗统治的暴君、独裁者们也开始利用他的恶魔之力。暗影恶魔的欺诈之术高明至极，以至于那些召唤他的人都认为自己是主人，暗影恶魔只是他们的奴仆；而就在同时，暗影恶魔不停地吞噬着他们的神智，并为己所用。到了最后，那些召唤过他的人，都成了他的傀儡，为他那邪恶的意志卖命。没人能猜到暗影恶魔下一步究竟想要做什么，然而就在那时，影魔偶然间吞噬了一个充满着恶臭的灵魂，发现里面竟然有着暗影恶魔的痕迹。在意识到暗影恶魔即将对他们的统治造成威胁，依靠阴影契约维持的古老的平衡已经不复存在以后，末日使者和影魔立刻加入到摧毁暗影恶魔傀儡大军的力量中。在他们那不可思议的力量面前，暗影恶魔几百年的精心谋划毁于一旦，他的傀儡大军也遭到瓦解——所有人都被杀死了。到最后，只有他自己的一点碎片残留了下来。然而，即使是一点碎片，也足以让他卷土重来。在接下来的几百年里，他开始缓慢的重新凝聚。他的碎片将触碰到的一切事物感染，而这种感染则逐渐滋生壮大。那些以前被撕裂的，现在被感染的部分通过一片混沌结合在一起，重新连接，给予了暗影恶魔一个比以前更加强大的形态。他几乎已经凝聚完成，而他那永久统治世界的计划也更加的周密。虽然我们的世界似乎不可能出现一个如此邪恶和恶毒的存在，这将是对所有生命的巨大威胁……然而，暗影恶魔的信徒，依然众多。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

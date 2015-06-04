@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>美杜莎</title>
+        <title>巨魔战将</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">巨魔战将</div>
-                    <div class="atype">远程</div>
+                     <div class="atype">远程</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">核心</td>
-                            <td class="role" width="50%"></td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%"></td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -162,10 +162,10 @@
                                 <img  src="../img/troll_warlord_whirling_axes_melee_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/troll_warlord_fervor_hp2.png" >
+                                <img  src="../img/troll_warlord_fervor_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/troll_warlord_battle_trance_hp2.png" >
+                                <img  src="../img/troll_warlord_battle_trance_hp2.png" />
                             </li>
                         </ul>
                     </div>
@@ -179,130 +179,141 @@
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标, 切换</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻击力加成:</td><td class="statRowColW">15</td>
+                                    <td>移动速度加成:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度加成:</td><td class="statRowColW">20 / 20 / 20 / 30</td>
+                                    <td>基础攻击间隔:</td><td class="statRowColW">1.55</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >基础攻击间隔:</td><td class="statRowColW">1.55</td>
+                                    <td>生命值加成:</td><td class="statRowColW">100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生命值加成:</td><td class="statRowColW">100</td>
+                                    <td>护甲加成:</td><td class="statRowColW">3</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >护甲加成:</td><td class="statRowColW">3</td>
+                                    <td>击晕概率:</td><td class="statRowColW">10%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >击晕概率:</td><td class="statRowColW">10%</td>
+                                    <td>眩晕持续时间:</td><td class="statRowColW">0.8 / 1.2 / 1.6 / 2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >眩晕持续时间:</td><td class="statRowColW">0.8 / 1.2 / 1.6 / 2</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >击晕伤害:</td><td class="statRowColW">20 / 30 / 40 / 50</td>
+                                    <td>击晕伤害:</td><td class="statRowColW">20 / 30 / 40 / 50</td>
                                 </tr>
                             </table>
+                            <p> 跟巨魔战将的怒火一样，他的斧头也是源源不断。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>旋风飞斧（远程）</strong></p>
                             <p>巨魔战将掷出手中的五把飞斧，减速并伤害前方900范围锥形区域内的敌方单位。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/50/50/50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">20</td>
+                                    <td>冷却时间:</td><td class="statRowColW">20/19/18/17</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方单位</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >飞斧伤害:</td><td class="statRowColW">75</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速持续时间:</td><td class="statRowColW">3 / 3.75 / 4.5 / 5.25</td>
+                                    <td>飞斧伤害:</td><td class="statRowColW">75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减缓:</td><td class="statRowColW">30%</td>
+                                    <td>减速持续时间:</td><td class="statRowColW">3 / 3.75 / 4.5 / 5.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度减缓:</td><td class="statRowColW">30%</td>
                                 </tr>
                             </table>
+                            <p> 只有注入了憎恨的斧头旋转起来才会如此致命。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>旋风飞斧（近战）</strong></p>
-                            <p>巨魔战将召唤出飞斧围绕他，使周围的敌人受到伤害并致盲。</p>
+                            <p>巨魔战将掷出两把飞斧环绕在他周围，使敌方单位受到伤害，并且部分普通攻击将不能命中。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/50/50/50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">125 / 175 / 225 / 275</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >范围:</td><td class="statRowColW">450</td>
+                                    <td>伤害:</td><td class="statRowColW">75 / 125 / 175 / 225</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >致盲持续时间:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                    <td>作用范围:</td><td class="statRowColW">450</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >未命中概率:</td><td class="statRowColW">60% / 60% / 60% / 60%</td>
+                                    <td>致盲持续时间:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>攻击落空几率:</td><td class="statRowColW">60%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>围绕持续时间:</td><td class="statRowColW">3</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>热血战魂</strong></p>
                             <p>当巨魔战将持续攻击同一个目标时，他会攻击得越来越快。如果改变目标，则额外的攻速加成清零。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大叠加层数:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                    <td>最大叠加层数:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >每层效果攻速加成:</td><td class="statRowColW">20</td>
+                                    <td>每层效果攻速加成:</td><td class="statRowColW">16 / 22 / 28 / 34</td>
                                 </tr>
                             </table>
+                            <p>如果第一下没成功，那就接着出招呗。</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
                             <p><strong>战斗专注</strong></p>
                             <p>巨魔战将的出场能提升战场上所有友方英雄的攻击速度。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75/75/75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30</td>
+                                    <td>冷却时间:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >专注持续时间:</td><td class="statRowColW">7</td>
+                                    <td>专注持续时间:</td><td class="statRowColW">5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击速度:</td><td class="statRowColW">60 / 120 / 180</td>
+                                    <td>攻击速度:</td><td class="statRowColW">60 / 120 / 180</td>
                                 </tr>
                             </table>
+                            <p>纯粹的仇恨让气血迅速上涌，刀剑也随之飞舞。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -310,7 +321,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>激怒巨魔是非常轻松的一件事情。巨魔这个种族的特点是容易动怒，喜爱争斗，靠着争吵和打架度日，不会错过任何话茬扯着嗓门与人争辩。男性巨魔在女族长的统治下在地下洞穴长到成年，终日饭来张口，游手好闲。通常在成年后他们还会待上数年，女族长继续负责他们的吃喝拉撒。当年轻的巨魔最终离开地下的洞穴时，他们会找到同类三两成群，组成团伙四处游荡，高声抱怨各种琐事。既然巨魔生性爱吵架，可以想象下一只巨魔因为太难相处被族人赶走是件多么稀罕的事。比如巨魔战将的经历，来自霍文林地深处的巨魔商人。他是如此的轻信别人，言语又十分刻薄粗暴，即使是其他巨魔也发现难以与他相处。特别是有一次他用嘲讽的语气声称刚才突袭抓住的狮子他也该分到一份时，他的同伴们爆发了。他们把矛头都指向他，用棍棒痛扁了一顿，还把他赶出了露营聚集地。他因为这次驱逐暴跳如雷，第二天回去的时候已经全副武装，一个接一个地把同伴杀光。接着他立下血誓：此后成为一支战斗力量为自己卖命。现在他以巨魔战将的称号在世界上游荡，言语尖酸，动作凶猛，作为一支单兵军队高高在上的得力战将。	</p>
+                    	<p>激怒巨魔是非常轻松的一件事情。巨魔这个种族的特点是容易动怒，喜爱争斗，靠着争吵和打架度日，不会错过任何话茬扯着嗓门与人争辩。男性巨魔在女族长的统治下在地下洞穴长到成年，终日饭来张口，游手好闲。通常在成年后他们还会待上数年，女族长继续负责他们的吃喝拉撒。当年轻的巨魔最终离开地下的洞穴时，他们会找到同类三两成群，组成团伙四处游荡，高声抱怨各种琐事。既然巨魔生性爱吵架，可以想象下一只巨魔因为太难相处被族人赶走是件多么稀罕的事。比如巨魔战将的经历，来自霍文林地深处的巨魔商人。他是如此的轻信别人，言语又十分刻薄粗暴，即使是其他巨魔也发现难以与他相处。特别是有一次他用嘲讽的语气声称刚才突袭抓住的狮子他也该分到一份时，他的同伴们爆发了。他们把矛头都指向他，用棍棒痛扁了一顿，还把他赶出了露营聚集地。他因为这次驱逐暴跳如雷，第二天回去的时候已经全副武装，一个接一个地把同伴杀光。接着他立下血誓：此后成为一支战斗力量为自己卖命。现在他以巨魔战将的称号在世界上游荡，言语尖酸，动作凶猛，作为一支单兵军队高高在上的得力战将。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

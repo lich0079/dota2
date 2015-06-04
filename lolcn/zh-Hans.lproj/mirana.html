@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>MIRANA</title>
+        <title>米拉娜</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,8 +127,8 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 1200</td>
+                                <td >视野范围</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -156,116 +156,132 @@
                                 <img  src="../img/mirana_starfall_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/mirana_arrow_hp2.png" />               
+                                <img  src="../img/mirana_arrow_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/mirana_leap_hp2.png" />                          
+                                <img  src="../img/mirana_leap_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/mirana_invis_hp2.png" >
+                                <img  src="../img/mirana_invis_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
-                            <p><strong>群星坠落</strong></p>
-                            <p>召唤陨石对周围敌方单位造成伤害。175码范围内随机一目标会受到群星坠落75%的第二次单体伤害。</p>
+                            <p><strong>群星风暴</strong></p>
+                            <p>召唤一波流星砸向附近的敌方单位。325范围内最近的敌方单位将会再受到一次75%伤害的冲击。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 120 / 140 / 160</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/120/140/160</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">625</td>
+                                    <td>攻击力:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围:</td><td class="statRowColW">625</td>
                                 </tr>
                             </table>
+                            <p>月之女神打破月亮的一部分地表，让她的公主在需要时可以使用。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>月神之箭</strong></p>
-                            <p>射出一支绝对精准的箭矢，对第一个击中的敌人造成大量伤害并眩晕目标。目标距离越远，眩晕时间越长，最短0.5秒，最多5秒。</p>
+                            <p>射出一支绝对精准的箭矢，对第一个击中的敌人造成伤害并眩晕目标。目标距离越远，眩晕时间越长，最短0.01秒，最长可达5秒。根据箭矢飞行的距离还将对目标额外造成最多140点伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">17.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">17</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">90 / 180 / 270 / 360</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">3000</td>
+                                    <td>攻击力:</td><td class="statRowColW">50 / 140 / 230 / 320</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最小眩晕时间:</td><td class="statRowColW">0.5</td>
+                                    <td>射程:</td><td class="statRowColW">3000</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大眩晕时间:</td><td class="statRowColW">5</td>
+                                    <td>最短眩晕时间:</td><td class="statRowColW">0.01</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>最长眩晕时间:</td><td class="statRowColW">5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>最大额外伤害:</td><td class="statRowColW">140</td>
                                 </tr>
                             </table>
+                            <p>月之能量让月之公主的箭矢变得更致命。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>跳跃</strong></p>
-                            <p>米拉娜向前跳进战斗，着地时发出一声凶狠的咆哮增强己方单位的攻击速度和移动速度。持续10秒。</p>
+                            <p>米拉娜的坐骑向前跳跃加入战斗，着地时发出一声凶狠的咆哮鼓舞友方单位，提升攻击和移动速度。速度加成持续10秒。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">40 / 35 / 30 / 20</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">40/35/30/20</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30.0 / 26.0 / 22.0 / 18.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">30/26/22/18</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >距离:</td><td class="statRowColW">630 / 690 / 780 / 840</td>
+                                    <td>距离:</td><td class="statRowColW">600 / 700 / 800 / 900</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >速度加成:</td><td class="statRowColW">4% / 8% / 12% / 16%</td>
+                                    <td>移动速度增加:</td><td class="statRowColW">4% / 8% / 12% / 16%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击速度提升:</td><td class="statRowColW">8 / 16 / 24 / 32</td>
                                 </tr>
                             </table>
+                            <p>在战斗最激烈的时候，敌我双方都会注意到米拉娜标志性的白色野兽。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>月之暗面</strong></p>
-                            <p>让米拉娜和所有己方英雄进入隐身。只要还在月光阴影的持续时间内，即使隐身被打破也会在短时间内重新淡入隐身。沉默可以打断月之暗面。</p>
+                            <p>让米拉娜和所有己方英雄进入隐身状态。只要还在月光阴影的持续时间内，即使隐身被打破也会在短时间内重新淡入隐身。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">140/120/100</td>
+                                    <td>冷却时间:</td><td class="statRowColW">140/120/100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >隐身延迟:</td><td class="statRowColW">2.5 / 2 / 1.5</td>
+                                    <td>淡入延迟:</td><td class="statRowColW">2.5 / 2 / 1.5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">15</td>
+                                    <td>持续时间:</td><td class="statRowColW">15</td>
                                 </tr>
                             </table>
+                            <p>作为赛莉蒙妮，米拉娜能将月蚀之暗投向大地，将她和她的友军隐藏在阴影中。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -273,7 +289,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>出生于皇室，带有高贵血统的公主米拉娜，在她即将登上太阳王座时，欣然放弃了所有对国土的世俗权力，将自身完全奉献给了月之女神赛莉蒙妮。从那以后米拉娜就作为众所周知的月之公主，巡回在银夜森林，搜索那些从月之女神保护地中的银色水池偷取夜光莲花的大胆之徒。米拉娜骑着她庞大的猫科伙伴，沉着、自豪且无畏，调和于月相和星座旋转。她的弓上镶嵌的月之矿石吸收月光之力，为她的光之箭矢充入能量。</p>
+                    	<p>出生于皇室，带有高贵血统的公主米拉娜，在她即将登上太阳王座时，欣然放弃了所有对国土的世俗权力，将自身完全奉献给了月之女神赛莉蒙妮。从那以后米拉娜就作为众所周知的月之公主，巡回在银夜森林，搜索那些从月之女神保护地中的银色水池偷取夜光莲花的大胆之徒。米拉娜骑着她庞大的猫科伙伴，沉着、自豪且无畏，调和于月相和星座旋转。她的弓上镶嵌的月之矿石吸收月光之力，为她的光之箭矢充入能量。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">凤凰</div>
-                    <div class="atype">远程</div>
+                     <div class="atype">远程</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">先手</td>
-                            <td class="role" width="50%">控制</td>
-                        </tr>
-                        <tr >
-                            <td class="role">爆发</td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">先手</td>
+                                <td class="role" width="50%">控制</td>
+                            </tr>
+                            <tr >
+                                <td class="role">爆发</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -162,8 +162,8 @@
                                 <img  src="../img/phoenix_sun_ray_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/phoenix_supernova_hp2.png" >
-                                    </li>
+                                <img  src="../img/phoenix_supernova_hp2.png" />
+                            </li>
                             <li sel="5" class="abi">
                                 <img  src="../img/phoenix_launch_fire_spirit_hp2.png" />
                             </li>
@@ -171,210 +171,248 @@
                                 <img  src="../img/phoenix_icarus_dive_stop_hp2.png" />
                             </li>
                             <li sel="7" class="abi">
-                                <img  src="../img/phoenix_sun_ray_stop_hp2.png" >
-                                    </li>
+                                <img  src="../img/phoenix_sun_ray_stop_hp2.png" />
+                            </li>
                             <li sel="8" class="abi">
-                                <img  src="../img/phoenix_sun_ray_toggle_move_hp2.png" >
+                                <img  src="../img/phoenix_sun_ray_toggle_move_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>凤凰冲击</strong></p>
-                            <p>凤凰向目标方向进行圆弧状飞行固定距离,对沿途的敌人造成一定的持续伤害并减缓其移动速度，然后再返回初始位置。飞行过程中如果施放超新星将停止飞行。</p>
+                            <p>凤凰向目标方向进行圆弧状飞行固定距离，对沿途的敌人造成一定的持续伤害并减缓其移动速度，然后再返回初始位置。飞行过程中如果施放超新星将停止飞行。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">36</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生命值消耗:</td><td class="statRowColW">15%</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冲击长度:</td><td class="statRowColW">1400</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >烧灼持续时间:</td><td class="statRowColW">4</td>
+                                    <td>生命值消耗:</td><td class="statRowColW">15%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >每秒烧灼伤害:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
+                                    <td>冲击长度:</td><td class="statRowColW">1400</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度减缓:</td><td class="statRowColW">25%</td>
+                                    <td>烧灼持续时间:</td><td class="statRowColW">4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>每秒烧灼伤害:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度减缓:</td><td class="statRowColW">25%</td>
                                 </tr>
                             </table>
+                            <p>尽管经常遨游于宇宙虚空之间，在大气里振翅高飞还是有不同的快感</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>烈火精灵</strong></p>
                             <p>召唤4只围绕凤凰飞行的烈火精灵。每一只烈火精灵都能被单独发射到指定区域。对敌人持续造成伤害并大幅降低他们的攻击速度。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80/90/100/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">45/40/35/30</td>
+                                    <td>冷却时间:</td><td class="statRowColW">45/40/35/30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >生命值消耗:</td><td class="statRowColW">15%</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >烈火精灵持续时间:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
+                                    <td>生命值消耗:</td><td class="statRowColW">20%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >烧灼持续时间:</td><td class="statRowColW">4</td>
+                                    <td>烈火精灵持续时间:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻击速度减少:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                    <td>作用范围:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >每秒烧灼伤害:</td><td class="statRowColW">15 / 35 / 55 / 75</td>
+                                    <td>烧灼持续时间:</td><td class="statRowColW">4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击速度减少:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>每秒烧灼伤害:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
                                 </tr>
                             </table>
+                            <p>凤凰那不断坍塌重生的内核经常释放出具有意识的短暂光流</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>烈日炙烤</strong></p>
                             <p>凤凰释放体内的热火，以损失生命能量为代价，向前射出一束炽热的光线炙烤敌人。光线对敌人造成其生命值一定百分比的伤害，并对友军有半额的治疗效果。随着光线不断炙烤，造成的伤害也会不断增加，最多增至初始伤害的两倍。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">20</td>
+                                    <td>冷却时间:</td><td class="statRowColW">20</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >每秒生命值消耗:</td><td class="statRowColW">6%</td>
+                                    <td>伤害类型:</td><td class="statRowColW">纯粹</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >每秒炙烤伤害:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大生命值的伤害百分比:</td><td class="statRowColW">1% / 2% / 3% / 4%</td>
+                                    <td>每秒生命值消耗:</td><td class="statRowColW">6%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >宽度:</td><td class="statRowColW">130</td>
+                                    <td>每秒炙烤伤害:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >射程:</td><td class="statRowColW">1300</td>
+                                    <td>最大生命值的伤害百分比:</td><td class="statRowColW">1% / 2% / 3% / 4%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">6</td>
+                                    <td>宽度:</td><td class="statRowColW">130</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>射程:</td><td class="statRowColW">1300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>持续时间:</td><td class="statRowColW">6</td>
                                 </tr>
                             </table>
+                            <p>如此星体能量的释放对凤凰来说仅仅是原子级别的</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>超新星</strong></p>
-                            <p>凤凰乐意的终结自己现在的生命来换取重生。将自己变为一颗燃烧的太阳，灼烧附近一大片区域内的敌人。</p>
+                            <p>凤凰十分乐意终结自己现在的生命来换取重生。将自己变为一颗燃烧的恒星，灼烧附近一大片区域内的敌人。恒星受到敌方英雄的一定攻击次数后将会被摧毁。经过6秒后恒星将会爆炸，使周围所有敌人受到眩晕作用。而凤凰的生命和魔法值都会回到满状态，并刷新所有技能的冷却时间。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200/200/200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">110</td>
+                                    <td>冷却时间:</td><td class="statRowColW">110</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>影响:</td><td class="statRowColW">友方英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">1000 / 1000 / 1000</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >每秒造成伤害:</td><td class="statRowColW">60 / 80 / 100</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕持续时间:</td><td class="statRowColW">1.5 / 2 / 2.5</td>
+                                    <td>作用范围:</td><td class="statRowColW">1000 / 1000 / 1000</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >击碎所需攻击次数:</td><td class="statRowColW">5 / 7 / 10</td>
+                                    <td>每秒造成伤害:</td><td class="statRowColW">60 / 80 / 100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">6</td>
+                                    <td>眩晕持续时间:</td><td class="statRowColW">1.5 / 2 / 2.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>击碎所需攻击次数:</td><td class="statRowColW">5 / 8 / 11</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>持续时间:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级施法距离:</td><td class="statRowColW">500</td>
                                 </tr>
                             </table>
+                            <p>超新星烈日一般的高温是致命的，然而从烈焰中，永生的凤吟将再一次升起</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
                             <p><strong>发动烈火精灵</strong></p>
-                            <p>每一只烈火精灵都能被单独发射到指定区域。对敌人持续造成伤害并大幅降低他们的攻击速度。</p>
+                            <p>每一只烈火精灵都能被单独发射到指定区域。对敌人持续造成伤害并大幅降低他们的攻击速度。获得目标区域的视野，持续1秒。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">0/0/0/0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生命值消耗:</td><td class="statRowColW">15%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >烈火精灵持续时间:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
+                                    <td>生命值消耗:</td><td class="statRowColW">20%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
+                                    <td>烈火精灵持续时间:</td><td class="statRowColW">16 / 16 / 16 / 16</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >烧灼持续时间:</td><td class="statRowColW">4</td>
+                                    <td>作用范围:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击速度减少:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                    <td>烧灼持续时间:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >每秒烧灼伤害:</td><td class="statRowColW">15 / 35 / 55 / 75</td>
+                                    <td>攻击速度减少:</td><td class="statRowColW">80 / 100 / 120 / 140</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>每秒烧灼伤害:</td><td class="statRowColW">10 / 30 / 50 / 70</td>
                                 </tr>
                             </table>
+                            <p>轰！嘣！</p>
                         </div>
                         <div id="abi6" class="abicontent cont hided">
                             <p><strong>终止凤凰冲击</strong></p>
                             <p>马上停止冲击。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
                                 </tr>
                             </table>
+                            <p>停！</p>
                         </div>
                         <div id="abi7" class="abicontent cont hided">
                             <p><strong>终止烈日炙烤</strong></p>
                             <p>马上停止烈日炙烤。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
                                 </tr>
                             </table>
+                            <p>嘎嘣脆！</p>
                         </div>
                         <div id="abi8" class="abicontent cont hided">
                             <p><strong>切换移动状态</strong></p>
-                            <p>在烈日炙烤时切换为缓慢前行状态。</p>
+                            <p>在烈日炙烤时切换为缓慢前行状态</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
                                 </tr>
                             </table>
+                            <p>&￥……%</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -382,7 +420,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>永世的黑暗中，光之守护者的第一个太阳之光轻微闪过，这一束有自我意识的光线注定要在虚空里发光发热。亿万年里，这一束炫目的光芒逐渐聚集了无穷的能量，爆发成了一颗超新星。在这烈火之中，如同其起源一样的光线向四下散射，穿越黑暗的海洋，到达各个星座。很快，这些光芒也将成为超新星，以同样的形式向外传递着光和热。这种奇迹一般的生命与重生将一直持续到创世神鬼斧神工的苍穹之上被完全点亮。在这无尽的轮回中，被凡人们称作凤凰的星星坍塌成型，和其先前的光芒一样，凤凰也一头扎入无尽宇宙，在其邻近的星系中散布光能。经过长久的轮回，逐渐有了意识，开始了解万物，机缘巧合下听闻有一处地方，由于宇宙的横生变故进行着经年累月的战斗。因此众星的新生儿化成了生物形态，渴望在最黑暗的地方闪耀他的光和热。</p>
+                    	<p>永世的黑暗中，光之守护者的第一个太阳之光轻微闪过，这一束有自我意识的光线注定要在虚空里发光发热。亿万年里，这一束炫目的光芒逐渐聚集了无穷的能量，爆发成了一颗超新星。在这烈火之中，如同其起源一样的光线向四下散射，穿越黑暗的海洋，到达各个星座。很快，这些光芒也将成为超新星，以同样的形式向外传递着光和热。这种奇迹一般的生命与重生将一直持续到创世神鬼斧神工的苍穹之上被完全点亮。在这无尽的轮回中，被凡人们称作凤凰的星星坍塌成型，和其先前的光芒一样，凤凰也一头扎入无尽宇宙，在其邻近的星系中散布光能。经过长久的轮回，逐渐有了意识，开始了解万物，机缘巧合下听闻有一处地方，由于宇宙的横生变故进行着经年累月的战斗。因此众星的新生儿化成了生物形态，渴望在最黑暗的地方闪耀他的光和热。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

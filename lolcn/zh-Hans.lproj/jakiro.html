@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>JAKIRO</title>
+        <title>杰奇洛</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -75,7 +75,7 @@
                             <ul>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>28 + 2.80</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>10 + 1.20</span></li>
-                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>24 + 2.30</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>25 + 2.30</span></li>
                             </ul>
                         </div>
                         <div class="grow floatleft">
@@ -100,9 +100,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >生命值</td>
-                                <td class="statRowColW">606</td>
-                                <td class="statRowColW">1,218</td>
-                                <td class="statRowColW">2,035</td>
+                                <td class="statRowColW">625</td>
+                                <td class="statRowColW">1,237</td>
+                                <td class="statRowColW">2,054</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,149 +156,177 @@
                                 <img  src="../img/jakiro_dual_breath_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/jakiro_ice_path_hp2.png" />               
+                                <img  src="../img/jakiro_ice_path_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/jakiro_liquid_fire_hp2.png" />                          
+                                <img  src="../img/jakiro_liquid_fire_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/jakiro_macropyre_hp2.png" >
+                                <img  src="../img/jakiro_macropyre_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>冰火交加</strong></p>
-                            <p>双头龙的双头能分别吐出寒冰和火焰气息，造成伤害。敌方单位的攻击速度和移动速度因此下降，并受到持续的火焰伤害。</p>
+                            <p>杰奇洛对面前的敌人先后喷出寒冰和火焰。寒冰吐息减速敌人，火焰吐息对敌人造成持续伤害。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">135 / 140 / 155 / 170</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">135/140/155/170</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">35 / 70 / 105 / 140</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >开始范围:</td><td class="statRowColW">200 / 200 / 200 / 200</td>
+                                    <td>前端范围:</td><td class="statRowColW">200 / 200 / 200 / 200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >结束范围:</td><td class="statRowColW">250 / 250 / 250 / 250</td>
+                                    <td>末端范围:</td><td class="statRowColW">250 / 250 / 250 / 250</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >火炎伤害:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                    <td>燃烧伤害:</td><td class="statRowColW">16 / 36 / 56 / 76</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减少:</td><td class="statRowColW">30% / 30% / 30% / 30%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">28% / 32% / 36% / 40%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">4 / 4 / 4 / 4</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">28 / 32 / 36 / 40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">5</td>
                                 </tr>
                             </table>
+                            <p>灼霜龙族的各个物种分支个体都拥有极端危险的气息；而将各物种分支的特性混合起来，就简直难以想象。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>冰封路径</strong></p>
-                            <p>在双头龙面前创造一条冰封路径。短暂延迟后，路径成型，将任何碰触到路径的敌方单位冻结起来并造成伤害。</p>
+                            <p>在杰奇洛前方制造一条冰封路径，对触及到的敌人造成伤害并眩晕。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12.0 / 11.0 / 10.0 / 9.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12/11/10/9</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >路径成型时间:</td><td class="statRowColW">0.5</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">1 / 1.4 / 1.8 / 2.2</td>
+                                    <td>冻结延迟:</td><td class="statRowColW">0.5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">150</td>
+                                    <td>持续时间:</td><td class="statRowColW">1 / 1.4 / 1.8 / 2.2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">25/50/75/100</td>
+                                    <td>作用范围:</td><td class="statRowColW">150</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>伤害值:</td><td class="statRowColW">50</td>
                                 </tr>
                             </table>
+                            <p>杰奇洛狡猾的右脑使出它的冰封天赋，用骇人的酷寒冻结大地。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>液态火</strong></p>
-                            <p>双头龙从腹中笔直地射出一团液态火焰，烧灼他选中的牺牲品。对范围内敌方单位造成持续伤害并降低其攻击速度。</p>
+                            <p>杰奇洛的火焰燃烧效果范围内的敌人，并降低他们的攻击速度。 液态火是攻击特效，不与其它攻击特效叠加。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">20 / 15 / 10 / 5</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">20/15/10/4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                    <td>技能:</td><td class="statRowColW">自动施放, 单位目标</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻速减少:</td><td class="statRowColW">20% / 30% / 40% / 50%</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">300 / 300 / 300 / 300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >火炎伤害:</td><td class="statRowColW">10 / 15 / 20 / 25</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">20 / 30 / 40 / 50</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">5 / 5 / 5 / 5</td>
+                                    <td>作用范围:</td><td class="statRowColW">300 / 300 / 300 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>每秒燃烧伤害:</td><td class="statRowColW">12 / 16 / 20 / 24</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>DURATION:</td><td class="statRowColW">5 / 5 / 5 / 5</td>
                                 </tr>
                             </table>
+                            <p>杰奇洛张开左边的咽喉，让前方生灵涂炭。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>烈焰焚身</strong></p>
-                            <p>杰奇洛在前方沿直线释放火柱，每道火柱都对广阔的效果范围内的敌人造成每秒伤害。可神杖升级。</p>
+                            <p>杰奇洛释放出烈焰风暴，烈焰风暴作用范围很宽，并持续数秒。烈焰风暴每秒都会对作用范围内的敌人造成伤害。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">220 / 330 / 440</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">220/330/440</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">60</td>
+                                    <td>冷却时间:</td><td class="statRowColW">60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">100 / 140 / 180</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">7 / 7 / 7</td>
+                                    <td>每秒伤害:</td><td class="statRowColW">100 / 140 / 180</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">125 / 175 / 225</td>
+                                    <td>火焰长度:</td><td class="statRowColW">900</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级射程:</td><td class="statRowColW">1350 / 1350 / 1350</td>
+                                    <td>火焰宽度:</td><td class="statRowColW">240</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">10</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级每秒伤害:</td><td class="statRowColW">125 / 175 / 225</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级火焰长度:</td><td class="statRowColW">1800</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级持续时间:</td><td class="statRowColW">20</td>
                                 </tr>
                             </table>
+                            <p>用冰与火混合而成的极端温度撕裂战场。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -306,7 +334,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>即使是在那些奇怪的魔法生物中，双头龙也算是一头怪物。同时拥有着冰火之力，狡黠且狂猛，被称为杰奇洛的双头龙在战场上空肆意的灼烧大地，冰封敌人，将胆敢和它对抗的任何事物变成废墟。灼霜龙族的窝中从来都是有两只幼龙。与生俱来的凶残使它们闻名于世，这一种族中，新孵化的幼龙在出生伊始就会努力的杀死自己的兄弟姐妹。强者生存。这就是灼霜龙族维系其强大力量的办法。在一次意外中，怪胎杰奇洛从一个龙蛋里孵化出来了，在这一头幼龙的身体里有着灼霜龙族所有的力量。在它那厚重的龙鳞内，蕴含着冰火之力，在这样的力量面前，随时可能丧命。</p>
+                    	<p>即使是在那些奇怪的魔法生物中，双头龙也算是一头怪物。同时拥有着冰火之力，狡黠且狂猛，被称为杰奇洛的双头龙在战场上空肆意的灼烧大地，冰封敌人，将胆敢和它对抗的任何事物变成废墟。灼霜龙族的窝中从来都是有两只幼龙。与生俱来的凶残使它们闻名于世，这一种族中，新孵化的幼龙在出生伊始就会努力的杀死自己的兄弟姐妹。强者生存。这就是灼霜龙族维系其强大力量的办法。在一次意外中，怪胎杰奇洛从一个龙蛋里孵化出来了，在这一头幼龙的身体里有着灼霜龙族所有的力量。在它那厚重的龙鳞内，蕴含着冰火之力，在这样的力量面前，随时可能丧命。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

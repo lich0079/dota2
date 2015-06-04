@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>PHANTOM LANCER</title>
+        <title>幻影长矛手</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -74,15 +74,15 @@
                         <div class="statsline floatleft">
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>21 + 2.00</span></li>
-                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>23 + 4.20</span></li>
-                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>18 + 1.70</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>29 + 3.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>21 + 1.70</span></li>
                             </ul>
                         </div>
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>22 - 44</span></li>
                                 <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>290</span></li>
-                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.22</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>4.06</span></li>
                             </ul>
                         </div>
                     </div>
@@ -100,9 +100,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >生命值</td>
-                                <td class="statRowColW">492</td>
-                                <td class="statRowColW">944</td>
-                                <td class="statRowColW">1,647</td>
+                                <td class="statRowColW">549</td>
+                                <td class="statRowColW">1,001</td>
+                                <td class="statRowColW">1,704</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -114,20 +114,20 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >攻击力</td>
-                                <td class="statRowColW">45-67</td>
-                                <td class="statRowColW">104-126</td>
-                                <td class="statRowColW">166-188</td>
+                                <td class="statRowColW">51-73</td>
+                                <td class="statRowColW">93-115</td>
+                                <td class="statRowColW">143-165</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
                                 <td >护甲</td>
-                                <td class="statRowColW">3</td>
-                                <td class="statRowColW">11</td>
-                                <td class="statRowColW">20</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">10</td>
+                                <td class="statRowColW">17</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,131 +156,135 @@
                                 <img  src="../img/phantom_lancer_spirit_lance_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/phantom_lancer_doppelwalk_hp2.png" />               
+                                <img  src="../img/phantom_lancer_doppelwalk_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/phantom_lancer_juxtapose_hp2.png" />                          
+                                <img  src="../img/phantom_lancer_phantom_edge_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/phantom_lancer_phantom_edge_hp2.png" >
+                                <img  src="../img/phantom_lancer_juxtapose_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>灵魂之矛</strong></p>
-                            <p>对目标敌方单位投出一支有魔力的灵魂之矛，造成伤害并减速，同时召唤一个幻象攻击该单位。</p>
+                            <p>对敌方目标单位投出一支有魔力的灵魂之矛，造成伤害并减速，同时召唤一个幻象攻击该单位。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 130 / 135 / 140</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125/130/135/140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">7.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">7</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速时间:</td><td class="statRowColW">3.25</td>
+                                    <td>攻击力:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减少:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                    <td>减速持续时间:</td><td class="statRowColW">3.25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >幻象持续时间:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                    <td>移动速度降低:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >幻象受到的额外伤害:</td><td class="statRowColW">300% / 300% / 300% / 300%</td>
+                                    <td>幻象持续时间:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >幻象攻击力:</td><td class="statRowColW">20%</td>
+                                    <td>幻象继承攻击力:</td><td class="statRowColW">20% / 20% / 20% / 20%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>幻象承受伤害:</td><td class="statRowColW">400% / 400% / 400% / 400%</td>
                                 </tr>
                             </table>
+                            <p>阿兹瑞斯对于用长矛捕鱼养家的精通被证明在战场上非常有用。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
-                            <p><strong>神出鬼没</strong></p>
-                            <p>幻影长矛手进入隐身，同时留下一个幻象迷惑敌人。</p>
+                            <p><strong>神行百变</strong></p>
+                            <p>幻影长矛手暂时从战场上消失。经过1秒，幻影长矛手和附近的所有幻象都会出现在目标地点的随机位置，并产生两个新的幻象。新加的两个幻象拥有不同的特性：一个承受正常百分比的伤害，不具有攻击力，另一个承受600%的伤害，继承20%的攻击力。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 120 / 90 / 60</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30.0 / 25.0 / 20.0 / 15.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">25/20/15/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">8 / 8 / 8 / 8</td>
+                                    <td>目标区域大小:</td><td class="statRowColW">325</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度加成:</td><td class="statRowColW">15%</td>
+                                    <td>幻象聚集范围:</td><td class="statRowColW">900</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >幻象持续时间:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
+                                    <td>重新现身延迟时间:</td><td class="statRowColW">1</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >幻象受到的额外伤害:</td><td class="statRowColW">300% / 300% / 300% / 300%</td>
-                                </tr>
-                                <tr class="statRowB">
-                                    <td >幻象攻击力:</td><td class="statRowColW">20%</td>
+                                    <td>神行幻象持续时间:</td><td class="statRowColW">8</td>
                                 </tr>
                             </table>
+                            <p>恐怖巫师沃恩的死亡让幻影长矛手获得了将自身在所有光线之中弯折破碎的能力。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>并列</strong></p>
-                            <p>幻影长矛手的攻击有12％概率创造幻象来迷惑敌人。</p>
+                            <p><strong>幻影冲锋</strong></p>
+                            <p>对目标发动攻击后，幻影长矛手将快速向其冲去。幻影长矛手的幻象也将继承此技能。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">16/12/8/4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >触发几率:</td><td class="statRowColW">12% / 12% / 12% / 12%</td>
+                                    <td>技能:</td><td class="statRowColW">被动</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最多幻象:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                    <td>最小冲锋距离:</td><td class="statRowColW">300</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >幻象持续时间:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >幻象受到的额外伤害:</td><td class="statRowColW">350% / 350% / 350% / 350%</td>
-                                </tr>
-                                <tr class="statRowB">
-                                    <td >幻象攻击力:</td><td class="statRowColW">20%</td>
+                                    <td>最大冲锋距离:</td><td class="statRowColW">600 / 700 / 800 / 900</td>
                                 </tr>
                             </table>
+                            <p>阿兹瑞斯明白，瞬息万变的战场上，速度就是一切。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>幻化之锋</strong></p>
-                            <p>幻影长矛手磨练他的技能。提高并列的概率，增加幻象数量上限，并列的幻象现在也可以创造自己的幻象。幻化之锋也能增加幻影长矛手的魔法抗性。</p>
+                            <p><strong>并列</strong></p>
+                            <p>幻影长矛手的存在有一定几率会破碎，产生自身的幻象。幻象也有几率进一步破碎，再产生幻象。幻影长矛手产生的幻象持续8秒，幻象产生的幻象则持续4秒。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >魔法抗性:</td><td class="statRowColW">10% / 15% / 20%</td>
+                                    <td>幻象数量上限:</td><td class="statRowColW">5 / 7 / 9</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >幻象复制几率:</td><td class="statRowColW">3% / 5% / 7%</td>
+                                    <td>本体触发几率:</td><td class="statRowColW">40% / 45% / 50%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >并列触发几率加成:</td><td class="statRowColW">2% / 4% / 6%</td>
+                                    <td>幻象触发几率:</td><td class="statRowColW">8%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>幻象继承攻击力:</td><td class="statRowColW">16%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>幻象承受伤害:</td><td class="statRowColW">500%</td>
                                 </tr>
                             </table>
+                            <p>阿兹瑞斯的每次刺击感觉就像一个普通战士的两次，或三次，或四次...</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -288,7 +292,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>遥远的极地村庄对于王国中心地带肆虐的战火一无所知。对于那里的村民们来说，用长矛刺鱼、一家人聚餐就是生活的全部。但是战争还是到来了。征兵令传来后，出身卑微的长矛手阿兹瑞斯作为一个身体健全的士兵，加入了军队，宣誓给王国带来和平，这样做也是为了给他的村庄带来和平。他和他的族人在对抗恐怖巫师沃恩的最终进攻中被安排为前锋，这使他们付出了几乎全灭的代价。当前锋队一路战斗到敌人的堡垒下时，长矛手的族人已经只剩阿兹瑞斯一个人了，他作为最后一人，成功地潜入了巫师的城堡。族人的死激怒了阿兹瑞斯，他闯过了巫师设置的每一个死亡陷阱，打败了所有巫师召唤的幻象守卫。很快，这个出身低微的渔夫抵达了沃恩的高塔圣所。两人激战了一整晚，长矛和法杖的对决掀起了狂怒的混沌，最终在一声震耳欲聋的嘶吼中，阿兹瑞斯的长矛刺穿了巫师的身体。但是巫师并没有单纯的死去；他爆裂成无数光影的碎片，以巨大的力量穿透了杀死他的阿兹瑞斯。尘埃落定，战斗激起的烟雾散去后，阿兹瑞斯发现他站在一群他的族人之中。每个人都穿的和他一样，每个人都拿着和他一样的武器，而且他能感觉到每个人都和他在进行同样的思考。意识到王国军在接近，阿兹瑞斯希望这些幻影赶快藏起来，于是他们就一个接一个遁入了虚无。士兵们到达塔顶后发现巫师已经被阿兹瑞斯打倒了。当他们靠近这位战士时，长矛手突然消失了。刚才站在他们面前的长矛手只是一个幻影而已。真正的阿兹瑞斯早已逃离了战场，为他的怒火而羞愧，为他失去的同胞而痛心，他坚定了要用今后的战斗为村人带来和平的决心。	</p>
+                    	<p>遥远的极地村庄对于王国中心地带肆虐的战火一无所知。对于那里的村民们来说，用长矛刺鱼、一家人聚餐就是生活的全部。但是战争还是到来了。征兵令传来后，出身卑微的长矛手阿兹瑞斯作为一个身体健全的士兵，加入了军队，宣誓给王国带来和平，这样做也是为了给他的村庄带来和平。他和他的族人在对抗恐怖巫师沃恩的最终进攻中被安排为前锋，这使他们付出了几乎全灭的代价。当前锋队一路战斗到敌人的堡垒下时，长矛手的族人已经只剩阿兹瑞斯一个人了，他作为最后一人，成功地潜入了巫师的城堡。族人的死激怒了阿兹瑞斯，他闯过了巫师设置的每一个死亡陷阱，打败了所有巫师召唤的幻象守卫。很快，这个出身低微的渔夫抵达了沃恩的高塔圣所。两人激战了一整晚，长矛和法杖的对决掀起了狂怒的混沌，最终在一声震耳欲聋的嘶吼中，阿兹瑞斯的长矛刺穿了巫师的身体。但是巫师并没有单纯的死去；他爆裂成无数光影的碎片，以巨大的力量穿透了杀死他的阿兹瑞斯。尘埃落定，战斗激起的烟雾散去后，阿兹瑞斯发现他站在一群他的族人之中。每个人都穿的和他一样，每个人都拿着和他一样的武器，而且他能感觉到每个人都和他在进行同样的思考。意识到王国军在接近，阿兹瑞斯希望这些幻影赶快藏起来，于是他们就一个接一个遁入了虚无。士兵们到达塔顶后发现巫师已经被阿兹瑞斯打倒了。当他们靠近这位战士时，长矛手突然消失了。刚才站在他们面前的长矛手只是一个幻影而已。真正的阿兹瑞斯早已逃离了战场，为他的怒火而羞愧，为他失去的同胞而痛心，他坚定了要用今后的战斗为村人带来和平的决心。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

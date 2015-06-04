@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Ancient Apparition</title>
+        <title>远古冰魄</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -40,7 +40,7 @@
                     <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/ancient_apparition_hphover.png"/></a>
                 </div>
                 <div  class="floatleft">
-                    <div class="heroName" style="font-size: 15px;">极寒幽魂</div>
+                    <div class="heroName">远古冰魄</div>
                      <div class="atype">远程</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
                             <tr >
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,8 +127,8 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
-                                <td class="statRowColW" colspan="3" align="center">1800 / 1400</td>
+                                <td >视野范围</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -156,13 +156,16 @@
                                 <img  src="../img/ancient_apparition_cold_feet_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/ancient_apparition_ice_vortex_hp2.png" />               
+                                <img  src="../img/ancient_apparition_ice_vortex_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/ancient_apparition_chilling_touch_hp2.png" />                          
+                                <img  src="../img/ancient_apparition_chilling_touch_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/ancient_apparition_ice_blast_hp2.png" >
+                                <img  src="../img/ancient_apparition_ice_blast_hp2.png" />
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/ancient_apparition_ice_blast_release_hp2.png" />
                             </li>
                         </ul>
                     </div>
@@ -173,120 +176,150 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 150 / 150 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/150/150/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">15.0 / 13.0 / 11.0 / 9.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">15/13/11/9</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续性伤害:</td><td class="statRowColW">37.5 / 50 / 62.5 / 75</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >消除距离:</td><td class="statRowColW">740 / 740 / 740 / 740</td>
+                                    <td>每次伤害:</td><td class="statRowColW">37.5 / 50 / 62.5 / 75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >眩晕时间:</td><td class="statRowColW">1.25 / 2 / 2.75 / 3.5</td>
+                                    <td>失效距离:</td><td class="statRowColW">740 / 740 / 740 / 740</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>眩晕时间:</td><td class="statRowColW">1.25 / 2 / 2.75 / 3.5</td>
                                 </tr>
                             </table>
+                            <p>卡尔德的存在将压周围的敌人吸入寒冷虚空，带来将他们锁进永恒冰牢的威胁。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>冰霜漩涡</strong></p>
-                            <p>创造一个寒冰能量的漩涡，降低范围内敌人的移动速度和魔法抗性。持续12秒。</p>
+                            <p>创造一个寒冰能量的漩涡，降低范围内敌人的移动速度，增加他们受到的魔法伤害。持续16秒。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80 / 90 / 100 / 110</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80/90/100/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">6.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速:</td><td class="statRowColW">18% / 22% / 26% / 30%</td>
+                                    <td>作用范围:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >降低魔抗:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">15% / 20% / 25% / 30%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>魔法伤害加深:</td><td class="statRowColW">15% / 20% / 25% / 30%</td>
                                 </tr>
                             </table>
+                            <p>卡尔德带来腐蚀性的冰风，将战场变寒冷。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>寒冰之触</strong></p>
-                            <p>一阵极寒之风对友方施加魔法，使他们接下来的数次普通攻击造成额外魔法伤害，但稍微降低攻击速度。持续30秒。</p>
+                            <p><strong>极寒之触</strong></p>
+                            <p>一阵极寒之风对友方英雄施加魔法，使他们接下来的数次普通攻击造成额外魔法伤害，但稍微降低攻击速度。无论选择何处施放，远古冰魄总是会获得状态效果。持续30秒。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110/120/130/140</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">50.0 / 46.0 / 42.0 / 38.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">50/42/34/26</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">525</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大攻击次数:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>作用范围:</td><td class="statRowColW">525</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">50 / 60 / 70 / 80</td>
+                                    <td>最多攻击次数:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻速:</td><td class="statRowColW">15% / 15% / 15% / 15%</td>
+                                    <td>额外伤害:</td><td class="statRowColW">50 / 60 / 70 / 80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>攻击速度降低:</td><td class="statRowColW">20</td>
                                 </tr>
                             </table>
+                            <p>远古冰魄的永恒知识给他的友军带来寒冷强化。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>冰晶爆轰</strong></p>
-                            <p>全图打击的爆炸冰球。第一次按下时，卡尔德向目标位置发射一个指向球。第二次按下时，射出真正的冰晶爆轰 - 距离越远，影响范围越大。对敌方单位造成伤害，并对范围内和周围的敌方单位附加寒霜诅咒，阻止他们的生命回复。受到寒霜诅咒的单位会持续受到小幅伤害；如果在此期间生命值下降到某一百分比以下，单位将立即死亡。</p>
+                            <p>向地图的任意位置发出爆炸冰球，在冰球飞行时再次施放此技能将使其停下，使所在区域产生毁灭性的冰爆。冰球飞行的距离越长，冰爆影响的范围也将越大。冰爆范围内的所有敌方单位将马上受到大量伤害，而处于冰球飞行路径上的敌方英雄将与冰爆范围内的敌方英雄一同受到寒霜诅咒的作用，持续受到小幅伤害，同时无法恢复生命值。在此期间如果生命值低于一定百分比，该英雄将立刻死亡。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 125 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/125/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">45.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">250 / 350 / 450</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冰晶持续时间:</td><td class="statRowColW">8 / 9 / 10</td>
+                                    <td>攻击力:</td><td class="statRowColW">250 / 350 / 450</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >冰晶伤害:</td><td class="statRowColW">12.5 / 20 / 32</td>
+                                    <td>寒霜诅咒持续时间:</td><td class="statRowColW">8 / 9 / 10</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >立即死亡生命值:</td><td class="statRowColW">10% / 11% / 12%</td>
+                                    <td>寒霜诅咒持续伤害:</td><td class="statRowColW">12.5 / 20 / 32</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级持续时间:</td><td class="statRowColW">17</td>
+                                    <td>即死生命值百分比:</td><td class="statRowColW">10% / 11% / 12%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级寒霜诅咒持续时间:</td><td class="statRowColW">17</td>
                                 </tr>
                             </table>
+                            <p>卡尔德的寒霜之体中流出远古的寒冰风暴，将这个世界的居民冻成他永恒力量的纪念碑。</p>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>释放</strong></p>
+                            <p>在它当前的位置放出冰晶爆轰。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                            </table>
+                            <p></p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -294,7 +327,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>卡尔德，极寒幽魂，是时光之外的冰冷投影。他来自寒冷的无尽虚空，目睹宇宙诞生，见证宇宙终结。卡尔德是夕在，今在，永在的无上力量...我们的所有认知，所有自认为正确的强大的事物，在永恒的卡尔德看来，不过是最细微最无力的附和。有人相信，随着宇宙的老化并走向衰亡，卡尔德的力量和光芒也将变得更强——极寒幽魂将更加年轻，更加强大。他对冰霜的控制能够冻结一切事物，他的投影放出的光芒异常夺目。他将不再是幽魂，而是神！</p>
+                    	<p>卡尔德，远古冰魄，是时光之外的冰冷投影。他来自寒冷的无尽虚空，目睹宇宙诞生，见证宇宙终结。卡尔德是夕在，今在，永在的无上力量...我们的所有认知，所有自认为强大的事物，在永恒的卡尔德看来，不过是最细微最无力的附和。世间有这样的传言，随着宇宙的老化并走向衰亡，卡尔德的力量和光芒也将变得更强——远古冰魄将更加年轻，更加强大。他对冰霜的控制能够冻结一切事物，他的投影放出的光芒异常夺目。他将不再是魂魄，而是神！ 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

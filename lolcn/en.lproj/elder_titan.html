@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>elder_titan</title>
+        <title>ELDER TITAN</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,23 +41,23 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">ELDER TITAN</div>
-                    <div class="atype">Melee</div>
+                     <div class="atype">Melee</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">Durable</td>
-                            <td class="role" width="50%">Initiator</td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Initiator</td>
+                                <td class="role" width="50%">Durable</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,14 +69,13 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>23 + 1.60</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>14 + 1.50</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>24 + 2.30</span></li>
-                                
                             </ul>
                         </div>
                         <div class="grow floatleft">
@@ -139,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >MISSILE SPEED</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -163,162 +162,182 @@
                                 <img  src="../img/elder_titan_natural_order_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/elder_titan_return_spirit_hp2.png" >
+                                <img  src="../img/elder_titan_return_spirit_hp2.png" />
                             </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/elder_titan_earth_splitter_hp2.png" >
+                                <img  src="../img/elder_titan_earth_splitter_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>Echo Stomp</strong></p>
-                            <p>Elder Titan and his Ancestral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations. The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage. Unconscious enemies will wake if they take damage.</p>
+                            <p>Elder Titan and his Astral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations. The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage.</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100/115/130/145</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">15</td>
+                                    <td>Cooldown:</td><td class="statRowColW">14/13/12/11</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET, CHANNELED</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target, Channeled</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">COMPOSITE</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Physical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >CAST TIME:</td><td class="statRowColW">1.4</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RADIUS:</td><td class="statRowColW">475</td>
+                                    <td>CAST TIME:</td><td class="statRowColW">1.6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SLEEP DURATION:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                    <td>RADIUS:</td><td class="statRowColW">475</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >STOMP DAMAGE:</td><td class="statRowColW">80 / 80 / 80 / 80</td>
+                                    <td>SLEEP DURATION:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>STOMP DAMAGE:</td><td class="statRowColW">80 / 90 / 100 / 110</td>
                                 </tr>
                             </table>
+                            <p>The force of creation still echoes in the stomp of the Titan.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
-                            <p><strong>Ancestral Spirit</strong></p>
-                            <p>Elder Titan sends forth his Ancestral Spirit, a spiritual mimic. The Spirit damages any units it passes through. When it rejoins the Titan, it grants bonus damage and movement speed for each unit it damaged. The Ancestral Spirit possesses the Echo Stomp, Return Spirit, and Natural Order abilities.</p>
+                            <p><strong>Astral Spirit</strong></p>
+                            <p>Elder Titan sends forth his Astral Spirit, damaging any units it passes through. When the spirit rejoins the Titan, it grants bonus damage and movement speed for each unit it damaged. The Astral Spirit possesses the Echo Stomp, Return Spirit, and Natural Order abilities.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">110/110/110/110</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">110/110/110/110</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">16</td>
+                                    <td>Cooldown:</td><td class="statRowColW">16</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">275</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DAMAGE:</td><td class="statRowColW">120 / 160 / 200 / 240</td>
+                                    <td>RADIUS:</td><td class="statRowColW">275</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">8</td>
+                                    <td>DAMAGE:</td><td class="statRowColW">60 / 90 / 120 / 150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BUFF DURATION:</td><td class="statRowColW">9</td>
+                                    <td>DURATION:</td><td class="statRowColW">8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BONUS SPEED(CREEPS):</td><td class="statRowColW">1%</td>
+                                    <td>BUFF DURATION:</td><td class="statRowColW">9</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BONUS SPEED(HEROES):</td><td class="statRowColW">5%</td>
+                                    <td>BONUS SPEED(CREEPS):</td><td class="statRowColW">1%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BONUS DAMAGE(CREEPS):</td><td class="statRowColW">3 / 6 / 9 / 12</td>
+                                    <td>BONUS SPEED(HEROES):</td><td class="statRowColW">5%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BONUS DAMAGE(HEROES):</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                    <td>BONUS DAMAGE(CREEPS):</td><td class="statRowColW">3 / 6 / 9 / 12</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>BONUS DAMAGE(HEROES):</td><td class="statRowColW">10 / 20 / 30 / 40</td>
                                 </tr>
                             </table>
+                            <p>Like the four fundamentals, Elder Titan exists across all planes at once and can draw other aspects of himself to assist in times of need.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Natural Order</strong></p>
-                            <p>Reduces all elements to their basic levels, removing base armor and magic resistance from nearby enemy units.</p>
+                            <p>Reduces all elements to their basic levels, removing base armor and magic damage resistance from nearby enemy units.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE, AURA</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">Passive, Aura</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >RADIUS:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >BASE ARMOR REDUCTION:</td><td class="statRowColW">25/50/75/100%</td>
+                                    <td>RADIUS:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BASE RESIST REDUCTION:</td><td class="statRowColW">6% / 14% / 20% / 26%</td>
+                                    <td>BASE ARMOR REDUCTION:</td><td class="statRowColW">40% / 60% / 80% / 100%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>BASE RESIST REDUCTION:</td><td class="statRowColW">12% / 19% / 26% / 33%</td>
                                 </tr>
                             </table>
+                            <p>As it was at the beginning, Elder Titan makes it so again.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>Return Ancestral Spirit</strong></p>
-                            <p>Returns the Ancestral Spirit to Elder Titan.</p>
+                            <p><strong>Return Astral Spirit</strong></p>
+                            <p>Returns the Astral Spirit to Elder Titan.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET</td>
+                                    <td width="45%">Cooldown:</td><td class="statRowColW" width="55%">0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">0</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                             </table>
+                            <p></p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
                             <p><strong>Earth Splitter</strong></p>
-                            <p>Sends forth a jagged crack in front of Elder Titan. After 3 seconds, the crack implodes, slowing them while dealing damage based on the maximum life of units caught in the area.</p>
+                            <p>Sends forth a jagged crack in front of Elder Titan. After 3 seconds, the crack implodes, slowing movement while dealing damage to each enemy based on their maximum life. Half of the damage dealt is Magical damage, while the other half is Physical damage. Upgradable by Aghanim's Scepter.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">175/175/175</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">175/175/175</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">100</td>
+                                    <td>Cooldown:</td><td class="statRowColW">100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Point Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Enemy Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">COMPOSITE</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DELAY:</td><td class="statRowColW">3.14</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >CRACK WIDTH:</td><td class="statRowColW">300</td>
+                                    <td>EXPLODE DELAY:</td><td class="statRowColW">3.14</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >RANGE:</td><td class="statRowColW">2400</td>
+                                    <td>CRACK WIDTH:</td><td class="statRowColW">300</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >SLOW:</td><td class="statRowColW">30% / 40% / 50%</td>
+                                    <td>CRACK LENGTH:</td><td class="statRowColW">2400</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SLOW DURATION:</td><td class="statRowColW">3 / 4 / 5</td>
+                                    <td>MOVEMENT SLOW:</td><td class="statRowColW">30% / 40% / 50%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MAX HP AS DAMAGE:</td><td class="statRowColW">35%</td>
+                                    <td>SLOW DURATION:</td><td class="statRowColW">3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>MAX HP AS DAMAGE:</td><td class="statRowColW">35%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>SCEPTER SLOW/DISARM DURATION:</td><td class="statRowColW">4 / 5 / 6</td>
                                 </tr>
                             </table>
+                            <p>That which he created, the titan tears asunder.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -326,11 +345,12 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>Well may you ask, "How did this world take its form?" Why of all the worlds in creation, has this one its strange properties, its diverse and motley collection of creatures, cultures and lore? "The answer," One whispers, "lies with the Titans." </p>
-                        
-                        <p>These original progenitors were there near the Beginning--if not actual witnesses to the creation, then born with it still echoing in their ears. Stamped with the earliest energies of the universe, they wished nothing more than to continue as creators themselves. Thus they bent to the task of shaping matter to their will: hammering and heating, bending and blasting. And when matter proved less challenging than they liked, they turned their tools upon themselves, reshaping their minds and reforging their spirits until they had become beings of great endurance. Reality itself became the ultimate object of their smithing. Yet, along the way, they sometimes erred. In cases of great ambition, mistakes are unavoidable. </p>
-                        
-                        <p>The one we know as the Elder Titan was a great innovator, one who studied at the forge of creation. In honing his skills, he shattered something that could never be repaired, only thrown aside. He fell into his own broken world, a shattered soul himself. There he dwelt among the jagged shards and fissured planes, along with other lost fragments that had sifted down through the cracks in the early universe. And this is why the world we know resembles an isle of castaways, survivors of a wreck now long forgotten. Forgotten, that is, by all but the One who blames himself. He spends his time forever seeking a way to accomplish the repairs, that he might rejoin the parts of his broken soul, that we and the world alike might all be mended. This is the One we know as Elder Titan. </p>
+                    	<p>Well may you ask, "How did this world take its form?" Why of all the worlds in creation, has this one its strange properties, its diverse and motley collection of creatures, cultures and lore? "The answer," One whispers, "lies with the Titans." 
+<br>
+<br> These original progenitors were there near the Beginning--if not actual witnesses to the creation, then born with it still echoing in their ears. Stamped with the earliest energies of the universe, they wished nothing more than to continue as creators themselves. Thus they bent to the task of shaping matter to their will: hammering and heating, bending and blasting. And when matter proved less challenging than they liked, they turned their tools upon themselves, reshaping their minds and reforging their spirits until they had become beings of great endurance. Reality itself became the ultimate object of their smithing. Yet, along the way, they sometimes erred. In cases of great ambition, mistakes are unavoidable. 
+<br>
+<br> The one we know as the Elder Titan was a great innovator, one who studied at the forge of creation. In honing his skills, he shattered something that could never be repaired, only thrown aside. He fell into his own broken world, a shattered soul himself. There he dwelt among the jagged shards and fissured planes, along with other lost fragments that had sifted down through the cracks in the early universe. And this is why the world we know resembles an isle of castaways, survivors of a wreck now long forgotten. Forgotten, that is, by all but the One who blames himself. He spends his time forever seeking a way to accomplish the repairs, that he might rejoin the parts of his broken soul, that we and the world alike might all be mended. This is the One we know as Elder Titan. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

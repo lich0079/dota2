@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>WEAVER</title>
+        <title>编织者</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,110 +156,132 @@
                                 <img  src="../img/weaver_the_swarm_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/weaver_shukuchi_hp2.png" />               
+                                <img  src="../img/weaver_shukuchi_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/weaver_geminate_attack_hp2.png" />                          
+                                <img  src="../img/weaver_geminate_attack_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/weaver_time_lapse_hp2.png" >
+                                <img  src="../img/weaver_time_lapse_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
-                            <p><strong>蝗虫群</strong></p>
-                            <p>向一个目标位置释放，一大群蝗虫（12只）会从地穴编制者的位置向目标位置飞去，攻击并降低护甲。</p>
+                            <p><strong>虫群</strong></p>
+                            <p>编织者放出12只编织者幼虫，每只幼虫都会紧紧缠住它遇到的敌人，攻击敌人并削弱他们的护甲，直到幼虫被杀死。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">36.0 / 33.0 / 30.0 / 27.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">36/33/30/27</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">8 / 12 / 16 / 20</td>
+                                    <td>甲虫攻击力:</td><td class="statRowColW">20</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >个数:</td><td class="statRowColW">12 / 12 / 12 / 12</td>
+                                    <td>攻击频率:</td><td class="statRowColW">1.4 / 1.25 / 1.1 / 0.95</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >护甲减少:</td><td class="statRowColW">1 / 1 / 1 / 1</td>
+                                    <td>数量:</td><td class="statRowColW">12 / 12 / 12 / 12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >消灭蝗虫需要的攻击次数:</td><td class="statRowColW">8 / 8 / 8 / 8</td>
+                                    <td>护甲削弱:</td><td class="statRowColW">1 / 1 / 1 / 1</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">16</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>甲虫可承受攻击次数:</td><td class="statRowColW">8 / 8 / 8 / 8</td>
                                 </tr>
                             </table>
+                            <p>斯吉茨格尔打开时空之纱的缺口，让编织者幼虫穿越而出，帮助他战斗。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>缩地</strong></p>
-                            <p>地穴编织者瞬间将速度提升至极限以至隐身，他在隐身状态下所碰到的任何单位受到伤害。</p>
+                            <p>编织者进入隐身，移动速度达到极限，并且能穿行肉体，在穿过敌方单位时还将造成伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60 / 60 / 60 / 60</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60/60/60/60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12.0 / 10.0 / 8.0 / 6.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12/10/8/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">90/110/130/150</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
+                                    <td>伤害:</td><td class="statRowColW">75 / 100 / 125 / 150</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >隐身时间:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                    <td>作用范围:</td><td class="statRowColW">175 / 175 / 175 / 175</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">4 / 4 / 4 / 4</td>
+                                    <td>进入隐身时间:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>持续时间:</td><td class="statRowColW">4 / 4 / 4 / 4</td>
                                 </tr>
                             </table>
+                            <p>编织者曾为创世之纱工作，小小的虫洞让他们可以穿越时间来更好的发挥他们的手艺。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>连击</strong></p>
-                            <p>让地穴编织者吐出两只毒虫，攻击目标两次。</p>
+                            <p>允许编织者立刻发动两次攻击。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">6.0 / 5.0 / 4.0 / 2.5</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">6/5/4/3</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                    <td>技能:</td><td class="statRowColW">被动</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                             </table>
+                            <p>斯吉茨格尔与时间有着多变的联系，使他的动作被看到和感受到，不止一次。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>时光倒流</strong></p>
-                            <p>让地穴编织者回到5秒前的状态和位置，不会对技能的冷却时间、经验值和金钱造成影响。</p>
+                            <p>编织者回到五秒前的时间点，获得当时的生命值和魔法值。不影响冷却时间、金钱和经验。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 75 / 0</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/75/0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">60 / 50 / 40</td>
+                                    <td>冷却时间:</td><td class="statRowColW">60/50/40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>影响:</td><td class="statRowColW">友方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级对队友施法距离:</td><td class="statRowColW">1000</td>
                                 </tr>
                             </table>
+                            <p>如果斯吉茨格尔认为世界当前的现实与他所渴望的不合，他就爬回过去的时间点来纠正错误。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -267,7 +289,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>创世之纱需要长期细心的照料，以防止其变得残破；因为一旦它散开了，整个世界就将毁于一旦。编织者的工作就是保持创世之纱的紧密，用现实之网修补它的破损。他们同样要防止那些在创世之纱的缺口上产卵或者侵蚀创世之纱的虫子，只要编织者稍微分心，这些家伙的幼虫就能吞噬掉整个宇宙。斯吉茨格尔是一名大师级的编织者，负责维护一块小补丁的紧密。然而这项任务并不能满足他，他经常唠叨过去那些原始的创造工作，对干完活就走人的世界纺织者也是颇有微词。他想创造，不想只是维护——他想按自己的设计编织出自己的世界。他开始在他负责的区域上做手脚，逐渐不能自拔，他的胆子也愈发的大，甚至私自改动了世界纺织者编织的图案。最后，守卫者来了，毁掉了编织者所作的一切，直接从创世之纱上去除了这一块，然后重新编织，却不让他参与其中。斯吉茨格尔现在孤身一人，被种群所弃，换做任何其他编织者，都会备受折磨。然而斯吉茨格尔却无比愉悦，因为他终于自由了，能够自由的创造，重头开始。他创造新世界所需的所有材料都触手可及。他只需要从缺口处将现在的世界撕裂。	</p>
+                    	<p>创世之纱需要长期细心的照料，以防止其变得残破；因为一旦它散开了，整个世界就将毁于一旦。编织者的工作就是保持创世之纱的紧密，用现实之网修补它的破损。他们同样要防止那些在创世之纱的缺口上产卵或者侵蚀创世之纱的虫子，只要编织者稍微分心，这些家伙的幼虫就能吞噬掉整个宇宙。斯吉茨格尔是一名大师级的编织者，负责维护一块小补丁的紧密。然而这项任务并不能满足他，他经常唠叨过去那些原始的创造工作，对干完活就走人的世界纺织者也是颇有微词。他想创造，不想只是维护——他想按自己的设计编织出自己的世界。他开始在他负责的区域上做手脚，逐渐不能自拔，他的胆子也愈发的大，甚至私自改动了世界纺织者编织的图案。最后，守卫者来了，毁掉了编织者所作的一切，直接从创世之纱上去除了这一块，然后重新编织，却不让他参与其中。斯吉茨格尔现在孤身一人，被种群所弃，换做任何其他编织者，都会备受折磨。然而斯吉茨格尔却无比愉悦，因为他终于自由了，能够自由的创造，重头开始。他创造新世界所需的所有材料都触手可及。他只需要从缺口处将现在的世界撕裂。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

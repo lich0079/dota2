@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>NYX ASSASSIN</title>
+        <title>司夜刺客</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">司夜刺客</div>
-                    <div class="atype">近战</div>
+                     <div class="atype">近战</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">控制</td>
-                            <td class="role" width="50%">爆发</td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">控制</td>
+                                <td class="role" width="50%">爆发</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -162,8 +162,14 @@
                                 <img  src="../img/nyx_assassin_spiked_carapace_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/nyx_assassin_vendetta_hp2.png" >
-                                    </li>
+                                <img  src="../img/nyx_assassin_burrow_hp2.png" />
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/nyx_assassin_unburrow_hp2.png" />
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/nyx_assassin_vendetta_hp2.png" />
+                            </li>
                         </ul>
                     </div>
                     <div class="contentblock">
@@ -173,105 +179,164 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95 / 115 / 135 / 155</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95/115/135/155</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">11.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">13</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">60 / 130 / 200 / 260</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">1.27 / 1.77 / 2.27 / 2.77</td>
+                                    <td>攻击力:</td><td class="statRowColW">80 / 140 / 200 / 260</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>眩晕时间:</td><td class="statRowColW">1.27 / 1.77 / 2.27 / 2.77</td>
                                 </tr>
                             </table>
+                            <p>所有狂热的圣甲虫都拥有地底通道的秘密学识，并用其为自己带来优势。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>法力燃烧</strong></p>
                             <p>烧毁目标英雄智力值数倍的魔法值，并造成和烧毁的魔法值等量的伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">28.0 / 20.0 / 12.0 / 4.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">28/20/12/4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >智力值倍数:</td><td class="statRowColW">3.5/4/4.5/5x</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>智力值倍数:</td><td class="statRowColW">3.5 / 4 / 4.5 / 5</td>
                                 </tr>
                             </table>
+                            <p>秘湮学院的典籍记载着一只能够侵蚀低等生物心智的圣甲虫。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>尖刺外壳</strong></p>
-                            <p>暂时用有机倒钩增强刺客的壳质护甲，使其在持续时间内可以阻挡并反弹来自任何单位的一次攻击，同时眩晕这些 攻击者。</p>
+                            <p>激活状态下，尖刺外壳可以反弹并无效化司夜刺客受到的伤害（每个攻击者最多作用一次），同时眩晕攻击者。激活尖刺外壳不会打破复仇的隐身状态。 钻地状态下尖刺外壳施放后将立刻眩晕周围的敌人。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">40 / 40 / 40 / 40</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">40/40/40/40</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">23/20/17/14</td>
+                                    <td>冷却时间:</td><td class="statRowColW">23/20/17/14</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                    <td>伤害类型:</td><td class="statRowColW">纯粹</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >反弹效果持续时间:</td><td class="statRowColW">2.25</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >眩晕时间:</td><td class="statRowColW">0.6 / 1.2 / 1.8 / 2.4</td>
+                                    <td>反弹持续时间:</td><td class="statRowColW">2.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>眩晕时间:</td><td class="statRowColW">0.6 / 1.2 / 1.8 / 2.4</td>
                                 </tr>
                             </table>
+                            <p>虽然他们的甲壳相对来说很薄，但是那是由伸缩自如的剃刀般锋利的尖刺所保卫的。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>复仇</strong></p>
-                            <p>地穴刺客进入隐身并提升移动速度。如果地穴刺客以攻击打破隐身，那一次攻击会造成巨大的额外伤害。</p>
+                            <p><strong>钻地</strong></p>
+                            <p>司夜刺客经过1秒的掘地后钻入地下。钻地后尖刺外壳一施放就会直接晕眩附近所有敌人，法力燃烧和穿刺的施法距离提升50%，穿刺的冷却时间减少，司夜刺客为隐身状态，无法进行移动/攻击。同时生命和魔法恢复速率都有所增加，受到的伤害则降低40%。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">160 / 210 / 260</td>
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">70.0 / 60.0 / 50.0</td>
+                                    <td>钻地后生命/魔法恢复速率:</td><td class="statRowColW">1.5%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>钻地后所受伤害减少:</td><td class="statRowColW">40</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>钻地后法力燃烧施法距离:</td><td class="statRowColW">900</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">20 / 35 / 50</td>
+                                    <td>钻地后穿刺施法距离:</td><td class="statRowColW">1050</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度:</td><td class="statRowColW">16% / 18% / 20%</td>
+                                    <td>钻地后穿刺冷却时间:</td><td class="statRowColW">9</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >额外伤害:</td><td class="statRowColW">250 / 400 / 550</td>
+                                    <td>钻地后尖刺外壳作用范围:</td><td class="statRowColW">300</td>
                                 </tr>
                             </table>
+                            <p>狂热圣甲虫中某些层级的成名绝技是挖掘小型洞穴，守株待兔，做好伏击猎物的准备。</p>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>现身</strong></p>
+                            <p>从钻地状态中现身。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                            </table>
+                            <p>狂热圣甲虫中某些层级的成名绝技是挖掘小型洞穴，守株待兔，做好伏击猎物的准备。</p>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>复仇</strong></p>
+                            <p>司夜刺客进入隐身状态并获得移动速度加成。如果司夜刺客以攻击打破隐身，那一次攻击将会造成巨大的额外伤害。 可用神杖升级。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">160/210/260</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>冷却时间:</td><td class="statRowColW">70/60/50</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">20 / 35 / 50</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度提升:</td><td class="statRowColW">16% / 18% / 20%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>额外伤害:</td><td class="statRowColW">250 / 400 / 550</td>
+                                </tr>
+                            </table>
+                            <p>圣甲虫为女王的荣耀而杀戮。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -279,7 +344,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在秘湮学院的禁断圣所中，在那些研究龙类遗传学论文和艰深晦涩的咒语书之间，藏有一本记录着古代昆虫学的珍贵书籍。这本凝聚了学者们心血的书里面记录了一种天生具有读心术的狂热圣甲虫，这种具有社会性的昆虫在七个位面的所以世界中都是独一无二的。和他领地中的其他幼虫不一样的是，司夜刺客的变形并不是被那种工兵般无聊乏味的思想所引领的。他的变化很特别，受到了夜神妮克丝的恩赐。他是天选者，被女神从万千族人中挑选出来并赐予了女神精华。他的族人大多都在虫后密室的黑暗祝福下死去，而后他出现了，有着犀利的读心术，尖刀般锋利的爪子和剃刀一样的下颚，通过空气感知着他身边的那些同类的想法。在所有的狂热圣甲虫中，只有他被最高存在召唤。在妮克丝的恩惠下，他变体了，重生了，被赋予了各种能力，去完成他的创造者唯一的要求：以女神之名杀戮。	</p>
+                    	<p>在秘湮学院的禁断圣所中，在那些研究龙类遗传学论文和艰深晦涩的咒语书之间，藏有一本记录着古代昆虫学的珍贵书籍。这本凝聚了学者们心血的书里面记录了一种天生具有读心术的狂热圣甲虫，这种具有社会性的昆虫在七个位面的所以世界中都是独一无二的。和他领地中的其他幼虫不一样的是，司夜刺客的变形并不是被那种工兵般无聊乏味的思想所引领的。他的变化很特别，受到了夜神妮克丝的恩赐。他是天选者，被女神从万千族人中挑选出来并赐予了女神精华。他的族人大多都在虫后密室的黑暗祝福下死去，而后他出现了，有着犀利的读心术，尖刀般锋利的爪子和剃刀一样的下颚，通过空气感知着他身边的那些同类的想法。在所有的狂热圣甲虫中，只有他被最高存在召唤。在妮克丝的恩惠下，他变体了，重生了，被赋予了各种能力，去完成他的创造者唯一的要求：以女神之名杀戮。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

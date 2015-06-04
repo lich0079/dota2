@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>VIPER</title>
+        <title>冥界亚龙</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,143 +156,165 @@
                                 <img  src="../img/viper_poison_attack_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/viper_nethertoxin_hp2.png" />               
+                                <img  src="../img/viper_nethertoxin_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/viper_corrosive_skin_hp2.png" />                          
+                                <img  src="../img/viper_corrosive_skin_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/viper_viper_strike_hp2.png" >
+                                <img  src="../img/viper_viper_strike_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>毒性攻击</strong></p>
-                            <p>在攻击中附加强烈毒素，降低攻击速度和移动速度，并造成持续性伤害。</p>
+                            <p>增强冥界亚龙的毒液，使它的普通攻击降低目标的攻击和移动速度，并造成持续伤害。 毒性攻击是攻击特效，不与其它攻击特效叠加。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">20 / 20 / 20 / 20</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">20/20/20/20</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">4.0 / 3.0 / 0.0 / 0.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">自动施法, 单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">自动施放, 单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续性伤害:</td><td class="statRowColW">10 / 16 / 22 / 28</td>
+                                    <td>攻击力:</td><td class="statRowColW">0 / 0 / 0 / 0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减少:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                    <td>持续时间:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻速减少:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                    <td>每秒伤害:</td><td class="statRowColW">10 / 16 / 22 / 28</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>移动速度减缓:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>攻击速度降低:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
                                 </tr>
                             </table>
+                            <p>冥界亚龙天生带有剧毒的呼吸能够迅速的抽干敌人的生命活力。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>幽冥剧毒</strong></p>
-                            <p>在攻击中附加强烈毒素，被攻击目标当前生命值越低，受到的伤害就越多。</p>
+                            <p>幽冥剧毒使蝮蛇的普通攻击对单位造成额外伤害，伤害量基于他们损失生命值的一定比例。目标每损失20%生命，幽冥剧毒带来的额外伤害将翻倍。幽冥剧毒对小兵和建筑物造成半额伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >基础伤害加成:</td><td class="statRowColW">2.5 / 5 / 7.5 / 10</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >小兵伤害:</td><td class="statRowColW">50% / 50% / 50% / 50%</td>
+                                    <td>基础额外伤害:</td><td class="statRowColW">2.5 / 5 / 7.5 / 10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大伤害加成:</td><td class="statRowColW">40 / 80 / 120 / 160</td>
+                                    <td>非英雄伤害:</td><td class="statRowColW">50% / 50% / 50% / 50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>最大额外伤害:</td><td class="statRowColW">40 / 80 / 120 / 160</td>
                                 </tr>
                             </table>
+                            <p>冥界之毒让你的伤口更加致命，让你的疲劳能够致死。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
-                            <p><strong>腐蚀外表</strong></p>
-                            <p>冥界亚龙的身体由毒素覆盖，任何攻击他的单位都会受到侵蚀，攻击速度和移动速度因此被降低，并受到毒素伤害。技能也增加冥界亚龙的魔抗。</p>
+                            <p><strong>腐蚀皮肤</strong></p>
+                            <p>冥界亚龙分泌出感染性的毒素，伤害并减速1400范围内任何伤害它的敌人。这种酸性分泌物还能提高蝮蛇的魔法抗性。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">4</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减少:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                    <td>持续时间:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻速减少:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >魔法抗性:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">10 / 15 / 20 / 25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续性伤害:</td><td class="statRowColW">10 / 15 / 20 / 25</td>
+                                    <td>魔法抗性提升:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>每秒伤害:</td><td class="statRowColW">10 / 15 / 20 / 25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围上限:</td><td class="statRowColW">1400</td>
                                 </tr>
                             </table>
+                            <p>对那些攻击冥界亚龙的人来说，刀刃一接触到它的皮肤就被腐蚀是再正常不过的。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>蝮蛇突袭</strong></p>
-                            <p>恶毒地撕咬目标，大幅降低目标的攻击速度和移动速度，造成毒性伤害。可神杖升级。</p>
+                            <p>降低目标敌方单位的移动和攻击速度，并造成持续毒性伤害。移动速度会在毒性的持续时间内逐渐恢复。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 175 / 250</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125/175/250</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">80.0 / 50.0 / 30.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">70/50/30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">5.1 / 5.1 / 5.1</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续性伤害:</td><td class="statRowColW">60 / 100 / 145</td>
+                                    <td>持续时间:</td><td class="statRowColW">5.1 / 5.1 / 5.1</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度减少:</td><td class="statRowColW">40% / 60% / 80%</td>
+                                    <td>每秒伤害:</td><td class="statRowColW">60 / 100 / 145</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻速减少:</td><td class="statRowColW">40% / 60% / 80%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">40% / 60% / 80%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级魔法消耗:</td><td class="statRowColW">125 / 125 / 125</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">40 / 60 / 80</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">12 / 12 / 12</td>
+                                    <td>神杖升级魔法消耗:</td><td class="statRowColW">125 / 125 / 125</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级施法距离:</td><td class="statRowColW">900 / 900 / 900</td>
+                                    <td>神杖升级冷却时间:</td><td class="statRowColW">12 / 12 / 12</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级施法距离:</td><td class="statRowColW">900</td>
                                 </tr>
                             </table>
+                            <p>曾经用于屠杀它那残酷主人的招数，冥界亚龙毒素中最强大的一种，用来折磨那些敢于激怒它的人来说再好不过。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -300,7 +322,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>一个暴虐凶残的巫师捕获了蝮蛇，希望驯服它作为自己的凶狠宠物，好奇的蝮蛇很乐意被带离那封闭不化的三途川，那是一块在地壳滑移中被封闭的幽冥龙穴，它的种族在那里已经居住了成千上万年。蝮蛇一开始还试着花时间来理解并服从巫师的命令，希望能学到他最高超的黑暗魔法。但它很快就发现，没有多少咒语比它与生俱来的毒液更致命。蝮蛇流出的酸液很快就腐蚀掉了它笼子上的铁柱，冥界亚龙挣脱出了巫师的囚禁，将它的毒液喷在了老巫师眼睛里杀死了它，蝮蛇翱翔在空中，向世界宣告它的来临。</p>
+                    	<p>一个暴虐凶残的巫师捕获了蝮蛇，希望驯服它作为自己的凶狠宠物，好奇的蝮蛇很乐意被带离那封闭不化的三途川，那是一块在地壳滑移中被封闭的幽冥龙穴，它的种族在那里已经居住了成千上万年。蝮蛇一开始还试着花时间来理解并服从巫师的命令，希望能学到他最高超的黑暗魔法。但它很快就发现，没有多少咒语比它与生俱来的毒液更致命。蝮蛇流出的酸液很快就腐蚀掉了它笼子上的铁柱，冥界亚龙挣脱出了巫师的囚禁，将它的毒液喷在了老巫师眼睛里杀死了它，蝮蛇翱翔在空中，向世界宣告它的来临。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

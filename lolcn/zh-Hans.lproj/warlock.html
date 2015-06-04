@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>WARLOCK</title>
+        <title>术士</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,137 +156,162 @@
                                 <img  src="../img/warlock_fatal_bonds_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/warlock_shadow_word_hp2.png" />               
+                                <img  src="../img/warlock_shadow_word_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/warlock_upheaval_hp2.png" />                          
+                                <img  src="../img/warlock_upheaval_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/warlock_rain_of_chaos_hp2.png" >
+                                <img  src="../img/warlock_rain_of_chaos_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>致命连接</strong></p>
-                            <p>将数个敌方单位连接在一起，其中一人受到的伤害20%会给其他所有人。</p>
+                            <p>将数个敌方单位连接在一起，其中一人受到的伤害的25%会被其他所有人感受到。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/120/120/120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">25.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">25</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">减少生命值</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >敌人绑定数:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                    <td>攻击力:</td><td class="statRowColW">0 / 0 / 0 / 0</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">25</td>
+                                    <td>连接敌人数:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">25</td>
                                 </tr>
                             </table>
+                            <p>将多个生命形式的生命能量连接成为一个集合体的远古咒语。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>暗言术</strong></p>
-                            <p>低声说出一个咒语，持续治疗一个友方单位或持续伤害一个敌方单位。</p>
+                            <p>术士低声说出一个咒语，持续治疗一个友方单位或伤害一个敌方单位。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 110 / 130 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90/110/130/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">16</td>
+                                    <td>冷却时间:</td><td class="statRowColW">16</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">英雄</td>
+                                    <td>影响:</td><td class="statRowColW">英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">15 / 25 / 35 / 45</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">9 / 9 / 9 / 9</td>
+                                    <td>攻击力:</td><td class="statRowColW">15 / 25 / 35 / 45</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">11</td>
                                 </tr>
                             </table>
+                            <p>戴蒙的奥术有无穷的用途，可以用来强化友军也可以用作诅咒伤害敌人。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>剧变</strong></p>
-                            <p>持续性 - 随施法时间增强的减速气流。持续10秒，最多减速84%。 敌方会被继续减速3秒在法术结束后。</p>
+                            <p>持续施法 - 随施法时间增强的减速气流。持续最多16秒。在魔法结束或目标离开生效区域后，敌人仍会被减速3秒。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 110 / 120 / 130</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/110/120/130</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">50.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">50/46/42/38</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">持续性, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">持续施法, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">650 / 650 / 650 / 650</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速率:</td><td class="statRowColW">7% / 14% / 21% / 28%</td>
+                                    <td>攻击力:</td><td class="statRowColW">0 / 0 / 0 / 0</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>作用范围:</td><td class="statRowColW">650 / 650 / 650 / 650</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>最大减速效果所需吟唱时间:</td><td class="statRowColW">12.5 / 6.5 / 4.5 / 3.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>最大减速:</td><td class="statRowColW">84%</td>
                                 </tr>
                             </table>
+                            <p>戴蒙操纵时空，削弱所有敌军。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>混乱之祭</strong></p>
-                            <p>从深渊召唤一个的地狱火傀儡，对敌军造成100伤害并眩晕1秒。地狱火持续60秒，对法术有一定抗性，有永恒献祭和烈焰之拳技能。可神杖升级。</p>
+                            <p>从深渊召唤一个地狱火，眩晕敌人1秒。地狱火持续60秒，对法术有一定抗性，有永久献祭和烈焰之拳技能。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 250 / 300</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200/300/400</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">165</td>
+                                    <td>冷却时间:</td><td class="statRowColW">165</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">600</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >傀儡生命值:</td><td class="statRowColW">900 / 1200 / 1500</td>
+                                    <td>召唤冲击作用范围:</td><td class="statRowColW">600</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >傀儡伤害:</td><td class="statRowColW">75 / 100 / 125</td>
+                                    <td>地狱火生命值:</td><td class="statRowColW">900 / 1200 / 1500</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >傀儡护甲:</td><td class="statRowColW">5 / 7 / 10</td>
+                                    <td>地狱火攻击力:</td><td class="statRowColW">75 / 100 / 125</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">100</td>
+                                    <td>地狱火护甲:</td><td class="statRowColW">6 / 9 / 12</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级傀儡数:</td><td class="statRowColW">2</td>
+                                    <td>地狱火生命恢复速率:</td><td class="statRowColW">25 / 50 / 75</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级生命值/伤害减少:</td><td class="statRowColW">25%</td>
+                                    <td>神杖升级地狱火数量:</td><td class="statRowColW">2</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级赏金减少:</td><td class="statRowColW">50%</td>
+                                    <td>神杖升级地狱火血量:</td><td class="statRowColW">675 / 900 / 1125</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级地狱火攻击力:</td><td class="statRowColW">56 / 75 / 94</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>神杖升级奖励减少:</td><td class="statRowColW">50%</td>
                                 </tr>
                             </table>
+                            <p>戴蒙释放被他关在恐惧之木法杖中的异界灵魂，在敌阵中造成毁灭性的打击。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -294,7 +319,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>作为秘湮学院禁断圣所的首席馆长和馆藏物主管，戴蒙·拉尼克不知疲倦地追求着那些罕见的失落的禁忌卷轴。无论被诅咒的寺庙有多禁忌，无论隐藏洞穴的路途有多危险，只要有谣传说那里藏着传说学识的原典，他就会不顾自己的安危进入这些危险的场所。然而，他经常在调查中惹怒各种守护者，这使他感到有必要掌握魔法。他将追寻古物时的执念用在了逼迫自己学习魔法上，最终他比大多数学徒都要快地完成了整个学业，在最短时间内成为了学院最强大的术士。后来他用恐惧之木雕刻了一根法杖，并在其中注入了一个他从异界之狱俘获的灵魂。因为期待着有一天能够复原所有的失落魔法书，他开始撰写自己的黑暗魔典。毫无疑问，这对他的黑暗魔法来说，意义非凡。</p>
+                    	<p>作为秘湮学院禁断圣所的首席馆长和馆藏物主管，戴蒙·拉尼克不知疲倦地追求着那些罕见的失落的禁忌卷轴。无论被诅咒的寺庙有多禁忌，无论隐藏洞穴的路途有多危险，只要有谣传说那里藏着传说学识的原典，他就会不顾自己的安危进入这些危险的场所。然而，他经常在调查中惹怒各种守护者，这使他感到有必要掌握魔法。他将追寻古物时的执念用在了逼迫自己学习魔法上，最终他比大多数学徒都要快地完成了整个学业，在最短时间内成为了学院最强大的术士。后来他用恐惧之木雕刻了一根法杖，并在其中注入了一个他从异界之狱俘获的灵魂。因为期待着有一天能够复原所有的失落魔法书，他开始撰写自己的黑暗魔典。毫无疑问，这对他的黑暗魔法来说，意义非凡。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

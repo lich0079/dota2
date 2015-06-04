@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>TIDEHUNTER</title>
+        <title>潮汐猎人</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -81,7 +81,7 @@
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>25 - 31</span></li>
-                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>310</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>305</span></li>
                                 <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.1</span></li>
                             </ul>
                         </div>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,13 +156,13 @@
                                 <img  src="../img/tidehunter_gush_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/tidehunter_kraken_shell_hp2.png" />               
+                                <img  src="../img/tidehunter_kraken_shell_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/tidehunter_anchor_smash_hp2.png" />                          
+                                <img  src="../img/tidehunter_anchor_smash_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/tidehunter_ravage_hp2.png" >
+                                <img  src="../img/tidehunter_ravage_hp2.png" />
                             </li>
                         </ul>
                     </div>
@@ -173,105 +173,121 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/120/120/120</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">12.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">110 / 160 / 210 / 260</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速:</td><td class="statRowColW">40% / 40% / 40% / 40%</td>
+                                    <td>攻击力:</td><td class="statRowColW">110 / 160 / 210 / 260</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >护甲减少:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">40% / 40% / 40% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>护甲削弱:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
                                 </tr>
                             </table>
+                            <p>在沉没之岛的竞赛中，利维坦赢得了对公海的统治。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>海妖外壳</strong></p>
-                            <p>潮汐猎人生出厚实的盔甲，帮助他伤害减免。并在承受一定伤害后移除负面效果。</p>
+                            <p>加厚潮汐猎人的外皮，可以被动格挡物理伤害，当受到的伤害达到临界值时外皮还将移除绝大多数负面效果。 不与带有伤害格挡的物品叠加。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害减免:</td><td class="statRowColW">7 / 14 / 21 / 28</td>
+                                    <td>伤害格挡:</td><td class="statRowColW">12 / 24 / 36 / 48</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害界限:</td><td class="statRowColW">600 / 600 / 600 / 600</td>
+                                    <td>伤害临界值:</td><td class="statRowColW">600 / 550 / 500 / 450</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>临界值累计时间:</td><td class="statRowColW">6 / 6 / 6 / 6</td>
                                 </tr>
                             </table>
+                            <p>铁帆海军里有一个传言，说是有只强大的海兽，明明被矛刺中被剑砍伤依然能践踏舰队。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>锚击</strong></p>
-                            <p>潮汐猎人以复仇心挥动他巨大的船锚，对周围敌方单位造成伤害并降低攻击力。</p>
+                            <p>潮汐猎人挥动他巨大的锚，对附近敌人造成伤害并降低他们的攻击力。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">30 / 40 / 50 / 60</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">30/40/50/60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">7.0 / 6.0 / 5.0 / 4.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">7/6/5/4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">75 / 125 / 175 / 225</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >攻击力减少:</td><td class="statRowColW">40% / 40% / 40% / 40%</td>
+                                    <td>攻击力:</td><td class="statRowColW">75 / 125 / 175 / 225</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">6 / 6 / 6 / 6</td>
+                                    <td>攻击力降低:</td><td class="statRowColW">45% / 50% / 55% / 60%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">400 / 400 / 400 / 400</td>
+                                    <td>持续时间:</td><td class="statRowColW">6 / 6 / 6 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围:</td><td class="statRowColW">375</td>
                                 </tr>
                             </table>
+                            <p>从舰队统帅昆卡的一艘旗舰上偷来的重锚，被利维坦用作有效的近战武器。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>毁灭</strong></p>
-                            <p>重击地面，形成大范围的穿刺，对附近敌方单位造成伤害并晕眩。</p>
+                            <p>猛击地面，触手向各个方向穿出，伤害并眩晕附近所有敌方单位。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 225 / 325</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/225/325</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">150.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">150</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">200 / 325 / 450</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">1025</td>
+                                    <td>攻击力:</td><td class="statRowColW">200 / 290 / 380</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">2.02 / 2.32 / 2.77</td>
+                                    <td>作用范围:</td><td class="statRowColW">1025</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>持续时间:</td><td class="statRowColW">2.02 / 2.32 / 2.77</td>
                                 </tr>
                             </table>
+                            <p>呼唤深海之神麦尔朗恩的举动导致整支武装舰队在海上失踪。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -279,7 +295,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>人称利维坦的潮汐猎人曾经是沉没之岛的竞技大师，他的行为方式和他的同胞们一样神秘莫测。陆地居民都知道海上航线的重要性，帝国的崛起和衰亡都取决于谁掌控了公海。相比之下，海底航线和南海流民的敌对部族如何通过无数次小规模海底战斗开辟家园的故事，则鲜为人知。在南海人和陆地人那脆弱的协议中，我们可以瞥见这个海底王国的规模，不过他们的政体则显得十分复杂和不透明。利维坦似乎厌倦了这些琐碎的小冲突，便独自离开了，只效忠于他的深海之神-深渊触手麦尔朗恩。现在他在浅滩上独自游弋，寻找路上遇到的人类或者南海人，他对他的宿敌-海军上将昆卡有着一种独特的厌恶，然而他们为何成为敌人，已经和当年的激烈海战一起被遗忘了。	</p>
+                    	<p>人称利维坦的潮汐猎人曾经是沉没之岛的竞技大师，他的行为方式和他的同胞们一样神秘莫测。陆地居民都知道海上航线的重要性，帝国的崛起和衰亡都取决于谁掌控了公海。相比之下，海底航线和南海流民的敌对部族如何通过无数次小规模海底战斗开辟家园的故事，则鲜为人知。在南海人和陆地人那脆弱的协议中，我们可以瞥见这个海底王国的规模，不过他们的政体则显得十分复杂和不透明。利维坦似乎厌倦了这些琐碎的小冲突，便独自离开了，只效忠于他的深海之神-深渊触手麦尔朗恩。现在他在浅滩上独自游弋，寻找路上遇到的人类或者南海人，他对他的宿敌-海军上将昆卡有着一种独特的厌恶，然而他们为何成为敌人，已经和当年的激烈海战一起被遗忘了。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

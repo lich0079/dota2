@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>SLARDAR</title>
+        <title>斯拉达</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,122 +156,135 @@
                                 <img  src="../img/slardar_sprint_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/slardar_slithereen_crush_hp2.png" />               
+                                <img  src="../img/slardar_slithereen_crush_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/slardar_bash_hp2.png" />                          
+                                <img  src="../img/slardar_bash_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/slardar_amplify_damage_hp2.png" >
+                                <img  src="../img/slardar_amplify_damage_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>冲刺</strong></p>
-                            <p>鱼人守卫在短时间内大幅提升他的移动速度，不过在被攻击时受到额外的伤害。</p>
+                            <p>斯拉达显著提升移动速度，但受到更多伤害。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">23</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">28</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>受到额外伤害:</td><td class="statRowColW">15%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >额外伤害:</td><td class="statRowColW">15%</td>
+                                    <td>速度提升:</td><td class="statRowColW">20% / 28% / 36% / 44%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >速度加成:</td><td class="statRowColW">20% / 27% / 33% / 40%</td>
-                                </tr>
-                                <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
+                                    <td>持续时间:</td><td class="statRowColW">16</td>
                                 </tr>
                             </table>
+                            <p>斯拉达从深海来到陆地后，发现有必要用强有力的尾巴冲刺来代替游泳。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>鱼人碎击</strong></p>
-                            <p>猛击地面，对敌方地面单位造成物理伤害，并使他们晕眩。之后，降低速度。</p>
+                            <p>猛击地面，对附近地面单位造成伤害并眩晕。眩晕结束后还会受到减速。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80 / 95 / 105 / 115</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80/95/105/115</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">8.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">50 / 100 / 150 / 200</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">350</td>
+                                    <td>攻击力:</td><td class="statRowColW">75 / 125 / 175 / 225</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速:</td><td class="statRowColW">20%</td>
+                                    <td>作用范围:</td><td class="statRowColW">350</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >减速时间:</td><td class="statRowColW">2</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">20%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕时间:</td><td class="statRowColW">1 / 1.5 / 2 / 2.5</td>
+                                    <td>攻击速度降低:</td><td class="statRowColW">20</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>减速持续时间:</td><td class="statRowColW">2</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>眩晕时间:</td><td class="statRowColW">1.6 / 1.9 / 2.2 / 2.5</td>
                                 </tr>
                             </table>
+                            <p>强力的快速碎击，溅起的水浪打破最坚固的防御。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>重击</strong></p>
-                            <p>在攻击中有一定几率对目标造成额外的伤害，并晕眩。</p>
+                            <p>攻击有一定概率造成额外伤害并眩晕敌人。对普通单位的眩晕时间加倍。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >几率:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >额外伤害:</td><td class="statRowColW">40 / 50 / 60 / 70</td>
+                                    <td>概率:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">1</td>
+                                    <td>额外伤害:</td><td class="statRowColW">60 / 80 / 100 / 120</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>眩晕时间:</td><td class="statRowColW">1</td>
                                 </tr>
                             </table>
+                            <p>偷窃深海宝藏的盗贼在战斗中遭遇到鱼人守卫的残暴之力。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>伤害加深</strong></p>
-                            <p>通过降低目标的护甲使目标受到更多的物理伤害，同时得到目标的视野。</p>
+                            <p>削弱敌人的护甲，加深他受到的物理伤害，同时提供目标的真实视域，显示隐身单位。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25/25/25</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >护甲减少:</td><td class="statRowColW">8 / 14 / 20</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">25 / 25 / 25</td>
+                                    <td>护甲削弱:</td><td class="statRowColW">10 / 15 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>持续时间:</td><td class="statRowColW">25 / 25 / 25</td>
                                 </tr>
                             </table>
+                            <p>斯拉达的诱饵光亮揭露了隐藏最深的敌人，以及他们的弱点。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -279,7 +292,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>斯拉达是个鱼人，一位深海住民，他守卫着沉没的城市和其中埋藏的古老宝藏。在海底深渊那黑暗的海沟中，鱼人守卫带着作为诱饵的光源穿梭在藏有宝物的密室中。陆地上贪婪的巫师们派下去的潜水盗贼被他看似友善的光亮吸引，然后一去不返。他对海洋绝对忠诚，沉默寡言的性格有效的隐藏了海洋最秘密场所的位置。有时他会上浮到浅海侦查，不顾光亮造成的痛苦，确保没人在对深海进行谋划。有时他会无情的追杀那些极少数设法从沉没宝库偷取了一件宝物的家伙。由于斯拉达的一生都生活在深海中，承受着海洋巨大的水压，因此鱼人守卫的力量无比强大。	</p>
+                    	<p>斯拉达是个鱼人，一位深海住民，他守卫着沉没的城市和其中埋藏的古老宝藏。在海底深渊那黑暗的海沟中，鱼人守卫带着作为诱饵的光源穿梭在藏有宝物的密室中。陆地上贪婪的巫师们派下去的潜水盗贼被他看似友善的光亮吸引，然后一去不返。他对海洋绝对忠诚，沉默寡言的性格有效的隐藏了海洋最秘密场所的位置。有时他会上浮到浅海侦查，不顾光亮造成的痛苦，确保没人在对深海进行谋划。有时他会无情的追杀那些极少数设法从沉没宝库偷取了一件宝物的家伙。由于斯拉达的一生都生活在深海中，承受着海洋巨大的水压，因此鱼人守卫的力量无比强大。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

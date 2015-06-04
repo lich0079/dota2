@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>abaddon</title>
+        <title>ABADDON</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -40,24 +40,24 @@
                     <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/abaddon_hphover.png"/></a>
                 </div>
                 <div  class="floatleft">
-                    <div class="heroName">Abaddon</div>
-                    <div class="atype">Melee</div>
+                    <div class="heroName">ABADDON</div>
+                     <div class="atype">Melee</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%"></td>
-                            <td class="role" width="50%"></td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">Durable</td>
+                                <td class="role" width="50%">Support</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Carry</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
+                <ul> 
                     <li sel="1" class="tab sel">STATS</li>
                     <li sel="2" class="tab unsel">ABILITIES</li>
                     <li sel="3" class="tab unsel">BIO</li>
@@ -69,21 +69,20 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>21 + 2.00</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>17 + 1.50</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>23 + 2.70</span></li>
-                                
                             </ul>
                         </div>
                         <div class="grow floatleft">
                             <ul>
                                 <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>32 - 42</span></li>
                                 <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>310</span></li>
-                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.38</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.38</span></li>
                             </ul>
                         </div>
                     </div>
@@ -122,9 +121,9 @@
                             <tr class="statRow">
                                 <td ></td>
                                 <td >ARMOR</td>
-                                <td class="statRowColW">2</td>
-                                <td class="statRowColW">5</td>
-                                <td class="statRowColW">10</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">9</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -139,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >MISSILE SPEED</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -163,7 +162,7 @@
                                 <img  src="../img/abaddon_frostmourne_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/abaddon_borrowed_time_hp2.png" >
+                                <img  src="../img/abaddon_borrowed_time_hp2.png" />
                             </li>
                         </ul>
                     </div>
@@ -174,105 +173,124 @@
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">75/75/75/75</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">50/60/70/80</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">5</td>
+                                    <td>Cooldown:</td><td class="statRowColW">5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">HEROES</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Heroes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                    <td>DAMAGE TYPE:</td><td class="statRowColW">Magical</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SELF DAMAGE:</td><td class="statRowColW">50 / 75 / 100 / 125</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DAMAGE/HEAL:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
+                                    <td>SELF DAMAGE:</td><td class="statRowColW">75 / 100 / 125 / 150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>DAMAGE/HEAL:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
                                 </tr>
                             </table>
+                            <p>A mysterious vapor from the Font of Avernus now infuses the breath of Abaddon, who releases it at will.</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>Aphotic Shield</strong></p>
                             <p>Summons dark energies around an ally unit, creating a shield that absorbs a set amount of damage before expiring. When the shield is destroyed it will burst and deal damage equal to the amount it could absorb to an area around it. Removes certain types of negative buffs and stuns on cast.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100/105/110/115</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">100/105/110/115</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">12/10/8/6</td>
+                                    <td>Cooldown:</td><td class="statRowColW">12/10/8/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">Unit Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >AFFECTS:</td><td class="statRowColW">ALLIED UNITS</td>
+                                    <td>AFFECTS:</td><td class="statRowColW">Allied Units</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">15</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">No</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >MAX DAMAGE ABSORBED:</td><td class="statRowColW">110 / 140 / 170 / 200</td>
+                                    <td>DURATION:</td><td class="statRowColW">15</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BURST RADIUS:</td><td class="statRowColW">675</td>
+                                    <td>MAX DAMAGE ABSORBED:</td><td class="statRowColW">110 / 140 / 170 / 200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>BURST RADIUS:</td><td class="statRowColW">675</td>
                                 </tr>
                             </table>
+                            <p>The powers of the black mist rise to absorb attacks like the black mist absorbs light.</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>Curse of Avernus</strong></p>
                             <p>Abaddon strikes an enemy with chilling curse on each attack, causing all units who attack the slowed enemy to gain increased movement speed, along with faster attack speed, for a limited time.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">Passive</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >DEBUFF DURATION:</td><td class="statRowColW">2.5</td>
+                                    <td>PIERCES SPELL IMMUNITY:</td><td class="statRowColW">Yes</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >BUFF DURATION:</td><td class="statRowColW">4.5</td>
+                                    <td>DEBUFF DURATION:</td><td class="statRowColW">2.5</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >SLOW:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                    <td>BUFF DURATION:</td><td class="statRowColW">4.5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >MOVE SPEED BONUS:</td><td class="statRowColW">15%</td>
+                                    <td>MOVEMENT SLOW:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >ATTACK SPEED BONUS:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                    <td>ATTACK SLOW:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>MOVE SPEED BONUS:</td><td class="statRowColW">15%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>ATTACK SPEED BONUS:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
                                 </tr>
                             </table>
+                            <p>The curse that slows an enemy, speeds an ally.</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>Borrowed Time</strong></p>
-                            <p>When activated, most negative buffs will be removed and any damage you take will heal instead of damaging you. If the ability is not in cooldown, it will passively activate when your hitpoints drop below a certain threshold. Upgradable by Aghanim's Scepter.</p>
+                            <p>When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will passively activate if your hitpoints drop below 400. Upgradable by Aghanim's Scepter.</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">0/0/0</td>
+                                    <td width="45%">Mana Cost:</td><td class="statRowColW" width="55%">0/0/0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >COOLDOWN:</td><td class="statRowColW">60/50/40</td>
+                                    <td>Cooldown:</td><td class="statRowColW">60/50/40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                    <td>ABILITY:</td><td class="statRowColW">No Target</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >HP THRESHOLD:</td><td class="statRowColW">400</td>
+                                    <td>HP THRESHOLD:</td><td class="statRowColW">400</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >DURATION:</td><td class="statRowColW">3 / 4 / 5</td>
+                                    <td>DURATION:</td><td class="statRowColW">4 / 5 / 6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">SCEPTER DURATION:</td><td class="statRowColW">5 / 6 / 7</td>
+                                    <td>SCEPTER DURATION:</td><td class="statRowColW">5 / 6 / 7</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>REDIRECT RANGE:</td><td class="statRowColW">900</td>
                                 </tr>
                             </table>
+                            <p>The most unnatural of all the gifts of the Font of Avernus, this power defies mortal understanding. What should hurt, instead heals; and what should kill gives strength anew.</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -280,11 +298,12 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>The Font of Avernus is the source of a family's strength, a crack in primal stones from which vapors of prophetic power have issued for generations. Each newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism they are given an innate connection to the mystic energies of the land. They grow up believing themselves fierce protectors of their lineal traditions, the customs of the realm--but what they really are protecting is the Font itself. And the motives of the mist are unclear. </p>
-                        
-                        <p>When the infant Abaddon was bathed in the Font, they say something went awry. In the child's eyes there flared a light of comprehension that startled all present and set the sacerdotes to whispering. He was raised with every expectation of following the path all scions of Avernus took--to train in war, that in times of need he might lead the family's army in defense of the ancestral lands. But Abaddon was always one apart. Where others trained with weapons, he bent himself to meditation in the presence of the mist. He drank deep from the vapors that welled from the Font, learning to blend his spirit with the potency that flowed from far beneath the House; he became a creature of the black mist. </p>
-                        
-                        <p>There was bitterness within the House Avernus--elders and young alike accusing him of neglecting his responsibilities. But all such accusations stopped when Abaddon rode into battle, and they saw how the powers of the mist had given him mastery over life and death beyond those of any lord the House had ever known.</p>
+                    	<p>The Font of Avernus is the source of a family's strength, a crack in primal stones from which vapors of prophetic power have issued for generations. Each newborn of the cavernous House Avernus is bathed in the black mist, and by this baptism they are given an innate connection to the mystic energies of the land. They grow up believing themselves fierce protectors of their lineal traditions, the customs of the realm--but what they really are protecting is the Font itself. And the motives of the mist are unclear. 
+<br>
+<br> When the infant Abaddon was bathed in the Font, they say something went awry. In the child's eyes there flared a light of comprehension that startled all present and set the sacerdotes to whispering. He was raised with every expectation of following the path all scions of Avernus took--to train in war, that in times of need he might lead the family's army in defense of the ancestral lands. But Abaddon was always one apart. Where others trained with weapons, he bent himself to meditation in the presence of the mist. He drank deep from the vapors that welled from the Font, learning to blend his spirit with the potency that flowed from far beneath the House; he became a creature of the black mist. 
+<br>
+<br> There was bitterness within the House Avernus--elders and young alike accusing him of neglecting his responsibilities. But all such accusations stopped when Abaddon rode into battle, and they saw how the powers of the mist had given him mastery over life and death beyond those of any lord the House had ever known. 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

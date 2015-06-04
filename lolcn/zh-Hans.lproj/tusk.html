@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>美杜莎</title>
+        <title>巨牙海民</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">巨牙海民</div>
-                    <div class="atype">近战</div>
+                     <div class="atype">近战</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">先手</td>
-                            <td class="role" width="50%">耐久</td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">先手</td>
+                                <td class="role" width="50%">耐久</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,13 +69,13 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
                                 <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>18 + 1.70</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>23 + 2.10</span></li>
-                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>22 + 2.30</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>23 + 2.30</span></li>
                             </ul>
                         </div>
                         <div class="grow floatleft">
@@ -100,9 +100,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >生命值</td>
-                                <td class="statRowColW">568</td>
-                                <td class="statRowColW">1,180</td>
-                                <td class="statRowColW">1,997</td>
+                                <td class="statRowColW">587</td>
+                                <td class="statRowColW">1,199</td>
+                                <td class="statRowColW">2,016</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -114,9 +114,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >攻击力</td>
-                                <td class="statRowColW">49-53</td>
-                                <td class="statRowColW">81-85</td>
-                                <td class="statRowColW">124-128</td>
+                                <td class="statRowColW">50-54</td>
+                                <td class="statRowColW">82-86</td>
+                                <td class="statRowColW">125-129</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -162,140 +162,205 @@
                                 <img  src="../img/tusk_frozen_sigil_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/tusk_walrus_punch_hp2.png" >
+                                <img  src="../img/tusk_launch_snowball_hp2.png" />
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/tusk_walrus_kick_hp2.png" />
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/tusk_walrus_punch_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>寒冰碎片</strong></p>
-                            <p>巨牙海民将5块冰碎片压缩成蕴含冰冻能量的冰球，对所有接触到冰球的敌人造成伤害。如果冰球接触到敌方英雄或者达到最大施法距离时，则产生一个障碍物，持续5秒。</p>
+                            <p>巨牙海民将数块寒冰碎片压缩成蕴含冰冻能量的冰球，对所有接触到冰球的敌人造成伤害。如果冰球到达目标地点时，则产生一个障碍物，持续7秒。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/120/120/120</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">18/16/14/12</td>
+                                    <td>冷却时间:</td><td class="statRowColW">19/16/13/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方单位</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">200</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >碎片伤害:</td><td class="statRowColW">70 / 140 / 210 / 280</td>
+                                    <td>作用范围:</td><td class="statRowColW">200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >碎片持续时间:</td><td class="statRowColW">5</td>
+                                    <td>碎片伤害:</td><td class="statRowColW">70 / 140 / 210 / 280</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>碎片持续时间:</td><td class="statRowColW">7</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>施法距离:</td><td class="statRowColW">1800</td>
                                 </tr>
                             </table>
+                            <p>在冰盾附近的冻原上，秋天最后一个日落后，结冰的速度非常惊人。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>雪球</strong></p>
-                            <p>巨牙海民和附近的友方英雄滚进一个迅速增大的雪球中朝敌方单位行进。所经过单位受到一定伤害并短暂晕眩；最终撞击目标受到额外伤害和眩晕。</p>
+                            <p>巨牙海民开始卷成雪球。右键点击400范围内的友方英雄能使其加入雪球。发动雪球后，雪球经过的单位将会被眩晕并受到伤害。雪球每卷入一个英雄，它的伤害都会得到提升。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75/75/75/75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">21</td>
+                                    <td>冷却时间:</td><td class="statRowColW">21/20/19/18</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">敌方单位</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >雪球作用范围:</td><td class="statRowColW">200</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >雪球半径每秒增大:</td><td class="statRowColW">40</td>
+                                    <td>基础伤害:</td><td class="statRowColW">80 / 120 / 160 / 200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >雪球伤害:</td><td class="statRowColW">40 / 80 / 120 / 160</td>
+                                    <td>每个英雄提升伤害:</td><td class="statRowColW">20 / 30 / 40 / 50</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕持续时间:</td><td class="statRowColW">0.25 / 0.5 / 0.75 / 1</td>
+                                    <td>眩晕持续时间:</td><td class="statRowColW">0.5 / 0.75 / 1 / 1.25</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >雪球持续时间:</td><td class="statRowColW">3</td>
+                                    <td>卷入范围:</td><td class="statRowColW">100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>发动时间:</td><td class="statRowColW">4</td>
                                 </tr>
                             </table>
+                            <p>至今还有故事在讲述白色荒原上终结那场空前格斗的狂野之举。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>冰封魔印</strong></p>
                             <p>巨牙海民从严冬极寒中召唤出一个冰冻印迹。印迹会创造暴风雪降低600范围内敌军速度。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75/75/75/75</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">50</td>
+                                    <td>冷却时间:</td><td class="statRowColW">50</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">600</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">30</td>
+                                    <td>作用范围:</td><td class="statRowColW">600</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >移动速度降低:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                    <td>持续时间:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >攻击速度降低:</td><td class="statRowColW">30% / 40% / 50% / 60%</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>攻击速度降低:</td><td class="statRowColW">30 / 40 / 50 / 60</td>
                                 </tr>
                             </table>
+                            <p>故乡的寒意！</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
-                            <p><strong>海象挥击！</strong></p>
-                            <p>巨牙海民为他强力的海象挥击做好准备；下一次攻击将会暴击并将目标打到半空中。目标在落地后会被减速并受到伤害。</p>
+                            <p><strong>雪球滚滚</strong></p>
+                            <p>向目标发动雪球。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
+                                </tr>
+                            </table>
+                            <p>向着白色荒原进发！</p>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>海象飞踢</strong></p>
+                            <p>将目标踢回900距离，并且减缓40%移动速度，持续4秒。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>冷却时间:</td><td class="statRowColW">12</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>飞踢距离:</td><td class="statRowColW">900</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>移动速度减缓:</td><td class="statRowColW">40%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>减速持续时间:</td><td class="statRowColW">4</td>
+                                </tr>
+                            </table>
+                            <p></p>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>海象神拳！</strong></p>
+                            <p>巨牙海民为他强力的海象神拳做好准备，下一次攻击将会暴击并将目标打到半空中。目标在落地后会被减速。 可用神杖升级。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50/75/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">30/24/18</td>
+                                    <td>冷却时间:</td><td class="statRowColW">20/16/12</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">自动施放, 单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >状态持续时间:</td><td class="statRowColW">10</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >暴击倍数:</td><td class="statRowColW">300%</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >触发临界值后的暴击倍数:</td><td class="statRowColW">400%</td>
+                                    <td>暴击倍数:</td><td class="statRowColW">350%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >目标生命值临界点:</td><td class="statRowColW">50%</td>
+                                    <td>滞空时间:</td><td class="statRowColW">1</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >滞空时间:</td><td class="statRowColW">1</td>
+                                    <td>减速持续时间:</td><td class="statRowColW">2 / 3 / 4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速持续时间:</td><td class="statRowColW">2 / 3 / 4</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">40%</td>
                                 </tr>
                             </table>
+                            <p>谁打出第一拳往往不重要，看的就是最后一拳。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -303,9 +368,10 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>那是场值得铭记的干架。当时号称“冰盾之惧”的巨牙海民尤弥尔，也叫钴蓝冰原的雪球大汉，他是唯一光明正大地打败刚背格斗家的战士，现在狼穴酒馆里只有他屹立不倒。原本是一场关于谁力气最大的酒吧小赌，结果那四名修士，一名铁匠还有六名来自霜寒军旅的一流士兵都被巨牙海民打得落花流水，酒馆里的桌椅瓶罐几乎都遭了秧。而他自鸣得意，端起酒杯一饮而尽。</p>
-                        
-                        <p>倒地的输家们刚头脑有点清醒，他们又开始叫嚣着再来赌一把。巨牙海民心想着何乐而不为，但是其他人回想刚才他赢的那场，实在想不出还能打什么赌。这时酒馆老板已经被店里毁坏的物品吓得面无人色，极力想避免让他们再打一架，他有了个主意。尤弥尔尽管身怀绝技，但是他从未在真正的战斗中大显身手，没有在你死我活的战争混沌中证明自己。老板跟战士打了个赌：尽力寻找规模最大的战斗，不论所在阵营，获胜凯旋。赌注是？下一轮的酒钱。</p>
+                    	<p>那是场值得铭记的干架。当时号称“冰盾之惧”的巨牙海民尤弥尔，也叫钴蓝冰原的雪球大汉，他是唯一光明正大地打败刚背格斗家的战士，现在狼穴酒馆里只有他屹立不倒。原本是一场关于谁力气最大的酒吧小赌，结果那四名修士，一名铁匠还有六名来自霜寒军旅的一流士兵都被巨牙海民打得落花流水，酒馆里的桌椅瓶罐几乎都遭了秧。而他自鸣得意，端起酒杯一饮而尽。 
+<br>
+<br>倒地的输家们刚头脑有点清醒，他们又开始叫嚣着再来赌一把。巨牙海民心想着何乐而不为，但是其他人回想刚才他赢的那场，实在想不出还能打什么赌。这时酒馆老板已经被店里毁坏的物品吓得面无人色，极力想避免让他们再打一架，他有了个主意。尤弥尔尽管身怀绝技，但是他从未在真正的战斗中大显身手，没有在你死我活的战争混沌中证明自己。老板跟战士打了个赌：尽力寻找规模最大的战斗，不论所在阵营，获胜凯旋。赌注是？下一轮的酒钱。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

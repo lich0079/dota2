@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>VENOMANCER</title>
+        <title>剧毒术士</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -80,8 +80,8 @@
                         </div>
                         <div class="grow floatleft">
                             <ul>
-                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 26</span></li>
-                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>290</span></li>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>19 - 21</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>285</span></li>
                                 <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.08</span></li>
                             </ul>
                         </div>
@@ -114,9 +114,9 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >攻击力</td>
-                                <td class="statRowColW">46-48</td>
-                                <td class="statRowColW">82-84</td>
-                                <td class="statRowColW">128-130</td>
+                                <td class="statRowColW">41-43</td>
+                                <td class="statRowColW">77-79</td>
+                                <td class="statRowColW">123-125</td>
                             </tr>
                             <tr class="statRow">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -156,134 +156,150 @@
                                 <img  src="../img/venomancer_venomous_gale_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/venomancer_poison_sting_hp2.png" />               
+                                <img  src="../img/venomancer_poison_sting_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/venomancer_plague_ward_hp2.png" />                          
+                                <img  src="../img/venomancer_plague_ward_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/venomancer_poison_nova_hp2.png" >
+                                <img  src="../img/venomancer_poison_nova_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>瘴气</strong></p>
-                            <p>向目标范围内投掷淬毒气，造成起始伤害，并每3秒造成后续伤害，降低移动速度。</p>
+                            <p>沿直线射出一个毒液球，碰到的敌人受到初始伤害和持续伤害，并受到减速效果影响。瘴气在持续时间内每3秒造成一次持续伤害。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">22.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">22</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">15 / 15 / 15 / 15</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >初始伤害:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
+                                    <td>持续时间:</td><td class="statRowColW">15 / 15 / 15 / 15</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续性伤害:</td><td class="statRowColW">15 / 30 / 45 / 60</td>
+                                    <td>初始伤害:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >减速:</td><td class="statRowColW">50% / 50% / 50% / 50%</td>
+                                    <td>每次伤害:</td><td class="statRowColW">10 / 40 / 70 / 100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>减速:</td><td class="statRowColW">50% / 50% / 50% / 50%</td>
                                 </tr>
                             </table>
+                            <p>一种由基迪岛丛林里搜集的各种毒针、毒液和毒素混合而成的药剂，几乎没有人能在沾到它后存活下来。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>毒刺</strong></p>
-                            <p>在英雄的普通攻击中附加毒性伤害，同时降低目标的移动速度。</p>
+                            <p>在剧毒术士的普通攻击中加入毒性伤害，并降低敌人的移动速度。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">6/8/10/12</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续性伤害:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                    <td>持续时间:</td><td class="statRowColW">6 / 9 / 12 / 15</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >减速:</td><td class="statRowColW">11% / 12% / 13% / 14%</td>
+                                    <td>每秒伤害:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>移动速度减缓:</td><td class="statRowColW">11% / 12% / 13% / 14%</td>
                                 </tr>
                             </table>
+                            <p>造成了他变异的那个生物的麻痹毒刺，现在属于剧毒术士了。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>瘟疫守卫</strong></p>
-                            <p>制造一个不会移动的蛇型守卫攻击敌人和建筑，守卫对魔法免疫。</p>
+                            <p>召唤一个瘟疫守卫来攻击敌方单位和建筑。守卫对魔法免疫。守卫拥有毒刺攻击，效果与毒刺技能的当前等级相同，造成50%的原技能伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">20 / 20 / 20 / 20</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">20/20/20/20</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">5.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">5</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">40 / 40 / 40 / 40</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >生命值:</td><td class="statRowColW">75 / 200 / 325 / 450</td>
+                                    <td>持续时间:</td><td class="statRowColW">40</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">10 / 19 / 29 / 38</td>
+                                    <td>守卫生命值:</td><td class="statRowColW">75 / 200 / 325 / 450</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>守卫攻击力:</td><td class="statRowColW">10 / 19 / 29 / 38</td>
                                 </tr>
                             </table>
+                            <p>他通过将早先的草药学天赋，和后天获得的毒素专精混合起来，创造出一个活体化瘟疫。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>剧毒新星</strong></p>
-                            <p>制造一个剧毒的圆环对周围的敌方单位一定时间内造成持续毒性伤害。目标生命值最多降低至1。可神杖升级。</p>
+                            <p>施放一个剧毒之环，对剧毒术士周围的敌方单位造成持续伤害。剧毒新星的效果不能致死；目标的生命值最低降至1点。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 300 / 400</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200/300/400</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">140.0 / 120.0 / 100.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">140/120/100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">830 / 830 / 830</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">12 / 14 / 15</td>
+                                    <td>作用范围:</td><td class="statRowColW">830 / 830 / 830</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">36 / 58 / 81</td>
+                                    <td>持续时间:</td><td class="statRowColW">12 / 14 / 15</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">140 / 120 / 60</td>
+                                    <td>伤害:</td><td class="statRowColW">36 / 58 / 81</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级持续时间:</td><td class="statRowColW">14 / 15 / 16</td>
+                                    <td>神杖升级冷却时间:</td><td class="statRowColW">140 / 120 / 60</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">58 / 81 / 108</td>
+                                    <td>神杖升级持续时间:</td><td class="statRowColW">14 / 15 / 16</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级伤害:</td><td class="statRowColW">58 / 81 / 108</td>
                                 </tr>
                             </table>
+                            <p>浓酸丛林中的生物通常会对攻击者释放毒性瘴气来保命；而剧毒术士却将这种瘟疫扩散出基迪岛。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -291,7 +307,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在基迪岛上的浓酸密林中，在所有生物的体内，包括植物的根茎，动物的内脏中，都流淌着致命的腐蚀剧毒。然而，就算在这种毒巢里，剧毒术士也是公认的万毒之王。多年以前，一个叫做里瑟尔的植物学家乘坐小舟跨越弗拉基海湾，想要从植物的根须中提取出一种强力药剂，结果他却遭遇了噩梦一般的变故。在深入到基迪岛密林中数英里时，里瑟尔遇到了一种伪装成寄生植物的毒性爬虫，当他想把爬虫扯下来的时候，被爬虫狠狠的蛰了。绝望之际，他用他对丛林植物仅有的认知，飞快地掐住这只爬虫后，将它的毒液和一种带甲兰花的花蜜混合，合成了解毒剂。他用兰花的尖刺为自己注射了解毒剂，然后立即陷入昏迷，并且逐渐陷入了全身完全麻木的状态。十七年后，在他倒下的地方，从多年积累的腐土中钻出某个东西：剧毒术士。草药学家里瑟尔已经不复存在，现在他是死亡使者里瑟尔。他的记忆几乎都没有了，他原来的肉体已经毁灭，现在被一种新的物质所替代--融合了那只爬虫的毒液和兰花的毒性外皮。基迪岛的浓酸丛林现在有了新的主人，过去最剧毒的捕食者在他面前都只能逃走或臣服求饶。这个可怕的岛屿毕竟太有限了，里瑟尔受到内心深处残留的人类的饥渴驱使，离开了岛屿，去寻找新的毒物，以及带来新的死亡。</p>
+                    	<p>在基迪岛上的浓酸密林中，在所有生物的体内，包括植物的根茎，动物的内脏中，都流淌着致命的腐蚀剧毒。然而，就算在这种毒巢里，剧毒术士也是公认的万毒之王。多年以前，一个叫做里瑟尔的植物学家乘坐小舟跨越弗拉基海湾，想要从植物的根须中提取出一种强力药剂，结果他却遭遇了噩梦一般的变故。在深入到基迪岛密林中数英里时，里瑟尔遇到了一种伪装成寄生植物的毒性爬虫，当他想把爬虫扯下来的时候，被爬虫狠狠的蛰了。绝望之际，他用他对丛林植物仅有的认知，飞快地掐住这只爬虫后，将它的毒液和一种带甲兰花的花蜜混合，合成了解毒剂。他用兰花的尖刺为自己注射了解毒剂，然后立即陷入昏迷，并且逐渐陷入了全身完全麻木的状态。十七年后，在他倒下的地方，从多年积累的腐土中钻出某个东西：剧毒术士。草药学家里瑟尔已经不复存在，现在他是死亡使者里瑟尔。他的记忆几乎都没有了，他原来的肉体已经毁灭，现在被一种新的物质所替代--融合了那只爬虫的毒液和兰花的毒性外皮。基迪岛的浓酸丛林现在有了新的主人，过去最剧毒的捕食者在他面前都只能逃走或臣服求饶。这个可怕的岛屿毕竟太有限了，里瑟尔受到内心深处残留的人类的饥渴驱使，离开了岛屿，去寻找新的毒物，以及带来新的死亡。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

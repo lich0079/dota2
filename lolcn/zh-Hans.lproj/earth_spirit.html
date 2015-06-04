@@ -12,7 +12,7 @@
                   
                   $(".tab").click(
                                   function(){
-                                  $(".tab").removeClass("sel");
+                                  $(".tab").removeClass("sel");  
                                   $(".tab").addClass("unsel");
                                   $(this).removeClass("unsel");
                                   $(this).addClass("sel");
@@ -22,7 +22,7 @@
                                   });
                   $(".abi").click(
                                   function(){
-                                  $(".abi").removeClass("cur");
+                                  $(".abi").removeClass("cur");  
                                   $(this).addClass("cur");
                                   var index = $(this).attr("sel");
                                   $(".abicontent").hide();
@@ -41,27 +41,27 @@
                 </div>
                 <div  class="floatleft">
                     <div class="heroName">大地之灵</div>
-                    <div class="atype">近战</div>
+                     <div class="atype">近战</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
-                        <tr >
-                            <td class="role" width="50%">核心</td>
-                            <td class="role" width="50%">爆发</td>
-                        </tr>
-                        <tr >
-                            <td class="role"></td>
-                            <td class="role"></td>
-                        </tr>
-                    </table>
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%">爆发</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
             <div class="clearfix"></div>
             
             <div class="tb_ floatleft">
-                <ul>
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                <ul> 
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
             
             <div class="floatleft">
                 <div id="content1"  class="hideDIV">
-                    
+
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -162,189 +162,235 @@
                                 <img  src="../img/earth_spirit_geomagnetic_grip_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/earth_spirit_stone_caller_hp2.png" >
-                                    </li>
+                                <img  src="../img/earth_spirit_stone_caller_hp2.png" />
+                            </li>
                             <li sel="5" class="abi">
-                                <img  src="../img/earth_spirit_magnetize_hp2.png" >
+                                <img  src="../img/earth_spirit_petrify_hp2.png" />
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/earth_spirit_magnetize_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>巨石冲击</strong></p>
-                            <p>大地之灵将敌方单位，友方单位或残岩为目标，将其击飞，目标将沿他面朝的方向飞行一段距离。过程中目标对碰到的所有单位都会造成伤害。如果目标是残岩，被击飞的距离也将加长，而受到伤害的单位还将被眩晕。</p>
+                            <p>大地之灵将敌方单位或友方单位作为目标，将其击飞，目标将沿他面朝的方向飞行一段距离。如果大地之灵点地为目标，他将击飞200范围内距离最近的残岩。击飞过程中目标对碰到的所有单位都会造成伤害。如果目标是残岩，被击飞的距离也将加长，而受到伤害的单位还将被眩晕。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">22/18/14/10</td>
+                                    <td>冷却时间:</td><td class="statRowColW">22/18/14/10</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">英雄</td>
+                                    <td>影响:</td><td class="statRowColW">英雄</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">200</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">125</td>
+                                    <td>冲击残岩范围:</td><td class="statRowColW">200</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >击退速度:</td><td class="statRowColW">1200</td>
+                                    <td>伤害:</td><td class="statRowColW">50 / 100 / 150 / 200</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >击飞距离（对单位）:</td><td class="statRowColW">500 / 600 / 700 / 800</td>
+                                    <td>眩晕持续时间:</td><td class="statRowColW">0.75 / 1.25 / 1.75 / 2.25</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >击飞距离（对残岩）:</td><td class="statRowColW">2000</td>
+                                    <td>行进速度:</td><td class="statRowColW">1200</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >眩晕持续时间:</td><td class="statRowColW">0.75 / 1.25 / 1.75 / 2.25</td>
+                                    <td>击飞距离:</td><td class="statRowColW">500 / 600 / 700 / 800</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>击飞距离（对残岩）:</td><td class="statRowColW">2000</td>
                                 </tr>
                             </table>
+                            <p>大地之灵的一招一式都蕴含着移山之力。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>巨石翻滚</strong></p>
-                            <p>经过0.6秒延迟，大地之灵化身为巨石，沿目标位置翻滚，对经过的敌人造成伤害，如果撞到敌方英雄或自身被眩晕，翻滚都会中止。如果翻滚过程中经过残岩将会大幅提高翻滚距离和速度，被撞的敌人其攻击速度和移动速度都将被降低，同时残岩也将被消耗。</p>
+                            <p>大地之灵化身为巨石，经过0.6秒延迟后沿目标位置翻滚，对经过的敌人造成伤害，如果撞到敌方英雄或自身被眩晕，翻滚都会中止。如果翻滚过程中经过残岩将会大幅提高翻滚距离和速度，被撞的敌人将受到更多伤害，其移动速度将被降低。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">16/12/8/4</td>
+                                    <td>冷却时间:</td><td class="statRowColW">16/12/8/4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">150</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >速度:</td><td class="statRowColW">800</td>
+                                    <td>速度:</td><td class="statRowColW">800</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >速度（经过残岩）:</td><td class="statRowColW">1600</td>
+                                    <td>速度（经过残岩）:</td><td class="statRowColW">1600</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害:</td><td class="statRowColW">90</td>
+                                    <td>距离:</td><td class="statRowColW">800</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害（经过残岩）:</td><td class="statRowColW">135</td>
+                                    <td>距离（经过残岩）:</td><td class="statRowColW">1600</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >距离:</td><td class="statRowColW">800</td>
+                                    <td>伤害:</td><td class="statRowColW">100</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >距离(经过残岩):</td><td class="statRowColW">1600</td>
+                                    <td>移动速度减缓:</td><td class="statRowColW">80%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >减速持续时间:</td><td class="statRowColW">2</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >减速:</td><td class="statRowColW">80%</td>
+                                    <td>减速持续时间:</td><td class="statRowColW">2</td>
                                 </tr>
                             </table>
+                            <p>大地之灵将自己与大地紧密结合，使松散的石块吸附到身上，从而组成一个防护圆球向前滚动。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>地磁之握</strong></p>
                             <p>大地之灵将友方目标或残岩拉扯到自己所在的位置，行进路径上被击中的敌人都会被沉默，如果拉扯的目标是残岩还将受到伤害效果。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">13</td>
+                                    <td>冷却时间:</td><td class="statRowColW">13</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标, 点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >影响:</td><td class="statRowColW">友方单位</td>
+                                    <td>影响:</td><td class="statRowColW">友方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">180</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >残岩伤害:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
+                                    <td>沉默持续时间:</td><td class="statRowColW">2.5 / 3 / 3.5 / 4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >拉扯速度:</td><td class="statRowColW">1000</td>
+                                    <td>英雄拉扯速度:</td><td class="statRowColW">600</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >沉默持续时间:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                    <td>残岩伤害:</td><td class="statRowColW">50 / 100 / 150 / 200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>残岩拉扯速度:</td><td class="statRowColW">1000</td>
                                 </tr>
                             </table>
+                            <p>异性相吸。即使是深藏于鲜血和骨头中的矿物都不能免疫大地之灵的呼唤。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>残岩</strong></p>
                             <p>在指定位置召唤一枚巨石残岩。残岩没有视野，不能被摧毁，残岩可以加强大地之灵的技能效果。召唤残岩需要消耗能量，能量将慢慢恢复。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大能量:</td><td class="statRowColW">6</td>
+                                    <td>最大能量:</td><td class="statRowColW">6</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >每点能量恢复时间:</td><td class="statRowColW">35</td>
+                                    <td>每点能量恢复时间:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">120</td>
+                                    <td>持续时间:</td><td class="statRowColW">120</td>
                                 </tr>
                             </table>
+                            <p>大地之灵唤出的残岩源自与他一同在大地黑暗的怀抱下埋藏多年的兵马俑。</p>
                         </div>
                         <div id="abi5" class="abicontent cont hided">
-                            <p><strong>磁化</strong></p>
-                            <p>将附近小范围内的敌方单位磁化，使其短时间内受到持续伤害。被磁化的英雄单位将会引起附近残岩的爆炸，每次爆炸都将刷新残岩附近单位身上的磁化时间（若附近单位未被磁化则为其施加一个磁化效果）。该过程可重复数次。爆炸后的残岩将不复存在。如果一个被磁化的英雄受到了地磁之握或巨石翻滚的作用被沉默或减速，那么所有被磁化的英雄都会受到同样效果。</p>
+                            <p><strong>残岩魔咒</strong></p>
+                            <p>大地之灵对一名英雄施法，使其暂时获得残岩的属性。经过3秒后残岩就会碎裂，释放出英雄，并对周围单位造成伤害。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">80</td>
+                                    <td>冷却时间:</td><td class="statRowColW">45</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">300</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >残岩引爆范围:</td><td class="statRowColW">300</td>
+                                    <td>残岩持续时间:</td><td class="statRowColW">3</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >残岩爆炸影响范围:</td><td class="statRowColW">600</td>
+                                    <td>碎裂伤害:</td><td class="statRowColW">300</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >效果持续时间:</td><td class="statRowColW">6</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td >每秒造成伤害:</td><td class="statRowColW">50 / 75 / 100</td>
+                                    <td>碎裂作用范围:</td><td class="statRowColW">300</td>
                                 </tr>
                             </table>
+                            <p>考林操控大地的元素之力，使生命体暂时石化，将其收编于他的兵马俑大军中。</p>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>磁化</strong></p>
+                            <p>将附近小范围内的敌方单位磁化，使其短时间内受到伤害。被磁化的英雄单位将会引起附近残岩的爆炸，每次爆炸都将摧毁残岩并刷新残岩附近单位身上的磁化时间（若附近单位未被磁化则为其施加一个磁化效果）。该过程可重复数次。如果一个被磁化的英雄受到了地磁之握或巨石翻滚的作用被沉默或减速，那么所有被磁化的英雄都会受到同样效果。 可用神杖升级。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100.000000</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>冷却时间:</td><td class="statRowColW">80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>作用范围:</td><td class="statRowColW">300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>每秒伤害:</td><td class="statRowColW">50 / 75 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>磁化持续时间:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>残岩引爆范围:</td><td class="statRowColW">400</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>残岩爆炸影响范围:</td><td class="statRowColW">600</td>
+                                </tr>
+                            </table>
+                            <p>在大地之灵的呼唤下，敌人体内的鲜血和骨头中所含的矿物都开始倒戈。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -352,7 +398,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>在地底深埋着一支兵马俑，数以万计，兵种齐全。在军队方阵前面的是考林将军的雕像，由神圣的玉石打造而成。这支军队在大地的怀抱中沉睡了上千年后，玉石雕像中大地本身的力量经过不停的流转，不断的汇聚，已经幻化成灵，冲破了玉石的束缚。现在，伟大的大地之灵考林从容地行走在地面之上，召唤着地底的军队，横扫一切敌人。</p>
+                    	<p>在地底深埋着一支兵马俑，数以万计，兵种齐全。在军队方阵前面的是考林将军的雕像，由神圣的玉石打造而成。这支军队在大地的怀抱中沉睡了上千年后，玉石雕像中大地本身的力量经过不停的流转，不断的汇聚，已经幻化成灵，冲破了玉石的束缚。现在，伟大的大地之灵考林从容地行走在地面之上，召唤着地底的军队，横扫一切敌人。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

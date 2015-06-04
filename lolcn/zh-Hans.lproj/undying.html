@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>UNDYING</title>
+        <title>不朽尸王</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -73,7 +73,7 @@
                     <div class="contentblock" >
                         <div class="statsline floatleft">
                             <ul>
-                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>27 + 2.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>27 + 2.50</span></li>
                                 <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>10 + 0.80</span></li>
                                 <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>22 + 2.10</span></li>
                             </ul>
@@ -108,8 +108,8 @@
                                 <td ></td>
                                 <td >魔法值</td>
                                 <td class="statRowColW">351</td>
-                                <td class="statRowColW">715</td>
-                                <td class="statRowColW">1,235</td>
+                                <td class="statRowColW">806</td>
+                                <td class="statRowColW">1,391</td>
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,149 +156,165 @@
                                 <img  src="../img/undying_decay_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/undying_soul_rip_hp2.png" />               
+                                <img  src="../img/undying_soul_rip_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/undying_tombstone_hp2.png" />                          
+                                <img  src="../img/undying_tombstone_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/undying_flesh_golem_hp2.png" >
+                                <img  src="../img/undying_flesh_golem_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>腐朽</strong></p>
-                            <p>不朽尸王使范围内敌方英雄的生命衰竭，造成伤害并偷取他们的力量值。</p>
+                            <p>不朽尸王偷取区域内所有敌方英雄的力量，造成基础伤害并将敌人的力量据为己有。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">70 / 90 / 110 / 130</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">70/90/110/130</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">10.0 / 8.0 / 6.0 / 4.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">10/8/6/4</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">20/60/100/140</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">325</td>
+                                    <td>基础伤害:</td><td class="statRowColW">20 / 60 / 100 / 140</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >持续时间:</td><td class="statRowColW">25 / 30 / 35 / 40</td>
+                                    <td>力量偷取:</td><td class="statRowColW">4</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >力量值偷取:</td><td class="statRowColW">4</td>
+                                    <td>偷取效果持续时间:</td><td class="statRowColW">40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>作用范围:</td><td class="statRowColW">325</td>
                                 </tr>
                             </table>
+                            <p>生者的力量只不过是从死者那里借来的。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>噬魂</strong></p>
-                            <p>将能量的流动导向目标友方或敌方单位，治疗或伤害目标，数值取决于不朽尸王附近的单位数量。每个计算的有效单位都会受到伤害。</p>
+                            <p>不朽尸王从附近的所有单位身上扯出生命力，并使用它治疗队友或伤害敌人。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 75 / 100 / 125</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/110/120/130</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">25.0 / 20.0 / 15.0 / 10.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">24/18/12/6</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害/治疗每单位:</td><td class="statRowColW">25</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >作用范围:</td><td class="statRowColW">975</td>
+                                    <td>每个单位提供的伤害/治疗量:</td><td class="statRowColW">18 / 22 / 26 / 30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最大单位数:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                    <td>有效单位数上限:</td><td class="statRowColW">10 / 12 / 14 / 16</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>撕扯作用范围:</td><td class="statRowColW">1300</td>
                                 </tr>
                             </table>
+                            <p>即使是友军也能从不朽尸王的存在中感受到绝望。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>墓碑</strong></p>
-                            <p>在目标位置召唤一座墓碑。墓碑会不断在其附近的每个敌方单位身边产生僵尸攻击他们。僵尸拥有嗜杀技能，使他们的攻击带有减速效果，并且若目标的生命值低于一定数值，僵尸的攻击和移动速度会提升。</p>
+                            <p>在目标位置召唤一座墓碑。墓碑会不断在其附近的每个敌方单位身边产生僵尸攻击他们。僵尸拥有死亡渴望技能，使他们的攻击带有减速效果，并且若目标的生命值低于一定数值或一定百分比，僵尸的攻击和移动速度会提升。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 130 / 140 / 150</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120/130/140/150</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">60.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                    <td>技能:</td><td class="statRowColW">点目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">400 / 600 / 800 / 1000</td>
+                                    <td>墓碑生命值:</td><td class="statRowColW">175 / 350 / 525 / 700</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >生产间隔:</td><td class="statRowColW">3</td>
+                                    <td>墓碑持续时间:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >生命值界限:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                    <td>僵尸产生范围:</td><td class="statRowColW">600 / 800 / 1000 / 1200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>死亡渴望触发生命值:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>死亡渴望触发百分比:</td><td class="statRowColW">20% / 25% / 30% / 35%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>僵尸产生间隔:</td><td class="statRowColW">3</td>
                                 </tr>
                             </table>
+                            <p>挽歌召唤他倒下的战友为死亡之神作战。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>血肉傀儡</strong></p>
-                            <p>不朽尸王变身为一具令人毛骨悚然的血肉傀儡，拥有瘟疫光环。光环对750范围内的所有敌方单位有减速效果，并加深他们受到的伤害；他们距离不朽尸王越近，受到的伤害就越多。当一个在瘟疫影响下的单位死亡时，不朽尸王会获得该单位生命最大值一定比例的生命恢复。可神杖升级。</p>
+                            <p>不朽尸王变身为一具令人毛骨悚然的血肉傀儡，拥有瘟疫光环。光环对750范围内的所有敌方单位有减速效果，并加深他们受到的伤害；他们距离不朽尸王越近，受到的伤害就越多，减速效果也越大。当一个在瘟疫影响下的单位死亡时，不朽尸王会获得自己生命最大值一定比例的生命恢复。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/100/100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">75.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">75</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >持续时间:</td><td class="statRowColW">30 / 30 / 30</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >移动速度减少:</td><td class="statRowColW">9%</td>
+                                    <td>持续时间:</td><td class="statRowColW">30</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >最大伤害:</td><td class="statRowColW">20% / 25% / 30%</td>
+                                    <td>最大伤害加深:</td><td class="statRowColW">20% / 25% / 30%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >最小伤害:</td><td class="statRowColW">5% / 10% / 15%</td>
+                                    <td>最大移速减缓:</td><td class="statRowColW">20%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >单位死亡时受到回复(英雄):</td><td class="statRowColW">6%</td>
+                                    <td>死亡治疗量（英雄）:</td><td class="statRowColW">6%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >单位死亡时受到回复(小兵):</td><td class="statRowColW">2%</td>
+                                    <td>死亡治疗量（普通单位）:</td><td class="statRowColW">2%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级最大伤害:</td><td class="statRowColW">25% / 30% / 35%</td>
+                                    <td>神杖升级最大伤害加深:</td><td class="statRowColW">30% / 35% / 40%</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级最小伤害:</td><td class="statRowColW">10% / 15% / 20%</td>
+                                    <td>神杖升级死亡治疗量（英雄）:</td><td class="statRowColW">10%</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级单位死亡时受到回复(英雄):</td><td class="statRowColW">10%</td>
-                                </tr>
-                                <tr class="statRow">
-                                    <td style="color: #6FE871;font-size:9px;">神杖升级单位死亡时受到回复(小兵):</td><td class="statRowColW">3%</td>
+                                    <td>神杖升级死亡治疗量（普通单位）:</td><td class="statRowColW">3%</td>
                                 </tr>
                             </table>
+                            <p>新近死者的血肉增强了挽歌瘟疫的力量。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -306,7 +322,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>他残破的心，已经不再记得自己的名，也不记得已经过了多久。还依稀记得的，是盔甲，是战旗，是身边死去的兄弟。他还记得那场战役：一双给他带去痛苦和恐惧的苍白的手，将他从马上扯下。他还记得自己和兄弟们一起被扔进死亡之神那漆黑的深坑，还记得他被虚无吞噬时耳畔的挽歌。在深渊下的黑暗中，他们被时间遗弃，抛弃了思想，抛弃了理智，唯一尚存的，只有饥饿。他们以彼此残留的指甲和牙齿为食，唤醒了身体。这时挽歌传来，一开始很遥远，只是最轻微的感官体验，然后声音逐渐汇集，似乎铺天盖地永无止境，歌声似乎形成了一堵音墙，将他意识中所有想法都清除。随着自己被挽歌吞噬，他也向死亡之神张开了双臂，迎接自己的陨灭。然而死亡之神并没有选择毁掉他，而是让他投入战争，在一片惨然的虚无中，他被赋予了新的使命：让世界遍地哀鸿，让死者吞噬生命。他成为了不朽尸王，死亡之神的先驱，他的躯体永生不灭。在你的往生路上，会奏响他永恒的挽歌。	</p>
+                    	<p>他残破的心，已经不再记得自己的名，也不记得已经过了多久。还依稀记得的，是盔甲，是战旗，是身边死去的兄弟。他还记得那场战役：一双给他带去痛苦和恐惧的苍白的手，将他从马上扯下。他还记得自己和兄弟们一起被扔进死亡之神那漆黑的深坑，还记得他被虚无吞噬时耳畔的挽歌。在深渊下的黑暗中，他们被时间遗弃，抛弃了思想，抛弃了理智，唯一尚存的，只有饥饿。他们以彼此残留的指甲和牙齿为食，唤醒了身体。这时挽歌传来，一开始很遥远，只是最轻微的感官体验，然后声音逐渐汇集，似乎铺天盖地永无止境，歌声似乎形成了一堵音墙，将他意识中所有想法都清除。随着自己被挽歌吞噬，他也向死亡之神张开了双臂，迎接自己的陨灭。然而死亡之神并没有选择毁掉他，而是让他投入战争，在一片惨然的虚无中，他被赋予了新的使命：让世界遍地哀鸿，让死者吞噬生命。他成为了不朽尸王，死亡之神的先驱，他的躯体永生不灭。在你的往生路上，会奏响他永恒的挽歌。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">

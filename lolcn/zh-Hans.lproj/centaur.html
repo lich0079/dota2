@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>CENTAUR WARRUNNER</title>
+        <title>半人马战行者</title>
         <link rel="stylesheet" type="text/css" href="../hero.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -40,7 +40,7 @@
                     <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/centaur_hphover.png"/></a>
                 </div>
                 <div  class="floatleft">
-                    <div class="heroName" style="font-size:14px;">半人马战行者</div>
+                    <div class="heroName">半人马战行者</div>
                      <div class="atype">近战</div>
                     <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
                             <tr >
@@ -58,10 +58,10 @@
             
             <div class="tb_ floatleft">
                 <ul> 
-                    <li sel="1" class="tab sel">基本资料</li>
-                    <li sel="2" class="tab unsel">技能介绍</li>
-                    <li sel="3" class="tab unsel">背景故事</li>
-                    <li sel="4" class="tab unsel">英雄图片</li>
+                    <li sel="1" class="tab sel">属性</li>
+                    <li sel="2" class="tab unsel">技能</li>
+                    <li sel="3" class="tab unsel">背景</li>
+                    <li sel="4" class="tab unsel">图片</li>
                 </ul>
             </div>
             
@@ -127,7 +127,7 @@
                             </tr>
                             <tr class="statRowB">
                                 <td ></td>
-                                <td >视野</td>
+                                <td >视野范围</td>
                                 <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
                             </tr>
                             <tr class="statRow">
@@ -138,7 +138,7 @@
                             <tr class="statRowB">
                                 <td ></td>
                                 <td >弹道速度</td>
-                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
                             </tr>
                         </table>
                         <br>
@@ -156,107 +156,132 @@
                                 <img  src="../img/centaur_hoof_stomp_hp2.png" />
                             </li>
                             <li sel="2" class="abi">
-                                <img  src="../img/centaur_double_edge_hp2.png" />               
+                                <img  src="../img/centaur_double_edge_hp2.png" />
                             </li>
                             <li sel="3" class="abi">
-                                <img  src="../img/centaur_return_hp2.png" />                          
+                                <img  src="../img/centaur_return_hp2.png" />
                             </li>
                             <li sel="4" class="abi">
-                                <img  src="../img/centaur_stampede_hp2.png" >
+                                <img  src="../img/centaur_stampede_hp2.png" />
                             </li>
                         </ul>
                     </div>
                     <div class="contentblock">
                         <div id="abi1" class="abicontent cont">
                             <p><strong>马蹄践踏</strong></p>
-                            <p>猛击地面，对敌方地面单位造成伤害和晕眩。</p>
+                            <p>猛踏地面，眩晕并伤害身边的敌方单位。</p>
                             <br>
                             <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">85 / 100 / 115 / 130</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">130</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">13.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">13</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >作用范围:</td><td class="statRowColW">315</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >眩晕时间:</td><td class="statRowColW">2 / 2.25 / 2.5 / 2.75</td>
+                                    <td>范围:</td><td class="statRowColW">315</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >践踏伤害:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
+                                    <td>眩晕持续时间  践踏伤害:</td><td class="statRowColW">2 / 2.25 / 2.5 / 2.75</td>
                                 </tr>
                             </table>
+                            <p>当战行者健壮的马蹄碰到了土壤，大地的震颤各处都能感受到。</p>
                         </div>
                         <div id="abi2" class="abicontent cont hided">
                             <p><strong>双刃剑</strong></p>
-                            <p>半人马酋长聚集起内在的力量进行一次威力巨大的攻击，同时对自己和小范围目标造成伤害。本技能不能用来自杀。</p>
+                            <p>半人马战行者以猛烈的力量进行近战攻击，对目标周围单位和自身造成伤害。此技能无法用于自杀。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">8.0</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">0/0/0/0</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                    <td>冷却时间:</td><td class="statRowColW">8</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                    <td>技能:</td><td class="statRowColW">单位目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                    <td>影响:</td><td class="statRowColW">敌方单位</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">175 / 250 / 325 / 400</td>
+                                    <td>伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>伤害:</td><td class="statRowColW">175 / 250 / 325 / 400</td>
                                 </tr>
                             </table>
+                            <p>在激烈的战斗中，布拉德瓦登凶猛的撞击有时候会对自己造成伤害。</p>
                         </div>
                         <div id="abi3" class="abicontent cont hided">
                             <p><strong>反击</strong></p>
-                            <p>半人马酋长能迅速回敬任何攻击他的敌人，回击伤害决定于力量值的百分比。</p>
+                            <p>半人马战行者反击攻击他的单位，伤害与半人马战行者的力量值成正比。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
                                     <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                    <td>伤害类型:</td><td class="statRowColW">物理</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >伤害:</td><td class="statRowColW">16 / 18 / 20 / 22</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">是</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >力量百分比伤害:</td><td class="statRowColW">26% / 34% / 42% / 50%</td>
+                                    <td>伤害:</td><td class="statRowColW">16 / 18 / 20 / 22</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>力量加成伤害:</td><td class="statRowColW">26% / 34% / 42% / 50%</td>
                                 </tr>
                             </table>
+                            <p>布拉德瓦登无需回避对手的攻击；这由他那盔甲般的马皮负责。</p>
                         </div>
                         <div id="abi4" class="abicontent cont hided">
                             <p><strong>奔袭冲撞</strong></p>
-                            <p>半人马战行者带领所有队友向胜利冲锋，所有友方英雄达到极限移动速度，并对踩到的敌人造成眩晕。每个敌人只会受到一次踩踏作用，并受到基于半人马战行者力量值的伤害。</p>
+                            <p>半人马战行者带领所有队友向胜利冲锋，所有友方英雄达到极限移动速度，并使踩到的敌人停滞。每个敌人只会受到一次踩踏作用，并受到基于半人马战行者力量值的伤害。 可用神杖升级。</p>
                             <br>
-                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
                                 <tr class="statRow">
-                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80</td>
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冷却时间:</td><td class="statRowColW">120.0 / 90.0 / 60.0</td>
+                                    <td>冷却时间:</td><td class="statRowColW">90/75/60</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                    <td>技能:</td><td class="statRowColW">无目标</td>
                                 </tr>
                                 <tr class="statRowB">
-                                    <td >冲撞持续时间:</td><td class="statRowColW">3.75</td>
+                                    <td>无视技能免疫:</td><td class="statRowColW">否</td>
                                 </tr>
                                 <tr class="statRow">
-                                    <td >力量倍数伤害:</td><td class="statRowColW">1 / 2 / 3</td>
+                                    <td>奔袭冲撞持续时间:</td><td class="statRowColW">3.75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>力量值伤害系数:</td><td class="statRowColW">1 / 2 / 3</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>停滞持续时间:</td><td class="statRowColW">1.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td>踩踏作用范围:</td><td class="statRowColW">105</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td>神杖升级伤害减少:</td><td class="statRowColW">60%</td>
                                 </tr>
                             </table>
+                            <p>欧梅克斯的巨大腰带，彰显着布拉德瓦登是同族中最伟大的战士，激励着他的格斗士同伴在野蛮的战斗中跟随他。</p>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -264,7 +289,8 @@
                 </div>
                 <div id="content3"  class="hideDIV hided">
                     <div class="story contentblock">
-                        <p>相传半人马所到之处，尸横遍野。对于名为战行者的半人马，这场面的确相当壮观。外界谣传，这杜鲁德大草原的四足部落里都是头脑简单，性格残暴的生物。他们虽有语言，但无文字；他们的文化没有图画记录，成型音乐，或是正式宗教。半人马认为，战斗是思想的完美阐释，自身实力的最高体现。如果杀戮是半人马部落中的艺术，那么战行者布拉德瓦登就是其中最伟大的艺术家。他获得主宰部落的地位是在古老的欧梅克斯竞技场，半人马部族千年以来聚集于此，行使他们格斗的权利。随着他声名远扬，不少观众都是不远千里前来目睹这名半人马的雄伟风姿。他总是第一个踏入竞技场，最后一个离开，在血肉横飞、刀光剑影中谱写着战斗的巨著。这是鲜血与钢铁织就的诗篇，飘扬在杀戮场上扬起的尘埃中。	</p>
+                    	<p>相传半人马所到之处，尸横遍野。对于名为战行者的半人马，这场面的确相当壮观。外界谣传，这杜鲁德大草原的四足部落里都是头脑简单，性格残暴的生物。他们虽有语言，但无文字；他们的文化没有图画记录，成型音乐，或是正式宗教。半人马认为，战斗是思想的完美阐释，自身实力的最高体现。如果杀戮是半人马部落中的艺术，那么战行者布拉德瓦登就是其中最伟大的艺术家。他获得主宰部落的地位是在古老的欧梅克斯竞技场，半人马部族千年以来聚集于此，行使他们格斗的权利。随着他声名远扬，不少观众都是不远千里前来目睹这名半人马的雄伟风姿。他总是第一个踏入竞技场，最后一个离开，在血肉横飞、刀光剑影中谱写着战斗的巨著。这是鲜血与钢铁织就的诗篇，飘扬在杀戮场上扬起的尘埃中。赛上暗淡的沙尘间看到的只有挥舞得眼花缭乱的兵器。战行者将挑战者一个接一个地击败，直到竞技场里欢腾着他的名字，作为部族里无与匹敌的冠军，他感到异常孤独。他被授予竞技场的巨大腰带，系在他伟岸的身躯上。但是这死亡艺术家在他的胜利中只感到空虚。没有挑战的战士还有什么意义？那天强大的半人马就这样带着全新的目标奔出了欧梅克斯竞技场。在他的族人中，战行者是踏入竞技场中最为强大的战士。现在他要证明，自己是有史以来最为强大的斗士。 
+<br clear="both"></p>
                     </div>
                 </div>
                 <div id="content4"  class="hideDIV hided">
