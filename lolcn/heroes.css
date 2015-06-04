@@ -15,7 +15,9 @@ body {
 background: #111313;
 }
 .everything{
-width:320px;
+/*width:320px;*/
+width: 100%;
+min-width: 320px;
 font-size:10px;
 }
 a {
@@ -34,12 +36,20 @@ align:center;
 }
 .main ul {
 overflow: hidden;
-width: 320px;
+width: 100%;
+min-width: 320px;
 margin: 2px 0px;
+}
+
+.main .herotype{
+width: 100%;
+min-width: 320px;
+padding: 10px 0 14px;
+height:20px;
 }
 .main li {
 float: left;
-width: 80px;
+width: 25%;
 padding: 0px;
 text-align: center;
 line-height: 17px;
@@ -55,20 +65,8 @@ text-align:center;
 }
 
 .filter{
-margin:5px;
-}
-.filter li {
-float: left;
-width: 60px;
-padding: 0px;
-margin: 1px;
-margin-bottom:13px;
-text-align: center;
-line-height: 13px;
-}
-
-.filter ul {
-width: 315px;
+margin:1.5625%;
+width: 98%;
 }
 
 .sel{
@@ -93,9 +91,12 @@ margin:0px 20px;
 
 
 .filterSelect {
-width: 100px;
-padding: 3px;
+width: 31%;
+min-width: 100px;
+padding: 0.93%;
 font-size: 12px;
+margin-left: 0.2%;
+margin-right: 0.2%;
 background-color: #2A2C2D;
 border-top: solid #363939 1px;
 border-left: solid #363939 1px;
@@ -107,7 +108,7 @@ text-transform: uppercase;
 select {
 -webkit-appearance: menulist;
 box-sizing: border-box;
--webkit-box-align: center;
+-webkit-box-align:center;
 border: 1px solid;
 white-space: pre;
 -webkit-rtl-ordering: logical;
@@ -125,7 +126,8 @@ position: relative;
 
 img {
 border: medium none;
-width:78px;
+max-width: 127px;
+width:98%;
 }
 
 #columnHeaderTextStr{

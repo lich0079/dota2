@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>HEROES</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="../heroes.css">
             <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
             <script type="text/javascript">
@@ -72,6 +73,7 @@
             <div class="main" >
                 <br>
                 <div class="filter">
+                    <center>
                     <select onchange="getRole()" id="filterRole" class="filterSelect" name="">
                         <option value="">Role</option>
                         <option value="">All</option>
@@ -208,13 +210,14 @@
                         <option value="witch_doctor">Witch Doctor</option>
                         <option value="zuus">Zeus</option>
                     </select>
+                    </center>
                 </div>
                 
                 <br>
                 
                 
                 <ul>
-                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                    <li class="heroli herotype">
                         <span id="columnHeaderTextStr">Strength</span>
                     </li>
                     
@@ -405,7 +408,7 @@
                 
                 
                 <ul>
-                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                    <li class="heroli herotype" >
                         <span id="columnHeaderTextAgi">Agility</span>
                     </li>
                     
@@ -586,7 +589,7 @@
                 </ul>
 
                 <ul>
-                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                    <li class="heroli herotype" >
                         <span id="columnHeaderTextInt">Intelligence</span>
                     </li>
                     
