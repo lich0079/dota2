@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Outworld Destroyer
+</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/obsidian_destroyer_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName" style="font-size: 14px;">殁境毁灭者</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%"></td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>26 + 3.30</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>24 + 2.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>19 + 1.85</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>23 - 38</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>5.36</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">511</td>
+                                <td class="statRowColW">1,003</td>
+                                <td class="statRowColW">1,735</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">338</td>
+                                <td class="statRowColW">939</td>
+                                <td class="statRowColW">1,628</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">49-64</td>
+                                <td class="statRowColW">95-110</td>
+                                <td class="statRowColW">148-163</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">9</td>
+                                <td class="statRowColW">15</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">450</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/obsidian_destroyer_arcane_orb_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/obsidian_destroyer_astral_imprisonment_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/obsidian_destroyer_essence_aura_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/obsidian_destroyer_sanity_eclipse_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>奥术天球</strong></p>
+                            <p>在殁境神蚀者的攻击中附带基于他当前魔法值的额外纯伤害。奥术天球对召唤单位和镜像造成额外伤害。 奥术天球是攻击特效，不与其他攻击特效叠加。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">自动施法, 单位目标</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >魔法值转换伤害:</td><td class="statRowColW">6% / 7% / 8% / 9%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >幻象伤害:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>星体禁锢</strong></p>
+                            <p>将一个目标友方或敌方英雄禁锢在星体中。被禁锢的英雄处于无敌和无法行动状态。当对一个敌方英雄使用星体禁锢时，先兆者将从他身上暂时偷取智力值。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">18.0 / 16.0 / 14.0 / 12.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >偷取智力值:</td><td class="statRowColW">4 / 6 / 8 / 10</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >偷取持续时间:</td><td class="statRowColW">60 / 60 / 60 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >禁锢持续时间:</td><td class="statRowColW">1 / 2 / 3 / 4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>精气光环</strong></p>
+                            <p>当附近友方英雄或殁境神蚀者自己使用技能时，有一定概率回复自身魔法上限25%的魔法值。同时被动增加殁境神蚀者的魔法上限。一些没有冷却时间的技能和切换型的技能不能触发精气光环。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动, 光环</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">1000 / 1000 / 1000 / 1000</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >基础魔法加值:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >回复几率:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>神智之蚀</strong></p>
+                            <p>对作用范围内的敌方英雄造成伤害，伤害取决于殁境神蚀者与受影响的英雄的智力之差。如果某个敌方英雄受到的伤害低于一个定值，他还会损失75%的当前魔法值。神智之蚀可以影响星体禁锢中的单位。若一个敌方英雄的智力值等于或高于殁境神蚀者，则神智之蚀对其无效。 神杖升级：提升伤害系数并增加施法距离。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">175 / 250 / 325</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">160.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">375 / 475 / 575</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >射程:</td><td class="statRowColW">600 / 650 / 700</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >差值伤害倍数:</td><td class="statRowColW">8 / 9 / 10</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >智力限界值:</td><td class="statRowColW">10 / 30 / 50</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级距离:</td><td class="statRowColW">700 / 750 / 800</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级差值伤害倍数:</td><td class="statRowColW">9 / 10 / 11</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>一个高傲且强横的种族中的一员，先兆者，徘徊于虚空裂隙，他是整个世界与创世深渊之间唯一的卫士。在这充斥着星体残片的殁境中，他凝视着天穹，警觉的提防着繁星之外那无底深渊中的任何骚动。在他非凡的智慧中，深藏着对先兆的敏锐洞察力和强烈共鸣，他心中那曲黑暗的协奏曲暗示着：总有一天，在这深渊之中，在那造化之外，会有某种东西醒来，并且注意到我们的世界。由于太专注于监视星体，殁境神蚀者对太阳附近的事件并不关心。然而，随着遗迹发出战争的召唤，随着心中那潜在的危机感不断扩大，殁境神蚀者展开双翼，向着我们的世界飞来。在预言中，先兆者的地位不言而喻：他的出现即是灾厄的征兆。何况，他已然亲临。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/obsidian_destroyer_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

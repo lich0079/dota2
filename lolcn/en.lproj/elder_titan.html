@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>elder_titan</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/elder_titan_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">ELDER TITAN</div>
+                    <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                        <tr >
+                            <td class="role" width="50%">Durable</td>
+                            <td class="role" width="50%">Initiator</td>
+                        </tr>
+                        <tr >
+                            <td class="role"></td>
+                            <td class="role"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul>
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+                    
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>23 + 1.60</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>14 + 1.50</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>24 + 2.30</span></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>23 - 33</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.96</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">606</td>
+                                <td class="statRowColW">1,218</td>
+                                <td class="statRowColW">2,035</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">299</td>
+                                <td class="statRowColW">590</td>
+                                <td class="statRowColW">1,058</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">47-57</td>
+                                <td class="statRowColW">79-89</td>
+                                <td class="statRowColW">122-132</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">11</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/elder_titan_echo_stomp_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/elder_titan_ancestral_spirit_hp2.png" />
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/elder_titan_natural_order_hp2.png" />
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/elder_titan_return_spirit_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/elder_titan_earth_splitter_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Echo Stomp</strong></p>
+                            <p>Elder Titan and his Ancestral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations. The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage. Unconscious enemies will wake if they take damage.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100/115/130/145</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">15</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET, CHANNELED</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">COMPOSITE</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >CAST TIME:</td><td class="statRowColW">1.4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RADIUS:</td><td class="statRowColW">475</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >SLEEP DURATION:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >STOMP DAMAGE:</td><td class="statRowColW">80 / 80 / 80 / 80</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Ancestral Spirit</strong></p>
+                            <p>Elder Titan sends forth his Ancestral Spirit, a spiritual mimic. The Spirit damages any units it passes through. When it rejoins the Titan, it grants bonus damage and movement speed for each unit it damaged. The Ancestral Spirit possesses the Echo Stomp, Return Spirit, and Natural Order abilities.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">110/110/110/110</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">16</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >RADIUS:</td><td class="statRowColW">275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">120 / 160 / 200 / 240</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DURATION:</td><td class="statRowColW">8</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BUFF DURATION:</td><td class="statRowColW">9</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS SPEED(CREEPS):</td><td class="statRowColW">1%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BONUS SPEED(HEROES):</td><td class="statRowColW">5%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS DAMAGE(CREEPS):</td><td class="statRowColW">3 / 6 / 9 / 12</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BONUS DAMAGE(HEROES):</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Natural Order</strong></p>
+                            <p>Reduces all elements to their basic levels, removing base armor and magic resistance from nearby enemy units.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE, AURA</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >RADIUS:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BASE ARMOR REDUCTION:</td><td class="statRowColW">25/50/75/100%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BASE RESIST REDUCTION:</td><td class="statRowColW">6% / 14% / 20% / 26%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Return Ancestral Spirit</strong></p>
+                            <p>Returns the Ancestral Spirit to Elder Titan.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">0</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>Earth Splitter</strong></p>
+                            <p>Sends forth a jagged crack in front of Elder Titan. After 3 seconds, the crack implodes, slowing them while dealing damage based on the maximum life of units caught in the area.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">175/175/175</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">COMPOSITE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DELAY:</td><td class="statRowColW">3.14</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >CRACK WIDTH:</td><td class="statRowColW">300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RANGE:</td><td class="statRowColW">2400</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >SLOW:</td><td class="statRowColW">30% / 40% / 50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >SLOW DURATION:</td><td class="statRowColW">3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MAX HP AS DAMAGE:</td><td class="statRowColW">35%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>Well may you ask, "How did this world take its form?" Why of all the worlds in creation, has this one its strange properties, its diverse and motley collection of creatures, cultures and lore? "The answer," One whispers, "lies with the Titans." </p>
+                        
+                        <p>These original progenitors were there near the Beginning--if not actual witnesses to the creation, then born with it still echoing in their ears. Stamped with the earliest energies of the universe, they wished nothing more than to continue as creators themselves. Thus they bent to the task of shaping matter to their will: hammering and heating, bending and blasting. And when matter proved less challenging than they liked, they turned their tools upon themselves, reshaping their minds and reforging their spirits until they had become beings of great endurance. Reality itself became the ultimate object of their smithing. Yet, along the way, they sometimes erred. In cases of great ambition, mistakes are unavoidable. </p>
+                        
+                        <p>The one we know as the Elder Titan was a great innovator, one who studied at the forge of creation. In honing his skills, he shattered something that could never be repaired, only thrown aside. He fell into his own broken world, a shattered soul himself. There he dwelt among the jagged shards and fissured planes, along with other lost fragments that had sifted down through the cracks in the early universe. And this is why the world we know resembles an isle of castaways, survivors of a wreck now long forgotten. Forgotten, that is, by all but the One who blames himself. He spends his time forever seeking a way to accomplish the repairs, that he might rejoin the parts of his broken soul, that we and the world alike might all be mended. This is the One we know as Elder Titan. </p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/elder_titan_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

@@ -1,0 +1,92 @@
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Arial, Helvetica;
+}
+
+header,section,footer,nav,aside,article,figure{
+    dispaly:block;
+    padding:0px;
+    margin:0px;
+    
+}
+body {
+    background-image: url("bg.png");
+}
+.everything{
+    width:320px;
+    font-size:10px;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    color: #FEAF00;
+    text-decoration: none;
+    cursor:default;
+}
+b {
+    color: #F00;
+}
+
+body{
+    color: #FEAF00;
+}
+.main {
+    padding: 5px 0;
+    align:center;
+}
+
+
+.name{
+    font-size:14px;
+    color: #D4F100;
+}
+
+.spellstable {
+
+margin: 0px auto 2px;
+border-collapse: collapse;
+
+}
+
+
+.col1{
+width:66px;
+height:80px;
+text-align: center;
+vertical-align: top;
+}
+
+.col2{
+vertical-align: top;
+text-align: left;
+}
+
+.info {
+float:left;width:250px;
+}
+.divname{
+float:left;
+}
+.divlevel{
+float:right;font-size:14px;
+}
+.divdesc{
+float:left;margin-top:5px;
+font-size: 13px;
+}
+.white{
+color: #D4EAFF;
+}
+
+
+.lang{
+    margin:5px;
+}
+
+
+.lang a {
+    color: gray;
+    font-size:14px;
+    margin:0px 20px;
+}

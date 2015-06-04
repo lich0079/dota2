@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>ANTI-MAGE</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/antimage_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">敌法师</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%">逃生</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>15 + 1.80</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>22 + 2.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>20 + 1.20</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>27 - 31</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.08</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">530</td>
+                                <td class="statRowColW">849</td>
+                                <td class="statRowColW">1,457</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">195</td>
+                                <td class="statRowColW">523</td>
+                                <td class="statRowColW">1,017</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">49-53</td>
+                                <td class="statRowColW">88-92</td>
+                                <td class="statRowColW">136-140</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">14</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/antimage_mana_break_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/antimage_blink_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/antimage_spell_shield_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/antimage_mana_void_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>法力损毁</strong></p>
+                            <p>每次攻击损毁目标一定量的魔法值，并额外造成相当于损毁魔法值60%%的伤害。
+                            法力损毁是个独特攻击特效，不与其它独特攻击特效叠加。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >魔法值伤害:</td><td class="statRowColW">28 / 40 / 52 / 64</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>闪烁</strong></p>
+                            <p>让敌法师自由出入战场的短距离传送。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">60 / 60 / 60 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">12.0 / 9.0 / 7.0 / 5.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >射程:</td><td class="statRowColW">1000 / 1075 / 1150 / 1150</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>法术护盾</strong></p>
+                            <p>提高敌法师的魔法抗性。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >抗性加成:</td><td class="statRowColW">26% / 34% / 42% / 50%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>法力虚空</strong></p>
+                            <p>根据目标损失的魔法值，对目标和目标周围的敌人造成伤害。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 200 / 275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">70.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">0.6 / 0.85 / 1.1</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >眩晕时间:</td><td class="statRowColW">0.1 / 0.2 / 0.3</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">300</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>当山下的王国被潮水般的侵略者们横扫的时候，星隐寺的僧侣们只是在山上默默的注视着那崎岖的山谷。苦行且务实的他们在偏远高山的寺院里，独自沉浸在远离尘嚣的冥想中，不受任何魔法元素或者神灵的干扰。然而，死亡之神的军队来了，带着摧毁所有信仰，并让当地人转而信奉死亡之神的虚无主义。带着他们千年的战乱和血雨腥风，死亡军团将他们打败的敌人的灵魂和尸骨撕裂，用这种恐怖来摧毁星隐寺的信仰。面对此等攻击，寺院只坚持了不到两个星期，甚至还有一些刚从冥想中醒来的僧侣认为，这些入侵者不过是恶魔用来干扰他们冥想的幻象，于是他们死在了自己的冥想垫上。只有一个人幸免于难，他是来星隐寺寻求智慧，却尚未得到寺院认可的侍僧。他惊恐的看着自己曾经侍奉过的僧侣们被杀，然后又被复活成为死亡之神的祭司。带着星隐寺残存的珍贵教义卷轴，他艰难的到达了一个相对安全的地方，他发誓，不仅要消灭死亡之神的魔法师，更要将“魔法”这个词从世上抹去。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/antimage_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

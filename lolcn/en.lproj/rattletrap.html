@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CLOCKWERK</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/rattletrap_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">CLOCKWERK</div>
+                     <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Initiator</td>
+                                <td class="role" width="50%">Durable</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>17 + 1.30</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>13 + 2.30</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>24 + 2.70</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>31 - 33</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.82</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">606</td>
+                                <td class="statRowColW">1,324</td>
+                                <td class="statRowColW">2,217</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">221</td>
+                                <td class="statRowColW">458</td>
+                                <td class="statRowColW">887</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">55-57</td>
+                                <td class="statRowColW">93-95</td>
+                                <td class="statRowColW">140-142</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">12</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/rattletrap_battery_assault_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/rattletrap_power_cogs_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/rattletrap_rocket_flare_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/rattletrap_hookshot_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Battery Assault</strong></p>
+                            <p>Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">32.0 / 28.0 / 24.0 / 20.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">15 / 35 / 55 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RADIUS:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DURATION:</td><td class="statRowColW">10.5 / 10.5 / 10.5 / 10.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >INTERVAL:</td><td class="statRowColW">0.7 / 0.7 / 0.7 / 0.7</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Power Cogs</strong></p>
+                            <p>Forms a barrier of energized cogs around Clockwerk, trapping any units that are near. Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down. Cogs can be destroyed by enemies in 3 attacks, but Clockwerk can destroy them with just one.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50 / 60 / 70 / 80</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">15.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DURATION:</td><td class="statRowColW">5 / 6 / 7 / 8</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MANA/HEALTH DRAIN:</td><td class="statRowColW">80 / 120 / 160 / 200</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Rocket Flare</strong></p>
+                            <p>Fires a global range flare that explodes over a given area, damaging enemies and providing vision for 10 seconds.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">20.0 / 18.0 / 16.0 / 14.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">80 / 120 / 160 / 200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RADIUS:</td><td class="statRowColW">575 / 575 / 575 / 575</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Hookshot</strong></p>
+                            <p>Fires a grappling device rapidly at the target location. If the hook hits a non-neutral enemy unit, Clockwerk launches himself into the target, stunning and dealing damage. Any enemies Clockwerk collides with along the way are subject to damage and stunned. If the hook collides with an allied unit, Clockwerk does not move. Upgradable by Aghanim's Scepter.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150 / 150 / 150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">70.0 / 55.0 / 40.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >STUN DURATION:</td><td class="statRowColW">1 / 1.5 / 2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RANGE:</td><td class="statRowColW">2000 / 2500 / 3000</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">100 / 200 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">SCEPTER COOLDOWN:</td><td class="statRowColW">12 / 12 / 12</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, has offset his diminutive stature through the application of gadgetry and wit. The son of the son of a clockmaker, Rattletrap was many years apprenticed to that trade before war rode down from the mountains and swept the plains villages free of such innocent vocations. "Your new trade is battle," his dying father told him as the village of their ancestors lay in charred and smoking ruins.</p>
+                        
+                        <p>It is a poor tradesman who blames his tools, and Rattletrap was never one to make excuses. After burying his father among the ruins of their village, he set about to transform himself into the greatest tool of warfare that any world had ever seen. He vowed to never again be caught unprepared, instead using his talents to assemble a suit of powered Clockwerk armor to make the knights of other lands look like tin cans by comparison. Now Rattletrap is alive with devices-a small but deadly warrior whose skills at ambush and destruction have risen to near-automated levels of efficiency. An artisan of death, his mechanizations make short work of the unwary, heralding a new dawn in this age of warfare. What time is it? It's Clockwerk time! </p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/rattletrap_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

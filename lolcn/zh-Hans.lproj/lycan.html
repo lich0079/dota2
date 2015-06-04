@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>LYCANTHROPE</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/lycan_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">狼人</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%">打野</td>
+                            </tr>
+                            <tr >
+                                <td class="role">推进</td>
+                                <td class="role">耐久</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>17 + 1.55</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>16 + 1.90</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>22 + 2.75</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>31 - 36</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>305</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.24</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">568</td>
+                                <td class="statRowColW">1,300</td>
+                                <td class="statRowColW">2,202</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">221</td>
+                                <td class="statRowColW">503</td>
+                                <td class="statRowColW">939</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">53-58</td>
+                                <td class="statRowColW">92-97</td>
+                                <td class="statRowColW">139-144</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">11</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/lycan_summon_wolves_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/lycan_howl_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/lycan_feral_impulse_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/lycan_shapeshift_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>召狼</strong></p>
+                            <p>召唤2只精灵狼为狼人作战。等级2-4可以暴击，等级4可以永久隐身。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">145</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">30.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">55 / 55 / 55 / 55</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >基础攻击时间:</td><td class="statRowColW">1.25 / 1.2 / 1.15 / 1.1</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">18 / 29 / 37 / 46</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >HP:</td><td class="statRowColW">200 / 240 / 280 / 320</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>嗥叫</strong></p>
+                            <p>以一声凄厉的嗥叫唤起所有友方玩家控制的单位内心的力量，获得伤害加成。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">15 / 20 / 25 / 30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">50.0 / 45.0 / 40.0 / 35.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">12 / 12 / 12 / 12</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >英雄伤害加成:</td><td class="statRowColW">20 / 30 / 40 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >小兵伤害加成:</td><td class="statRowColW">4 / 8 / 12 / 16</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>野性驱使</strong></p>
+                            <p>提升狼人和他所控制的单位的攻击速度和攻击力。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >攻击速度加成:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害加成:</td><td class="statRowColW">15% / 20% / 25% / 30%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>变狼</strong></p>
+                            <p>变身为狼，增强近战能力。变身期间，狼人和他所控制的单位获得最大移动速度并无法被减速。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">100.0 / 70.0 / 40.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">18 / 18 / 18</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >基础攻击时间:</td><td class="statRowColW">1.5 / 1.5 / 1.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >暴击率:</td><td class="statRowColW">30% / 30% / 30%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >暴击伤害:</td><td class="statRowColW">170% / 170% / 170%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >生命值加成:</td><td class="statRowColW">100 / 200 / 300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >夜视加成:</td><td class="statRowColW">1000</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >护甲加成:</td><td class="statRowColW">2</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>贝恩霍勒出生在高贵的安布里家族——古老的斯洛姆王国中最伟大的贵族。在凋零之秋以前，国王的欲望愈发的奇怪，朝廷也逐渐被法师和江湖术士占领，而安布里家族则第一个起来反对王权的贪得无厌。他们不再对国王效忠，不再对国家纳贡，而是派出了一支六千人的军队去进攻王城，结果，在史称“变节者之殇”的大屠杀中，这些人被尽数除掉。接下来发生的就完全印证了古语中常说的：打蛇打七寸，擒贼先擒王：叛变将国王激怒了，他将安布里家族的家主和其幼子贝恩霍勒抓住，然后将所有安布里家族的人杀得一干二净。在皇家法庭的审判中，国王命令他的法师将安布里领主的幼子施法变成狼，然后咬断他父亲的喉咙。“动手！”国王下令，“这样他也能尝尝被人背叛的滋味！”强大的魔法被施放到了贝恩霍勒身上，这个孩子当时就变成了狼。然而，尽管躯体转变，他的心智尚存，他将看守撕成了碎片。为了将这只猛兽赶走，国王付出了一队骑士的生命。安布里领主在加锁中大笑着，甚至当国王将剑刺入其身体后仍狂笑不止。现在，安布里家族唯一的子嗣，贝恩霍勒，以狼人的形态游荡着，半狼半人，追寻着，他所失去的公义。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/lycan_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

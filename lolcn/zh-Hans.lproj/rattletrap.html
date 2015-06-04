@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CLOCKWERK</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/rattletrap_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">发条技师</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">先手</td>
+                                <td class="role" width="50%">耐久</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>17 + 1.30</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>13 + 2.30</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>24 + 2.70</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>31 - 33</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.82</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">606</td>
+                                <td class="statRowColW">1,324</td>
+                                <td class="statRowColW">2,217</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">221</td>
+                                <td class="statRowColW">458</td>
+                                <td class="statRowColW">887</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">55-57</td>
+                                <td class="statRowColW">93-95</td>
+                                <td class="statRowColW">140-142</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">12</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/rattletrap_battery_assault_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/rattletrap_power_cogs_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/rattletrap_rocket_flare_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/rattletrap_hookshot_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>弹幕冲击</strong></p>
+                            <p>发条地精从机械结构的开口处喷出高能弹片，对附近的随机的一个敌方单位造成一定的伤害和晕眩。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">32.0 / 28.0 / 24.0 / 20.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">15 / 35 / 55 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">10.5 / 10.5 / 10.5 / 10.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >发射间隔:</td><td class="statRowColW">0.7 / 0.7 / 0.7 / 0.7</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>能量齿轮</strong></p>
+                            <p>发条地精以弹出的内部核心零件开成屏障环绕在他的四周，将附近的敌方单位困在其中。这些齿轮在消失前需要受到3次敌方攻击或发条技师1次攻击才能摧毁。如果带有魔法值的敌方单位尝试从外侧靠近其中任意一个齿轮，将会损失一定的生命和魔法，并被击退。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 60 / 70 / 80</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">5 / 6 / 7 / 8</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >魔法值/生命值损失:</td><td class="statRowColW">80 / 120 / 160 / 200</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>照明火箭</strong></p>
+                            <p>向指定区域发射一枚快速的照明火箭，对作用范围内的敌方单位造成伤害。照明火箭提供视野，持续10秒。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">20.0 / 18.0 / 16.0 / 14.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">80 / 120 / 160 / 200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">575 / 575 / 575 / 575</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>发射钩爪</strong></p>
+                            <p>向目标或者指定区域射出一个可以伸缩的钩爪，接触任意单位即缩回。如果这是一个非中立的敌方或友方单位，钩爪会将其牢牢抓住并将发条地精牵引至这个单位的身边。并对敌方单位造成伤害和晕眩。如果是友方单位，发条技师不会移动。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 150 / 150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">70.0 / 55.0 / 40.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >眩晕时间:</td><td class="statRowColW">1 / 1.5 / 2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >射程:</td><td class="statRowColW">2000 / 2500 / 3000</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">100 / 200 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖冷却时间:</td><td class="statRowColW">12 / 12 / 12</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>瑞托崔普和狙击手以及修补匠属于同一个分布广泛的种族，和其他许多敏感的族人一样，瑞托崔普用他的智慧和一些小玩意弥补了体型上的矮小。作为一个钟表匠的孙子，瑞托崔普在这个行业当了很多年的学徒，直到战争从山的另一边席卷而来，摧毁了这个从事着与战斗无关的行业的无辜村庄。祖先传下来的村庄变成了满是焦火和黑烟的废墟，“你的新行业是战斗”他的父亲临死前留下这样一句话。这个可怜的生意人责备他的工具无法用于战斗，但瑞托崔普从不找借口。在村庄的废墟中埋葬了父亲后，瑞托崔普开始着手将他自己转变为前所未见的最强大的战争道具。他发誓永远不再毫无防备的被抓住，瑞托崔普用他的智慧装配了一套强大的发条动力装甲，这使其它大陆的骑士在他面前就像易拉罐般渺小。现在瑞托崔普全身充满各种装置，小而强大的战士，他埋伏和破坏的技术已经达到了几乎自动化的高效水平。这个死亡工匠的机械可以迅速干掉不够谨慎的敌人，在这个战争时代宣告了新的曙光。是时候让你们见识见识发条技师的厉害了！	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/rattletrap_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>BLOODSEEKER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/bloodseeker_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">BLOODSEEKER</div>
+                     <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%">Jungler</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>18 + 1.70</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>24 + 3.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>23 + 2.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>29 - 35</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>305</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.36</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">587</td>
+                                <td class="statRowColW">1,119</td>
+                                <td class="statRowColW">1,879</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">234</td>
+                                <td class="statRowColW">543</td>
+                                <td class="statRowColW">1,024</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">53-59</td>
+                                <td class="statRowColW">95-101</td>
+                                <td class="statRowColW">145-151</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">9</td>
+                                <td class="statRowColW">16</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/bloodseeker_bloodrage_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/bloodseeker_blood_bath_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/bloodseeker_thirst_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/bloodseeker_rupture_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Bloodrage</strong></p>
+                            <p>Drives a unit into a bloodthirsty rage, during which it has higher attack damage, but cannot cast spells and takes damage every second.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">80 / 80 / 80 / 80</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">12.0 / 10.0 / 8.0 / 6.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DURATION:</td><td class="statRowColW">6 / 7 / 8 / 9</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE INCREASE:</td><td class="statRowColW">30% / 60% / 90% / 120%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Blood Bath</strong></p>
+                            <p>Bloodseeker revels in combat, gaining health with every unit he kills. The health gained is a percentage of the killed unit's maximum HP. If a hero dies within a radius of 225 of Bloodseeker and he is not the killer, he is healed for half the normal hero kill effect.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >HERO KILL:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >UNIT KILL:</td><td class="statRowColW">10% / 15% / 20% / 25%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Thirst</strong></p>
+                            <p>Enables Bloodseeker to sense enemy Heroes with health below a certain percentage, giving him vision of that unit and increased movement speed. Bloodseeker gains True Sight of enemy heroes below half their visiblity threshold.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RADIUS:</td><td class="statRowColW">6000 / 6000 / 6000 / 6000</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >VISIBILITY HEALTH:</td><td class="statRowColW">20% / 30% / 40% / 50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MOVEMENT SPEED:</td><td class="statRowColW">15% / 25% / 35% / 45%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Rupture</strong></p>
+                            <p>Causes an enemy unit's skin to rupture, dealing massive damage. If the unit moves while under the effect of Rupture, it takes a percentage of the distance traveled as damage.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150 / 200 / 250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">70.0 / 60.0 / 50.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">PURE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">150 / 250 / 350</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DURATION:</td><td class="statRowColW">7 / 8 / 9</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MOVE DAMAGE:</td><td class="statRowColW">20% / 40% / 60%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>Strygwyr the Bloodseeker is a ritually sanctioned hunter, Hound of the Flayed Twins, sent down from the mist-shrouded peaks of Xhacatocatl in search of blood. The Flayed Ones require oceanic amounts of blood to keep them sated and placated, and would soon drain their mountain empire of its populace if the priests of the high plateaus did not appease them. Strygwyr therefore goes out in search of carnage. The vital energy of any blood he lets, flows immediately to the Twins through the sacred markings on his weapons and armor. Over the years, he has come to embody the energy of a vicious hound; in battle he is savage as a jackal. Beneath the Mask of the Bloodseeker, in the rush of bloody quenching, it is said that you can sometime see the features of the Flayers taking direct possession of their Hound.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/bloodseeker_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

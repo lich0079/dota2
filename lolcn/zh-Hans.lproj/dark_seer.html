@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>DARK SEER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/dark_seer_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">黑暗贤者</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">先手</td>
+                                <td class="role" width="50%">爆发</td>
+                            </tr>
+                            <tr >
+                                <td class="role">逃生</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>29 + 2.70</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>12 + 1.20</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>22 + 2.30</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>31 - 37</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>300</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>5.68</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">568</td>
+                                <td class="statRowColW">1,180</td>
+                                <td class="statRowColW">1,997</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">377</td>
+                                <td class="statRowColW">868</td>
+                                <td class="statRowColW">1,479</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">60-66</td>
+                                <td class="statRowColW">98-104</td>
+                                <td class="statRowColW">145-151</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">13</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/dark_seer_vacuum_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/dark_seer_ion_shell_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/dark_seer_surge_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/dark_seer_wall_of_replica_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>真空</strong></p>
+                            <p>黑暗贤者在目标区域制造一个真空环境，将周围的敌方单位吸进去，打乱阵脚并造成伤害。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 130 / 160 / 190</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">24</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">250 / 350 / 450 / 550</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">40 / 80 / 120 / 160</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>离子外壳</strong></p>
+                            <p>将目标用一面尖刺之盾包围起来，对周围的敌人造成伤害。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">70 / 90 / 110 / 130</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">250</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续性伤害:</td><td class="statRowColW">30 / 50 / 70 / 90</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">20</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>奔腾</strong></p>
+                            <p>为一个友方目标注入能量，使其在短时间内移动速度达到最高。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">20 / 30 / 40 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">12.0 / 11.0 / 10.0 / 9.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">3 / 4.5 / 6 / 7.5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>复制之墙</strong></p>
+                            <p>制造一堵扭曲的光墙，对穿过的敌方英雄造成伤害，并复制一个其自身的幻象，幻象由黑暗贤者控制。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 300 / 400</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">100.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">15 / 30 / 45</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">150 / 150 / 150</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >幻象受到的伤害:</td><td class="statRowColW">300% / 300% / 300%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >幻象伤害:</td><td class="statRowColW">70% / 80% / 90%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级幻象伤害:</td><td class="statRowColW">100% / 120% / 140%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>迅捷如风，足智多谋，黑暗贤者依什卡菲尔并不需要多么锋利的武器来搏斗，他总是运用强大的心灵之力来征服敌人。他有着颠覆战局使之对己方有利的天才。迎着欢呼和敬意，他从一个叫做“幻墙之末”的世界走了出来，并不热衷于这个世界的纷争——他是一个来自现实世界之外的勇者。曾经，黑暗贤者是备受人民尊敬的将军，是神王达玛瑞克斯麾下英勇的保卫者，然而他的军队在边境大战的最后几天，被一股更为强大的力量悉数歼灭。面临如此惨败，他绝望的做出了最后一个决定：引诱着敌军进入了幻墙迷宫。在他即将被捕的前一刻，他穿过幻墙，释放出强大的黑暗能量，将幻墙永远的封印起来。当飞扬的尘土归于平静以后，他发现他成功的拯救了自己的人民，而自己却沐浴在另一个世界的阳光下，亦真亦幻，无法回到现实世界。现在，他决心以一名战略家的身份来证明自己的价值，并且立誓要让这个新的世界见识他那伟大的谋略。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/dark_seer_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

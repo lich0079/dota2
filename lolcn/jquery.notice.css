@@ -1,0 +1,42 @@
+.notice-wrap {
+	position: fixed;
+	top: 50%;
+	left: 10%;
+	width: 80%;
+	height:auto;
+	text-align: center; 
+	z-index: 100000;
+}
+
+.notice-item {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background: black;
+	border: 1px solid #555;
+	color: white;
+	display: block;
+	font-family: Georgia;
+	font-size: 16px;
+	padding: 10px;
+	position: relative;
+}
+
+.notice-item-close {
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 700;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+}
+
+.notice-item a {
+	color: #C7E1C6;
+	text-decoration: none;
+}
+
+.notice-item a:hover {
+	color: #C7E1C6;
+	text-decoration: underline;
+}

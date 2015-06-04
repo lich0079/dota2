@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>ANTI-MAGE</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/antimage_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">ANTI-MAGE</div>
+                     <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%">Escape</td>
+                            </tr>
+                            <tr >
+                                <td class="role"></td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>15 + 1.80</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>22 + 2.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>20 + 1.20</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>27 - 31</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.08</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">530</td>
+                                <td class="statRowColW">849</td>
+                                <td class="statRowColW">1,457</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">195</td>
+                                <td class="statRowColW">523</td>
+                                <td class="statRowColW">1,017</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">49-53</td>
+                                <td class="statRowColW">88-92</td>
+                                <td class="statRowColW">136-140</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">14</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/antimage_mana_break_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/antimage_blink_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/antimage_spell_shield_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/antimage_mana_void_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Mana Break</strong></p>
+                            <p>Burns an opponent's mana on each attack. Mana Break deals 60% of the mana burned as damage to the target. Mana Break is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">PHYSICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MANA PER HIT:</td><td class="statRowColW">28 / 40 / 52 / 64</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Blink</strong></p>
+                            <p>Short distance teleportation that allows Anti-Mage to move in and out of combat.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">60 / 60 / 60 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">12.0 / 9.0 / 7.0 / 5.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RANGE:</td><td class="statRowColW">1000 / 1075 / 1150 / 1150</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Spell Shield</strong></p>
+                            <p>Increases Anti-Mage's resistance to magic damage.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RESISTANCE:</td><td class="statRowColW">26% / 34% / 42% / 50%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Mana Void</strong></p>
+                            <p>For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">125 / 200 / 275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">70.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">0.6 / 0.85 / 1.1</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >STUN DURATION:</td><td class="statRowColW">0.1 / 0.2 / 0.3</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RADIUS:</td><td class="statRowColW">300</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all local worship with their Unliving Lord's poisonous nihilosophy. From a landscape that had known nothing but blood and battle for a thousand years, they tore the souls and bones of countless fallen legions and pitched them against Turstarkuri. The monastery stood scarcely a fortnight against the assault, and the few monks who bothered to surface from their meditations believed the invaders were but demonic visions sent to distract them from meditation. They died where they sat on their silken cushions. Only one youth survived--a pilgrim who had come as an acolyte, seeking wisdom, but had yet to be admitted to the monastery. He watched in horror as the monks to whom he had served tea and nettles were first slaughtered, then raised to join the ranks of the Dead God's priesthood. With nothing but a few of Turstarkuri's prized dogmatic scrolls, he crept away to the comparative safety of other lands, swearing to obliterate not only the Dead God's magic users--but to put an end to magic altogether.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/antimage_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

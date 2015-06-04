@@ -1,0 +1,24 @@
+{
+	Intro = "Lore";
+    News = "News";
+    Updates = "Updates";
+	Heroes = "Heroes";
+	Items = "Items";
+	Runes = "Runes";
+    Spells = "Spells";
+    Masteries = "Masteries";
+    Help = "Help";
+    Gallery="Gallery";
+    "savetophoto"="Save to Photos";
+    "cancel"="Cancel";
+    "ok"="OK";
+    "savedone"="Save success";
+    "Release to refresh..."="Release to refresh...";
+    "Pull down to refresh..."="Pull down to refresh...";
+    "Loading..."="Loading...";
+    "Last Updated"="Last Updated: %@";
+    "updating news"="updating news";
+    "updating updates"="updating updates";
+    "newsurl"="http://blog.dota2.com";
+    "sharetitle"="ArmoryDOTA2";
+}

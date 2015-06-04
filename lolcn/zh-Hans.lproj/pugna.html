@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>PUGNA</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/pugna_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">帕格纳</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">爆发</td>
+                                <td class="role" width="50%">推进</td>
+                            </tr>
+                            <tr >
+                                <td class="role">辅助</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>26 + 4.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>16 + 1.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>17 + 1.20</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>19 - 27</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>320</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.24</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">473</td>
+                                <td class="statRowColW">792</td>
+                                <td class="statRowColW">1,400</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">338</td>
+                                <td class="statRowColW">1,066</td>
+                                <td class="statRowColW">1,846</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">45-53</td>
+                                <td class="statRowColW">101-109</td>
+                                <td class="statRowColW">161-169</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">7</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">600</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/pugna_nether_blast_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/pugna_decrepify_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/pugna_nether_ward_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/pugna_life_drain_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>幽冥爆轰</strong></p>
+                            <p>一个爆炸性脉冲，对敌方单位造成伤害。对建筑物造成50%伤害。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">85 / 105 / 125 / 145</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">5.5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >延迟:</td><td class="statRowColW">0.9 / 0.9 / 0.9 / 0.9</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">400 / 400 / 400 / 400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>衰老</strong></p>
+                            <p>一个强大的驱逐咒语，能降低一个单位的速度并使其无法攻击/受到攻击。受影响的单位承受额外魔法伤害。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">12/10/8/6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >额外法术伤害:</td><td class="statRowColW">40% / 40% / 40% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >减速:</td><td class="statRowColW">50% / 50% / 50% / 50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">2 / 2.5 / 3 / 3.5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>幽冥守卫</strong></p>
+                            <p>帕格纳放置一个幽冥守卫，对胆敢施法的敌方英雄发射魔力闪光，同时也能阻止敌人恢复魔法。幽冥守卫造成的伤害与施法消耗的魔法值成正比。持续25秒。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80 / 80 / 80 / 80</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">35.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">1600</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >魔法回复:</td><td class="statRowColW">1.5 / 3 / 4.5 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害比:</td><td class="statRowColW">1 / 1.25 / 1.5 / 1.75</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>生命汲取</strong></p>
+                            <p>持续性 - 当持续施展生命汲取时，帕格纳吸取敌方目标单位的生命值。持续9秒。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 175 / 225</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">22.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">持续性, 单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >吸取/秒:</td><td class="statRowColW">120 / 160 / 200</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级吸取/秒:</td><td class="statRowColW">180 / 240 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级施法距离加成:</td><td class="statRowColW">50</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>在帕格纳的出生之境，三途川的发源地附近耸立着一座专门研究湮灭术的喇嘛寺，这座寺庙直接从河中汲取冥界的能量。寺庙的上师几年之前将自己湮灭撒手归西，留下一个无人管理的学院。在上师归西的同时，寺庙摄政者们就开始举行一个占卜仪式，来确定他们师傅的转世投胎，最终，所有标记都指向了紧挨他们的邻居。数个村庄坐落在寺庙的影子下，小巷与广场充满了孩童们的笑骂声。帕格纳，一个仅仅13个月大的幼儿，成为了当地的候选者之一，并且在提名日，他与另外两名有前途的幼儿被寺庙选中。喇嘛们给了他们一大杂用过的、属于前任上师的珍贵宝物。一个男孩伸手抓出一根原本属于喇嘛的斑岩手杖……然后把它插到他鼻孔里。一个调皮的女孩拉出一个原本也属于喇嘛的护符，然后立刻吞掉了。帕格纳冷静地注视着另外两人，愉快地笑了一下，接着用一团翠绿的火焰把他们烧成了灰。然后他从灰烬中夺回了手杖和护符，说到：“这些是我的！”摄政者们立刻将喜气洋洋的帕格纳架在肩上，给他套上了上师的法衣，在他心情变化前急忙把他抬上了宝座。五年内，这座庙宇本身成为了另一堆灰烬，让帕格纳愉悦不止。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/pugna_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

@@ -1,0 +1,153 @@
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-family: Verdana, Arial, Helvetica;
+}
+
+header,section,footer,nav,aside,article,figure{
+dispaly:block;
+padding:0px;
+margin:0px;
+
+}
+body {
+background: #111313;
+}
+.everything{
+width:320px;
+font-size:10px;
+}
+a {
+background: none repeat scroll 0 0 transparent;
+color: #C4C0C0;
+text-decoration: none;
+cursor:default;
+}
+b {
+color: #F00;
+}
+
+.main {
+padding: 5px 0;
+align:center;
+}
+.main ul {
+overflow: hidden;
+width: 320px;
+margin: 2px 0px;
+}
+.main li {
+float: left;
+width: 80px;
+padding: 0px;
+text-align: center;
+line-height: 17px;
+font-size:12px;
+height:85px;
+}
+ol, ul {
+list-style: none;
+}
+
+.title{
+text-align:center;
+}
+
+.filter{
+margin:5px;
+}
+.filter li {
+float: left;
+width: 60px;
+padding: 0px;
+margin: 1px;
+margin-bottom:13px;
+text-align: center;
+line-height: 13px;
+}
+
+.filter ul {
+width: 315px;
+}
+
+.sel{
+background: url(tab_bg1.png)  no-repeat;
+color: #600;
+}
+.unsel{
+background: url(tab_bg2.png)  no-repeat;
+}
+
+.lang{
+margin:5px;
+}
+
+
+.lang a {
+color: gray;
+font-size:14px;
+margin:0px 20px;
+}
+
+
+
+.filterSelect {
+width: 100px;
+padding: 3px;
+font-size: 12px;
+background-color: #2A2C2D;
+border-top: solid #363939 1px;
+border-left: solid #363939 1px;
+border-bottom: solid #1B1E1E 1px;
+border-right: solid #1B1E1E 1px;
+text-transform: uppercase;
+}
+
+select {
+-webkit-appearance: menulist;
+box-sizing: border-box;
+-webkit-box-align: center;
+border: 1px solid;
+white-space: pre;
+-webkit-rtl-ordering: logical;
+color: black;
+background-color: white;
+cursor: default;
+}
+
+
+
+.heroPickerIconLink {
+background-color: #000000;
+position: relative;
+}
+
+img {
+border: medium none;
+width:78px;
+}
+
+#columnHeaderTextStr{
+    background-image: url("img/overviewicon_str.png");
+}
+
+#columnHeaderTextAgi{
+    background-image: url("img/overviewicon_agi.png");
+}
+
+#columnHeaderTextInt{
+    background-image: url("img/overviewicon_int.png");
+}
+
+#columnHeaderTextStr, #columnHeaderTextAgi, #columnHeaderTextInt {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: georgia,serif;
+    font-size: 16px;
+    overflow: visible;
+    padding: 6px 10px 15px 40px;
+    text-transform: uppercase;
+    text-align: center;
+}

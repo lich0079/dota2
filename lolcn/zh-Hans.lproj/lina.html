@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>LINA</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/lina_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">莉娜</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">爆发</td>
+                                <td class="role" width="50%">控制</td>
+                            </tr>
+                            <tr >
+                                <td class="role">辅助</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>27 + 3.20</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>16 + 1.50</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>18 + 1.50</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>13 - 31</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>295</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.24</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">492</td>
+                                <td class="statRowColW">891</td>
+                                <td class="statRowColW">1,556</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">351</td>
+                                <td class="statRowColW">933</td>
+                                <td class="statRowColW">1,609</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">40-58</td>
+                                <td class="statRowColW">85-103</td>
+                                <td class="statRowColW">137-155</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">9</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">635</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/lina_dragon_slave_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/lina_light_strike_array_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/lina_fiery_soul_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/lina_laguna_blade_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>龙破斩</strong></p>
+                            <p>莉娜引导龙的吐息，放出一波火焰，烧焦所有波及的敌人。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 105 / 125 / 140</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">8.5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">100 / 170 / 230 / 280</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>光击阵</strong></p>
+                            <p>召唤一道火柱对区域内的目标造成伤害，并晕眩。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 100 / 110 / 125</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">7.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">90 / 150 / 210 / 280</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">225</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >施法时间:</td><td class="statRowColW">0.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >眩晕时间:</td><td class="statRowColW">1.6</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>炽魂</strong></p>
+                            <p>被动技能。每当秀逗魔法师释放技能时，她炽热的战魂能被动地提升自身的攻击和移动速度，提升效果可以叠加。持续7秒。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >攻击速度加成:</td><td class="statRowColW">40 / 55 / 70 / 85</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度加成:</td><td class="statRowColW">4% / 5% / 6% / 7%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >最大叠加:</td><td class="statRowColW">3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>神灭斩</strong></p>
+                            <p>对单个敌方单位射出闪电，造成大量伤害。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">280 / 420 / 680</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">70.0 / 60.0 / 50.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">450 / 675 / 950</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">600 / 925 / 1250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级射程:</td><td class="statRowColW">900 / 900 / 900</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>秀逗魔导士莉娜和她妹妹水晶室女莉莱从小就合不来，她们从童年开始就你来我往的争斗成为了当地人津津乐道的传奇故事。莉娜总是占上风，如果说水晶室女的天性纯良而诚实，那么莉娜则是火爆中带着放纵和聪慧。在两人分别用冰和火毁掉了一大半房子以后，她们气急败坏的父母终于意识到两人必须分开。作为姐姐，莉娜被送到了遥远的南方，纷争之国的燃烧沙漠，和她有耐心的姑妈一起生活，这里的气候对这位火爆的魔导士来说其实更舒服。她的到来让一潭死水的当地泛起了不小的涟漪，许多男人试图追求她，最后却拖着烧焦的手指头或者只剩半边的眉毛以及被摧毁的自信心狼狈离开。莉娜非常自信且骄傲，没有任何事物能抑制她的火焰。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/lina_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

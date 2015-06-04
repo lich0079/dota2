@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>bristleback</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/bristleback_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">BRISTLEBACK</div>
+                    <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                        <tr >
+                            <td class="role" width="50%">Durable</td>
+                            <td class="role" width="50%">Initiator</td>
+                        </tr>
+                        <tr >
+                            <td class="role">Disabler</td>
+                            <td class="role"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul>
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+                    
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>14 + 2.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>17 + 1.80</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>22 + 2.20</span></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>30 - 40</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>295</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.38</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">568</td>
+                                <td class="statRowColW">1,153</td>
+                                <td class="statRowColW">1,951</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">182</td>
+                                <td class="statRowColW">692</td>
+                                <td class="statRowColW">1,316</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">52-62</td>
+                                <td class="statRowColW">83-93</td>
+                                <td class="statRowColW">125-135</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">7</td>
+                                <td class="statRowColW">12</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/bristleback_viscous_nasal_goo_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/bristleback_quill_spray_hp2.png" />
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/bristleback_bristleback_hp2.png" />
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/bristleback_warpath_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Viscous Nasal Goo</strong></p>
+                            <p>Covers a target in snot, causing it to have reduced armor and movement speed. Multiple casts stack and refresh the duration.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">30/30/30/30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">1.50</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY UNITS</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DURATION:</td><td class="statRowColW">5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ARMOR LOSS:</td><td class="statRowColW">1 / 1 / 2 / 2</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BASE MOVEMENT SLOW:</td><td class="statRowColW">20%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >SLOW PER STACK:</td><td class="statRowColW">3% / 6% / 9% / 12%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >STACK LIMIT:</td><td class="statRowColW">4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Quill Spray</strong></p>
+                            <p>Sprays enemy units with quills dealing damage in an area of effect around Bristleback. Deals bonus damage for every time a unit was hit by Quill Spray in the last 10 seconds.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">35/35/35/35</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">3</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">PHYSICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >RADIUS:</td><td class="statRowColW">625</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >QUILL BASE DAMAGE:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >QUILL STACK DAMAGE:</td><td class="statRowColW">30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >STACK DURATION:</td><td class="statRowColW">14</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MAX DAMAGE:</td><td class="statRowColW">400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Bristleback</strong></p>
+                            <p>Bristleback takes less damage if hit on the sides or rear. If Bristleback takes 250 damage from the rear, he releases a Quill Spray of the current level.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >SIDE DAMAGE REDUCTION:</td><td class="statRowColW">8% / 12% / 16% / 20%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BACK DAMAGE REDUCTION:</td><td class="statRowColW">16% / 24% / 32% / 40%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Warpath</strong></p>
+                            <p>Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage. The first stack (base) provides larger bonuses.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BASE DAMAGE BONUS:</td><td class="statRowColW">20 / 25 / 30</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE PER STACK:</td><td class="statRowColW">20 / 25 / 30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BASE MOVEMENT BONUS:</td><td class="statRowColW">5% / 7% / 10%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MOVEMENT PER STACK:</td><td class="statRowColW">1% / 2% / 3%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >STACK DURATION:</td><td class="statRowColW">10 / 10 / 10</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MAX STACKS:</td><td class="statRowColW">5</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>Never one to turn his back on a fight, Rigwarl was known for battling the biggest, meanest scrappers he could get his hands on. Christened Bristleback by the drunken crowds, he waded into backroom brawls in every road tavern between Slom and Elze, until his exploits finally caught the eye of a barkeep in need of an enforcer. For a bit of brew, Bristleback was hired to collect tabs, keep the peace, and break the occasional leg or two (or five, in the case of one unfortunate web-hund). </p>
+                        
+                        <p>After indulging in a night of merriment during which bodily harm was meted out in equal parts upon both delinquent patrons and his own liver, Bristleback finally met his match. "Your tusks offend me, sir," he was heard to drunkenly slur to one particularly large fellow from the northern wastes whose bill had come due. What followed was a fight for the ages. A dozen fighters jumped in. No stool was left unbroken, and in the end, the impossible happened: the tab went unpaid. Over the weeks that followed, Bristleback's wounds healed, and his quills grew back; but an enforcer's honor can be a prickly thing. He paid the tab from his own coin, vowing to track down this northerner and extract redemption. And then he did something he'd never done before--he actually trained, and in so doing made a startling discovery about himself. A smile peeled back from his teeth as he flexed his quills. Turning his back to a fight might be just the thing.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/bristleback_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

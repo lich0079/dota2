@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>AXE</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/axe_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">斧王</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">耐久</td>
+                                <td class="role" width="50%">先手</td>
+                            </tr>
+                            <tr >
+                                <td class="role">控制</td>
+                                <td class="role">打野</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>18 + 1.60</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>20 + 2.20</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>25 + 2.50</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 28</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>290</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.8</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">625</td>
+                                <td class="statRowColW">1,290</td>
+                                <td class="statRowColW">2,145</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">234</td>
+                                <td class="statRowColW">525</td>
+                                <td class="statRowColW">993</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">49-53</td>
+                                <td class="statRowColW">84-88</td>
+                                <td class="statRowColW">129-133</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">12</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/axe_berserkers_call_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/axe_battle_hunger_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/axe_counter_helix_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/axe_culling_blade_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>狂战士的怒吼</strong></p>
+                            <p>斧王将周围敌人的恨意集中到自己身上，让他们攻击他。斧王同时获得护甲加成。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80 / 90 / 100 / 110</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">275</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >护甲加成:</td><td class="statRowColW">40 / 40 / 40 / 40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">1.5 / 2 / 2.5 / 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>战斗饥渴</strong></p>
+                            <p>以对杀戮的可怕的渴望折磨目标，他将持续受到伤害并减速，直到他杀死任意单位或持续时间结束为止。没折磨一个目标斧王都会获得移动速度加成。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 85 / 95 / 105</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">20.0 / 15.0 / 10.0 / 5.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">15 / 21 / 27 / 33</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">10 / 13 / 16 / 19</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度减少:</td><td class="statRowColW">8%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >自身移动速度加成:</td><td class="statRowColW">8%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>反击螺旋</strong></p>
+                            <p>在受到攻击时，斧王有一定几率施展反击螺旋攻击附近的所有敌人。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0.55/0.5/0.45/0.4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">100 / 135 / 170 / 205</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >触发几率:</td><td class="statRowColW">17%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>淘汰之刃</strong></p>
+                            <p>清除斧王视线范围内的弱者，伤害并不高，但能瞬间斩杀生命值不足的敌人。当这样杀死敌人时，斧王和附近的队友获得移动速度加成。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 160 / 200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">75.0 / 65.0 / 55.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >可斩杀的生命值:</td><td class="statRowColW">300 / 450 / 625</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">150 / 250 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度加成:</td><td class="statRowColW">25%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度加成持续时间:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度加成范围:</td><td class="statRowColW">600</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">6 / 6 / 6</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>作为红雾军团的一名步兵，蒙哥可汗的目标是成为红雾军团的将军。在一场又一场的战斗中，他用血腥的战果证明了自己的价值。他毫不犹豫杀死上级的行为帮助了他的晋升。在七年的千冰斗湖战役中，他用光荣的杀戮给自己带来了荣誉，他的声望比从前更耀眼了，但他身边的战友也在一个个的减少。在最终战胜的夜晚，斧王宣布他为红雾军团的新将军，并冠以自身“斧王”的头衔。但他的军队现在却只有他一人。当然，许多人是战死的，而更多人则是死在斧王的刃下。不用说，现在大多数战士都在回避他作为领导者。但这对斧王来说不算什么，因为他的军队只需要他一个人就够了。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/axe_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

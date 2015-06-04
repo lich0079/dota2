@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>NATURE'S PROPHET</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/furion_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">先知</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">打野</td>
+                                <td class="role" width="50%">推进</td>
+                            </tr>
+                            <tr >
+                                <td class="role">核心</td>
+                                <td class="role">逃生</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>21 + 2.90</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>18 + 1.90</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>19 + 1.80</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 38</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>295</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.52</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">511</td>
+                                <td class="statRowColW">990</td>
+                                <td class="statRowColW">1,712</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">273</td>
+                                <td class="statRowColW">801</td>
+                                <td class="statRowColW">1,438</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">45-59</td>
+                                <td class="statRowColW">86-100</td>
+                                <td class="statRowColW">135-149</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">7</td>
+                                <td class="statRowColW">13</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">600</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">1125</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/furion_sprout_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/furion_teleportation_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/furion_force_of_nature_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/furion_wrath_of_nature_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>发芽</strong></p>
+                            <p>在一个单位周围发芽一圈树木，把它困在其中。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 120 / 140 / 160</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">11 / 10 / 9 / 8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">3 / 3.75 / 4.5 / 5.25</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>传送</strong></p>
+                            <p>传送到地图上任何已探索的位置。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">50 / 40 / 30 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>自然的呼唤</strong></p>
+                            <p>将一片树木转化成树人。树人拥有550点生命，造成21-23点伤害。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">160 / 160 / 160 / 160</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">37</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >树人数:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >树人持续时间:</td><td class="statRowColW">60 / 60 / 60 / 60</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>自然之怒</strong></p>
+                            <p>伤害性的能量在地图上弹跳，打击施法点附近的敌人。首次攻击后每下一个目标受到的伤害增加。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 200 / 250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">90 / 75 / 60</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标, 点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >最大目标数:</td><td class="statRowColW">16 / 16 / 16</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">140 / 180 / 225</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >每次弹跳伤害增加:</td><td class="statRowColW">7%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级最大目标数:</td><td class="statRowColW">18 / 18 / 18</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">155 / 210 / 275</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>在种子里埋入盘起的灵魂，从岩石深处引出缠绕的水流，起誓阳光会普照这生长的一切，当树木之神维萝迪希娅完成这一系列森林的创造后，她意识到自己的生命也到达终点，如一片命运已被她印在种子中的树叶一样飘落，无法看见自己的梦想结果。嫩芽尚未破土，即使破土，脆弱的嫩芽也很容易受到各种伤害，而她却即将辞世，无能为力，这让她无比痛心。然而她在种子袋中发现了一颗播种时漏掉的种子，在弥留之际，她将力量化作一字箴言，寄于此种，然后将其服下。在漫长的冬天，她巨大的身体逐渐分解，化为了幼苗来年春天的肥料。在春分的早晨，当其它种子还没有苏醒时，最后那颗种子在一瞬间成熟然后爆裂了。从中走出了特夸亚，自然的先知，他身披树叶，强壮且智慧，拥有树木之神维萝迪希娅的力量，能预见到森林最需要他的地方，同时他也很清楚，能作为他的盟友，是天赐的幸运。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/furion_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

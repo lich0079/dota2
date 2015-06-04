@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CHAOS KNIGHT</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/chaos_knight_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">CHAOS KNIGHT</div>
+                     <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%">Disabler</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Durable</td>
+                                <td class="role">Pusher</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>16 + 1.20</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>14 + 2.10</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>20 + 2.90</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>29 - 59</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>325</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.96</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">530</td>
+                                <td class="statRowColW">1,301</td>
+                                <td class="statRowColW">2,232</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">208</td>
+                                <td class="statRowColW">426</td>
+                                <td class="statRowColW">842</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">49-79</td>
+                                <td class="statRowColW">90-120</td>
+                                <td class="statRowColW">139-169</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">14</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/chaos_knight_chaos_bolt_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/chaos_knight_reality_rift_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/chaos_knight_chaos_strike_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/chaos_knight_phantasm_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Chaos Bolt</strong></p>
+                            <p>Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">140 / 140 / 140 / 140</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">10.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MINIMUM STUN:</td><td class="statRowColW">1 / 1 / 1 / 2</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MAXIMUM STUN:</td><td class="statRowColW">2 / 3 / 4 / 4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MINIMUM DAMAGE:</td><td class="statRowColW">1 / 50 / 75 / 100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MAXIMUM DAMAGE:</td><td class="statRowColW">200 / 225 / 250 / 275</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Reality Rift</strong></p>
+                            <p>Teleports you, any images you have and the target unit to a random point along the line between the two of you. Gives you bonus attack damage for one attack.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">70 / 70 / 70 / 70</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">24 / 18 / 12 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >RANGE:</td><td class="statRowColW">550 / 600 / 650 / 700</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BONUS DAMAGE:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS DURATION:</td><td class="statRowColW">1.2</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Chaos Strike</strong></p>
+                            <p>Chaos Knight's mojo gives him a chance to deal bonus damage.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >CRITICAL DAMAGE:</td><td class="statRowColW">150% / 200% / 250% / 300%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >CRITICAL CHANCE:</td><td class="statRowColW">10% / 10% / 10% / 10%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Phantasm</strong></p>
+                            <p>Summons several copies of the Chaos Knight from alternate dimensions. The illusions deal full damage, but take double damage.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">125 / 200 / 275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">140.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DURATION:</td><td class="statRowColW">24 / 24 / 24</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >NUMBER OF ILLUSIONS:</td><td class="statRowColW">1 / 2 / 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>The veteran of countless battles on a thousand worlds, Chaos Knight hails from a far upstream plane where the fundamental laws of the universe have found sentient expression. Of all the ancient Fundamentals, he is the oldest and most tireless-endlessly searching out a being he knows only as "The Light." Long ago the Light ventured out from the progenitor realm, in defiance of the first covenant. Now Chaos Knight shifts from plane to plane, always on the hunt to extinguish the Light wherever he finds it. A thousand times he has snuffed out the source, and always he slides into another plane to continue his search anew.</p>
+                        
+                        <p>Upon his steed Armageddon he rides, wading into battle with maniacal frenzy, drawing strength from the disorder of the universe. A physical manifestation of chaos itself, in times of need he calls upon other versions of himself from other planes, and together these dark horsemen ride into battle, as unstoppable as any force of nature. Only when the last Light of the world is scoured from existence will the search be ended. Where rides the Chaos Knight, death soon follows.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/chaos_knight_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

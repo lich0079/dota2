@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>SPIRIT BREAKER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/spirit_breaker_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">SPIRIT BREAKER</div>
+                     <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Durable</td>
+                                <td class="role" width="50%">Carry</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Initiator</td>
+                                <td class="role">Disabler</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>14 + 1.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>17 + 1.70</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>29 + 2.40</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>31 - 41</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>290</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>5.38</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">701</td>
+                                <td class="statRowColW">1,339</td>
+                                <td class="statRowColW">2,175</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">182</td>
+                                <td class="statRowColW">510</td>
+                                <td class="statRowColW">1,004</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">60-70</td>
+                                <td class="statRowColW">94-104</td>
+                                <td class="statRowColW">138-148</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">9</td>
+                                <td class="statRowColW">14</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/spirit_breaker_charge_of_darkness_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/spirit_breaker_empowering_haste_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/spirit_breaker_greater_bash_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/spirit_breaker_nether_strike_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Charge of Darkness</strong></p>
+                            <p>Spirit Breaker fixes his sight on an enemy unit and starts charging through all objects. All enemy units passed through will be hit by a Greater Bash, and the targeted unit is stunned upon impact. If the targeted unit dies, Spirit Breaker will change his target to the nearest enemy unit to that location.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">35.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >CHARGE SPEED:</td><td class="statRowColW">600 / 650 / 700 / 750</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >STUN DURATION:</td><td class="statRowColW">1.2 / 1.6 / 2 / 2.4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Empowering Haste</strong></p>
+                            <p>Causes the Spirit Breaker to gain power with higher movement speed. His presence increases the movement speed of nearby allied units.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE, AURA</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ALLIES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS MOVE SPEED:</td><td class="statRowColW">6% / 10% / 14% / 18%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AURA RADIUS:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Greater Bash</strong></p>
+                            <p>Gives a chance to stun and knockback an enemy unit on an attack, as well as gaining bonus movement speed after a bash occurs. Deals a percentage of movement speed as damage.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">COOLDOWN:</td><td class="statRowColW" width="55%">1.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ABILITY:</td><td class="statRowColW">PASSIVE</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >CHANCE TO BASH:</td><td class="statRowColW">17% / 17% / 17% / 17%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MOVESPEED AS DAMAGE:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >STUN DURATION:</td><td class="statRowColW">1 / 1.2 / 1.4 / 1.6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >KNOCKBACK DURATION:</td><td class="statRowColW">0.5 / 0.5 / 0.5 / 0.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BONUS MOVE SPEED:</td><td class="statRowColW">15% / 15% / 15% / 15%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >SPEED DURATION:</td><td class="statRowColW">3 / 3 / 3 / 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Nether Strike</strong></p>
+                            <p>Spirit Breaker slips into the nether realm, reappearing next to his hapless victim. Upon reappearing, a Greater Bash of the current level occurs and deals bonus damage. Upgradable by Aghanim's Scepter.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">125 / 150 / 175</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">75.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BONUS DAMAGE:</td><td class="statRowColW">150 / 250 / 350</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >RANGE:</td><td class="statRowColW">400 / 550 / 700</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">SCEPTER RANGE:</td><td class="statRowColW">550 / 700 / 850</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">SCEPTER BASH RADIUS:</td><td class="statRowColW">250 / 250 / 250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">SCEPTER COOLDOWN:</td><td class="statRowColW">20 / 20 / 20</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>Barathrum the Spirit Breaker is a lordly and powerful being, a fierce and elemental intelligence which chose to plane-shift into the world of matter to take part in events with repercussions in the elemental realm that is his home. To that end, he assembled a form that would serve him well, both in our world and out of it. His physical form borrows from the strengths of this world, blending features both bovine and simian-horns, hooves and hands-as outward emblems of his inner qualities of strength, speed and cunning. He wears a ring in his nose, as a reminder that he serves a hidden master, and that this world in which he works is but a shadow of the real one.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/spirit_breaker_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

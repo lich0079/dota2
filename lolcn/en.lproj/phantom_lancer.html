@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>PHANTOM LANCER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/phantom_lancer_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">PHANTOM LANCER</div>
+                     <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%">Escape</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Pusher</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>21 + 2.00</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>23 + 4.20</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>18 + 1.70</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>22 - 44</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>290</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.22</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">492</td>
+                                <td class="statRowColW">944</td>
+                                <td class="statRowColW">1,647</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">273</td>
+                                <td class="statRowColW">637</td>
+                                <td class="statRowColW">1,157</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">45-67</td>
+                                <td class="statRowColW">104-126</td>
+                                <td class="statRowColW">166-188</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">11</td>
+                                <td class="statRowColW">20</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/phantom_lancer_spirit_lance_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/phantom_lancer_doppelwalk_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/phantom_lancer_juxtapose_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/phantom_lancer_phantom_edge_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Spirit Lance</strong></p>
+                            <p>Casts a magical spirit lance on a target enemy unit that damages and slows, while a Phantom is summoned to attack the unit.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">125 / 130 / 135 / 140</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">7.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >SLOW DURATION:</td><td class="statRowColW">3.25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MOVEMENT SLOW:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ILLUSION DURATION:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ILLUSION BONUS DAMAGE TAKEN:</td><td class="statRowColW">300% / 300% / 300% / 300%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ILLUSION DAMAGE DEALT:</td><td class="statRowColW">20%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Doppelwalk</strong></p>
+                            <p>Renders Phantom Lancer invisible, while generating a duplicate image to confuse enemies.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150 / 120 / 90 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">30.0 / 25.0 / 20.0 / 15.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DURATION:</td><td class="statRowColW">8 / 8 / 8 / 8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS MOVEMENT SPEED:</td><td class="statRowColW">15%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ILLUSION DURATION:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ILLUSION BONUS DAMAGE TAKEN:</td><td class="statRowColW">300% / 300% / 300% / 300%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ILLUSION DAMAGE DEALT:</td><td class="statRowColW">20%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Juxtapose</strong></p>
+                            <p>Phantom Lancer's attacks have a chance to create illusions to confuse enemies.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >CHANCE:</td><td class="statRowColW">12% / 12% / 12% / 12%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MAX ILLUSIONS:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ILLUSION DURATION:</td><td class="statRowColW">20 / 20 / 20 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ILLUSION BONUS DAMAGE TAKEN:</td><td class="statRowColW">350% / 350% / 350% / 350%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ILLUSION DAMAGE DEALT:</td><td class="statRowColW">20%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Phantom Edge</strong></p>
+                            <p>Phantom Lancer hones his abilities. Improves chance of Juxtaposing, and the Juxtapose illusions can now create their own illusions. Phantom Edge also increases Phantom Lancer's magic resistance.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MAGIC RESISTANCE:</td><td class="statRowColW">10% / 15% / 20%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ILLUSION DUPLICATE CHANCE:</td><td class="statRowColW">3% / 5% / 7%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >JUXTAPOSE CHANCE BONUS:</td><td class="statRowColW">2% / 4% / 6%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>The remote village of Pole had no knowledge of the wars raging in the heart of the kingdom. For them, the quiet of spear fishing, and a family meal were all that a full life required. Yet war came for them nonetheless. Joining the able-bodied conscripts as they filed passed their homes, the humble lancer Azwraith vowed to bring peace to his kingdom, and in so doing, his people. Placed with his kin in the vanguard of the final assault against the Dread Magus Vorn, the cost to his fellows was absolute. As the charging force battled toward the fortress, Azwraith alone among his kind remained standing, and he alone was able to infiltrate the keep. Focused and infuriated by the slaughter of his brothers, Azwraith bested each of the wizard's deadly traps and conjured guardians. Soon the simple fisherman arrived at Vorn's tower sanctum. The pair dueled through the night, pike to staff, as chaos raged below, and with a deafening cry Azwraith pierced his enemy. But the wizard did not simply expire; he exploded into uncountable shards of light, penetrating his killer with power. As the dust settled and the smoke of combat began to clear, Azwraith found himself standing among a throng of his kin. Each seemed to be dressed as he was, each seemed armed as he was, and he could sense that each thought as he did. Aware that his allies were approaching, he willed these phantoms to hide themselves, and one by one they began to vanish into nothingness. As the soldiers came upon the sanctum, they found the warrior that had bested the wizard. When they approached their champion, the lancer vanished. The pikeman who had stood before them was no more than another phantom.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/phantom_lancer_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

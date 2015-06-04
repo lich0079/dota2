@@ -1,0 +1,221 @@
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Arial, Helvetica;
+}
+
+header,section,footer,nav,aside,article,figure{
+    dispaly:block;
+    padding:2px;
+    margin:5px;
+    
+}
+body {
+    background: #111313;
+    color: #939393;
+}
+.everything{
+    width:320px;
+    font-size:10px;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    color: #939393;
+    text-decoration: none;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+b {
+    color: #F00;
+}
+.main {
+    padding: 5px 0;
+    align:center;
+}
+.main ul {
+    overflow: hidden;
+    width: 320px;
+    margin: 2px 0px;
+}
+.main li {
+    float: left;
+    width: 76px;
+    padding: 0px 2px;
+    text-align: center;
+    line-height: 10px;
+    font-size:10px;
+    height:80px;
+}
+ol, ul {
+    list-style: none;
+}
+img{
+    width:74px;
+}
+.title{
+    text-align:center;
+}
+
+.corner{
+    position:absolute;
+    top:0px;
+    left:2px;
+}
+.relatived{
+    position:relative;
+}
+
+
+.filter{
+    margin:5px;
+}
+.filter li {
+    float: left;
+    width: 48px;
+    padding: 0px;
+    margin:1px;
+    text-align: center;
+    line-height: 13px;
+    font-size:9px;
+    height:auto;
+}
+
+.sel{
+    background: url(tab_bg1.png)  no-repeat;
+    color: #600;
+}
+.unsel{
+    background: url(tab_bg2.png)  no-repeat;
+}
+
+.lang{
+    margin:5px;
+}
+
+
+.lang a {
+    color: gray;
+    font-size:14px;
+    margin:0px 20px;
+}
+
+.filterSelect {
+width: 100px;
+padding: 3px;
+font-size: 12px;
+background-color: #2A2C2D;
+border-top: solid #363939 1px;
+border-left: solid #363939 1px;
+border-bottom: solid #1B1E1E 1px;
+border-right: solid #1B1E1E 1px;
+text-transform: uppercase;
+}
+
+select {
+-webkit-appearance: menulist;
+box-sizing: border-box;
+-webkit-box-align: center;
+border: 1px solid;
+white-space: pre;
+-webkit-rtl-ordering: logical;
+color: black;
+background-color: white;
+cursor: default;
+}
+
+.type {
+background-position: 0 0;
+background-repeat: no-repeat;
+color: white;
+font-family: georgia,serif;
+font-size: 16px;
+overflow: visible;
+padding: 6px 10px 15px 50px;
+text-transform: uppercase;
+text-align: center;
+}
+
+#consumables {
+background-image: url("img/itemcat_consumables.png");
+background-size:33px;
+}
+.consumablescolor a{
+    color: white;
+}
+
+
+#attributes {
+    background-image: url("img/itemcat_attributes.png");
+    background-size:33px;
+}
+.attributescolor a{
+    color: white;
+}
+
+.commoncolor a{
+    color: #2BAB01;
+}
+
+.bluecolor a{
+    color: #1A87F9;
+}
+
+.purplecolor a{
+    color: #B812F9;
+}
+
+.goldencolor a{
+    color: #E29B01;
+}
+
+#armaments {
+    background-image: url("img/itemcat_armaments.png");
+    background-size:33px;
+}
+
+#arcane {
+    background-image: url("img/itemcat_arcane.png");
+    background-size:33px;
+}
+
+#common {
+    background-image: url("img/itemcat_common.png");
+    background-size:33px;
+}
+
+#support {
+    background-image: url("img/itemcat_support.png");
+    background-size:33px;
+}
+
+#caster {
+    background-image: url("img/itemcat_caster.png");
+    background-size:33px;
+}
+
+#weapons {
+    background-image: url("img/itemcat_weapons.png");
+    background-size:33px;
+}
+
+#armor {
+    background-image: url("img/itemcat_armor.png");
+    background-size:33px;
+}
+
+#artifacts {
+    background-image: url("img/itemcat_artifacts.png");
+    background-size:33px;
+}
+
+#secret {
+    background-image: url("img/itemcat_secret.png");
+    background-size:33px;
+}
+
+.wallpapers{
+    width: 100%;
+text-align: center;
+
+}

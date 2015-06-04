@@ -1,0 +1,84 @@
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Arial, Helvetica;
+}
+
+header,section,footer,nav,aside,article,figure{
+    dispaly:block;
+    padding:2px;
+    margin:5px;
+    
+}
+body {
+    background-image: url("bg.png") ;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    color: #1C1A3E;
+    text-decoration: none;
+}
+b {
+    color: #F00;
+}
+body{
+    color: #FEAF00;
+}
+.everything {
+    width:310px;
+    min-height:400px;
+    font-size:10px;
+    margin:5px;
+}
+
+.title{
+    color: #D4F100;
+    font-size:14px;
+    margin-left:5px;
+}
+.heroname{
+    color: #D4F100;
+    font-size:14px;
+}
+.herotitle{
+    color: #D4F1FE;
+    font-size:13px;
+    text-align:right;
+}
+
+.contentblock{
+    color:#1C1A3E;
+    float:left;
+}
+
+.floatleft{
+    float:left;
+}
+.intro{
+    width:200px;
+    margin-left:30px;
+}
+
+.relatived{
+    position:relative;
+}
+
+.itemimage{
+    margin-left:10px;
+}
+.fixios4bottom{
+    clear:both;
+}
+
+img{
+    width:64px;
+    height:64px;
+}
+.clearfix{
+    clear:both;
+}
+.img12{
+    width:12px;
+    height:12px;
+}

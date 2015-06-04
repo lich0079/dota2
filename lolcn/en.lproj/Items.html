@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Items</title>
+        <link rel="stylesheet" type="text/css" href="../items.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".filtertab").click(function(){
+                                        $(".filtertab").removeClass("sel");  
+                                        $(".filtertab").addClass("unsel");
+                                        $(this).removeClass("unsel");
+                                        $(this).addClass("sel");
+                                        
+                                        var index = $(this).attr("id");
+                                        if(index == "All"){
+                                        $(".heroli").show();
+                                        }else{
+                                        $(".heroli").hide();
+                                        $("."+index).show();
+                                        }
+                                        
+                                        });
+                  
+                  
+                  
+                  });
+                
+                function getRole(){
+                    var role = $('#filterRole').val();
+                    if(role == ""){
+                        $(".itemtype").show();
+                    }else{
+                        $(".itemtype").hide();
+                        $("."+role).show();
+                    }
+                    
+                }
+                </script>
+            </head>
+    <body>
+        <div class="everything">
+            <div class="main" >
+                
+                <br>
+                <div class="wallpapers">
+                    <span>
+                        <div class="filter">
+                            <select onchange="getRole()" id="filterRole" class="filterSelect" name="">
+                                <option value="">All</option>
+                                <option value="consumables">Consumables</option>
+                                <option value="attributes">Attributes</option>
+                                <option value="armaments">Armaments</option>
+                                <option value="arcane">Arcane</option>
+                                <option value="common">Common</option>
+                                <option value="support">Support</option>
+                                <option value="caster">Caster</option>
+                                <option value="weapons">Weapons</option>
+                                <option value="armor">Armor</option>
+                                <option value="artifacts">Artifacts</option>
+                                <option value="secret">Secret</option>
+                            </select>
+                        </div>
+                    </span>
+                </div>
+                
+                
+                <br>
+                
+                <ul class="consumablescolor itemtype consumables">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="consumables" class="type">consumables</span>
+                    </li>
+                    <li class="heroli ">
+                            <a href="clarity_lg.html"><img  src="../img/clarity_lg.png" />CLARITY</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="tango_lg.html"><img  src="../img/tango_lg.png" />TANGO</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="flask_lg.html"><img  src="../img/flask_lg.png" />HEALING SALVE</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="smoke_of_deceit_lg.html"><img  src="../img/smoke_of_deceit_lg.png" />SMOKE OF DECEIT</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="tpscroll_lg.html"><img  src="../img/tpscroll_lg.png" />TOWN PORTAL SCROLL</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="dust_lg.html"><img  src="../img/dust_lg.png" />DUST OF APPEARANCE</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="courier_lg.html"><img  src="../img/courier_lg.png" />ANIMAL COURIER</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="flying_courier_lg.html"><img  src="../img/flying_courier_lg.png" />FLYING COURIER</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="ward_observer_lg.html"><img  src="../img/ward_observer_lg.png" />OBSERVER WARD</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="ward_sentry_lg.html"><img  src="../img/ward_sentry_lg.png" />SENTRY WARD</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="bottle_lg.html"><img  src="../img/bottle_lg.png" />BOTTLE</a>
+                    </li>
+                </ul>
+
+                
+                <ul class="attributescolor itemtype attributes">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="attributes" class="type">attributes</span>
+                    </li>
+                    <li class="heroli ">
+                            <a href="branches_lg.html"><img  src="../img/branches_lg.png" />IRON BRANCH</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="gauntlets_lg.html"><img  src="../img/gauntlets_lg.png" />GAUNTLETS OF STRENGTH</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="slippers_lg.html"><img  src="../img/slippers_lg.png" />SLIPPERS OF AGILITY</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="mantle_lg.html"><img  src="../img/mantle_lg.png" />MANTLE OF INTELLIGENCE</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="circlet_lg.html"><img  src="../img/circlet_lg.png" />CIRCLET</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="belt_of_strength_lg.html"><img  src="../img/belt_of_strength_lg.png" />BELT OF STRENGTH</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="boots_of_elves_lg.html"><img  src="../img/boots_of_elves_lg.png" />BAND OF ELVENSKIN</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="robe_lg.html"><img  src="../img/robe_lg.png" />ROBE OF THE MAGI</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="ogre_axe_lg.html"><img  src="../img/ogre_axe_lg.png" />OGRE CLUB</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="blade_of_alacrity_lg.html"><img  src="../img/blade_of_alacrity_lg.png" />BLADE OF ALACRITY</a>
+                    </li>
+                    <li class="heroli ">
+                            <a href="staff_of_wizardry_lg.html"><img  src="../img/staff_of_wizardry_lg.png" />STAFF OF WIZARDRY</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ultimate_orb_lg.html"><img  src="../img/ultimate_orb_lg.png" />ULTIMATE ORB</a>
+                    </li>
+                </ul>
+                
+                
+                <ul class="attributescolor itemtype armaments">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="armaments" class="type">armaments</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ring_of_protection_lg.html"><img  src="../img/ring_of_protection_lg.png" />RING OF PROTECTION</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="quelling_blade_lg.html"><img  src="../img/quelling_blade_lg.png" />QUELLING BLADE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="stout_shield_lg.html"><img  src="../img/stout_shield_lg.png" />STOUT SHIELD</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="blades_of_attack_lg.html"><img  src="../img/blades_of_attack_lg.png" />BLADES OF ATTACK</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="chainmail_lg.html"><img  src="../img/chainmail_lg.png" />CHAINMAIL</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="helm_of_iron_will_lg.html"><img  src="../img/helm_of_iron_will_lg.png" />HELM OF IRON WILL</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="broadsword_lg.html"><img  src="../img/broadsword_lg.png" />BROADSWORD</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="quarterstaff_lg.html"><img  src="../img/quarterstaff_lg.png" />QUARTERSTAFF</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="claymore_lg.html"><img  src="../img/claymore_lg.png" />CLAYMORE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="javelin_lg.html"><img  src="../img/javelin_lg.png" />JAVELIN</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="platemail_lg.html"><img  src="../img/platemail_lg.png" />PLATEMAIL</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="mithril_hammer_lg.html"><img  src="../img/mithril_hammer_lg.png" />MITHRIL HAMMER</a>
+                    </li>
+                </ul>
+                
+                
+                <ul class="attributescolor itemtype arcane">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="arcane" class="type">arcane</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="magic_stick_lg.html"><img  src="../img/magic_stick_lg.png" />MAGIC STICK</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="sobi_mask_lg.html"><img  src="../img/sobi_mask_lg.png" />SAGE'S MASK</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ring_of_regen_lg.html"><img  src="../img/ring_of_regen_lg.png" />RING OF REGEN</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="boots_lg.html"><img  src="../img/boots_lg.png" />BOOTS OF SPEED</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="gloves_lg.html"><img  src="../img/gloves_lg.png" />GLOVES OF HASTE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="cloak_lg.html"><img  src="../img/cloak_lg.png" />CLOAK</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="gem_lg.html"><img  src="../img/gem_lg.png" />GEM OF TRUE SIGHT</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="lifesteal_lg.html"><img  src="../img/lifesteal_lg.png" />MORBID MASK</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ghost_lg.html"><img  src="../img/ghost_lg.png" />GHOST SCEPTER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="talisman_of_evasion_lg.html"><img  src="../img/talisman_of_evasion_lg.png" />TALISMAN OF EVASION</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="blink_lg.html"><img  src="../img/blink_lg.png" />BLINK DAGGER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="shadow_amulet_lg.html"><img  src="../img/shadow_amulet_lg.png" />SHADOW AMULET</a>
+                    </li>
+                </ul>
+                
+                
+                
+                <ul class="commoncolor itemtype common">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="common" class="type">common</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="wraith_band_lg.html"><img  src="../img/wraith_band_lg.png" />WRAITH BAND</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="null_talisman_lg.html"><img  src="../img/null_talisman_lg.png" />NULL TALISMAN</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="magic_wand_lg.html"><img  src="../img/magic_wand_lg.png" />MAGIC WAND</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="bracer_lg.html"><img  src="../img/bracer_lg.png" />BRACER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="poor_mans_shield_lg.html"><img  src="../img/poor_mans_shield_lg.png" />POOR MAN'S SHIELD</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="soul_ring_lg.html"><img  src="../img/soul_ring_lg.png" />SOUL RING</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="phase_boots_lg.html"><img  src="../img/phase_boots_lg.png" />PHASE BOOTS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="power_treads_lg.html"><img  src="../img/power_treads_lg.png" />POWER TREADS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="oblivion_staff_lg.html"><img  src="../img/oblivion_staff_lg.png" />OBLIVION STAFF</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="pers_lg.html"><img  src="../img/pers_lg.png" />PERSEVERANCE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="hand_of_midas_lg.html"><img  src="../img/hand_of_midas_lg.png" />HAND OF MIDAS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="travel_boots_lg.html"><img  src="../img/travel_boots_lg.png" />BOOTS OF TRAVEL</a>
+                    </li>
+                </ul>
+                
+                
+                <ul class="bluecolor itemtype support">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="support" class="type">support</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ring_of_basilius_lg.html"><img  src="../img/ring_of_basilius_lg.png" />RING OF BASILIUS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="headdress_lg.html"><img  src="../img/headdress_lg.png" />HEADDRESS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="buckler_lg.html"><img  src="../img/buckler_lg.png" />BUCKLER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="urn_of_shadows_lg.html"><img  src="../img/urn_of_shadows_lg.png" />URN OF SHADOWS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ring_of_aquila_lg.html"><img  src="../img/ring_of_aquila_lg.png" />RING OF AQUILA</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="tranquil_boots_lg.html"><img  src="../img/tranquil_boots_lg.png" />TRANQUIL BOOTS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="medallion_of_courage_lg.html"><img  src="../img/medallion_of_courage_lg.png" />MEDALLION OF COURAGE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="arcane_boots_lg.html"><img  src="../img/arcane_boots_lg.png" />ARCANE BOOTS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ancient_janggo_lg.html"><img  src="../img/ancient_janggo_lg.png" />DRUM OF ENDURANCE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="vladmir_lg.html"><img  src="../img/vladmir_lg.png" />VLADMIR'S OFFERING</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="mekansm_lg.html"><img  src="../img/mekansm_lg.png" />MEKANSM</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="pipe_lg.html"><img  src="../img/pipe_lg.png" />PIPE OF INSIGHT</a>
+                    </li>
+                </ul>
+                
+                
+                <ul class="bluecolor itemtype caster">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="caster" class="type">caster</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="force_staff_lg.html"><img  src="../img/force_staff_lg.png" />FORCE STAFF</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="necronomicon_lg.html"><img  src="../img/necronomicon_lg.png" />NECRONOMICON</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="cyclone_lg.html"><img  src="../img/cyclone_lg.png" />EUL'S SCEPTER OF DIVINITY</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="dagon_lg.html"><img  src="../img/dagon_lg.png" />DAGON</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="veil_of_discord_lg.html"><img  src="../img/veil_of_discord_lg.png" />VEIL OF DISCORD</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="rod_of_atos_lg.html"><img  src="../img/rod_of_atos_lg.png" />ROD OF ATOS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ultimate_scepter_lg.html"><img  src="../img/ultimate_scepter_lg.png" />AGHANIM'S SCEPTER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="orchid_lg.html"><img  src="../img/orchid_lg.png" />ORCHID MALEVOLENCE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="refresher_lg.html"><img  src="../img/refresher_lg.png" />REFRESHER ORB</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="sheepstick_lg.html"><img  src="../img/sheepstick_lg.png" />SCYTHE OF VYSE</a>
+                    </li>
+                </ul>
+                
+                
+                <ul class="purplecolor itemtype weapons">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="weapons" class="type">weapons</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="lesser_crit_lg.html"><img  src="../img/lesser_crit_lg.png" />CRYSTALYS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="armlet_lg.html"><img  src="../img/armlet_lg.png" />ARMLET OF MORDIGGIAN</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="basher_lg.html"><img  src="../img/basher_lg.png" />SKULL BASHER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="invis_sword_lg.html"><img  src="../img/invis_sword_lg.png" />SHADOW BLADE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="bfury_lg.html"><img  src="../img/bfury_lg.png" />BATTLE FURY</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ethereal_blade_lg.html"><img  src="../img/ethereal_blade_lg.png" />ETHEREAL BLADE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="radiance_lg.html"><img  src="../img/radiance_lg.png" />RADIANCE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="monkey_king_bar_lg.html"><img  src="../img/monkey_king_bar_lg.png" />MONKEY KING BAR</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="greater_crit_lg.html"><img  src="../img/greater_crit_lg.png" />DAEDALUS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="butterfly_lg.html"><img  src="../img/butterfly_lg.png" />BUTTERFLY</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="rapier_lg.html"><img  src="../img/rapier_lg.png" />DIVINE RAPIER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="abyssal_blade_lg.html"><img  src="../img/abyssal_blade_lg.png" />ABYSSAL BLADE</a>
+                    </li>
+                </ul>
+                
+                <ul class="purplecolor itemtype armor">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="armor" class="type">armor</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="hood_of_defiance_lg.html"><img  src="../img/hood_of_defiance_lg.png" />HOOD OF DEFIANCE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="blade_mail_lg.html"><img  src="../img/blade_mail_lg.png" />BLADE MAIL</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="vanguard_lg.html"><img  src="../img/vanguard_lg.png" />VANGUARD</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="soul_booster_lg.html"><img  src="../img/soul_booster_lg.png" />SOUL BOOSTER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="black_king_bar_lg.html"><img  src="../img/black_king_bar_lg.png" />BLACK KING BAR</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="shivas_guard_lg.html"><img  src="../img/shivas_guard_lg.png" />SHIVA'S GUARD</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="manta_lg.html"><img  src="../img/manta_lg.png" />MANTA STYLE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="bloodstone_lg.html"><img  src="../img/bloodstone_lg.png" />BLOODSTONE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="sphere_lg.html"><img  src="../img/sphere_lg.png" />LINKEN'S SPHERE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="assault_lg.html"><img  src="../img/assault_lg.png" />ASSAULT CUIRASS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="heart_lg.html"><img  src="../img/heart_lg.png" />HEART OF TARRASQUE</a>
+                    </li>
+                </ul>
+                
+                
+                <ul class="goldencolor itemtype artifacts">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="artifacts" class="type">artifacts</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="helm_of_the_dominator_lg.html"><img  src="../img/helm_of_the_dominator_lg.png" />HELM OF THE DOMINATOR</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="mask_of_madness_lg.html"><img  src="../img/mask_of_madness_lg.png" />MASK OF MADNESS</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="sange_lg.html"><img  src="../img/sange_lg.png" />SANGE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="yasha_lg.html"><img  src="../img/yasha_lg.png" />YASHA</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="maelstrom_lg.html"><img  src="../img/maelstrom_lg.png" />MAELSTROM</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="diffusal_blade_lg.html"><img  src="../img/diffusal_blade_lg.png" />DIFFUSAL BLADE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="desolator_lg.html"><img  src="../img/desolator_lg.png" />DESOLATOR</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="heavens_halberd_lg.html"><img  src="../img/heavens_halberd_lg.png" />HEAVEN'S HALBERD</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="sange_and_yasha_lg.html"><img  src="../img/sange_and_yasha_lg.png" />SANGE AND YASHA</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="mjollnir_lg.html"><img  src="../img/mjollnir_lg.png" />MJOLLNIR</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="skadi_lg.html"><img  src="../img/skadi_lg.png" />EYE OF SKADI</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="satanic_lg.html"><img  src="../img/satanic_lg.png" />SATANIC</a>
+                    </li>
+                </ul>
+                
+                <ul class="attributescolor itemtype secret">
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="secret" class="type">secret</span>
+                    </li>
+                    <li class="heroli ">
+                        <a href="demon_edge_lg.html"><img  src="../img/demon_edge_lg.png" />DEMON EDGE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="eagle_lg.html"><img  src="../img/eagle_lg.png" />EAGLESONG</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="reaver_lg.html"><img  src="../img/reaver_lg.png" />REAVER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="relic_lg.html"><img  src="../img/relic_lg.png" />SACRED RELIC</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="hyperstone_lg.html"><img  src="../img/hyperstone_lg.png" />HYPERSTONE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="ring_of_health_lg.html"><img  src="../img/ring_of_health_lg.png" />RING OF HEALTH</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="void_stone_lg.html"><img  src="../img/void_stone_lg.png" />VOID STONE</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="mystic_staff_lg.html"><img  src="../img/mystic_staff_lg.png" />MYSTIC STAFF</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="energy_booster_lg.html"><img  src="../img/energy_booster_lg.png" />ENERGY BOOSTER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="point_booster_lg.html"><img  src="../img/point_booster_lg.png" />POINT BOOSTER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="vitality_booster_lg.html"><img  src="../img/vitality_booster_lg.png" />VITALITY BOOSTER</a>
+                    </li>
+                    <li class="heroli ">
+                        <a href="orb_of_venom_lg.html"><img  src="../img/orb_of_venom_lg.png" />ORB OF VENOM</a>
+                    </li>
+                </ul>
+                
+                <br><br>
+                 <div class="lang">
+                    <TABLE WIDTH="100%" HEIGHT="100%">
+                        <TR>
+                            <TD ALIGN="center" VALIGN="middle">
+                                <a href="../en.lproj/Items.html">English</a>
+                                <a href="../zh-Hans.lproj/Items.html">中文</a>
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </div>
+            </div>
+            
+        </div>
+        <br><br>
+    </body>

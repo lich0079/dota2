@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName="ArmoryDOTA2";   
+CFBundleDisplayName="ArmoryDOTA2";

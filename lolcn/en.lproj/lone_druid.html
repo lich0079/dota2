@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>LONE DRUID</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/lone_druid_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">LONE DRUID</div>
+                     <div class="atype">Ranged</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%">Durable</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Pusher</td>
+                                <td class="role">Jungler</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>13 + 1.40</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>24 + 2.70</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>17 + 2.10</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>22 - 26</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.36</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">473</td>
+                                <td class="statRowColW">1,032</td>
+                                <td class="statRowColW">1,811</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">169</td>
+                                <td class="statRowColW">424</td>
+                                <td class="statRowColW">866</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">46-50</td>
+                                <td class="statRowColW">84-88</td>
+                                <td class="statRowColW">131-135</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">9</td>
+                                <td class="statRowColW">15</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">550</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/lone_druid_spirit_bear_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/lone_druid_rabid_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/lone_druid_synergy_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/lone_druid_true_form_battle_cry_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/lone_druid_true_form_hp2.png" />
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/lone_druid_true_form_druid_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Summon Spirit Bear</strong></p>
+                            <p>Summons a powerful Spirit Bear companion that can equip items. If the bear moves 1100 distance away from the Lone Druid, it cannot attack. If the Spirit Bear dies, the Lone Druid suffers composite damage as backlash. As the bear increases in levels, it can learn the Return, Entangling Claws, and Demolish abilities. Spirit Bear does not benefit from attributes.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">180.0 / 160.0 / 140.0 / 120.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BEAR HP:</td><td class="statRowColW">1400 / 1800 / 2300 / 2700</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BEAR BASE ATTACK TIME:</td><td class="statRowColW">1.75 / 1.65 / 1.55 / 1.45</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BEAR ARMOR:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BACKLASH DAMAGE:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Rabid</strong></p>
+                            <p>Increases the attack and movement speed of Lone Druid and the Spirit Bear.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">30.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ATTACK SPEED:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MOVEMENT SPEED:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DURATION:</td><td class="statRowColW">10 / 10 / 10 / 10</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Synergy</strong></p>
+                            <p>Increases the Lone Druid's synergy with his Spirit Bear and himself, upgrading attributes and abilities.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">PASSIVE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BEAR BONUS DAMAGE:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BEAR BONUS SPEED:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RABID DURATION BONUS:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >TRUE FORM BONUS HP:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Battle Cry</strong></p>
+                            <p>Adds damage and armor to the Lone Druid and his Spirit Bear.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">30.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BONUS DAMAGE:</td><td class="statRowColW">20 / 40 / 60</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS ARMOR:</td><td class="statRowColW">2 / 4 / 6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DURATION:</td><td class="statRowColW">8 / 8 / 8</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>True Form</strong></p>
+                            <p>Lone Druid learns to morph himself into a raging bear, losing his ranged advantage and some base movement speed, but gaining melee power as well as the Battle Cry ability. He can morph freely between druid and bear form.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BASE ATTACK TIME:</td><td class="statRowColW">1.5 / 1.5 / 1.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BONUS ARMOR:</td><td class="statRowColW">4 / 6 / 8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS HP:</td><td class="statRowColW">250 / 400 / 600</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BASE SPEED LOSS:</td><td class="statRowColW">35 / 35 / 35</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>Druid Form</strong></p>
+                            <p>Return to Druid form.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>Long before the first words of the first histories there rose the druidic Bear Clan. Wise and just they were, and focused in their ways to seek an understanding of the natural order. The arch forces of nature saw this, and so sought the most learned among them. Wise old Sylla, clan justiciar and seer, stepped forward for his kin, and to him was given the Seed with these words: 'When all of the world has dimmed, when civilization has left these lands, when the world is slain and wracked by the endless deserts at the end of ages, plant the Seed.' As he grasped his trust, Sylla felt his years recede and his vitality returned. Vast knowledge burst into his mind. He found himself able to project his very will into reality and, with some concentration, alter his own physical form as well. Yet subtle whispers and cruel ears brought word of the Seed and its power to other peoples, and a terrible war crashed upon the Bear Clan. As his ancestral home burned, Sylla took his burden and fled to the wild places. Ages passed, and time and myth forgot the Bear Clan, forgot Sylla and the Seed, forgot wondrous civilizations that rose and fell in Bear Clan's wake. For millenia Sylla has waited, waited for word from his deities, waited for peace to come to the ever warring realms, waited in exile and in secret for the end of all things and for the conclusion of his sacred commitment, preparing himself always to face and destroy whatever would dare threaten his purpose.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/lone_druid_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

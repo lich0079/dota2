@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>MORPHLING</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/morphling_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">MORPHLING</div>
+                     <div class="atype">Ranged</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">Carry</td>
+                                <td class="role" width="50%">Escape</td>
+                            </tr>
+                            <tr >
+                                <td class="role">Initiator</td>
+                                <td class="role">Nuker</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>17 + 1.50</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>24 + 3.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>19 + 2.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>13 - 22</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>285</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.36</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">511</td>
+                                <td class="statRowColW">1,043</td>
+                                <td class="statRowColW">1,803</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">221</td>
+                                <td class="statRowColW">494</td>
+                                <td class="statRowColW">949</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">37-46</td>
+                                <td class="statRowColW">79-88</td>
+                                <td class="statRowColW">129-138</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">7</td>
+                                <td class="statRowColW">14</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">350</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">1300</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/morphling_waveform_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/morphling_adaptive_strike_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/morphling_morph_agi_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/morphling_morph_str_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/morphling_replicate_hp2.png" />                          
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/morphling_morph_replicate_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Waveform</strong></p>
+                            <p>Morphling dissolves into liquid and surges forward, damaging enemy units in his path. Morphling is invulnerable during Waveform.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">140 / 155 / 160 / 165</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">11.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET POINT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">100 / 175 / 250 / 325</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Adaptive Strike</strong></p>
+                            <p>Strikes an enemy unit with a blast of water. If Morphling's agility is 50% higher than strength, it deals the maximum damage and the minimum stun. If strength is 50% higher, it deals the maximum stun and minimum damage.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">10.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ENEMY HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >STUN MIN:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >STUN MAX:</td><td class="statRowColW">0.75 / 1.5 / 2.25 / 3</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE MIN:</td><td class="statRowColW">0.25 / 0.25 / 0.25 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE MAX:</td><td class="statRowColW">0.5 / 1 / 1.5 / 2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >BASE DAMAGE:</td><td class="statRowColW">20 / 40 / 60 / 80</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Morph (Agility Gain)</strong></p>
+                            <p>Morphling shifts its form, pulling points from Strength and pouring them into Agility. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Agility.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET, TOGGLE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MANA PER SECOND:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >POINTS PER SHIFT:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >SHIFT RATE:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS AGILITY:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Morph (Strength Gain)</strong></p>
+                            <p>Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible. Additional points in Morph increase the rate of stat change. Passively grants bonus Strength.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">ABILITY:</td><td class="statRowColW" width="55%">NO TARGET, TOGGLE</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >MANA PER SECOND:</td><td class="statRowColW">30 / 30 / 30 / 30</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >POINTS PER SHIFT:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >SHIFT RATE:</td><td class="statRowColW">1 / 0.5 / 0.33 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >BONUS STRENGTH:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>Replicate</strong></p>
+                            <p>Morphling replicates any hero, friend or foe, although only dealing 50% the original hero's damage. At any time, Morphling can instantly take the position of the Replicate.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">80.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">TARGET UNIT</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DURATION:</td><td class="statRowColW">30 / 45 / 60</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >CAST RANGE:</td><td class="statRowColW">700 / 1100 / 1500</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>Morph Replicate</strong></p>
+                            <p>Morphling switches into his replication, instantly taking its position.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">150 / 150 / 150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>For dark eons the comet circled. Held in thrall to a distant sun, bound by gravity's inexorable pull, the massive ball of ice careened through the blackness between worlds, made strange by its dark journey. On the eve of the ancient war of the Vloy, it punched down through the sky and lit a glowing trail across the night-a sign both armies took for an omen. The frozen ball melted in a flash of boiling heat, as below two forces enjoined in battle across the border of a narrow river. Thus freed from its icy stasis, the Morphling was born into conflict, an elemental power at one with the tides of the ocean, capricious and unconstrained. He entered the fight, instinctively taking the form of the first general who dared set foot across the water-and then struck him dead. As the motley warriors clashed, he shifted from form to form throughout the battle, instantly absorbing the ways of these strange creatures-now a footsoldier, now an archer, now the cavalryman-until, by the time the last soldier fell, Morphling had played every part. The battle's end was his beginning.</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/morphling_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

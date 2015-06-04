@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>KEEPER OF THE LIGHT</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/keeper_of_the_light_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName" style="font-size:15px;">光之守卫</div>
+                    <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                        <tr >
+                            <td class="role" width="50%">爆发</td>
+                            <td class="role" width="50%">辅助</td>
+                        </tr>
+                        <tr >
+                            <td class="role">对线辅助</td>
+                            <td class="role"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul>
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+                    
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>22 + 2.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>15 + 1.60</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>14 + 1.80</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>18 - 32</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.1</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">416</td>
+                                <td class="statRowColW">895</td>
+                                <td class="statRowColW">1,617</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">286</td>
+                                <td class="statRowColW">796</td>
+                                <td class="statRowColW">1,420</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">40-54</td>
+                                <td class="statRowColW">79-93</td>
+                                <td class="statRowColW">127-141</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">4</td>
+                                <td class="statRowColW">9</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">600</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/keeper_of_the_light_illuminate_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/keeper_of_the_light_mana_leak_hp2.png" />
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/keeper_of_the_light_chakra_magic_hp2.png" />
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/keeper_of_the_light_spirit_form_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/keeper_of_the_light_recall_hp2.png" />
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/keeper_of_the_light_blinding_light_hp2.png" />
+                            </li>
+                            <li sel="7" class="abi">
+                                <img  src="../img/keeper_of_the_light_illuminate_end_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>冲击波</strong></p>
+                            <p>积聚一个光明能量之球，其威力随着积聚时间的增加而提升。释放后，能量球沿直线造成伤害并提供视野。积聚时间越长，造成的伤害越高。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150/160/170/180</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">持续性, 点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害/秒:</td><td class="statRowColW">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">350</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >射程:</td><td class="statRowColW">1600</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >最大积聚时间:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>法力流失</strong></p>
+                            <p>削弱敌人的魔法精华，使他们在移动时损失魔法。如果敌人损失了全部的魔法值，他将被眩晕。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">16.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >流失持续时间:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >魔法值流失百分比:</td><td class="statRowColW">3.5% / 4% / 4.5% / 5%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >眩晕时间:</td><td class="statRowColW">1.3 / 1.6 / 1.9 / 2.2</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>查克拉魔法</strong></p>
+                            <p>恢复目标单位的魔法值。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25 / 45 / 65 / 85</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">19.0 / 18.0 / 17.0 / 16.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >魔法值恢复:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>灵魂形态</strong></p>
+                            <p>伊扎洛暂时将自己的身体转换为发光的形态，获得多种能力。 冲击波由一个独立的灵魂来积聚， 同时可以使用致盲之光和召回。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">80.0 / 70.0 / 60.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">40 / 40 / 40</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>召回</strong></p>
+                            <p>传送地图任意位置的队友到身边，被召唤队友在施法期间被攻击则中断传送。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标, 持续性, 单位目标, 点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友军</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >传送延迟:</td><td class="statRowColW">5 / 4 / 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>致盲之光</strong></p>
+                            <p>可以击退区域范围内的敌人，并致盲敌人。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">20.0 / 16.0 / 12.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">675 / 675 / 675</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >未命中率:</td><td class="statRowColW">80% / 80% / 80%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >击退距离:</td><td class="statRowColW">250 / 250 / 250</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi7" class="abicontent cont hided">
+                            <p><strong>释放冲击波</strong></p>
+                            <p>提前释放冲击波。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">无目标</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>他座下是一骑白马，他是无尽千阳之辉，他就是光之守卫。早在许久以前，伊扎洛就挣脱了将他束缚在浩浩原初谐律之内的其他远古力量，从而由原始位面 逃离，在宇宙的黎明，本是无形力量的他萌生了知觉。如今他高举承载着光之力量的辉光之杖，同时奔走在所有的位面，将追寻着他的混沌抛在身后。乍一看去，他似乎是一个在马上都坐不稳的衰朽老头，然而掩藏在这副外表下的却是他高贵的真身。只有在面对混沌或黑暗军团的挑战时，他的全部力量才会显现出来。原初之光从体内迸射而出的一刻，他也将再次化身为璀璨的力量之芒。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/keeper_of_the_light_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

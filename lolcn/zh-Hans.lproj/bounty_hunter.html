@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>BOUNTY HUNTER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/bounty_hunter_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">赏金猎人</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%">逃生</td>
+                            </tr>
+                            <tr >
+                                <td class="role">爆发</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>19 + 1.40</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>21 + 3.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>17 + 1.80</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 38</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>5.94</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">473</td>
+                                <td class="statRowColW">952</td>
+                                <td class="statRowColW">1,674</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">247</td>
+                                <td class="statRowColW">502</td>
+                                <td class="statRowColW">944</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">45-59</td>
+                                <td class="statRowColW">87-101</td>
+                                <td class="statRowColW">137-151</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">12</td>
+                                <td class="statRowColW">19</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 1000</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/bounty_hunter_shuriken_toss_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/bounty_hunter_jinada_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/bounty_hunter_wind_walk_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/bounty_hunter_track_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>投掷飞镖</strong></p>
+                            <p>赏金猎人向目标投掷一个飞镖，造成伤害以及晕眩。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">90 / 115 / 135 / 155</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">100 / 200 / 250 / 325</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>忍术</strong></p>
+                            <p>每隔一段时间给予一次致命一击的机会，并且对目标造成残废效果。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">12.0 / 10.0 / 8.0 / 6.0</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >额外伤害:</td><td class="statRowColW">150% / 175% / 200% / 225%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度减少:</td><td class="statRowColW">25% / 25% / 25% / 25%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >攻速减少:</td><td class="statRowColW">25 / 25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">3 / 3 / 3 / 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>暗影步</strong></p>
+                            <p>进入隐身并可以穿越单位，直到攻击或使用技能，如果是使用攻击，会造成额外伤害。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">15 / 20 / 25 / 30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >隐身时间:</td><td class="statRowColW">1 / 0.75 / 0.5 / 0.25</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >额外伤害:</td><td class="statRowColW">30 / 60 / 90 / 120</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>追踪术</strong></p>
+                            <p>追踪一个敌方英雄，获得目标的真实视域，被追踪者周围的友军获得移动速度提升。如果目标在被追踪期间死亡，赏金猎人和附近友方英雄将获得一笔赏金。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">10.0 / 7.0 / 5.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >加速范围:</td><td class="statRowColW">900 / 900 / 900</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >速度加成:</td><td class="statRowColW">20% / 20% / 20%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >对自己的奖金:</td><td class="statRowColW">150 / 200 / 250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >对友方的奖金:</td><td class="statRowColW">50 / 100 / 150</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">30 / 30 / 30</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>关于赏金猎人刚铎，有很多真假难分的故事，唯一的共同点是，讲述这些故事的人都死了。在那些低语中，有的说他像工具一样被抛弃，为了生存而学习追踪术。另一种说法是他是战争中幸存的弃儿，被伟大的猎手索鲁克带走，并在阴暗的森林中教会他高超的猎人技巧。然而，另外一些人则相信他是贫民窟的捣蛋鬼，在一帮小偷扒手中混迹成人，擅长偷盗和误导。被刚铎追杀的人每次一提起他，恐惧就会剧增：他们说，那个追踪暴君伽夫多年，最后将其逼疯并杀死，割下其头颅拿走其权杖的人，就是刚铎。就是他，渗透进海西特反叛军营地，将传奇盗贼“白色海角”带回去接受审判。就是他，终结了猎手索鲁克的神话，让其为杀死王子的得力助手付出了代价。刚铎的传奇还在继续，每一个故事都比之前的更加不可思议，每一个猎物都比以前的更加难以捕杀。然而，只要出价够高，谁都无法躲开他；只要出价够高，即使是最强大的战士，想到刚铎，都会在阴影中颤抖。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/bounty_hunter_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

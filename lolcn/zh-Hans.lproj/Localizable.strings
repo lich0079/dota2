@@ -1,0 +1,24 @@
+{
+	Intro = "\U4ecb\U7ecd";
+	News = "\U65b0\U95fb";
+	Updates = "\U66f4\U65b0";
+	Heroes = "\U82f1\U96c4";
+	Items = "\U9053\U5177";
+	Runes = "\U7b26\U6587";
+	Spells = "\U6cd5\U672f";
+	Masteries = "\U5929\U8d4b";
+	Help = "\U5e2e\U52a9";
+	Gallery = "\U753b\U518c";
+	savetophoto = "\U4fdd\U5b58\U81f3\U76f8\U518c";
+	cancel = "\U53d6\U6d88";
+	ok = "\U786e\U5b9a";
+	savedone = "\U4fdd\U5b58\U6210\U529f";
+	"Release to refresh..." = "\U677e\U5f00\U5373\U53ef\U5237\U65b0...";
+	"Pull down to refresh..." = "\U4e0b\U62c9\U53ef\U4ee5\U5237\U65b0...";
+	"Loading..." = "\U52a0\U8f7d\U4e2d...";
+	"Last Updated" = "\U6700\U540e\U66f4\U65b0: %@";
+	"updating news" = "\U66f4\U65b0\U65b0\U95fb\U4e2d";
+	"updating updates" = "\U66f4\U65b0\U8865\U4e01\U4fe1\U606f\U4e2d";
+    "newsurl"="http://cn.dota2.com";
+    "sharetitle"="DOTA2\U624b\U518c";
+}

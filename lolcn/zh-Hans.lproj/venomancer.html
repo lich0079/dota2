@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>VENOMANCER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/venomancer_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">剧毒术士</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">辅助</td>
+                                <td class="role" width="50%">爆发</td>
+                            </tr>
+                            <tr >
+                                <td class="role">先手</td>
+                                <td class="role">推进</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>15 + 1.75</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>22 + 2.60</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>18 + 1.85</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 26</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>290</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.08</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">492</td>
+                                <td class="statRowColW">984</td>
+                                <td class="statRowColW">1,716</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">195</td>
+                                <td class="statRowColW">514</td>
+                                <td class="statRowColW">1,001</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">46-48</td>
+                                <td class="statRowColW">82-84</td>
+                                <td class="statRowColW">128-130</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">8</td>
+                                <td class="statRowColW">15</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">450</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/venomancer_venomous_gale_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/venomancer_poison_sting_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/venomancer_plague_ward_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/venomancer_poison_nova_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>瘴气</strong></p>
+                            <p>向目标范围内投掷淬毒气，造成起始伤害，并每3秒造成后续伤害，降低移动速度。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">22.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">15 / 15 / 15 / 15</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >初始伤害:</td><td class="statRowColW">25 / 50 / 75 / 100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续性伤害:</td><td class="statRowColW">15 / 30 / 45 / 60</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >减速:</td><td class="statRowColW">50% / 50% / 50% / 50%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>毒刺</strong></p>
+                            <p>在英雄的普通攻击中附加毒性伤害，同时降低目标的移动速度。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">6/8/10/12</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续性伤害:</td><td class="statRowColW">5 / 10 / 15 / 20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >减速:</td><td class="statRowColW">11% / 12% / 13% / 14%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>瘟疫守卫</strong></p>
+                            <p>制造一个不会移动的蛇型守卫攻击敌人和建筑，守卫对魔法免疫。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">20 / 20 / 20 / 20</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">5.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">40 / 40 / 40 / 40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >生命值:</td><td class="statRowColW">75 / 200 / 325 / 450</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">10 / 19 / 29 / 38</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>剧毒新星</strong></p>
+                            <p>制造一个剧毒的圆环对周围的敌方单位一定时间内造成持续毒性伤害。目标生命值最多降低至1。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 300 / 400</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">140.0 / 120.0 / 100.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">830 / 830 / 830</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">12 / 14 / 15</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">36 / 58 / 81</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">140 / 120 / 60</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级持续时间:</td><td class="statRowColW">14 / 15 / 16</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">58 / 81 / 108</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>在基迪岛上的浓酸密林中，在所有生物的体内，包括植物的根茎，动物的内脏中，都流淌着致命的腐蚀剧毒。然而，就算在这种毒巢里，剧毒术士也是公认的万毒之王。多年以前，一个叫做里瑟尔的植物学家乘坐小舟跨越弗拉基海湾，想要从植物的根须中提取出一种强力药剂，结果他却遭遇了噩梦一般的变故。在深入到基迪岛密林中数英里时，里瑟尔遇到了一种伪装成寄生植物的毒性爬虫，当他想把爬虫扯下来的时候，被爬虫狠狠的蛰了。绝望之际，他用他对丛林植物仅有的认知，飞快地掐住这只爬虫后，将它的毒液和一种带甲兰花的花蜜混合，合成了解毒剂。他用兰花的尖刺为自己注射了解毒剂，然后立即陷入昏迷，并且逐渐陷入了全身完全麻木的状态。十七年后，在他倒下的地方，从多年积累的腐土中钻出某个东西：剧毒术士。草药学家里瑟尔已经不复存在，现在他是死亡使者里瑟尔。他的记忆几乎都没有了，他原来的肉体已经毁灭，现在被一种新的物质所替代--融合了那只爬虫的毒液和兰花的毒性外皮。基迪岛的浓酸丛林现在有了新的主人，过去最剧毒的捕食者在他面前都只能逃走或臣服求饶。这个可怕的岛屿毕竟太有限了，里瑟尔受到内心深处残留的人类的饥渴驱使，离开了岛屿，去寻找新的毒物，以及带来新的死亡。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/venomancer_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

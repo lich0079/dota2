@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>earth_spirit</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/earth_spirit_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">EARTH SPIRIT</div>
+                    <div class="atype">Melee</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                        <tr >
+                            <td class="role" width="50%">Carry</td>
+                            <td class="role" width="50%">Nuker</td>
+                        </tr>
+                        <tr >
+                            <td class="role"></td>
+                            <td class="role"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul>
+                    <li sel="1" class="tab sel">STATS</li>
+                    <li sel="2" class="tab unsel">ABILITIES</li>
+                    <li sel="3" class="tab unsel">BIO</li>
+                    <li sel="4" class="tab unsel">PORTRAIT</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+                    
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>18 + 2.40</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>17 + 1.50</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>21 + 2.90</span></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>25 - 35</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>305</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.38</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">LEVEL</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >HIT POINTS</td>
+                                <td class="statRowColW">549</td>
+                                <td class="statRowColW">1,320</td>
+                                <td class="statRowColW">2,251</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >MANA</td>
+                                <td class="statRowColW">234</td>
+                                <td class="statRowColW">671</td>
+                                <td class="statRowColW">1,243</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >DAMAGE</td>
+                                <td class="statRowColW">46-56</td>
+                                <td class="statRowColW">87-97</td>
+                                <td class="statRowColW">136-146</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ARMOR</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">11</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >SIGHT RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >ATTACK RANGE</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >MISSILE SPEED</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/earth_spirit_boulder_smash_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/earth_spirit_rolling_boulder_hp2.png" />
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/earth_spirit_geomagnetic_grip_hp2.png" />
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/earth_spirit_stone_caller_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/earth_spirit_magnetize_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>Boulder Smash</strong></p>
+                            <p>Earth Spirit smashes the target enemy, ally, or Stone Remnant, knocking it back in the direction he is facing. The knocked back target deals damage to all units it hits. If the target was a Stone Remnant, damaged targets are also stunned, and the travel distance is improved.</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">22/18/14/10</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET, POINT TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">HEROES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RADIUS:</td><td class="statRowColW">200</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">125</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >KNOCKBACK SPEED:</td><td class="statRowColW">1200</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DISTANCE(UNIT):</td><td class="statRowColW">500 / 600 / 700 / 800</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DISTANCE(STONE):</td><td class="statRowColW">2000</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >STUN DURATION:</td><td class="statRowColW">0.75 / 1.25 / 1.75 / 2.25</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>Rolling Boulder</strong></p>
+                            <p>After a 0.6s delay, Earth Spirit becomes a boulder, rolling towards the target position and damaging enemy units, stopping if he collides with an enemy hero or is stunned. If the boulder rolls over a Stone Remnant, the Stone Remnant is consumed and travel distance and speed are improved, and impacted enemies have their movement and attack speed slowed.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">16/12/8/4</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >RADIUS:</td><td class="statRowColW">150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >SPEED:</td><td class="statRowColW">800</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >SPEED(STONE):</td><td class="statRowColW">1600</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">90</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE(STONE):</td><td class="statRowColW">135</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DISTANCE:</td><td class="statRowColW">800</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DISTANCE(STONE):</td><td class="statRowColW">1600</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >SLOW DURATION:</td><td class="statRowColW">2</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >SLOW:</td><td class="statRowColW">80%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>Geomagnetic Grip</strong></p>
+                            <p>Earth Spirit pulls the target allied unit or Stone Remnant to his location. Enemies struck by the flying target will be silenced, and take damage if the flying target is a Stone Remnant.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">13</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">UNIT TARGET, POINT TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >AFFECTS:</td><td class="statRowColW">ALLIED UNITS</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >RADIUS:</td><td class="statRowColW">180</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >STONE DAMAGE:</td><td class="statRowColW">100 / 150 / 200 / 250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >PULL SPEED:</td><td class="statRowColW">1000</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >SILENCE DURATION:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>Stone Remnant</strong></p>
+                            <p>Call a Stone Remnant at the target location. Stones Remnants have no vision and are invulnerable, and can be used with Earth Spirit's abilities. Calling a Stone Remnant consumes a charge, which recharge over time.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">COOLDOWN:</td><td class="statRowColW" width="55%">0</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ABILITY:</td><td class="statRowColW">POINT TARGET</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >MAX CHARGES:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >CHARGE RESTORE TIME:</td><td class="statRowColW">35</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DURATION:</td><td class="statRowColW">120</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>Magnetize</strong></p>
+                            <p>Magnetizes units in a small nearby area, causing them to take damage over time for a short duration. Any magnetized heroes cause nearby Stone Remnants to become energized and explode, applying/refreshing the magnetize debuff on all units near the Stone Remnant. This process can repeat multiple times. Stone Remnants are destroyed in this process. If an enemy hero is affected by silence or slows as a result of Geomagnetic Grip or Rolling Boulder, all magnetized heroes share the effects.</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">MANA COST:</td><td class="statRowColW" width="55%">100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >COOLDOWN:</td><td class="statRowColW">80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ABILITY:</td><td class="statRowColW">NO TARGET</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DAMAGE:</td><td class="statRowColW">MAGICAL</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >RADIUS:</td><td class="statRowColW">300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >ROCK SEARCH RADIUS:</td><td class="statRowColW">300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >ROCK EXPLOSION RADIUS:</td><td class="statRowColW">600</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >DEBUFF DURATION:</td><td class="statRowColW">6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >DAMAGE PER SECOND:</td><td class="statRowColW">50 / 75 / 100</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>Deep amid the Upland crags and cliffs there runs a seam of sacred jade long foresworn by highland miners. From this rare material, the likeness of the great general Kaolin was carved and buried at the head of a stone funerary army ten thousand strong--a force of soldiers and holy men, jesters and acrobats, carved by crafstmen and entombed for millennia in the dark embrace of the Earth. </p>
+                        
+                        <p>What the craftsmen had not known was that within the strange seam of jade flowed the spirit of the Earth itself--an elemental force at one with the planet. When the force within the carved jade found itself cut off from the life's blood of the world, it gathered its strength over the course of a thousand years and dug itself free and into the light. Now the great Kaolin Earth Spirit strides the Upland roads, fighting for the spirit of the Earth; and in times of need calls forth remnants of his buried army still locked in the loving embrace of the soil.	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/earth_spirit_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

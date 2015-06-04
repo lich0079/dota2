@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>BROODMOTHER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/broodmother_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">育母蜘蛛</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">推进</td>
+                                <td class="role" width="50%">核心</td>
+                            </tr>
+                            <tr >
+                                <td class="role">逃生</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>18 + 2.00</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>18 + 2.20</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>17 + 2.50</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>26 - 32</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>295</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.52</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">473</td>
+                                <td class="statRowColW">1,138</td>
+                                <td class="statRowColW">1,993</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">234</td>
+                                <td class="statRowColW">598</td>
+                                <td class="statRowColW">1,118</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">44-50</td>
+                                <td class="statRowColW">75-81</td>
+                                <td class="statRowColW">117-123</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">7</td>
+                                <td class="statRowColW">13</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/broodmother_spawn_spiderlings_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/broodmother_spin_web_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/broodmother_incapacitating_bite_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/broodmother_insatiable_hunger_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>寄生蜘蛛</strong></p>
+                            <p>育母蜘蛛将她的卵寄生到目标体内，造成伤害。如果目标在感染期间死亡，将会有蜘蛛幼虫从尸体中诞生。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">10.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >个数:</td><td class="statRowColW">1/2/3/4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>织网</strong></p>
+                            <p>在指定区域织一张蛛网，育母蜘蛛在其中处于隐身状态，并且被动地提升她的移动速度与生命回复速度。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">30.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >最大织网数:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >生命值回复:</td><td class="statRowColW">2 / 4 / 6 / 8</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度:</td><td class="statRowColW">20% / 25% / 30% / 35%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>麻痹之咬</strong></p>
+                            <p>让育母蜘蛛在攻击中附带能大幅削弱目标能力的毒素，减速并增加额外的攻击，使目标有几率攻击落空。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >未命中几率:</td><td class="statRowColW">30/40/50/60%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度减少:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>极度饥渴</strong></p>
+                            <p>育母蜘蛛变得对生命极度得饥渴，这种饥渴大幅地增加了她的攻击力，并且能够吸血。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">60.0 / 45.0 / 30.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >额外伤害:</td><td class="statRowColW">60 / 80 / 100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >生命偷取:</td><td class="statRowColW">40% / 60% / 80%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">14 / 14 / 14</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>几个世纪以来，育母蜘蛛布蕾克·艾拉齐娜一直潜伏在灼神山的火山口岩洞中，悉心的照料着数以百万计的幼虫，保证他们能够安全的存活到去地上世界捕食的年龄。直到后来，索罗普瑟斯，一个贪婪的权臣，在死火山的火山口修建了他的私人庙塔，因为他知道，就算有人觊觎他的财富，也不能活着穿越那条蜘蛛出没的死亡之路。在安享了几百年的安宁后，布蕾克·艾拉齐娜发现一些不速之客不停的在干扰着她的生活，毛手毛脚的小偷、有勇无谋的骑士，以及出生贵族的年轻人——诚然，他们都是美味的食物，但是他们的到来切实的影响到了她照料她那“无辜”的后代。忍无可忍之时，她去造访了索罗普瑟斯，而这个权臣却不愿意妥协，于是她用蛛丝将他裹起来，扔到一边，留给那些即将出生的小崽子们美味一顿。不幸的是，庙塔主人的失踪却让更多的人壮着胆子前来骚扰。而当她的一名新生儿被一个冒失的探险者踩死时，她终于爆发了。育母蜘蛛向着地上世界前进，誓要清洗掉世界上所有可能对她的孩子有威胁的入侵者，即使是英雄也不例外，直到确保她能够为她那珍贵的小蜘蛛们提供一个安全健康的温床。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/broodmother_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

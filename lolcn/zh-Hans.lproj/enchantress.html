@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>ENCHANTRESS</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/enchantress_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">魅惑魔女</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">辅助</td>
+                                <td class="role" width="50%">推进</td>
+                            </tr>
+                            <tr >
+                                <td class="role">耐久</td>
+                                <td class="role">打野</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>16 + 2.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>19 + 1.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>16 + 1.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>31 - 41</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>310</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.66</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">454</td>
+                                <td class="statRowColW">720</td>
+                                <td class="statRowColW">1,290</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">208</td>
+                                <td class="statRowColW">718</td>
+                                <td class="statRowColW">1,342</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">47-57</td>
+                                <td class="statRowColW">86-96</td>
+                                <td class="statRowColW">134-144</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">11</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 1800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">550</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/enchantress_untouchable_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/enchantress_enchant_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/enchantress_natures_attendants_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/enchantress_impetus_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>不可侵犯</strong></p>
+                            <p>魅惑魔女让攻击她的敌人神魂颠倒，降低他们的攻击速度。持续3秒。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >攻速减少:</td><td class="statRowColW">20/50/80/110</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>魅诱</strong></p>
+                            <p>操纵一个目标生物（小兵），如果目标不能被控制（英雄），则降低移动速度。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">65 / 65 / 65 / 65</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">30.0 / 25.0 / 20.0 / 15.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度减少:</td><td class="statRowColW">20% / 30% / 40% / 50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >魅诱持续时间:</td><td class="statRowColW">80 / 80 / 80 / 80</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >减速时间:</td><td class="statRowColW">5.5 / 5.5 / 5.5 / 5.5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>自然之助</strong></p>
+                            <p>释放出小精灵来治疗魅惑魔女附近的友方单位。持续10秒。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 140 / 155 / 170</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">45.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >回复/秒:</td><td class="statRowColW">10 / 10 / 10 / 10</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >小精灵数:</td><td class="statRowColW">3 / 5 / 7 / 9</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>推进</strong></p>
+                            <p>提升魅惑魔女攻击的威力，目标距离越远造成的伤害越大。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">55 / 60 / 65</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">自动施法, 单位目标</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >距离伤害:</td><td class="statRowColW">15% / 20% / 25%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级距离加成:</td><td class="statRowColW">190 / 190 / 190</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>从外表上看，爱由莎就像是一个天真无忧的森林精灵，尽管的确如此，但这也不是对她最为完整的评价。她对自然所遭受的苦难感同身受。她曾跋山涉水，穿越过斑驳的森林，走过四季变换，结识新的朋友，分享新的见闻，为她所到之处带去自然的治愈和欢乐的笑容。因为在那些饱受战乱折磨的地区，森林被大规模的砍伐，用作造船以及制造攻城车；而即使是在和平地区，也有人因为建造房屋而砍伐森林，为添加灶火而毁坏树木。爱由莎从森林中的小精灵处听闻了这些事情，这些小家伙需要森林的荫蔽来繁衍。她耐心的倾听着那些苦于无法倾诉的人诉说着痛苦，坚信自己的鼓励也是一种魅力，一种能够让未来再次充满绿色的魅之魔力。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/enchantress_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

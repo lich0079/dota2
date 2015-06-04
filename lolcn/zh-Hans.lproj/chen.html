@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>CHEN</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/chen_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">陈</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">辅助</td>
+                                <td class="role" width="50%">打野</td>
+                            </tr>
+                            <tr >
+                                <td class="role">推进</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>21 + 2.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>15 + 2.10</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>20 + 1.50</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>22 - 32</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>300</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.1</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">530</td>
+                                <td class="statRowColW">929</td>
+                                <td class="statRowColW">1,594</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">273</td>
+                                <td class="statRowColW">783</td>
+                                <td class="statRowColW">1,407</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">43-53</td>
+                                <td class="statRowColW">82-92</td>
+                                <td class="statRowColW">130-140</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">11</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">600</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">1100</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/chen_penitence_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/chen_test_of_faith_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/chen_test_of_faith_teleport_hp2.png" />
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/chen_holy_persuasion_hp2.png" />                          
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/chen_hand_of_god_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>赎罪</strong></p>
+                            <p>迫使一个敌方单位移动变慢，受到的攻击和技能伤害增加。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">14.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">7 / 7 / 7 / 7</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >减速:</td><td class="statRowColW">8% / 16% / 24% / 32%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >额外伤害:</td><td class="statRowColW">8% / 16% / 24% / 32%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>忠诚考验</strong></p>
+                            <p>对一个敌方单位造成随机伤害来考验他的忠诚。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">175 / 175 / 175 / 175</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">24.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">纯粹</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >最小伤害:</td><td class="statRowColW">50 / 100 / 150 / 200</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >最大伤害:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>忠诚考验</strong></p>
+                            <p>传送一个友方单位回基地。小兵立即传送。英雄有延迟。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 200 / 200 / 200</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">24.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >英雄延迟:</td><td class="statRowColW">6 / 5 / 4 / 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>神圣劝化</strong></p>
+                            <p>控制一个敌方小兵或者中立生物，并提高它的生命值。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">30.0 / 26.0 / 22.0 / 18.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">ENEMIES</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >最多单位数:</td><td class="statRowColW">1 / 1 / 2 / 3</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >生命值加成:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>上帝之手</strong></p>
+                            <p>完全回复受陈控制的所有小兵，并治疗地图上的所有友军英雄。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 300 / 400</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">140 / 130 / 120</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >回复:</td><td class="statRowColW">200 / 300 / 400</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">30 / 30 / 30</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>生于无信仰的哈扎达尔废墟，陈出生的年代正是那些沙漠中的游荡部落苦苦挣扎求生的时期。通过古老的动物奴役手段，陈的同胞们悉心的看护着沙漠中特有的掘地蜥，这是一种发育不良的掘地龙变种，能够将沙熔为集雨的玻璃管道——尽管两年才下一次雨。长期挣扎在饥荒和干旱的边缘，不停和周围的部落争斗，陈的部落做了一个错误的决定，在宿命注定的那一天，他们袭击了一个不该袭击的车队。在接下来的残酷战斗中，陈的部落完全处于下风。他们的袭击对象——全副武装的教会骑士，很快的清理掉了一大波攻击的掘地蜥。随着部落的神龙死去，族人们也接连被杀死。陈挣扎着，忍着刀伤，爬行着，几近死去。失败以后，他跪着准备接受充满羞辱的处决，引颈待戮。仲裁者被陈的勇气所打动，没有处死他。他给陈提供了一个选择：死亡还是转变信仰。陈开始执着的信仰神灵。他加入了教会，通过一次又一次血腥的改造，他逐渐赢得了自己的地位和武装。而现在，出于对改造他人信仰的狂热，力量达到巅峰的他，和他的动物奴役一起，寻找着那些无信仰之人，给予最终的“赏赐”。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/chen_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

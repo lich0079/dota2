@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>SPIRIT BREAKER</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/spirit_breaker_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">裂魂人</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">耐久</td>
+                                <td class="role" width="50%">核心</td>
+                            </tr>
+                            <tr >
+                                <td class="role">先手</td>
+                                <td class="role">控制</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>14 + 1.80</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>17 + 1.70</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>29 + 2.40</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>31 - 41</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>290</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>5.38</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">701</td>
+                                <td class="statRowColW">1,339</td>
+                                <td class="statRowColW">2,175</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">182</td>
+                                <td class="statRowColW">510</td>
+                                <td class="statRowColW">1,004</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">60-70</td>
+                                <td class="statRowColW">94-104</td>
+                                <td class="statRowColW">138-148</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">9</td>
+                                <td class="statRowColW">14</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/spirit_breaker_charge_of_darkness_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/spirit_breaker_empowering_haste_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/spirit_breaker_greater_bash_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/spirit_breaker_nether_strike_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>暗影冲刺</strong></p>
+                            <p>裂魂人紧盯着一个目标向他冲去。在冲刺的过程中，所有被穿越的单位会受到巨力重击，目标单位会眩晕。如果目标单位死了，会转换目标至最近的地方单位。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100 / 100 / 100 / 100</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">35.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >冲刺速度:</td><td class="statRowColW">600 / 650 / 700 / 750</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >眩晕时间:</td><td class="statRowColW">1.2 / 1.6 / 2 / 2.4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>神行太保</strong></p>
+                            <p>提升裂魂人和附近范围内的友方单位的移动速度。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动, 光环</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友军</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度加成:</td><td class="statRowColW">6% / 10% / 14% / 18%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >光环范围:</td><td class="statRowColW">900 / 900 / 900 / 900</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>巨力重击</strong></p>
+                            <p>在攻击中有几率重击对手，将他推至后方并造成额外的伤害。重击后获得移动速度加成。移动速度的百分比作为伤害加成。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">1.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >重击几率:</td><td class="statRowColW">17% / 17% / 17% / 17%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度伤害加成:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >眩晕时间:</td><td class="statRowColW">1 / 1.2 / 1.4 / 1.6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >击退持续时间:</td><td class="statRowColW">0.5 / 0.5 / 0.5 / 0.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度加成:</td><td class="statRowColW">15% / 15% / 15% / 15%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度加成持续时间:</td><td class="statRowColW">3 / 3 / 3 / 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>幽冥一击</strong></p>
+                            <p>瞬间移动到目标的身旁，发动巨力重击。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 150 / 175</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">75.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >额外伤害:</td><td class="statRowColW">150 / 250 / 350</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >射程:</td><td class="statRowColW">400 / 550 / 700</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级射程:</td><td class="statRowColW">550 / 700 / 850</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级重击范围:</td><td class="statRowColW">250 / 250 / 250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级冷却时间:</td><td class="statRowColW">20 / 20 / 20</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>裂魂人巴拉森来自元素领域，他高傲、强大、凶猛且精通元素之力，来到物质世界参与那些会影响到元素世界的事件。为此他准备了一个能派上用处的形态，既存在于我们的物质世界，又存在于物质世界之外。他的物理形态来自于我们的物质世界，又像牛又像人，有蹄和手，这个外表象征着他的力量、速度与狡猾。他戴着的鼻环则暗示了他侍奉于一位藏在幕后的主人，而这个世界对他来说不过是元素世界的影子。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/spirit_breaker_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

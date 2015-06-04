@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>LICH</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/lich_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">巫妖</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">辅助</td>
+                                <td class="role" width="50%">对线辅助</td>
+                            </tr>
+                            <tr >
+                                <td class="role">爆发</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>18 + 3.25</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>15 + 2.00</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>18 + 1.55</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>24 - 33</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.1</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">492</td>
+                                <td class="statRowColW">904</td>
+                                <td class="statRowColW">1,579</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">234</td>
+                                <td class="statRowColW">826</td>
+                                <td class="statRowColW">1,508</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">42-51</td>
+                                <td class="statRowColW">88-97</td>
+                                <td class="statRowColW">140-149</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">1</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">11</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">550</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/lich_frost_nova_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/lich_frost_armor_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/lich_dark_ritual_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/lich_chain_frost_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>霜冻之星</strong></p>
+                            <p>破坏性的寒霜在目标敌方单位身上爆发，造成范围伤害并降低范围内敌人的移动和攻击速度4秒。主要目标所受伤害最高。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">125 / 150 / 170 / 190</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">50 / 100 / 150 / 200</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >AREA 伤害:</td><td class="statRowColW">75 / 100 / 125 / 150</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">200 / 200 / 200 / 200</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度减少:</td><td class="statRowColW">30% / 30% / 30% / 30%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >攻速减少:</td><td class="statRowColW">20% / 20% / 20% / 20%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>霜冻护甲</strong></p>
+                            <p>为一个友方单位制造一层寒冰护甲，增加护甲值并减速近身攻击他的敌方单位。持续40秒。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">5.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">自动施法, 单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >护甲加成:</td><td class="statRowColW">3 / 5 / 7 / 9</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >减速时间:</td><td class="statRowColW">2 / 2 / 2 / 2</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度减少:</td><td class="statRowColW">30% / 30% / 30% / 30%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >攻速减少:</td><td class="statRowColW">20% / 20% / 20% / 20%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>邪恶祭祀</strong></p>
+                            <p>牺牲一个友方小兵，将他的生命值转化成巫妖的魔法值。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25 / 25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">35.0 / 30.0 / 25.0 / 20.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友军</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >生命值转换率:</td><td class="statRowColW">15% / 30% / 45% / 60%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>连环霜冻</strong></p>
+                            <p>释放一个在敌人间弹跳7次的霜冻法球，减速并伤害敌人。第一个目标会受到短暂眩晕。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">200 / 325 / 500</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">145.0 / 115.0 / 60.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >弹跳次数:</td><td class="statRowColW">10</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >减速时间:</td><td class="statRowColW">4 / 4 / 4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度减少:</td><td class="statRowColW">30% / 30% / 30%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >攻速减少:</td><td class="statRowColW">20% / 20% / 20%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >弹跳距离:</td><td class="statRowColW">575 / 575 / 575</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">280 / 370 / 460</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级伤害:</td><td class="statRowColW">370 / 460 / 550</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td style="color: #6FE871;font-size:9px;">神杖升级射程:</td><td class="statRowColW">850 / 850 / 850</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>巫妖生前是一位叫艾斯瑞安的冰霜法师，他曾经威胁要带来毁灭性的冰霜，企图征服整个王国。终于，那些平民在几个绝望的魔法师的帮助下，终于鼓起了勇气去暗算他。他们用一些具有足够魔力的绳索把他永远束缚住了，被绑上了厚重的石头后，这个冰霜巫师被扔进了一个据说深不见底的湖泊。但其实不然。他只下沉了一年左右，绳索挂在了一个石头上。在那里他平静地死去，虽然死了但并没有腐烂，直到风水师安希尔前来核查被认为是无底湖的黑暗之湖的传说。安希尔放下的铅垂线与绑住被淹死的巫师的绳索缠在了一起，于是他拉上了意外的收获。他认为将死者转变为不死族后，便可以向巫妖询问这个湖的情况，他移除了捆绑巫妖的绳索并进行了简单的转生仪式。由于艾斯瑞安的故事已经被时间所抹去，就算是当年杀死他的人的后代也不再记得，所以当时没有人能对安希尔的鲁莽行为做出警告。不过紧接着，安希尔就尝到了苦果，巫妖一摆脱绳索的束缚，就将他吞噬。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/lich_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

@@ -1,0 +1,220 @@
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Arial, Helvetica;
+}
+
+header,section,footer,nav,aside,article,figure{
+    dispaly:block;
+    padding:2px;
+    margin:5px;
+    
+}
+body {
+    background: #111313;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    color: #1C1A3E;
+    text-decoration: none;
+}
+b {
+    color: #F00;
+}
+body{
+    color: #FEAF00;
+}
+.everything {
+    width:310px;
+    min-height:400px;
+    font-size:10px;
+    margin:5px;
+}
+ol, ul {
+    list-style: none;
+}
+.recommanditems ul {
+    overflow: hidden;
+    width: 310px;
+    margin: 2px auto;
+}
+.recommanditems li {
+    float: left;
+    padding: 4px;
+    text-align: center;
+    line-height: 12px;
+    font-size:12px;
+}
+
+.title{
+    color: #D4F100;
+    font-size:14px;
+    margin-left:5px;
+}
+.heroname{
+    color: #D4F100;
+    font-size:14px;
+}
+.herotitle{
+    color: #D4F1FE;
+    font-size:13px;
+    text-align:right;
+}
+
+.price{
+    color: #D4F100;
+    font-size:12px;
+    text-align:right;
+}
+
+.recommanditems table {
+    margin: 5px auto 10px;
+    border-collapse: collapse;
+    width: 300px;
+    border: 2px solid gray;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.recommanditems .att {
+    width: 70px;
+    color: white;
+    text-align:center;
+}
+
+.recommanditems td {
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid gray;
+    color: yellow;
+    font-size:12px;
+    word-wrap:break-word; 
+    word-break:break-all;
+}
+
+.contentblock{
+    color:#1C1A3E;
+    float:left;
+}
+
+.floatleft{
+    float:left;
+}
+
+.relatived{
+    position:relative;
+}
+
+.itemimage{
+    margin-left:10px;
+}
+.fixios4bottom{
+    clear:both;
+}
+
+ .itemIcon {
+    float:left;
+    margin-right:10px;
+}
+ .itemName {
+    margin:7px 0px 3px 82px;
+    color:#ffffff;
+    font-size:18px;
+    font-family:georgia,serif;
+    text-transform:uppercase;
+    height:40px;
+}
+ .quality_rare {
+    color:#1a87f9;
+}
+ .quality_artifact {
+    color:#e29b01;
+}
+ .quality_secret_shop {
+    color:#ffffff;
+}
+ .quality_consumable {
+    color:#1d80e7;
+}
+ .quality_common {
+    color:#2bab01;
+}
+ .quality_epic {
+    color:#b812f9;
+}
+ .quality_component {
+    color:#ffffff;
+}
+ .goldIcon {
+    float:left;
+    margin:2px 4px 0 0;
+}
+ .goldCost {
+    font-weight:bold;
+    color:#f5c433;
+    font-size:15px;
+}
+ .description {
+    font-weight:bold;
+    color:#c0c0c0;
+    font-size:12px;
+    line-height:21px;
+    margin-top:4px;
+    padding-left:2px;
+}
+ .attribVal {
+    color:#fbb040;
+}
+ .attribs {
+    font-weight:bold;
+    color:#7a7a7a;
+    font-size:15px;
+    line-height:21px;
+    margin:6px 0 0 11px;
+    padding-left:2px;
+}
+ .attribValText
+{
+    color:#c0c0c0;
+}
+ .lore {
+    clear:right;
+    color:#afafaf;
+    font-size:11px;
+    line-height:18px;
+    padding-left:2px;
+}
+ .mana {
+    float:right;
+    width:168px;
+}
+ .cooldownMana {
+    color:#fbb040;
+    font-size:13px;
+    margin:8px 0 10px 0;
+    line-height:22px;
+    height:22px;
+    padding-left:2px;
+}
+ .manaImg,  .cooldownImg {
+    margin:0 6px 0 0;
+    display:block;
+    float:left;
+}
+.recipe{
+    color:#cfcfcf;
+}
+.share{
+    position:fixed;
+    right:5px;
+}

@@ -1,0 +1,815 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>HEROES</title>
+        <link rel="stylesheet" type="text/css" href="../heroes.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  
+                  $(".filtertab").click(function(){
+                                        $(".filtertab").removeClass("sel");  
+                                        $(".filtertab").addClass("unsel");
+                                        $(this).removeClass("unsel");
+                                        $(this).addClass("sel");
+                                        
+                                        var index = $(this).attr("id");
+                                        if(index == "All"){
+                                            $(".heroli").show();
+                                        }else{
+                                            $(".heroli").hide();
+                                            $("."+index).show();
+                                        }
+                                        
+                                    });
+                  
+                  
+                  });    
+                
+                
+                function getRole(){
+                    var role = $('#filterRole').val();
+                    var roleStr = "";
+                    if(role == ""){
+                        
+                    }else{
+                        roleStr = "."+role;
+                    }
+                    
+                    var attack = $('#filterAttack').val();
+                    var attackStr = "";
+                    if(attack == ""){
+                        
+                    }else{
+                        attackStr = "."+attack;
+                    }
+                    
+                    if(roleStr+attackStr == ""){
+                        $(".heroli").show();
+                    }else{
+                        $(".heroli").hide();
+                        $(roleStr+attackStr).show();
+                    }
+                }
+                
+                function getName(){
+                    var name = $('#filterName').val();
+                    if(name == ""){
+                        $(".heroli").show();
+                    }else{
+                        $(".heroli").hide();
+                        $("#link_"+name).show();
+                    }
+                }
+                </script>
+            </head>
+    <body>
+        <div class="everything">
+            <div class="main" >
+                <br>
+                <div class="filter">
+                    <select onchange="getRole()" id="filterRole" class="filterSelect" name="">
+                        <option value="">角色</option>
+                        <option value="">全部</option>
+                        <option value="Carry">核心</option>
+                        <option value="Disabler">控制</option>
+                        <option value="LaneSupport">对线辅助</option>
+                        <option value="Initiator">先手</option>
+                        <option value="Jungler">打野</option>
+                        <option value="Support">辅助</option>
+                        <option value="Durable">耐久</option>
+                        <option value="Nuker">爆发</option>
+                        <option value="Pusher">推进</option>
+                        <option value="Escape">逃生</option>
+                    </select>
+                    
+                    <select onchange="getRole()" id="filterAttack" class="filterSelect" name="">
+                        <option value="">攻击距离</option>
+                        <option value="">全部</option>
+                        <option value="Melee">近战</option>
+                        <option value="Ranged">远程</option>
+                    </select>
+                    
+                    <select onchange="getName()" id="filterName" class="filterSelect noCaps" name="">
+                        <option value="">英雄名字</option>
+                        <option value="">全部</option>
+                        <option value="abaddon">亚巴顿</option>
+                        <option value="alchemist">炼金术士</option>
+                        <option value="ancient_apparition">极寒幽魂</option>
+                        <option value="antimage">敌法师</option>
+                        <option value="axe">斧王</option>
+                        <option value="bane">祸乱之源</option>
+                        <option value="batrider">蝙蝠骑士</option>
+                        <option value="beastmaster">兽王</option>
+                        <option value="bloodseeker">血魔</option>
+                        <option value="bounty_hunter">赏金猎人</option>
+                        <option value="bristleback">钢背兽</option>
+                        <option value="brewmaster">酒仙</option>
+                        <option value="broodmother">育母蜘蛛</option>
+                        <option value="centaur">半人马战行者</option>
+                        <option value="chaos_knight">混沌骑士</option>
+                        <option value="chen">陈</option>
+                        <option value="clinkz">克林克兹</option>
+                        <option value="rattletrap">发条技师</option>
+                        <option value="crystal_maiden">水晶室女</option>
+                        <option value="dark_seer">黑暗贤者</option>
+                        <option value="dazzle">戴泽</option>
+                        <option value="death_prophet">死亡先知</option>
+                        <option value="disruptor">干扰者</option>
+                        <option value="doom_bringer">末日使者</option>
+                        <option value="dragon_knight">龙骑士</option>
+                        <option value="drow_ranger">卓尔游侠</option>
+                        <option value="earthshaker">撼地者</option>
+                        <option value="earth_spirit">大地之灵</option>
+                        <option value="elder_titan">上古巨神</option>
+                        <option value="ember_spirit">灰烬之灵</option>
+                        <option value="enchantress">魅惑魔女</option>
+                        <option value="enigma">谜团</option>
+                        <option value="faceless_void">虚空假面</option>
+                        <option value="gyrocopter">矮人直升机</option>
+                        <option value="huskar">神灵武士</option>
+                        <option value="invoker">祈求者</option>
+                        <option value="jakiro">杰奇洛</option>
+                        <option value="juggernaut">主宰</option>
+                        <option value="keeper_of_the_light">光之守卫</option>
+                        <option value="kunkka">昆卡</option>
+                        <option value="legion_commander">军团指挥官</option>
+                        <option value="leshrac">拉席克</option>
+                        <option value="lich">巫妖</option>
+                        <option value="life_stealer">噬魂鬼</option>
+                        <option value="lina">莉娜</option>
+                        <option value="lion">莱恩</option>
+                        <option value="lone_druid">德鲁伊</option>
+                        <option value="luna">露娜</option>
+                        <option value="lycan">狼人</option>
+                        <option value="magnataur">马格纳斯</option>
+                        <option value="medusa">美杜莎</option>
+                        <option value="meepo">米波</option>
+                        <option value="mirana">米拉娜</option>
+                        <option value="morphling">变体精灵</option>
+                        <option value="furion">先知</option>
+                        <option value="naga_siren">娜迦海妖</option>
+                        <option value="necrolyte">瘟疫法师</option>
+                        <option value="night_stalker">暗夜魔王</option>
+                        <option value="nyx_assassin">司夜刺客</option>
+                        <option value="ogre_magi">食人魔法师</option>
+                        <option value="omniknight">全能骑士</option>
+                        <option value="oracle">神谕者</option>
+                        <option value="obsidian_destroyer">殁境毁灭者</option>
+                        <option value="phantom_assassin">幻影刺客</option>
+                        <option value="phantom_lancer">幻影长矛手</option>
+                        <option value="phoenix">凤凰</option>
+                        <option value="puck">帕克</option>
+                        <option value="pudge">帕吉</option>
+                        <option value="pugna">帕格纳</option>
+                        <option value="queenofpain">痛苦女王</option>
+                        <option value="razor">剃刀</option>
+                        <option value="riki">力丸</option>
+                        <option value="rubick">拉比克</option>
+                        <option value="sand_king">沙王</option>
+                        <option value="shadow_demon">暗影恶魔</option>
+                        <option value="skywrath_mage">天怒法师</option>
+                        <option value="nevermore">影魔</option>
+                        <option value="shadow_shaman">暗影萨满</option>
+                        <option value="silencer">沉默术士</option>
+                        <option value="skeleton_king">骷髅王</option>
+                        <option value="slardar">斯拉达</option>
+                        <option value="slark">斯拉克</option>
+                        <option value="sniper">狙击手</option>
+                        <option value="spectre">幽鬼</option>
+                        <option value="spirit_breaker">裂魂人</option>
+                        <option value="storm_spirit">风暴之灵</option>
+                        <option value="sven">斯温</option>
+                        <option value="techies">工程师</option>
+                        <option value="templar_assassin">圣堂刺客</option>
+                        <option value="terrorblade">恐怖利刃</option>
+                        <option value="tidehunter">潮汐猎人</option>
+                        <option value="shredder">撕裂者</option>
+                        <option value="tinker">修补匠</option>
+                        <option value="tiny">小小</option>
+                        <option value="treant">树精卫士</option>
+                        <option value="troll_warlord">巨魔战将</option>
+                        <option value="tusk">巨牙海民</option>
+                        <option value="undying">不朽尸王</option>
+                        <option value="ursa">熊战士</option>
+                        <option value="vengefulspirit">复仇之魂</option>
+                        <option value="venomancer">剧毒术士</option>
+                        <option value="viper">冥界亚龙</option>
+                        <option value="visage">维萨吉</option>
+                        <option value="warlock">术士</option>
+                        <option value="weaver">编织者</option>
+                        <option value="windrunner">风行者</option>
+                        <option value="winter_wyvern">寒冬飞龙</option>
+                        <option value="wisp">精灵守卫</option>
+                        <option value="witch_doctor">巫医</option>
+                        <option value="zuus">宙斯</option>
+                    </select>
+                </div>
+                
+                <br>
+                
+                
+                <ul>
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="columnHeaderTextStr">力量</span>
+                    </li>
+                    
+                    <li id="link_earthshaker" class="heroli Melee Initiator Disabler Support LaneSupport">
+                        <a href="earthshaker.html">
+                            <img class="heroPickerIconLink" src="../img/earthshaker_hphover.png">
+                                撼地者</a>
+                    </li>
+                    <li id="link_sven" class="heroli Melee Disabler Initiator Carry Support">
+                        <a href="sven.html">
+                            <img class="heroPickerIconLink" src="../img/sven_hphover.png">
+                                斯温</a>
+                    </li>
+                    <li id="link_tiny" class="heroli Melee Disabler Nuker Initiator Durable">
+                        <a href="tiny.html">
+                            <img class="heroPickerIconLink" src="../img/tiny_hphover.png">
+                                小小</a>
+                    </li>
+                    <li id="link_kunkka" class="heroli Melee Disabler Initiator Carry Durable">
+                        <a href="kunkka.html">
+                            <img class="heroPickerIconLink" src="../img/kunkka_hphover.png">
+                                昆卡</a>
+                    </li>
+                    <li id="link_beastmaster" class="heroli Melee Initiator Disabler Durable">
+                        <a href="beastmaster.html">
+                            <img class="heroPickerIconLink" src="../img/beastmaster_hphover.png">
+                                兽王</a>
+                    </li>
+                    <li id="link_dragon_knight" class="heroli Melee Carry Durable Disabler Pusher">
+                        <a href="dragon_knight.html">
+                            <img class="heroPickerIconLink" src="../img/dragon_knight_hphover.png">
+                                龙骑士</a>
+                    </li>
+                    <li id="link_rattletrap" class="heroli Melee Initiator Durable">
+                        <a href="rattletrap.html">
+                            <img class="heroPickerIconLink" src="../img/rattletrap_hphover.png">
+                                发条技师</a>
+                    </li>
+                    <li id="link_omniknight" class="heroli Melee Durable LaneSupport Support">
+                        <a href="omniknight.html">
+                            <img class="heroPickerIconLink" src="../img/omniknight_hphover.png">
+                                全能骑士</a>
+                    </li>
+                    <li id="link_huskar" class="heroli Ranged Carry Initiator Durable">
+                        <a href="huskar.html">
+                            <img class="heroPickerIconLink" src="../img/huskar_hphover.png">
+                                神灵武士</a>
+                    </li>
+                    <li id="link_alchemist" class="heroli Melee Durable Carry Disabler">
+                        <a href="alchemist.html">
+                            <img class="heroPickerIconLink" src="../img/alchemist_hphover.png">
+                                炼金术士</a>
+                    </li>
+                    <li id="link_brewmaster" class="heroli Melee Carry Durable Initiator Pusher">
+                        <a href="brewmaster.html">
+                            <img class="heroPickerIconLink" src="../img/brewmaster_hphover.png">
+                                酒仙</a>
+                    </li>
+                    <li id="link_treant" class="heroli Melee Durable Initiator LaneSupport Disabler">
+                        <a href="treant.html">
+                            <img class="heroPickerIconLink" src="../img/treant_hphover.png">
+                                树精卫士</a>
+                    </li>
+                    <li id="link_wisp" class="heroli Ranged Support LaneSupport Nuker">
+                        <a href="wisp.html">
+                            <img class="heroPickerIconLink" src="../img/wisp_hphover.png">
+                                精灵守卫</a>
+                    </li>
+                    <li id="link_centaur" class="heroli Melee Durable Disabler Initiator">
+                        <a href="centaur.html">
+                            <img class="heroPickerIconLink" src="../img/centaur_hphover.png">
+                                半人马战行者</a>
+                    </li>
+                    <li id="link_shredder" class="heroli Melee Durable Nuker Escape">
+                        <a href="shredder.html">
+                            <img class="heroPickerIconLink" src="../img/shredder_hphover.png">
+                                撕裂者</a>
+                    </li>
+                    <li id="link_bristleback" class="heroli Melee Durable Initiator Disabler">
+                        <a href="bristleback.html">
+                            <img class="heroPickerIconLink" src="../img/bristleback_hphover.png">
+                                钢背兽</a>
+                    </li>
+                    <li id="link_shredder" class="heroli Melee Durable Initiator">
+                        <a href="tusk.html">
+                            <img class="heroPickerIconLink" src="../img/tusk_hphover.png">
+                                巨牙海民</a>
+                    </li>
+                    <li id="link_elder_titan" class="heroli Melee Durable Initiator">
+                        <a href="elder_titan.html">
+                            <img class="heroPickerIconLink" src="../img/elder_titan_hphover.png">
+                                上古巨神</a>
+                    </li>
+                    <li id="link_legion_commander" class="heroli Melee Carry Durable">
+                        <a href="legion_commander.html">
+                            <img class="heroPickerIconLink" src="../img/legion_commander_hphover.png">
+                                军团指挥官</a>
+                    </li>
+                    <li id="link_earth_spirit" class="heroli Melee Carry Nuker">
+                        <a href="earth_spirit.html">
+                            <img class="heroPickerIconLink" src="../img/earth_spirit_hphover.png">
+                                大地之灵</a>
+                    </li>
+                    <li id="link_phoenix" class="heroli Ranged Initiator Disabler Nuker">
+                        <a href="phoenix.html">
+                            <img class="heroPickerIconLink" src="../img/phoenix_hphover.png">
+                                凤凰</a>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li id="link_axe" class="heroli Melee Durable Initiator Disabler Jungler ">
+                        <a href="axe.html">
+                            <img class="heroPickerIconLink" src="../img/axe_hphover.png">
+                                斧王</a>
+                    </li>
+                    <li id="link_pudge" class="heroli Melee Durable Disabler ">
+                        <a href="pudge.html">
+                            <img class="heroPickerIconLink" src="../img/pudge_hphover.png">
+                                帕吉</a>
+                    </li>
+                    <li id="link_sand_king" class="heroli Melee Initiator Disabler Nuker ">
+                        <a href="sand_king.html">
+                            <img class="heroPickerIconLink" src="../img/sand_king_hphover.png">
+                                沙王</a>
+                    </li>
+                    <li id="link_slardar" class="heroli Melee Carry Durable Disabler Initiator ">
+                        <a href="slardar.html">
+                            <img class="heroPickerIconLink" src="../img/slardar_hphover.png">
+                                斯拉达</a>
+                    </li>
+                    <li id="link_tidehunter" class="heroli Melee Initiator Durable Disabler Support ">
+                        <a href="tidehunter.html">
+                            <img class="heroPickerIconLink" src="../img/tidehunter_hphover.png">
+                                潮汐猎人</a>
+                    </li>
+                    <li id="link_skeleton_king" class="heroli Melee Durable Carry Disabler ">
+                        <a href="skeleton_king.html">
+                            <img class="heroPickerIconLink" src="../img/skeleton_king_hphover.png">
+                                骷髅王</a>
+                    </li>
+                    <li id="link_life_stealer" class="heroli Melee Carry Durable Jungler Escape ">
+                        <a href="life_stealer.html">
+                            <img class="heroPickerIconLink" src="../img/life_stealer_hphover.png">
+                                噬魂鬼</a>
+                    </li>
+                    <li id="link_night_stalker" class="heroli Melee Durable Initiator ">
+                        <a href="night_stalker.html">
+                            <img class="heroPickerIconLink" src="../img/night_stalker_hphover.png">
+                                暗夜魔王</a>
+                    </li>
+                    <li id="link_doom_bringer" class="heroli Melee Durable Carry Nuker ">
+                        <a href="doom_bringer.html">
+                            <img class="heroPickerIconLink" src="../img/doom_bringer_hphover.png">
+                                末日使者</a>
+                    </li>
+                    <li id="link_spirit_breaker" class="heroli Melee Durable Carry Initiator Disabler ">
+                        <a href="spirit_breaker.html">
+                            <img class="heroPickerIconLink" src="../img/spirit_breaker_hphover.png">
+                                裂魂人</a>
+                    </li>
+                    <li id="link_lycan" class="heroli Melee Carry Jungler Pusher Durable ">
+                        <a href="lycan.html">
+                            <img class="heroPickerIconLink" src="../img/lycan_hphover.png">
+                                狼人</a>
+                    </li>
+                    <li id="link_chaos_knight" class="heroli Melee Carry Disabler Durable Pusher ">
+                        <a href="chaos_knight.html">
+                            <img class="heroPickerIconLink" src="../img/chaos_knight_hphover.png">
+                                混沌骑士</a>
+                    </li>
+                    <li id="link_undying" class="heroli Melee Durable Pusher Disabler Initiator ">
+                        <a href="undying.html">
+                            <img class="heroPickerIconLink" src="../img/undying_hphover.png">
+                                不朽尸王</a>
+                    </li>
+                    <li id="link_magnataur" class="heroli Melee Initiator Disabler Nuker Carry">
+                        <a href="magnataur.html">
+                            <img class="heroPickerIconLink" src="../img/magnataur_hphover.png">
+                                马格纳斯</a>
+                    </li>
+                    <li id="link_abaddon" class="heroli Melee ">
+                        <a href="abaddon.html">
+                            <img class="heroPickerIconLink" src="../img/abaddon_hphover.png">
+                                亚巴顿</a>
+                    </li>
+                </ul>
+                
+                
+                <ul>
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="columnHeaderTextAgi">敏捷</span>
+                    </li>
+                    
+                    <li id="link_antimage" class="heroli Melee Carry Escape ">
+                        <a href="antimage.html">
+                            <img class="heroPickerIconLink" src="../img/antimage_hphover.png">
+                                敌法师</a>
+                    </li>
+                    <li id="link_drow_ranger" class="heroli Ranged Carry ">
+                        <a href="drow_ranger.html">
+                            <img class="heroPickerIconLink" src="../img/drow_ranger_hphover.png">
+                                卓尔游侠</a>
+                    </li>
+                    <li id="link_juggernaut" class="heroli Melee Carry Pusher ">
+                        <a href="juggernaut.html">
+                            <img class="heroPickerIconLink" src="../img/juggernaut_hphover.png">
+                                主宰</a>
+                    </li>
+                    <li id="link_mirana" class="heroli Ranged Carry Nuker Disabler Escape ">
+                        <a href="mirana.html">
+                            <img class="heroPickerIconLink" src="../img/mirana_hphover.png">
+                                米拉娜</a>
+                    </li>
+                    <li id="link_morphling" class="heroli Ranged Carry Escape Initiator Nuker ">
+                        <a href="morphling.html">
+                            <img class="heroPickerIconLink" src="../img/morphling_hphover.png">
+                                变体精灵</a>
+                    </li>
+                    <li id="link_phantom_lancer" class="heroli Melee Carry Escape Pusher ">
+                        <a href="phantom_lancer.html">
+                            <img class="heroPickerIconLink" src="../img/phantom_lancer_hphover.png">
+                                幻影长矛手</a>
+                    </li>
+                    <li id="link_vengefulspirit" class="heroli Ranged Support Disabler LaneSupport Initiator ">
+                        <a href="vengefulspirit.html">
+                            <img class="heroPickerIconLink" src="../img/vengefulspirit_hphover.png">
+                                复仇之魂</a>
+                    </li>
+                    <li id="link_riki" class="heroli Melee Carry Escape ">
+                        <a href="riki.html">
+                            <img class="heroPickerIconLink" src="../img/riki_hphover.png">
+                                力丸</a>
+                    </li>
+                    <li id="link_sniper" class="heroli Ranged Carry ">
+                        <a href="sniper.html">
+                            <img class="heroPickerIconLink" src="../img/sniper_hphover.png">
+                                狙击手</a>
+                    </li>
+                    <li id="link_templar_assassin" class="heroli Ranged Carry Escape ">
+                        <a href="templar_assassin.html">
+                            <img class="heroPickerIconLink" src="../img/templar_assassin_hphover.png">
+                                圣堂刺客</a>
+                    </li>
+                    <li id="link_luna" class="heroli Ranged Carry Nuker ">
+                        <a href="luna.html">
+                            <img class="heroPickerIconLink" src="../img/luna_hphover.png">
+                                露娜</a>
+                    </li>
+                    <li id="link_bounty_hunter" class="heroli Melee Carry Escape Nuker ">
+                        <a href="bounty_hunter.html">
+                            <img class="heroPickerIconLink" src="../img/bounty_hunter_hphover.png">
+                                赏金猎人</a>
+                    </li>
+                    <li id="link_ursa" class="heroli Melee Carry Jungler Durable ">
+                        <a href="ursa.html">
+                            <img class="heroPickerIconLink" src="../img/ursa_hphover.png">
+                                熊战士</a>
+                    </li>
+                    <li id="link_gyrocopter" class="heroli Ranged Disabler Initiator Nuker ">
+                        <a href="gyrocopter.html">
+                            <img class="heroPickerIconLink" src="../img/gyrocopter_hphover.png">
+                                矮人直升机</a>
+                    </li>
+                    <li id="link_lone_druid" class="heroli Ranged Carry Durable Pusher Jungler ">
+                        <a href="lone_druid.html">
+                            <img class="heroPickerIconLink" src="../img/lone_druid_hphover.png">
+                                德鲁伊</a>
+                    </li>
+                    <li id="link_naga_siren" class="heroli Melee Carry Disabler Pusher Escape ">
+                        <a href="naga_siren.html">
+                            <img class="heroPickerIconLink" src="../img/naga_siren_hphover.png">
+                                娜迦海妖</a>
+                    </li>
+                    <li id="link_troll_warlord" class="heroli Ranged Carry ">
+                        <a href="troll_warlord.html">
+                            <img class="heroPickerIconLink" src="../img/troll_warlord_hphover.png">
+                                巨魔战将</a>
+                    </li>
+                    <li id="link_ember_spirit" class="heroli Melee Carry Nuker ">
+                        <a href="ember_spirit.html">
+                            <img class="heroPickerIconLink" src="../img/ember_spirit_hphover.png">
+                                灰烬之灵</a>
+                    </li>
+
+                </ul>
+                <br>
+                <ul>
+                    <li id="link_bloodseeker" class="heroli Melee Carry Jungler ">
+                        <a href="bloodseeker.html">
+                            <img class="heroPickerIconLink" src="../img/bloodseeker_hphover.png">
+                                血魔</a>
+                    </li>
+                    <li id="link_nevermore" class="heroli Ranged Carry Nuker ">
+                        <a href="nevermore.html">
+                            <img class="heroPickerIconLink" src="../img/nevermore_hphover.png">
+                                影魔</a>
+                    </li>
+                    <li id="link_razor" class="heroli Ranged Carry Durable Nuker ">
+                        <a href="razor.html">
+                            <img class="heroPickerIconLink" src="../img/razor_hphover.png">
+                                剃刀</a>
+                    </li>
+                    <li id="link_venomancer" class="heroli Ranged Support Nuker Initiator Pusher ">
+                        <a href="venomancer.html">
+                            <img class="heroPickerIconLink" src="../img/venomancer_hphover.png">
+                                剧毒术士</a>
+                    </li>
+                    <li id="link_faceless_void" class="heroli Melee Carry Initiator Disabler Escape ">
+                        <a href="faceless_void.html">
+                            <img class="heroPickerIconLink" src="../img/faceless_void_hphover.png">
+                                虚空假面</a>
+                    </li>
+                    <li id="link_phantom_assassin" class="heroli Melee Carry Escape ">
+                        <a href="phantom_assassin.html">
+                            <img class="heroPickerIconLink" src="../img/phantom_assassin_hphover.png">
+                                幻影刺客</a>
+                    </li>
+                    <li id="link_viper" class="heroli Ranged Carry Durable ">
+                        <a href="viper.html">
+                            <img class="heroPickerIconLink" src="../img/viper_hphover.png">
+                                冥界亚龙</a>
+                    </li>
+                    <li id="link_clinkz" class="heroli Ranged Carry Escape ">
+                        <a href="clinkz.html">
+                            <img class="heroPickerIconLink" src="../img/clinkz_hphover.png">
+                                克林克兹</a>
+                    </li>
+                    <li id="link_broodmother" class="heroli Melee Pusher Carry Escape ">
+                        <a href="broodmother.html">
+                            <img class="heroPickerIconLink" src="../img/broodmother_hphover.png">
+                                育母蜘蛛</a>
+                    </li>
+                    <li id="link_weaver" class="heroli Ranged Carry Escape ">
+                        <a href="weaver.html">
+                            <img class="heroPickerIconLink" src="../img/weaver_hphover.png">
+                                编织者</a>
+                    </li>
+                    <li id="link_spectre" class="heroli Melee Carry Durable ">
+                        <a href="spectre.html">
+                            <img class="heroPickerIconLink" src="../img/spectre_hphover.png">
+                                幽鬼</a>
+                    </li>
+                    <li id="link_meepo" class="heroli Carry Disabler Initiator ">
+                        <a href="meepo.html">
+                            <img class="heroPickerIconLink" src="../img/meepo_hphover.png">
+                                米波</a>
+                    </li>
+                    <li id="link_nyx_assassin" class="heroli Melee Disabler Nuker ">
+                        <a href="nyx_assassin.html">
+                            <img class="heroPickerIconLink" src="../img/nyx_assassin_hphover.png">
+                                司夜刺客</a>
+                    </li>
+                    <li id="link_slark" class="heroli Melee Escape ">
+                        <a href="slark.html">
+                            <img class="heroPickerIconLink" src="../img/slark_hphover.png">
+                                斯拉克</a>
+                    </li>
+                    <li id="link_medusa" class="heroli Ranged Carry ">
+                        <a href="medusa.html">
+                            <img class="heroPickerIconLink" src="../img/medusa_hphover.png">
+                                美杜莎</a>
+                    </li>
+                    <li id="link_terrorblade" class="heroli Melee Carry ">
+                        <a href="terrorblade.html">
+                            <img class="heroPickerIconLink" src="../img/terrorblade_hphover.png">
+                                恐怖利刃</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="columnHeaderTextInt">智力</span>
+                    </li>
+                    
+                    <li id="link_crystal_maiden" class="heroli Ranged Support Disabler Nuker LaneSupport ">
+                        <a href="crystal_maiden.html">
+                            <img class="heroPickerIconLink" src="../img/crystal_maiden_hphover.png">
+                                水晶室女</a>
+                    </li>
+                    <li id="link_puck" class="heroli Ranged Initiator Nuker Disabler Escape ">
+                        <a href="puck.html">
+                            <img class="heroPickerIconLink" src="../img/puck_hphover.png">
+                                帕克</a>
+                    </li>
+                    <li id="link_storm_spirit" class="heroli Ranged Carry Initiator Escape Disabler ">
+                        <a href="storm_spirit.html">
+                            <img class="heroPickerIconLink" src="../img/storm_spirit_hphover.png">
+                                风暴之灵</a>
+                    </li>
+                    <li id="link_windrunner" class="heroli Ranged Disabler Nuker Support Escape ">
+                        <a href="windrunner.html">
+                            <img class="heroPickerIconLink" src="../img/windrunner_hphover.png">
+                                风行者</a>
+                    </li>
+                    <li id="link_zuus" class="heroli Ranged Nuker Support ">
+                        <a href="zuus.html">
+                            <img class="heroPickerIconLink" src="../img/zuus_hphover.png">
+                                宙斯</a>
+                    </li>
+                    <li id="link_lina" class="heroli Ranged Nuker Disabler Support ">
+                        <a href="lina.html">
+                            <img class="heroPickerIconLink" src="../img/lina_hphover.png">
+                                莉娜</a>
+                    </li>
+                    <li id="link_shadow_shaman" class="heroli Ranged Pusher Disabler Nuker Support ">
+                        <a href="shadow_shaman.html">
+                            <img class="heroPickerIconLink" src="../img/shadow_shaman_hphover.png">
+                                暗影萨满</a>
+                    </li>
+                    <li id="link_tinker" class="heroli Ranged Nuker Pusher ">
+                        <a href="tinker.html">
+                            <img class="heroPickerIconLink" src="../img/tinker_hphover.png">
+                                修补匠</a>
+                    </li>
+                    <li id="link_furion" class="heroli Ranged Jungler Pusher Carry Escape ">
+                        <a href="furion.html">
+                            <img class="heroPickerIconLink" src="../img/furion_hphover.png">
+                                先知</a>
+                    </li>
+                    <li id="link_enchantress" class="heroli Ranged Support Pusher Durable Jungler ">
+                        <a href="enchantress.html">
+                            <img class="heroPickerIconLink" src="../img/enchantress_hphover.png">
+                                魅惑魔女</a>
+                    </li>
+                    <li id="link_jakiro" class="heroli Ranged Nuker Pusher LaneSupport Disabler ">
+                        <a href="jakiro.html">
+                            <img class="heroPickerIconLink" src="../img/jakiro_hphover.png">
+                                杰奇洛</a>
+                    </li>
+                    <li id="link_chen" class="heroli Ranged Support Jungler Pusher ">
+                        <a href="chen.html">
+                            <img class="heroPickerIconLink" src="../img/chen_hphover.png">
+                                陈</a>
+                    </li>
+                    <li id="link_silencer" class="heroli Ranged Support Carry Initiator ">
+                        <a href="silencer.html">
+                            <img class="heroPickerIconLink" src="../img/silencer_hphover.png">
+                                沉默术士</a>
+                    </li>
+                    <li id="link_ogre_magi" class="heroli Melee Nuker Disabler Durable ">
+                        <a href="ogre_magi.html">
+                            <img class="heroPickerIconLink" src="../img/ogre_magi_hphover.png">
+                                食人魔法师</a>
+                    </li>
+                    <li id="link_rubick" class="heroli Ranged Disabler Pusher ">
+                        <a href="rubick.html">
+                            <img class="heroPickerIconLink" src="../img/rubick_hphover.png">
+                                拉比克</a>
+                    </li>
+                    <li id="link_disruptor" class="heroli Ranged Nuker Support Initiator Disabler ">
+                        <a href="disruptor.html">
+                            <img class="heroPickerIconLink" src="../img/disruptor_hphover.png">
+                                干扰者</a>
+                    </li>
+                    <li id="link_keeper_of_the_light" class="heroli Ranged Nuker Support LaneSupport ">
+                        <a href="keeper_of_the_light.html">
+                            <img class="heroPickerIconLink" src="../img/keeper_of_the_light_hphover.png">
+                                光之守卫</a>
+                    </li>
+                    <li id="link_skywrath_mage" class="heroli Ranged Nuker Support ">
+                        <a href="skywrath_mage.html">
+                            <img class="heroPickerIconLink" src="../img/skywrath_mage_hphover.png">
+                                天怒法师</a>
+                    </li>
+                    <li id="link_oracle" class="heroli Ranged Nuker Support LaneSupport ">
+                        <a href="oracle.html">
+                            <img class="heroPickerIconLink" src="../img/oracle_hphover.png">
+                                神谕者</a>
+                    </li>
+                    <li id="link_techies" class="heroli Ranged ">
+                        <a href="techies.html">
+                            <img class="heroPickerIconLink" src="../img/techies_hphover.png">
+                                工程师</a>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li id="link_bane" class="heroli Ranged Disabler Nuker Support ">
+                        <a href="bane.html">
+                            <img class="heroPickerIconLink" src="../img/bane_hphover.png">
+                                祸乱之源</a>
+                    </li>
+                    <li id="link_lich" class="heroli Ranged Support LaneSupport Nuker ">
+                        <a href="lich.html">
+                            <img class="heroPickerIconLink" src="../img/lich_hphover.png">
+                                巫妖</a>
+                    </li>
+                    <li id="link_lion" class="heroli Ranged Disabler Nuker LaneSupport Support ">
+                        <a href="lion.html">
+                            <img class="heroPickerIconLink" src="../img/lion_hphover.png">
+                                莱恩</a>
+                    </li>
+                    <li id="link_witch_doctor" class="heroli Ranged Support Disabler ">
+                        <a href="witch_doctor.html">
+                            <img class="heroPickerIconLink" src="../img/witch_doctor_hphover.png">
+                                巫医</a>
+                    </li>
+                    <li id="link_enigma" class="heroli Ranged Disabler Initiator Jungler Pusher ">
+                        <a href="enigma.html">
+                            <img class="heroPickerIconLink" src="../img/enigma_hphover.png">
+                                谜团</a>
+                    </li>
+                    <li id="link_necrolyte" class="heroli Ranged Support Durable Carry ">
+                        <a href="necrolyte.html">
+                            <img class="heroPickerIconLink" src="../img/necrolyte_hphover.png">
+                                瘟疫法师</a>
+                    </li>
+                    <li id="link_warlock" class="heroli Ranged Initiator Support LaneSupport Disabler ">
+                        <a href="warlock.html">
+                            <img class="heroPickerIconLink" src="../img/warlock_hphover.png">
+                                术士</a>
+                    </li>
+                    <li id="link_queenofpain" class="heroli Ranged Nuker Escape Carry ">
+                        <a href="queenofpain.html">
+                            <img class="heroPickerIconLink" src="../img/queenofpain_hphover.png">
+                                痛苦女王</a>
+                    </li>
+                    <li id="link_death_prophet" class="heroli Ranged Pusher Nuker Durable ">
+                        <a href="death_prophet.html">
+                            <img class="heroPickerIconLink" src="../img/death_prophet_hphover.png">
+                                死亡先知</a>
+                    </li>
+                    <li id="link_pugna" class="heroli Ranged Nuker Pusher Support ">
+                        <a href="pugna.html">
+                            <img class="heroPickerIconLink" src="../img/pugna_hphover.png">
+                                帕格纳</a>
+                    </li>
+                    <li id="link_dazzle" class="heroli Ranged Support LaneSupport ">
+                        <a href="dazzle.html">
+                            <img class="heroPickerIconLink" src="../img/dazzle_hphover.png">
+                                戴泽</a>
+                    </li>
+                    <li id="link_leshrac" class="heroli Ranged Nuker Pusher Disabler Support ">
+                        <a href="leshrac.html">
+                            <img class="heroPickerIconLink" src="../img/leshrac_hphover.png">
+                                拉席克</a>
+                    </li>
+                    <li id="link_dark_seer" class="heroli Melee Initiator Nuker Escape ">
+                        <a href="dark_seer.html">
+                            <img class="heroPickerIconLink" src="../img/dark_seer_hphover.png">
+                                黑暗贤者</a>
+                    </li>
+                    <li id="link_batrider" class="heroli Ranged Initiator Disabler Nuker Escape ">
+                        <a href="batrider.html">
+                            <img class="heroPickerIconLink" src="../img/batrider_hphover.png">
+                                蝙蝠骑士</a>
+                    </li>
+                    <li id="link_ancient_apparition" class="heroli Ranged Support Disabler ">
+                        <a href="ancient_apparition.html">
+                            <img class="heroPickerIconLink" src="../img/ancient_apparition_hphover.png">
+                                极寒幽魂</a>
+                    </li>
+                    <li id="link_invoker" class="heroli Ranged Carry Nuker Initiator Escape ">
+                        <a href="invoker.html">
+                            <img class="heroPickerIconLink" src="../img/invoker_hphover.png">
+                                祈求者</a>
+                    </li>
+                    <li id="link_obsidian_destroyer" class="heroli Ranged Carry ">
+                        <a href="obsidian_destroyer.html">
+                            <img class="heroPickerIconLink" src="../img/obsidian_destroyer_hphover.png">
+                                殁境毁灭者</a>
+                    </li>
+                    <li id="link_shadow_demon" class="heroli Ranged Support Disabler Nuker ">
+                        <a href="shadow_demon.html">
+                            <img class="heroPickerIconLink" src="../img/shadow_demon_hphover.png">
+                                暗影恶魔</a>
+                    </li>
+                    <li id="link_visage" class="heroli Ranged Nuker Durable Disabler ">
+                        <a href="visage.html">
+                            <img class="heroPickerIconLink" src="../img/visage_hphover.png">
+                                维萨吉</a>
+                    </li>
+                    <li id="link_winter_wyvern" class="heroli Ranged ">
+                        <a href="winter_wyvern.html">
+                            <img class="heroPickerIconLink" src="../img/winter_wyvern_hphover.png">
+                                寒冬飞龙</a>
+                    </li>
+                </ul>
+
+                    
+                    
+<br><br>
+                 <div class="lang">
+                 <TABLE WIDTH="100%" HEIGHT="100%">
+                 <TR>
+                 <TD ALIGN="center" VALIGN="middle">
+                 <a href="../en.lproj/Heroes.html">English</a>
+                 <a href="../zh-Hans.lproj/Heroes.html">中文</a>
+                 </TD>
+                 </TR>
+                 </TABLE>
+                 </div>
+
+            </div>
+        </div>
+        <br><br>
+    </body>

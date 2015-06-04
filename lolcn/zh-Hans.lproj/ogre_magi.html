@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>OGRE MAGI</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/ogre_magi_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">食人魔法师</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">爆发</td>
+                                <td class="role" width="50%">控制</td>
+                            </tr>
+                            <tr >
+                                <td class="role">耐久</td>
+                                <td class="role"></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_int.png" class="img33"> <span>17 + 2.40</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>14 + 1.55</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>23 + 3.20</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>41 - 47</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>295</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>5.92</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">587</td>
+                                <td class="statRowColW">1,438</td>
+                                <td class="statRowColW">2,426</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">221</td>
+                                <td class="statRowColW">658</td>
+                                <td class="statRowColW">1,230</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">58-64</td>
+                                <td class="statRowColW">92-98</td>
+                                <td class="statRowColW">136-142</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">9</td>
+                                <td class="statRowColW">14</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/ogre_magi_fireblast_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/ogre_magi_ignite_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/ogre_magi_bloodlust_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/ogre_magi_unrefined_fireblast_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/ogre_magi_multicast_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>火焰爆轰</strong></p>
+                            <p>发出火焰轰炸一个目标，造成伤害并晕眩。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 85 / 95 / 105</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">12.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">80 / 145 / 210 / 275</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >眩晕时间:</td><td class="statRowColW">1.5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>引燃</strong></p>
+                            <p>对目标的敌方单位造成影响，他们将持续受到伤害，移动速度也因此降低。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">95 / 105 / 115 / 125</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">15.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">4 / 5 / 6 / 7</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >火炎伤害:</td><td class="statRowColW">26/34/42/50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >减速:</td><td class="statRowColW">20% / 22% / 24% / 26%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>嗜血术</strong></p>
+                            <p>使一个友方单位变得狂热，提升攻击速度和移动速度。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">20</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">自动施法, 单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">友方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">30</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度:</td><td class="statRowColW">10 / 12 / 14 / 16%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >攻速:</td><td class="statRowColW">20 / 30 / 40 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td ></td><td class="statRowColW"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>未精通的火焰爆轰</strong></p>
+                            <p>以一波火焰轰击一个敌方单位，造成伤害并使目标眩晕。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">400</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">10</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">275</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >眩晕时间:</td><td class="statRowColW">1.5</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>多重施法</strong></p>
+                            <p>使食人魔法师可以迅速施法，并极大提升法术的效力。有一定概率在一次施法中多次施放同一法术。降低火焰爆轰的冷却时间，增加魔法消耗，为引燃增加范围作用效果，降低嗜血术的冷却时间并增加其作用范围。可神杖升级。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >火焰爆轰魔法值消耗增加:</td><td class="statRowColW">30 / 70 / 110</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >火焰爆轰冷却减少:</td><td class="statRowColW">2 / 4 / 6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >引燃范围:</td><td class="statRowColW">150 / 300 / 450</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >嗜血术范围:</td><td class="statRowColW">575</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >嗜血术冷却减少:</td><td class="statRowColW">5 / 10 / 15</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >2次几率:</td><td class="statRowColW">25% / 40% / 50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >3次几率:</td><td class="statRowColW">0% / 20% / 25%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >4次几率:</td><td class="statRowColW">0% / 0% / 12.5%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >引燃距离增加:</td><td class="statRowColW">150 / 300 / 450</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>普通食人魔的愚蠢正是一句俗话“蠢的像一袋石头一样”所形容的。在自然状况下，一只食人魔完全没有能力做任何事或下决定。他们不仅邋遢至极，有时一只食人魔还会发现自己吃完一头动物后居然被困在它的皮囊里。食人魔并非社会性生物，经常有人发现他们大岩石或者树桩亲昵的依偎在一起，显然是将这些东西错认成了他们的同类（这也许可以解释食人魔的低繁殖率）。然而，每一世代的食人魔中，都会诞生一只双头的食人魔魔法师，一出生就会立刻被授予传统名字：阿格隆·碎石者，这个名字属于它们种族历史上第一个以及或许是每一世代中唯一有智慧的食人魔。有两个脑袋的食人魔魔法师发现他可以比其他只有一个脑袋的生物更高效的行事。尽管食人魔魔法师无法赢得任何辩论（即使和它自己），但它天生就属于傻人有傻福，这命运中的意外收获让这个无法供养自己的种族在敌人的威胁和恶劣的天气下能繁荣起来。就好像是幸运女神对这个平均智商低下的种族的特别眷顾一样，她赐予了他们食人魔法师。她还能怎样呢？真是可怜的家伙们。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/ogre_magi_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

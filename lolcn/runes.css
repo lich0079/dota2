@@ -1,0 +1,96 @@
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Arial, Helvetica;
+}
+
+header,section,footer,nav,aside,article,figure{
+    dispaly:block;
+    padding:0px;
+    margin:0px;
+    
+}
+body {
+    background-image: url("bg.png");
+}
+.everything{
+    width:320px;
+    font-size:10px;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    color: #FEAF00;
+    text-decoration: none;
+    cursor:default;
+}
+b {
+    color: #F00;
+}
+
+body{
+    color: #FEAF00;
+}
+.main {
+    padding: 5px 0;
+    align:center;
+}
+.main ul {
+    overflow: hidden;
+    width: 320px;
+    margin: 2px 0px;
+}
+.main li {
+    float: left;
+    width: 80px;
+    padding: 0px;
+    text-align: center;
+    line-height: 13px;
+    font-size:9px;
+}
+ol, ul {
+    list-style: none;
+}
+img{
+    width:80px;
+    height:80px;
+}
+.title{
+    text-align:center;
+}
+
+.filter{
+margin:5px;
+}
+.filter li {
+    float: left;
+    width: 60px;
+    padding: 0px;
+    margin:1px 1px 10px 1px;
+    text-align: center;
+    line-height: 13px;
+    font-size:10px;
+}
+
+.filter ul {
+    width: 315px;
+}
+
+.sel{
+    background: url(tab_bg1.png)  no-repeat;
+    color: #600;
+}
+.unsel{
+    background: url(tab_bg2.png)  no-repeat;
+}
+
+.lang{
+    margin:5px;
+}
+
+
+.lang a {
+    color: gray;
+    font-size:14px;
+    margin:0px 20px;
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>上古巨神</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/elder_titan_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">上古巨神</div>
+                    <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                        <tr >
+                            <td class="role" width="50%">先手</td>
+                            <td class="role" width="50%">耐久</td>
+                        </tr>
+                        <tr >
+                            <td class="role"></td>
+                            <td class="role"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul>
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+                    
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>23 + 1.60</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>14 + 1.50</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>24 + 2.30</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>23 - 33</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>2.96</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">606</td>
+                                <td class="statRowColW">1,218</td>
+                                <td class="statRowColW">2,035</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">299</td>
+                                <td class="statRowColW">590</td>
+                                <td class="statRowColW">1,058</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">47-57</td>
+                                <td class="statRowColW">79-89</td>
+                                <td class="statRowColW">122-132</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">6</td>
+                                <td class="statRowColW">11</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/elder_titan_echo_stomp_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/elder_titan_ancestral_spirit_hp2.png" />
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/elder_titan_natural_order_hp2.png" />
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/elder_titan_return_spirit_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/elder_titan_earth_splitter_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>回音重踏</strong></p>
+                            <p>上古巨神与他的先祖灵魂一起践踏地面，对敌方单位造成伤害并使他们在原地昏迷。上古巨神造成物理伤害，先祖灵魂造成魔法伤害。昏迷的敌人受到伤害会被惊醒。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">100/115/130/145</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">15</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标, 持续施法</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">混合</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >吟唱时间:</td><td class="statRowColW">1.4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">475</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >昏迷时间:</td><td class="statRowColW">2 / 3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >践踏伤害:</td><td class="statRowColW">80 / 80 / 80 / 80</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>先祖之魂</strong></p>
+                            <p>上古巨神将他的先祖灵魂，一个精神复制体送至前方。灵魂对任何经过的单位造成伤害。当它与巨神合体时，它每伤害过一个单位就能给予若干攻击力和移动速度加成。 先祖灵魂拥有回音践踏，回归和自然秩序三个技能。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">110/110/110/110</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">16</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害:</td><td class="statRowColW">120 / 160 / 200 / 240</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">8</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >加成持续时间:</td><td class="statRowColW">9</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度加成（每个小兵）:</td><td class="statRowColW">1%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度加成（每个英雄）:</td><td class="statRowColW">5%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >攻击力加成（每个小兵）:</td><td class="statRowColW">3 / 6 / 9 / 12</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >攻击力加成（每个英雄）:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>自然秩序</strong></p>
+                            <p>使所有元素降低至基础水平，移除附近敌方单位的基础物理护甲和魔法抗性。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动, 光环</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方单位</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">275 / 275 / 275 / 275</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >基础护甲减少:</td><td class="statRowColW">25/50/75/100%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >基础魔抗减少:</td><td class="statRowColW">6% / 14% / 20% / 26%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>先祖之魂回归</strong></p>
+                            <p>使先祖之魂回归至上古巨神。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>裂地沟壑</strong></p>
+                            <p>上古巨神向前方放出一道不平坦的裂纹。3秒后裂纹塌陷，范围内的单位将被减速，并受到基于他们自身生命最大值的伤害。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">175/175/175</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">100</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">敌方单位</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">混合</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >生效延迟:</td><td class="statRowColW">3.14</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >裂纹宽度:</td><td class="statRowColW">300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >施法距离:</td><td class="statRowColW">2400</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >减速:</td><td class="statRowColW">30% / 40% / 50%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >减速持续时间:</td><td class="statRowColW">3 / 4 / 5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >最大生命值伤害百分比:</td><td class="statRowColW">35%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>也许有人会问：“这个世界是如何形成的？”在所有现存世界中，为什么这个世界的属性如此奇特，如此多样化，其中的生物，文化和传说更是数不胜数呢？“答案，”有人低语道，“就在于巨神们。” </p>
+                        
+                        <p>这些原初的先祖在宇宙形成伊始就已在世——即使他们并非创世的见证，他们降世时耳中也是回荡着创世的巨响。带着宇宙原初力量的印记，他们最大的愿望是自己创世者的生涯能得到延续。所以他们转而承担了改造事物的任务：捶打、鼓风、加热、塑形，一切全凭意志。事物改造后如果失去了挑战性，他们就会提着工具转向自己，修正自己的思想，锻炼自己的灵魂，提高自身的忍耐力。现实本身就是他们锻造的终极目标。但是，在这样的过程中，他们有时也会犯错。在施展雄图大志时，错误总是不可避免。 </p>
+                        
+                        <p>我们所知的上古巨神是伟大的创造者，他曾在创世的熔炉研习。在磨砺技艺时，他打碎了一样东西，无法修复、只能放弃的东西。他陷入了自己破碎的世界，这也是他自己破碎的灵魂。他 滞留所在的位面里全是参差不齐的碎片和漫山遍野的裂缝，还有其他从初生宇宙裂缝中散落的失落残片。这就解释了为什么众所周知的世界形似一座小岛，岛上尽是失事船只上的幸存者，现在这些落难之人早已在历史长河中被忘却。世人虽无记忆，但是自责的人除外。他将永世寻找方法去完成修复工作，寻找再次与他残破的灵魂结合的方法，寻找修复世人和世界的方法。这就是我们所知的上古巨神。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/elder_titan_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

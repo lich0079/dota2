@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>KUNKKA</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/kunkka_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">昆卡</div>
+                     <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">控制</td>
+                                <td class="role" width="50%">先手</td>
+                            </tr>
+                            <tr >
+                                <td class="role">核心</td>
+                                <td class="role">耐久</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>18 + 1.50</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_agi.png" class="img33"> <span>14 + 1.30</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_str.png" class="img33"> <span>24 + 3.00</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>26 - 36</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>300</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.96</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">606</td>
+                                <td class="statRowColW">1,404</td>
+                                <td class="statRowColW">2,354</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">234</td>
+                                <td class="statRowColW">507</td>
+                                <td class="statRowColW">962</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">47-57</td>
+                                <td class="statRowColW">89-99</td>
+                                <td class="statRowColW">139-149</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">9</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/kunkka_torrent_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/kunkka_tidebringer_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/kunkka_x_marks_the_spot_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/kunkka_ghostship_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/kunkka_x_marks_the_spot_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>洪流</strong></p>
+                            <p>在指定的区域召唤一阵水流，冲出地面，将范围内的敌方单位抛至空中，造成伤害并在接下来的数秒内移动速度。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120 / 120</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">12.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">120 / 180 / 240 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">215 / 215 / 215 / 215</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >减速:</td><td class="statRowColW">35%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >减速时间:</td><td class="statRowColW">1 / 2 / 3 / 4</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >眩晕时间:</td><td class="statRowColW">1.53 / 1.53 / 1.53 / 1.53</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >延迟:</td><td class="statRowColW">1.6 / 1.6 / 1.6 / 1.6</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>潮汐使者</strong></p>
+                            <p>舰队统帅传奇般的宝剑潮汐使者，被大海灌入了不可思议的力量。每过一段时间，潮汐使者便会被动的给予舰队统帅额外的力量（增加攻击力和溅射伤害，仅限一次攻击）。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">13.0 / 10.0 / 7.0 / 4.0</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害类型:</td><td class="statRowColW">物理</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >作用范围:</td><td class="statRowColW">500 / 500 / 500 / 600</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害加成:</td><td class="statRowColW">15 / 30 / 45 / 60</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>地图地标</strong></p>
+                            <p>为一个友方或敌方英雄在地上标记其当前的位置一个英雄脚下画出一个十字，数秒之后，被标记的英雄立刻返回标记位置。在效果持续时间可随时触发返回。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">80</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">16.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">单位目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >影响:</td><td class="statRowColW">英雄</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >延迟:</td><td class="statRowColW">1 / 2 / 3 / 4</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >射程:</td><td class="statRowColW">500 / 650 / 800 / 950</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>幽灵船</strong></p>
+                            <p>召唤出神秘的幽灵船横越战场，椰子号经过友军时，会为友军灌下椰子船长的朗姆酒，使其在接下来的数秒内提升移动速度，减少所受伤害的一半（酒劲消退时会承受累积的那一半伤害）。幽灵船撞毁后，会对范围内的敌方单位造成伤害和眩晕。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">150 / 200 / 250</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">60.0 / 50.0 / 40.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">点目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">350/450/550</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >眩晕时间:</td><td class="statRowColW">1.4 / 1.4 / 1.4</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度加成:</td><td class="statRowColW">10% / 10% / 10%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >增益持续时间:</td><td class="statRowColW">8</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>返回</strong></p>
+                            <p>让被标记的英雄返回。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">5.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>洪流恶魔一直都在计划抢夺人类的土地，而作为强大的铁帆海军的舰队指挥官，昆卡则担负着守卫他祖国小岛的使命。在恶魔多年的小规模突击和越来越大胆的毁灭性攻击后，恶魔的舰队终于包围了战栗之岛。绝望之下，铁帆舰队的魔法师使用了自杀性的终极杀招，召唤了一群不分敌我的先祖灵魂来保护舰队。这刚好能够扭转与恶魔对峙的局势。昆卡看着他的战舰一艘接一艘被击沉的同时，先祖也在慢慢消耗掉恶魔的舰队，这让他感到很满意。但在战斗最激烈的时候，人类、恶魔、先祖灵魂的冲突惹恼了沉睡在深海的第四股势力。残留不多的舰队旁喷出了高耸的海浪，深渊触手 ——毁灭漩涡在战场中出现了。他的触须在船只间移动，把人类和恶魔的舰船拖卷在一起，水和风被搅动成狂怒的混沌。没有人能说清那场严酷的风暴中到底发生了什么。洪流恶魔放弃了进攻，怒吼着逃入了虚空。昆卡则晋升为海军上将，但他只有一艘船，一艘不断重演它最终毁灭场面的幽灵船。然而谁都说不准他是否还活着。即使是毁灭漩涡的召唤者潮汐猎人，也不能确定。</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/kunkka_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

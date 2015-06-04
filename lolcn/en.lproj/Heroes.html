@@ -1,0 +1,815 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>HEROES</title>
+        <link rel="stylesheet" type="text/css" href="../heroes.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  
+                  $(".filtertab").click(function(){
+                                        $(".filtertab").removeClass("sel");  
+                                        $(".filtertab").addClass("unsel");
+                                        $(this).removeClass("unsel");
+                                        $(this).addClass("sel");
+                                        
+                                        var index = $(this).attr("id");
+                                        if(index == "All"){
+                                            $(".heroli").show();
+                                        }else{
+                                            $(".heroli").hide();
+                                            $("."+index).show();
+                                        }
+                                        
+                                    });
+                  
+                  
+                  });    
+                
+                
+                function getRole(){
+                    var role = $('#filterRole').val();
+                    var roleStr = "";
+                    if(role == ""){
+                        
+                    }else{
+                        roleStr = "."+role;
+                    }
+                    
+                    var attack = $('#filterAttack').val();
+                    var attackStr = "";
+                    if(attack == ""){
+                        
+                    }else{
+                        attackStr = "."+attack;
+                    }
+                    
+                    if(roleStr+attackStr == ""){
+                        $(".heroli").show();
+                    }else{
+                        $(".heroli").hide();
+                        $(roleStr+attackStr).show();
+                    }
+                }
+                
+                function getName(){
+                    var name = $('#filterName').val();
+                    if(name == ""){
+                        $(".heroli").show();
+                    }else{
+                        $(".heroli").hide();
+                        $("#link_"+name).show();
+                    }
+                }
+                </script>
+            </head>
+    <body>
+        <div class="everything">
+            <div class="main" >
+                <br>
+                <div class="filter">
+                    <select onchange="getRole()" id="filterRole" class="filterSelect" name="">
+                        <option value="">Role</option>
+                        <option value="">All</option>
+                        <option value="Carry">Carry</option>
+                        <option value="Disabler">Disabler</option>
+                        <option value="LaneSupport">Lane Support</option>
+                        <option value="Initiator">Initiator</option>
+                        <option value="Jungler">Jungler</option>
+                        <option value="Support">Support</option>
+                        <option value="Durable">Durable</option>
+                        <option value="Nuker">Nuker</option>
+                        <option value="Pusher">Pusher</option>
+                        <option value="Escape">Escape</option>
+                    </select>
+                    
+                    <select onchange="getRole()" id="filterAttack" class="filterSelect" name="">
+                        <option value="">Attack type</option>
+                        <option value="">All</option>
+                        <option value="Melee">Melee</option>
+                        <option value="Ranged">Ranged</option>
+                    </select>
+                    
+                    <select onchange="getName()" id="filterName" class="filterSelect noCaps" name="">
+                        <option value="">NAME</option>
+                        <option value="">All</option>
+                        <option value="abaddon">Abaddon</option>
+                        <option value="alchemist">Alchemist</option>
+                        <option value="ancient_apparition">Ancient Apparition</option>
+                        <option value="antimage">Anti-Mage</option>
+                        <option value="axe">Axe</option>
+                        <option value="bane">Bane</option>
+                        <option value="batrider">Batrider</option>
+                        <option value="beastmaster">Beastmaster</option>
+                        <option value="bloodseeker">Bloodseeker</option>
+                        <option value="bounty_hunter">Bounty Hunter</option>
+                        <option value="bristleback">Bristleback</option>
+                        <option value="brewmaster">Brewmaster</option>
+                        <option value="broodmother">Broodmother</option>
+                        <option value="centaur">Centaur Warrunner</option>
+                        <option value="chaos_knight">Chaos Knight</option>
+                        <option value="chen">Chen</option>
+                        <option value="clinkz">Clinkz</option>
+                        <option value="rattletrap">Clockwerk</option>
+                        <option value="crystal_maiden">Crystal Maiden</option>
+                        <option value="dark_seer">Dark Seer</option>
+                        <option value="dazzle">Dazzle</option>
+                        <option value="death_prophet">Death Prophet</option>
+                        <option value="disruptor">Disruptor</option>
+                        <option value="doom_bringer">Doom Bringer</option>
+                        <option value="dragon_knight">Dragon Knight</option>
+                        <option value="drow_ranger">Drow Ranger</option>
+                        <option value="earthshaker">Earthshaker</option>
+                        <option value="earth_spirit">Earth Spirit</option>
+                        <option value="elder_titan">Elder Titan</option>
+                        <option value="ember_spirit">Ember Spirit</option>
+                        <option value="enchantress">Enchantress</option>
+                        <option value="enigma">Enigma</option>
+                        <option value="faceless_void">Faceless Void</option>
+                        <option value="gyrocopter">Gyrocopter</option>
+                        <option value="huskar">Huskar</option>
+                        <option value="invoker">Invoker</option>
+                        <option value="jakiro">Jakiro</option>
+                        <option value="juggernaut">Juggernaut</option>
+                        <option value="keeper_of_the_light">Keeper of the Light</option>
+                        <option value="kunkka">Kunkka</option>
+                        <option value="legion_commander">Legion Commander</option>
+                        <option value="leshrac">Leshrac</option>
+                        <option value="lich">Lich</option>
+                        <option value="life_stealer">Lifestealer</option>
+                        <option value="lina">Lina</option>
+                        <option value="lion">Lion</option>
+                        <option value="lone_druid">Lone Druid</option>
+                        <option value="luna">Luna</option>
+                        <option value="lycan">Lycanthrope</option>
+                        <option value="magnataur">Magnus</option>
+                        <option value="medusa">Medusa</option>
+                        <option value="meepo">Meepo</option>
+                        <option value="mirana">Mirana</option>
+                        <option value="morphling">Morphling</option>
+                        <option value="furion">Nature's Prophet</option>
+                        <option value="naga_siren">Naga Siren</option>
+                        <option value="necrolyte">Necrolyte</option>
+                        <option value="night_stalker">Night Stalker</option>
+                        <option value="nyx_assassin">Nyx Assassin</option>
+                        <option value="ogre_magi">Ogre Magi</option>
+                        <option value="omniknight">Omniknight</option>
+                        <option value="oracle">Oracle</option>
+                        <option value="obsidian_destroyer">Outworld Destroyer</option>
+                        <option value="phantom_assassin">Phantom Assassin</option>
+                        <option value="phantom_lancer">Phantom Lancer</option>
+                        <option value="phoenix">Phoenix</option>
+                        <option value="puck">Puck</option>
+                        <option value="pudge">Pudge</option>
+                        <option value="pugna">Pugna</option>
+                        <option value="queenofpain">Queen of Pain</option>
+                        <option value="razor">Razor</option>
+                        <option value="riki">Riki</option>
+                        <option value="rubick">Rubick</option>
+                        <option value="sand_king">Sand King</option>
+                        <option value="shadow_demon">Shadow Demon</option>
+                        <option value="nevermore">Shadow Fiend</option>
+                        <option value="shadow_shaman">Shadow Shaman</option>
+                        <option value="skywrath_mage">Skywrath Mage</option>
+                        <option value="silencer">Silencer</option>
+                        <option value="skeleton_king">Skeleton King</option>
+                        <option value="slardar">Slardar</option>
+                        <option value="slark">Slark</option>
+                        <option value="sniper">Sniper</option>
+                        <option value="spectre">Spectre</option>
+                        <option value="spirit_breaker">Spirit Breaker</option>
+                        <option value="storm_spirit">Storm Spirit</option>
+                        <option value="sven">Sven</option>
+                        <option value="techies">Techies</option>
+                        <option value="templar_assassin">Templar Assassin</option>
+                        <option value="terrorblade">Terrorblade</option>
+                        <option value="tidehunter">Tidehunter</option>
+                        <option value="shredder">Timbersaw</option>
+                        <option value="tinker">Tinker</option>
+                        <option value="tiny">Tiny</option>
+                        <option value="treant">Treant Protector</option>
+                        <option value="troll_warlord">Troll Warlord</option>
+                        <option value="tusk">Tusk</option>
+                        <option value="undying">Undying</option>
+                        <option value="ursa">Ursa</option>
+                        <option value="vengefulspirit">Vengeful Spirit</option>
+                        <option value="venomancer">Venomancer</option>
+                        <option value="viper">Viper</option>
+                        <option value="visage">Visage</option>
+                        <option value="warlock">Warlock</option>
+                        <option value="weaver">Weaver</option>
+                        <option value="windrunner">Windrunner</option>
+                        <option value="winter_wyvern">Winter Wyvern</option>
+                        <option value="wisp">Wisp</option>
+                        <option value="witch_doctor">Witch Doctor</option>
+                        <option value="zuus">Zeus</option>
+                    </select>
+                </div>
+                
+                <br>
+                
+                
+                <ul>
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="columnHeaderTextStr">Strength</span>
+                    </li>
+                    
+                    <li id="link_earthshaker" class="heroli Melee Initiator Disabler Support LaneSupport">
+                        <a href="earthshaker.html">
+                            <img class="heroPickerIconLink" src="../img/earthshaker_hphover.png">
+                                Earthshaker</a>
+                    </li>
+                    <li id="link_sven" class="heroli Melee Disabler Initiator Carry Support">
+                        <a href="sven.html">
+                            <img class="heroPickerIconLink" src="../img/sven_hphover.png">
+                                Sven</a>
+                    </li>
+                    <li id="link_tiny" class="heroli Melee Disabler Nuker Initiator Durable">
+                        <a href="tiny.html">
+                            <img class="heroPickerIconLink" src="../img/tiny_hphover.png">
+                                Tiny</a>
+                    </li>
+                    <li id="link_kunkka" class="heroli Melee Disabler Initiator Carry Durable">
+                        <a href="kunkka.html">
+                            <img class="heroPickerIconLink" src="../img/kunkka_hphover.png">
+                                Kunkka</a>
+                    </li>
+                    <li id="link_beastmaster" class="heroli Melee Initiator Disabler Durable">
+                        <a href="beastmaster.html">
+                            <img class="heroPickerIconLink" src="../img/beastmaster_hphover.png">
+                                Beastmaster</a>
+                    </li>
+                    <li id="link_dragon_knight" class="heroli Melee Carry Durable Disabler Pusher">
+                        <a href="dragon_knight.html">
+                            <img class="heroPickerIconLink" src="../img/dragon_knight_hphover.png">
+                                Dragon Knight</a>
+                    </li>
+                    <li id="link_rattletrap" class="heroli Melee Initiator Durable">
+                        <a href="rattletrap.html">
+                            <img class="heroPickerIconLink" src="../img/rattletrap_hphover.png">
+                                Clockwerk</a>
+                    </li>
+                    <li id="link_omniknight" class="heroli Melee Durable LaneSupport Support">
+                        <a href="omniknight.html">
+                            <img class="heroPickerIconLink" src="../img/omniknight_hphover.png">
+                                Omniknight</a>
+                    </li>
+                    <li id="link_huskar" class="heroli Ranged Carry Initiator Durable">
+                        <a href="huskar.html">
+                            <img class="heroPickerIconLink" src="../img/huskar_hphover.png">
+                                Huskar</a>
+                    </li>
+                    <li id="link_alchemist" class="heroli Melee Durable Carry Disabler">
+                        <a href="alchemist.html">
+                            <img class="heroPickerIconLink" src="../img/alchemist_hphover.png">
+                                Alchemist</a>
+                    </li>
+                    <li id="link_brewmaster" class="heroli Melee Carry Durable Initiator Pusher">
+                        <a href="brewmaster.html">
+                            <img class="heroPickerIconLink" src="../img/brewmaster_hphover.png">
+                                Brewmaster</a>
+                    </li>
+                    <li id="link_treant" class="heroli Melee Durable Initiator LaneSupport Disabler">
+                        <a href="treant.html">
+                            <img class="heroPickerIconLink" src="../img/treant_hphover.png">
+                                Treant Protector</a>
+                    </li>
+                    <li id="link_wisp" class="heroli Ranged Support LaneSupport Nuker">
+                        <a href="wisp.html">
+                            <img class="heroPickerIconLink" src="../img/wisp_hphover.png">
+                                Wisp</a>
+                    </li>
+                    <li id="link_centaur" class="heroli Melee Durable Disabler Initiator">
+                        <a href="centaur.html">
+                            <img class="heroPickerIconLink" src="../img/centaur_hphover.png">
+                                Centaur Warrunner</a>
+                    </li>
+                    <li id="link_shredder" class="heroli Melee Durable Nuker Escape">
+                        <a href="shredder.html">
+                            <img class="heroPickerIconLink" src="../img/shredder_hphover.png">
+                                Timbersaw</a>
+                    </li>
+                    <li id="link_bristleback" class="heroli Melee Durable Initiator Disabler">
+                        <a href="bristleback.html">
+                            <img class="heroPickerIconLink" src="../img/bristleback_hphover.png">
+                                Bristleback</a>
+                    </li>
+                    <li id="link_tusk" class="heroli Melee Durable Initiator">
+                        <a href="tusk.html">
+                            <img class="heroPickerIconLink" src="../img/tusk_hphover.png">
+                                Tusk</a>
+                    </li>
+                    <li id="link_elder_titan" class="heroli Melee Durable Initiator">
+                        <a href="elder_titan.html">
+                            <img class="heroPickerIconLink" src="../img/elder_titan_hphover.png">
+                                Elder Titan</a>
+                    </li>
+                    <li id="link_legion_commander" class="heroli Melee Carry Durable">
+                        <a href="legion_commander.html">
+                            <img class="heroPickerIconLink" src="../img/legion_commander_hphover.png">
+                                Legion Commander</a>
+                    </li>
+                    <li id="link_earth_spirit" class="heroli Melee Carry Nuker">
+                        <a href="earth_spirit.html">
+                            <img class="heroPickerIconLink" src="../img/earth_spirit_hphover.png">
+                                Earth Spirit</a>
+                    </li>
+                    <li id="link_phoenix" class="heroli Ranged Initiator Disabler Nuker">
+                        <a href="phoenix.html">
+                            <img class="heroPickerIconLink" src="../img/phoenix_hphover.png">
+                                Phoenix</a>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li id="link_axe" class="heroli Melee Durable Initiator Disabler Jungler ">
+                        <a href="axe.html">
+                            <img class="heroPickerIconLink" src="../img/axe_hphover.png">
+                                Axe</a>
+                    </li>
+                    <li id="link_pudge" class="heroli Melee Durable Disabler ">
+                        <a href="pudge.html">
+                            <img class="heroPickerIconLink" src="../img/pudge_hphover.png">
+                                Pudge</a>
+                    </li>
+                    <li id="link_sand_king" class="heroli Melee Initiator Disabler Nuker ">
+                        <a href="sand_king.html">
+                            <img class="heroPickerIconLink" src="../img/sand_king_hphover.png">
+                                Sand King</a>
+                    </li>
+                    <li id="link_slardar" class="heroli Melee Carry Durable Disabler Initiator ">
+                        <a href="slardar.html">
+                            <img class="heroPickerIconLink" src="../img/slardar_hphover.png">
+                                Slardar</a>
+                    </li>
+                    <li id="link_tidehunter" class="heroli Melee Initiator Durable Disabler Support ">
+                        <a href="tidehunter.html">
+                            <img class="heroPickerIconLink" src="../img/tidehunter_hphover.png">
+                                Tidehunter</a>
+                    </li>
+                    <li id="link_skeleton_king" class="heroli Melee Durable Carry Disabler ">
+                        <a href="skeleton_king.html">
+                            <img class="heroPickerIconLink" src="../img/skeleton_king_hphover.png">
+                                Skeleton King</a>
+                    </li>
+                    <li id="link_life_stealer" class="heroli Melee Carry Durable Jungler Escape ">
+                        <a href="life_stealer.html">
+                            <img class="heroPickerIconLink" src="../img/life_stealer_hphover.png">
+                                Lifestealer</a>
+                    </li>
+                    <li id="link_night_stalker" class="heroli Melee Durable Initiator ">
+                        <a href="night_stalker.html">
+                            <img class="heroPickerIconLink" src="../img/night_stalker_hphover.png">
+                                Night Stalker</a>
+                    </li>
+                    <li id="link_doom_bringer" class="heroli Melee Durable Carry Nuker ">
+                        <a href="doom_bringer.html">
+                            <img class="heroPickerIconLink" src="../img/doom_bringer_hphover.png">
+                                Doom Bringer</a>
+                    </li>
+                    <li id="link_spirit_breaker" class="heroli Melee Durable Carry Initiator Disabler ">
+                        <a href="spirit_breaker.html">
+                            <img class="heroPickerIconLink" src="../img/spirit_breaker_hphover.png">
+                                Spirit Breaker</a>
+                    </li>
+                    <li id="link_lycan" class="heroli Melee Carry Jungler Pusher Durable ">
+                        <a href="lycan.html">
+                            <img class="heroPickerIconLink" src="../img/lycan_hphover.png">
+                                Lycanthrope</a>
+                    </li>
+                    <li id="link_chaos_knight" class="heroli Melee Carry Disabler Durable Pusher ">
+                        <a href="chaos_knight.html">
+                            <img class="heroPickerIconLink" src="../img/chaos_knight_hphover.png">
+                                Chaos Knight</a>
+                    </li>
+                    <li id="link_undying" class="heroli Melee Durable Pusher Disabler Initiator ">
+                        <a href="undying.html">
+                            <img class="heroPickerIconLink" src="../img/undying_hphover.png">
+                                Undying</a>
+                    </li>
+                    <li id="link_magnataur" class="heroli Melee Initiator Disabler Nuker Carry">
+                        <a href="magnataur.html">
+                            <img class="heroPickerIconLink" src="../img/magnataur_hphover.png">
+                                Magnus</a>
+                    </li>
+                    <li id="link_abaddon" class="heroli Melee ">
+                        <a href="abaddon.html">
+                            <img class="heroPickerIconLink" src="../img/abaddon_hphover.png">
+                                Abaddon</a>
+                    </li>
+                </ul>
+                
+                
+                <ul>
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="columnHeaderTextAgi">Agility</span>
+                    </li>
+                    
+                    <li id="link_antimage" class="heroli Melee Carry Escape ">
+                        <a href="antimage.html">
+                            <img class="heroPickerIconLink" src="../img/antimage_hphover.png">
+                                Anti-Mage</a>
+                    </li>
+                    <li id="link_drow_ranger" class="heroli Ranged Carry ">
+                        <a href="drow_ranger.html">
+                            <img class="heroPickerIconLink" src="../img/drow_ranger_hphover.png">
+                                Drow Ranger</a>
+                    </li>
+                    <li id="link_juggernaut" class="heroli Melee Carry Pusher ">
+                        <a href="juggernaut.html">
+                            <img class="heroPickerIconLink" src="../img/juggernaut_hphover.png">
+                                Juggernaut</a>
+                    </li>
+                    <li id="link_mirana" class="heroli Ranged Carry Nuker Disabler Escape ">
+                        <a href="mirana.html">
+                            <img class="heroPickerIconLink" src="../img/mirana_hphover.png">
+                                Mirana</a>
+                    </li>
+                    <li id="link_morphling" class="heroli Ranged Carry Escape Initiator Nuker ">
+                        <a href="morphling.html">
+                            <img class="heroPickerIconLink" src="../img/morphling_hphover.png">
+                                Morphling</a>
+                    </li>
+                    <li id="link_phantom_lancer" class="heroli Melee Carry Escape Pusher ">
+                        <a href="phantom_lancer.html">
+                            <img class="heroPickerIconLink" src="../img/phantom_lancer_hphover.png">
+                                Phantom Lancer</a>
+                    </li>
+                    <li id="link_vengefulspirit" class="heroli Ranged Support Disabler LaneSupport Initiator ">
+                        <a href="vengefulspirit.html">
+                            <img class="heroPickerIconLink" src="../img/vengefulspirit_hphover.png">
+                                Vengeful Spirit</a>
+                    </li>
+                    <li id="link_riki" class="heroli Melee Carry Escape ">
+                        <a href="riki.html">
+                            <img class="heroPickerIconLink" src="../img/riki_hphover.png">
+                                Riki</a>
+                    </li>
+                    <li id="link_sniper" class="heroli Ranged Carry ">
+                        <a href="sniper.html">
+                            <img class="heroPickerIconLink" src="../img/sniper_hphover.png">
+                                Sniper</a>
+                    </li>
+                    <li id="link_templar_assassin" class="heroli Ranged Carry Escape ">
+                        <a href="templar_assassin.html">
+                            <img class="heroPickerIconLink" src="../img/templar_assassin_hphover.png">
+                                Templar Assassin</a>
+                    </li>
+                    <li id="link_luna" class="heroli Ranged Carry Nuker ">
+                        <a href="luna.html">
+                            <img class="heroPickerIconLink" src="../img/luna_hphover.png">
+                                Luna</a>
+                    </li>
+                    <li id="link_bounty_hunter" class="heroli Melee Carry Escape Nuker ">
+                        <a href="bounty_hunter.html">
+                            <img class="heroPickerIconLink" src="../img/bounty_hunter_hphover.png">
+                                Bounty Hunter</a>
+                    </li>
+                    <li id="link_ursa" class="heroli Melee Carry Jungler Durable ">
+                        <a href="ursa.html">
+                            <img class="heroPickerIconLink" src="../img/ursa_hphover.png">
+                                Ursa</a>
+                    </li>
+                    <li id="link_gyrocopter" class="heroli Ranged Disabler Initiator Nuker ">
+                        <a href="gyrocopter.html">
+                            <img class="heroPickerIconLink" src="../img/gyrocopter_hphover.png">
+                                Gyrocopter</a>
+                    </li>
+                    <li id="link_lone_druid" class="heroli Ranged Carry Durable Pusher Jungler ">
+                        <a href="lone_druid.html">
+                            <img class="heroPickerIconLink" src="../img/lone_druid_hphover.png">
+                                Lone Druid</a>
+                    </li>
+                    <li id="link_naga_siren" class="heroli Melee Carry Disabler Pusher Escape ">
+                        <a href="naga_siren.html">
+                            <img class="heroPickerIconLink" src="../img/naga_siren_hphover.png">
+                                Naga Siren</a>
+                    </li>
+                    <li id="link_troll_warlord" class="heroli Ranged Carry ">
+                        <a href="troll_warlord.html">
+                            <img class="heroPickerIconLink" src="../img/troll_warlord_hphover.png">
+                                Troll Warlord</a>
+                    </li>
+                    <li id="link_ember_spirit" class="heroli Melee Carry Nuker ">
+                        <a href="ember_spirit.html">
+                            <img class="heroPickerIconLink" src="../img/ember_spirit_hphover.png">
+                                Ember Spirit</a>
+                    </li>
+
+                </ul>
+                <br>
+                <ul>
+                    <li id="link_bloodseeker" class="heroli Melee Carry Jungler ">
+                        <a href="bloodseeker.html">
+                            <img class="heroPickerIconLink" src="../img/bloodseeker_hphover.png">
+                                Bloodseeker</a>
+                    </li>
+                    <li id="link_nevermore" class="heroli Ranged Carry Nuker ">
+                        <a href="nevermore.html">
+                            <img class="heroPickerIconLink" src="../img/nevermore_hphover.png">
+                                Shadow Fiend</a>
+                    </li>
+                    <li id="link_razor" class="heroli Ranged Carry Durable Nuker ">
+                        <a href="razor.html">
+                            <img class="heroPickerIconLink" src="../img/razor_hphover.png">
+                                Razor</a>
+                    </li>
+                    <li id="link_venomancer" class="heroli Ranged Support Nuker Initiator Pusher ">
+                        <a href="venomancer.html">
+                            <img class="heroPickerIconLink" src="../img/venomancer_hphover.png">
+                                Venomancer</a>
+                    </li>
+                    <li id="link_faceless_void" class="heroli Melee Carry Initiator Disabler Escape ">
+                        <a href="faceless_void.html">
+                            <img class="heroPickerIconLink" src="../img/faceless_void_hphover.png">
+                                Faceless Void</a>
+                    </li>
+                    <li id="link_phantom_assassin" class="heroli Melee Carry Escape ">
+                        <a href="phantom_assassin.html">
+                            <img class="heroPickerIconLink" src="../img/phantom_assassin_hphover.png">
+                                Phantom Assassin</a>
+                    </li>
+                    <li id="link_viper" class="heroli Ranged Carry Durable ">
+                        <a href="viper.html">
+                            <img class="heroPickerIconLink" src="../img/viper_hphover.png">
+                                Viper</a>
+                    </li>
+                    <li id="link_clinkz" class="heroli Ranged Carry Escape ">
+                        <a href="clinkz.html">
+                            <img class="heroPickerIconLink" src="../img/clinkz_hphover.png">
+                                Clinkz</a>
+                    </li>
+                    <li id="link_broodmother" class="heroli Melee Pusher Carry Escape ">
+                        <a href="broodmother.html">
+                            <img class="heroPickerIconLink" src="../img/broodmother_hphover.png">
+                                Broodmother</a>
+                    </li>
+                    <li id="link_weaver" class="heroli Ranged Carry Escape ">
+                        <a href="weaver.html">
+                            <img class="heroPickerIconLink" src="../img/weaver_hphover.png">
+                                Weaver</a>
+                    </li>
+                    <li id="link_spectre" class="heroli Melee Carry Durable ">
+                        <a href="spectre.html">
+                            <img class="heroPickerIconLink" src="../img/spectre_hphover.png">
+                                Spectre</a>
+                    </li>
+                    <li id="link_meepo" class="heroli Carry Disabler Initiator ">
+                        <a href="meepo.html">
+                            <img class="heroPickerIconLink" src="../img/meepo_hphover.png">
+                                Meepo</a>
+                    </li>
+                    <li id="link_nyx_assassin" class="heroli Melee Disabler Nuker ">
+                        <a href="nyx_assassin.html">
+                            <img class="heroPickerIconLink" src="../img/nyx_assassin_hphover.png">
+                                Nyx Assassin</a>
+                    </li>
+                    <li id="link_slark" class="heroli Melee Escape ">
+                        <a href="slark.html">
+                            <img class="heroPickerIconLink" src="../img/slark_hphover.png">
+                                Slark</a>
+                    </li>
+                    <li id="link_medusa" class="heroli Ranged Carry ">
+                        <a href="medusa.html">
+                            <img class="heroPickerIconLink" src="../img/medusa_hphover.png">
+                                Medusa</a>
+                    </li>
+                    <li id="link_terrorblade" class="heroli Melee Carry ">
+                        <a href="terrorblade.html">
+                            <img class="heroPickerIconLink" src="../img/terrorblade_hphover.png">
+                                Terrorblade</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="heroli" style="width:320px;padding: 10px 0 14px;height:20px;">
+                        <span id="columnHeaderTextInt">Intelligence</span>
+                    </li>
+                    
+                    <li id="link_crystal_maiden" class="heroli Ranged Support Disabler Nuker LaneSupport ">
+                        <a href="crystal_maiden.html">
+                            <img class="heroPickerIconLink" src="../img/crystal_maiden_hphover.png">
+                                Crystal Maiden</a>
+                    </li>
+                    <li id="link_puck" class="heroli Ranged Initiator Nuker Disabler Escape ">
+                        <a href="puck.html">
+                            <img class="heroPickerIconLink" src="../img/puck_hphover.png">
+                                Puck</a>
+                    </li>
+                    <li id="link_storm_spirit" class="heroli Ranged Carry Initiator Escape Disabler ">
+                        <a href="storm_spirit.html">
+                            <img class="heroPickerIconLink" src="../img/storm_spirit_hphover.png">
+                                Storm Spirit</a>
+                    </li>
+                    <li id="link_windrunner" class="heroli Ranged Disabler Nuker Support Escape ">
+                        <a href="windrunner.html">
+                            <img class="heroPickerIconLink" src="../img/windrunner_hphover.png">
+                                Windrunner</a>
+                    </li>
+                    <li id="link_zuus" class="heroli Ranged Nuker Support ">
+                        <a href="zuus.html">
+                            <img class="heroPickerIconLink" src="../img/zuus_hphover.png">
+                                Zeus</a>
+                    </li>
+                    <li id="link_lina" class="heroli Ranged Nuker Disabler Support ">
+                        <a href="lina.html">
+                            <img class="heroPickerIconLink" src="../img/lina_hphover.png">
+                                Lina</a>
+                    </li>
+                    <li id="link_shadow_shaman" class="heroli Ranged Pusher Disabler Nuker Support ">
+                        <a href="shadow_shaman.html">
+                            <img class="heroPickerIconLink" src="../img/shadow_shaman_hphover.png">
+                                Shadow Shaman</a>
+                    </li>
+                    <li id="link_tinker" class="heroli Ranged Nuker Pusher ">
+                        <a href="tinker.html">
+                            <img class="heroPickerIconLink" src="../img/tinker_hphover.png">
+                                Tinker</a>
+                    </li>
+                    <li id="link_furion" class="heroli Ranged Jungler Pusher Carry Escape ">
+                        <a href="furion.html">
+                            <img class="heroPickerIconLink" src="../img/furion_hphover.png">
+                                Nature's Prophet</a>
+                    </li>
+                    <li id="link_enchantress" class="heroli Ranged Support Pusher Durable Jungler ">
+                        <a href="enchantress.html">
+                            <img class="heroPickerIconLink" src="../img/enchantress_hphover.png">
+                                Enchantress</a>
+                    </li>
+                    <li id="link_jakiro" class="heroli Ranged Nuker Pusher LaneSupport Disabler ">
+                        <a href="jakiro.html">
+                            <img class="heroPickerIconLink" src="../img/jakiro_hphover.png">
+                                Jakiro</a>
+                    </li>
+                    <li id="link_chen" class="heroli Ranged Support Jungler Pusher ">
+                        <a href="chen.html">
+                            <img class="heroPickerIconLink" src="../img/chen_hphover.png">
+                                Chen</a>
+                    </li>
+                    <li id="link_silencer" class="heroli Ranged Support Carry Initiator ">
+                        <a href="silencer.html">
+                            <img class="heroPickerIconLink" src="../img/silencer_hphover.png">
+                                Silencer</a>
+                    </li>
+                    <li id="link_ogre_magi" class="heroli Melee Nuker Disabler Durable ">
+                        <a href="ogre_magi.html">
+                            <img class="heroPickerIconLink" src="../img/ogre_magi_hphover.png">
+                                Ogre Magi</a>
+                    </li>
+                    <li id="link_rubick" class="heroli Ranged Disabler Pusher ">
+                        <a href="rubick.html">
+                            <img class="heroPickerIconLink" src="../img/rubick_hphover.png">
+                                Rubick</a>
+                    </li>
+                    <li id="link_disruptor" class="heroli Ranged Nuker Support Initiator Disabler ">
+                        <a href="disruptor.html">
+                            <img class="heroPickerIconLink" src="../img/disruptor_hphover.png">
+                                Disruptor</a>
+                    </li>
+                    <li id="link_keeper_of_the_light" class="heroli Ranged Nuker Support LaneSupport ">
+                        <a href="keeper_of_the_light.html">
+                            <img class="heroPickerIconLink" src="../img/keeper_of_the_light_hphover.png">
+                                Keeper of the Light</a>
+                    </li>
+                    <li id="link_skywrath_mage" class="heroli Ranged Nuker Support ">
+                        <a href="skywrath_mage.html">
+                            <img class="heroPickerIconLink" src="../img/skywrath_mage_hphover.png">
+                                Skywrath Mage</a>
+                    </li>
+                    <li id="link_oracle" class="heroli Ranged Nuker Support LaneSupport ">
+                        <a href="oracle.html">
+                            <img class="heroPickerIconLink" src="../img/oracle_hphover.png">
+                                Oracle</a>
+                    </li>
+                    <li id="link_techies" class="heroli Ranged ">
+                        <a href="techies.html">
+                            <img class="heroPickerIconLink" src="../img/techies_hphover.png">
+                                Techies</a>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li id="link_bane" class="heroli Ranged Disabler Nuker Support ">
+                        <a href="bane.html">
+                            <img class="heroPickerIconLink" src="../img/bane_hphover.png">
+                                Bane</a>
+                    </li>
+                    <li id="link_lich" class="heroli Ranged Support LaneSupport Nuker ">
+                        <a href="lich.html">
+                            <img class="heroPickerIconLink" src="../img/lich_hphover.png">
+                                Lich</a>
+                    </li>
+                    <li id="link_lion" class="heroli Ranged Disabler Nuker LaneSupport Support ">
+                        <a href="lion.html">
+                            <img class="heroPickerIconLink" src="../img/lion_hphover.png">
+                                Lion</a>
+                    </li>
+                    <li id="link_witch_doctor" class="heroli Ranged Support Disabler ">
+                        <a href="witch_doctor.html">
+                            <img class="heroPickerIconLink" src="../img/witch_doctor_hphover.png">
+                                Witch Doctor</a>
+                    </li>
+                    <li id="link_enigma" class="heroli Ranged Disabler Initiator Jungler Pusher ">
+                        <a href="enigma.html">
+                            <img class="heroPickerIconLink" src="../img/enigma_hphover.png">
+                                Enigma</a>
+                    </li>
+                    <li id="link_necrolyte" class="heroli Ranged Support Durable Carry ">
+                        <a href="necrolyte.html">
+                            <img class="heroPickerIconLink" src="../img/necrolyte_hphover.png">
+                                Necrolyte</a>
+                    </li>
+                    <li id="link_warlock" class="heroli Ranged Initiator Support LaneSupport Disabler ">
+                        <a href="warlock.html">
+                            <img class="heroPickerIconLink" src="../img/warlock_hphover.png">
+                                Warlock</a>
+                    </li>
+                    <li id="link_queenofpain" class="heroli Ranged Nuker Escape Carry ">
+                        <a href="queenofpain.html">
+                            <img class="heroPickerIconLink" src="../img/queenofpain_hphover.png">
+                                Queen of Pain</a>
+                    </li>
+                    <li id="link_death_prophet" class="heroli Ranged Pusher Nuker Durable ">
+                        <a href="death_prophet.html">
+                            <img class="heroPickerIconLink" src="../img/death_prophet_hphover.png">
+                                Death Prophet</a>
+                    </li>
+                    <li id="link_pugna" class="heroli Ranged Nuker Pusher Support ">
+                        <a href="pugna.html">
+                            <img class="heroPickerIconLink" src="../img/pugna_hphover.png">
+                                Pugna</a>
+                    </li>
+                    <li id="link_dazzle" class="heroli Ranged Support LaneSupport ">
+                        <a href="dazzle.html">
+                            <img class="heroPickerIconLink" src="../img/dazzle_hphover.png">
+                                Dazzle</a>
+                    </li>
+                    <li id="link_leshrac" class="heroli Ranged Nuker Pusher Disabler Support ">
+                        <a href="leshrac.html">
+                            <img class="heroPickerIconLink" src="../img/leshrac_hphover.png">
+                                Leshrac</a>
+                    </li>
+                    <li id="link_dark_seer" class="heroli Melee Initiator Nuker Escape ">
+                        <a href="dark_seer.html">
+                            <img class="heroPickerIconLink" src="../img/dark_seer_hphover.png">
+                                Dark Seer</a>
+                    </li>
+                    <li id="link_batrider" class="heroli Ranged Initiator Disabler Nuker Escape ">
+                        <a href="batrider.html">
+                            <img class="heroPickerIconLink" src="../img/batrider_hphover.png">
+                                Batrider</a>
+                    </li>
+                    <li id="link_ancient_apparition" class="heroli Ranged Support Disabler ">
+                        <a href="ancient_apparition.html">
+                            <img class="heroPickerIconLink" src="../img/ancient_apparition_hphover.png">
+                                Ancient Apparition</a>
+                    </li>
+                    <li id="link_invoker" class="heroli Ranged Carry Nuker Initiator Escape ">
+                        <a href="invoker.html">
+                            <img class="heroPickerIconLink" src="../img/invoker_hphover.png">
+                                Invoker</a>
+                    </li>
+                    <li id="link_obsidian_destroyer" class="heroli Ranged Carry ">
+                        <a href="obsidian_destroyer.html">
+                            <img class="heroPickerIconLink" src="../img/obsidian_destroyer_hphover.png">
+                                Outworld Destroyer</a>
+                    </li>
+                    <li id="link_shadow_demon" class="heroli Ranged Support Disabler Nuker ">
+                        <a href="shadow_demon.html">
+                            <img class="heroPickerIconLink" src="../img/shadow_demon_hphover.png">
+                                Shadow Demon</a>
+                    </li>
+                    <li id="link_visage" class="heroli Ranged Nuker Durable Disabler ">
+                        <a href="visage.html">
+                            <img class="heroPickerIconLink" src="../img/visage_hphover.png">
+                                Visage</a>
+                    </li>
+                    <li id="link_winter_wyvern" class="heroli Ranged ">
+                        <a href="winter_wyvern.html">
+                            <img class="heroPickerIconLink" src="../img/winter_wyvern_hphover.png">
+                                Winter Wyvern</a>
+                    </li>
+                </ul>
+
+                    
+                
+<br><br>
+                 <div class="lang">
+                 <TABLE WIDTH="100%" HEIGHT="100%">
+                 <TR>
+                 <TD ALIGN="center" VALIGN="middle">
+                 <a href="../en.lproj/Heroes.html">English</a>
+                 <a href="../zh-Hans.lproj/Heroes.html">中文</a>
+                 </TD>
+                 </TR>
+                 </TABLE>
+                 </div>
+
+            </div>
+        </div>
+        <br><br>
+    </body>

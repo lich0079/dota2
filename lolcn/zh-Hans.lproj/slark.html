@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>SLARK</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/slark_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">斯拉克</div>
+                    <div class="atype">近战</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                        <tr >
+                            <td class="role" width="50%">逃生</td>
+                            <td class="role" width="50%"></td>
+                        </tr>
+                        <tr >
+                            <td class="role"></td>
+                            <td class="role"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul>
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+                    
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>16 + 1.90</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>21 + 1.50</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>21 + 1.80</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>33 - 41</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>305</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>1.94</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">549</td>
+                                <td class="statRowColW">1,028</td>
+                                <td class="statRowColW">1,750</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">208</td>
+                                <td class="statRowColW">554</td>
+                                <td class="statRowColW">1,061</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">54-62</td>
+                                <td class="statRowColW">75-83</td>
+                                <td class="statRowColW">110-118</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">2</td>
+                                <td class="statRowColW">5</td>
+                                <td class="statRowColW">10</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 1800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">128</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">N/A</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/slark_dark_pact_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/slark_pounce_hp2.png" />
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/slark_essence_shift_hp2.png" />
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/slark_shadow_dance_hp2.png" >
+                                    </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>黑暗契约</strong></p>
+                            <p>牺牲自身一部分生命，施法后对以自己为中心，一定范围内敌方单位和自身造成伤害，并解除自身的负面状态。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">55 / 50 / 45 / 40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">9.0 / 8.0 / 7.0 / 6.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >伤害:</td><td class="statRowColW">75 / 150 / 225 / 300</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >延迟:</td><td class="statRowColW">1.5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >作用范围:</td><td class="statRowColW">325</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>突袭</strong></p>
+                            <p>向前方跳跃，对碰到的敌方单位造成一定的伤害，并用枷锁将其锁住，使其在一定时间内无法移出范围。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">20.0 / 16.0 / 12.0 / 8.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害类型:</td><td class="statRowColW">魔法</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >距离:</td><td class="statRowColW">700</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >跳跃伤害:</td><td class="statRowColW">70 / 140 / 210 / 280</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >捆绑持续时间:</td><td class="statRowColW">3.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >捆绑范围:</td><td class="statRowColW">325</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>能量转换</strong></p>
+                            <p>通过古老的诅咒剑刃，鱼人夜行者在攻击中窃取对方的属性转为自己的敏捷加成。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">冷却时间:</td><td class="statRowColW" width="55%">0.4 / 0.35 / 0.3 / 0.25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">被动</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >获得敏捷:</td><td class="statRowColW">3</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >全属性丢失:</td><td class="statRowColW">1</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >持续时间:</td><td class="statRowColW">15 / 30 / 60 / 120</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>暗影之舞</strong></p>
+                            <p>从鱼人学此技能开始，获得一个被动技能：当自己不在敌人视线之内时，增加自己的移动速度和生命值回复速度。主动使用时，鱼人夜行者将进入隐身状态5.5秒，在此期间任何的攻击和施法将不会打断隐身状态。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">120 / 120 / 120</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">25.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">5.5 / 5.5 / 5.5</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度加成:</td><td class="statRowColW">30% / 35% / 40%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >生命值回复/秒:</td><td class="statRowColW">3% / 5% / 7%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>除了水下住民，暗黑之礁很少为世人所知晓，这是座沉没之牢，关押的都是犯下滔天罪行的海洋生物。这座监牢外围装满了倒钩，里面充斥着心狠手辣的鱼人，狡猾歹毒的深海住民还有嗜杀同类的南海人。在这阴暗的迷宫中，鳗鱼四处巡逻，巨大的海葵担任着守卫的工作，在里面想不死就只能为恶。斯拉克被投入暗黑之礁的罪名已经不得而知，他在里面待的半生泯灭了亲情和良知，信任的只有自己，信奉的生存之道是鬼祟的行动和冷酷的心肠，他的脑海中不断酝酿自己的想法和计划。当臭名昭著的暗黑之礁十二恶棍密谋着越狱时，他们完美地将计划保密，发现蛛丝马迹的人都被他们杀害-但是他们的阴谋不知怎么的被斯拉克发现了，他在这计划中给自己找到了容身之地。越狱过程中十个恶棍遭到击毙，剩下两个被擒获，押回了暗黑之礁，作为那里犯人们的消遣活动被处以极刑。但是斯拉克，无名的第十三个越狱犯，利用暴乱作掩护逃之夭夭；永获自由。现在斯拉克隐居在紧靠影承废墟南部的食肉红树林灌丛中，迄今为止，他仍是唯一成功从暗黑之礁越狱的逃犯。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/slark_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>

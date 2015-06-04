@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>LONE DRUID</title>
+        <link rel="stylesheet" type="text/css" href="../hero.css">
+            <script type="text/javascript" src="../jquery-1.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
+                  document.body.style.webkitTouchCallout = "none";
+                  document.body.style.webkitUserSelect = "none";
+                  
+                  $(".tab").click(
+                                  function(){
+                                  $(".tab").removeClass("sel");  
+                                  $(".tab").addClass("unsel");
+                                  $(this).removeClass("unsel");
+                                  $(this).addClass("sel");
+                                  var index = $(this).attr("sel");
+                                  $(".hideDIV").hide();
+                                  $("#content"+index).show();
+                                  });
+                  $(".abi").click(
+                                  function(){
+                                  $(".abi").removeClass("cur");  
+                                  $(this).addClass("cur");
+                                  var index = $(this).attr("sel");
+                                  $(".abicontent").hide();
+                                  $("#abi"+index).show();
+                                  });
+                  });
+                
+                
+                </script>
+            </head>
+    <body>
+        <div class="everything"><div class="share"><a href="share.html"><img src="../openin.png"/></a></div>
+            <div>
+                <div class="floatleft">
+                    <a href='javascript:history.go(-1)'  name='gotop'><img  src="../img/lone_druid_hphover.png"/></a>
+                </div>
+                <div  class="floatleft">
+                    <div class="heroName">德鲁伊</div>
+                     <div class="atype">远程</div>
+                    <table class="roletable" border="0"  cellspacing="0" cellpadding="4">
+                            <tr >
+                                <td class="role" width="50%">核心</td>
+                                <td class="role" width="50%">耐久</td>
+                            </tr>
+                            <tr >
+                                <td class="role">推进</td>
+                                <td class="role">打野</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="tb_ floatleft">
+                <ul> 
+                    <li sel="1" class="tab sel">基本资料</li>
+                    <li sel="2" class="tab unsel">技能介绍</li>
+                    <li sel="3" class="tab unsel">背景故事</li>
+                    <li sel="4" class="tab unsel">英雄图片</li>
+                </ul>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="floatleft">
+                <div id="content1"  class="hideDIV">
+
+                    <div class="contentblock" >
+                        <div class="statsline floatleft">
+                            <ul>
+                                <li >&nbsp;<img src="../img/overviewicon_int.png" class="img33"> <span>13 + 1.40</span></li>
+                                <li class="relativeP">&nbsp;<img class="primary" src="../img/overviewicon_primary.png" width="40" height="40"><img src="../img/overviewicon_agi.png" class="img33"> <span>24 + 2.70</span></li>
+                                <li >&nbsp;<img src="../img/overviewicon_str.png" class="img33"> <span>17 + 2.10</span></li>
+                            </ul>
+                        </div>
+                        <div class="grow floatleft">
+                            <ul>
+                                <li ><img src="../img/overviewicon_attack.png" class="img33"> &nbsp;&nbsp;<span>22 - 26</span></li>
+                                <li ><img src="../img/overviewicon_speed.png"  class="img33"> <span>315</span></li>
+                                <li ><img src="../img/overviewicon_defense.png" class="img33"> &nbsp;&nbsp;&nbsp;&nbsp;<span>3.36</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    <div class="recommanditems contentblock" >
+                        <table class="stattable" width="98%" border="0"  cellspacing="0" cellpadding="4">
+                            <tr class="statRow">
+                                <td width="2%"></td>
+                                <td width="30%">等级</td>
+                                <td width="20%">1</td>
+                                <td width="20%">15</td>
+                                <td width="18%">25</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >生命值</td>
+                                <td class="statRowColW">473</td>
+                                <td class="statRowColW">1,032</td>
+                                <td class="statRowColW">1,811</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >魔法值</td>
+                                <td class="statRowColW">169</td>
+                                <td class="statRowColW">424</td>
+                                <td class="statRowColW">866</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >攻击力</td>
+                                <td class="statRowColW">46-50</td>
+                                <td class="statRowColW">84-88</td>
+                                <td class="statRowColW">131-135</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >护甲</td>
+                                <td class="statRowColW">3</td>
+                                <td class="statRowColW">9</td>
+                                <td class="statRowColW">15</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >视野</td>
+                                <td class="statRowColW" colspan="3" align="center">1800 / 800</td>
+                            </tr>
+                            <tr class="statRow">
+                                <td ></td>
+                                <td >攻击距离</td>
+                                <td class="statRowColW" colspan="3" align="center">550</td>
+                            </tr>
+                            <tr class="statRowB">
+                                <td ></td>
+                                <td >弹道速度</td>
+                                <td class="statRowColW" colspan="3" align="center">900</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                    
+                    
+                </div>
+                <div id="content2"  class="abilities hideDIV hided">
+                    <div class="contentblock">
+                        <br>
+                        <ul>
+                            <li sel="1" class="abi cur">
+                                <img  src="../img/lone_druid_spirit_bear_hp2.png" />
+                            </li>
+                            <li sel="2" class="abi">
+                                <img  src="../img/lone_druid_rabid_hp2.png" />               
+                            </li>
+                            <li sel="3" class="abi">
+                                <img  src="../img/lone_druid_synergy_hp2.png" />                          
+                            </li>
+                            <li sel="4" class="abi">
+                                <img  src="../img/lone_druid_true_form_battle_cry_hp2.png" >
+                            </li>
+                            <li sel="5" class="abi">
+                                <img  src="../img/lone_druid_true_form_hp2.png" />
+                            </li>
+                            <li sel="6" class="abi">
+                                <img  src="../img/lone_druid_true_form_druid_hp2.png" >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contentblock">
+                        <div id="abi1" class="abicontent cont">
+                            <p><strong>熊灵伙伴</strong></p>
+                            <p>召唤一只可以装备物品的熊灵伙伴。若熊灵与德鲁伊的距离超过1100，则不能攻击。若熊灵死了，德鲁伊会受到伤害。随着熊灵等级的提高，可以学习，回归，缠绕之爪和拆毁技能。</p>
+                            <br>
+                            <table class="stattable" border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">75 / 75 / 75 / 75</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">180.0 / 160.0 / 140.0 / 120.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >熊灵生命值:</td><td class="statRowColW">1400 / 1800 / 2300 / 2700</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >熊灵攻击间隔:</td><td class="statRowColW">1.75 / 1.65 / 1.55 / 1.45</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >熊灵护甲:</td><td class="statRowColW">3 / 4 / 5 / 6</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >熊灵死亡伤害:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi2" class="abicontent cont hided">
+                            <p><strong>狂猛</strong></p>
+                            <p>提升德鲁伊和熊灵的攻击速度和移动速度。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">30.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >攻速:</td><td class="statRowColW">10% / 20% / 30% / 40%</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >移动速度:</td><td class="statRowColW">5% / 10% / 15% / 20%</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">10 / 10 / 10 / 10</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi3" class="abicontent cont hided">
+                            <p><strong>协同</strong></p>
+                            <p>提升德鲁伊和熊灵的默契，提升属性和能力。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">技能:</td><td class="statRowColW" width="55%">被动</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >熊灵伤害加成:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >熊灵速度加成:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >狂猛持续时间加成:</td><td class="statRowColW">10 / 20 / 30 / 40</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >真身形态生命值加成:</td><td class="statRowColW">100 / 200 / 300 / 400</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi4" class="abicontent cont hided">
+                            <p><strong>战吼</strong></p>
+                            <p>提升德鲁伊和熊灵的伤害和护甲。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">50 / 50 / 50</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >冷却时间:</td><td class="statRowColW">30.0</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >伤害加成:</td><td class="statRowColW">20 / 40 / 60</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >护甲加成:</td><td class="statRowColW">2 / 4 / 6</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >持续时间:</td><td class="statRowColW">8 / 8 / 8</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi5" class="abicontent cont hided">
+                            <p><strong>真身</strong></p>
+                            <p>德鲁伊将自己的形态变换为狂怒的熊，失去远程攻击能力和一些移动速度，获得近战攻击能力和战吼技能。他可以人形态和熊形态之间自由切换。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >攻击间隔:</td><td class="statRowColW">1.5 / 1.5 / 1.5</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >护甲加成:</td><td class="statRowColW">4 / 6 / 8</td>
+                                </tr>
+                                <tr class="statRow">
+                                    <td >生命值加成:</td><td class="statRowColW">250 / 400 / 600</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >移动速度减少:</td><td class="statRowColW">35 / 35 / 35</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="abi6" class="abicontent cont hided">
+                            <p><strong>德鲁伊</strong></p>
+                            <p>返回德鲁伊形态。</p>
+                            <br>
+                            <table class="stattable"  border="0"  cellspacing="0" cellpadding="4">
+                                <tr class="statRow">
+                                    <td width="45%">魔法消耗:</td><td class="statRowColW" width="55%">25 / 25 / 25</td>
+                                </tr>
+                                <tr class="statRowB">
+                                    <td >技能:</td><td class="statRowColW">无目标</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <br>
+                </div>
+                <div id="content3"  class="hideDIV hided">
+                    <div class="story contentblock">
+                        <p>早在有史可考的年代之前，德鲁伊巨熊部落就已经形成了。他们天生就是智者，专注于探索和理解自然秩序。自然之力注意到了他们，并找到了他们中最有学识的一位，睿智的老悉拉，巨熊部落的先知 和仲裁者，脱颖而出。它走到悉拉面前，将生命之种交给了他，并且告诉他：“当世界变得昏暗，当文明不再繁荣，当荒漠延伸到世界的尽头，那就种下这粒种子。”获得了自然之力的信任以后，悉拉 感到自己的活力又回来了，岁月的痕迹也消失无踪，他原本渊博的学识更加广袤。同时，他发现自己能够将自己的意愿变成现实，甚至，在专注的情况下，能够改变自己的物质形态。然而，关于生命之 种的谣言却给他的部落和人民带来了灾难，恐怖的战争席卷了整个部落，将其毁于一旦。家园被毁，悉拉带着自己的责任，逃到了荒野。随着时间的流逝，巨熊部落以及生命之种的故事已经在岁月长河中被人遗忘。几万年来，悉拉一直在等待，等待神谕，等待永世争斗的结束，等待他流浪宿命的终结，等待他神圣使命的实现，同时准备着消灭那些敢于阻挠他的事物。	</p>
+                    </div>
+                </div>
+                <div id="content4"  class="hideDIV hided">
+                    <div class="recommanditems">
+                        <div class="wallpapers contentblock">
+                            <br>
+                            <span><img src="../img/lone_druid_vert.jpg" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+    </body>
