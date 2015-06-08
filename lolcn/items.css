@@ -16,7 +16,8 @@ body {
     color: #939393;
 }
 .everything{
-    width:320px;
+    width: 100%;
+    min-width: 320px;
     font-size:10px;
 }
 a {
@@ -35,7 +36,7 @@ b {
 }
 .main ul {
     overflow: hidden;
-    width: 320px;
+    width: 100%;
     margin: 2px 0px;
 }
 .main li {
@@ -46,6 +47,11 @@ b {
     line-height: 10px;
     font-size:10px;
     height:80px;
+}
+.main .itype{
+    width:100%;
+    padding: 10px 0 14px;
+    height:20px;
 }
 ol, ul {
     list-style: none;

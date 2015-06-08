@@ -26,7 +26,8 @@ body{
     color: #FEAF00;
 }
 .everything {
-    width:310px;
+    min-width:310px;
+    width: 96.875%;
     min-height:400px;
     font-size:10px;
     margin:5px;
